@@ -353,6 +353,42 @@ export default function AppleRepairs() {
                         loading="lazy"
                         className="max-w-full max-h-full object-contain"
                       />
+                    ) : model.id === "iphone-8" ? (
+                      <img 
+                        src="/images/iphones/iphone-8.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-8-plus" ? (
+                      <img 
+                        src="/images/iphones/iphone-8-plus.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-x" ? (
+                      <img 
+                        src="/images/iphones/iphone-x.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-xs" ? (
+                      <img 
+                        src="/images/iphones/iphone-xs.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
                     ) : (
                       <div className="relative">
                         {/* Front View */}
