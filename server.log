@@ -1189,3 +1189,21 @@ Import trace for requested module:
  GET / 200 in 86ms
  ✓ Compiled in 804ms (963 modules)
  GET / 200 in 90ms
+ ✓ Compiled in 279ms (963 modules)
+ GET / 200 in 111ms
+ ✓ Compiled in 935ms (963 modules)
+ GET / 200 in 143ms
+ ✓ Compiled in 211ms (963 modules)
+ GET / 200 in 92ms
+ ✓ Compiled in 133ms (963 modules)
+ GET / 200 in 61ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 573ms (954 modules)
+ GET / 200 in 213ms
+ GET /reparationer 404 in 812ms
+ GET /reparationer/apple 404 in 51ms
+ GET / 200 in 46ms
+ GET /kontakt 404 in 61ms
+ ✓ Compiled /favicon.ico in 134ms (590 modules)
+ GET /favicon.ico 200 in 276ms
+ GET / 200 in 99ms
