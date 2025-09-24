@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export default function AppleRepairs() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
 
   const iphoneModels = [
     // iPhone 16 Series (2024)
@@ -279,37 +278,10 @@ export default function AppleRepairs() {
     
          ];
 
-  // Filter models based on search and selected filters
+  // Filter models based on search only
   const filteredModels = iphoneModels.filter(model => {
-    const matchesSearch = model.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesFilters = selectedFilters.length === 0 || selectedFilters.some(filter => {
-      if (filter === "Pro") return model.name.includes("Pro");
-      if (filter === "Max") return model.name.includes("Max");
-      if (filter === "Plus") return model.name.includes("Plus");
-      if (filter === "mini") return model.name.includes("mini");
-      if (filter === "2024") return model.year === "2024";
-      if (filter === "2023") return model.year === "2023";
-      if (filter === "2022") return model.year === "2022";
-      if (filter === "2021") return model.year === "2021";
-      if (filter === "2020") return model.year === "2020";
-      if (filter === "2019") return model.year === "2019";
-      if (filter === "2018") return model.year === "2018";
-      if (filter === "2017") return model.year === "2017";
-      if (filter === "2016") return model.year === "2016";
-      if (filter === "2015") return model.year === "2015";
-      if (filter === "2014") return model.year === "2014";
-      return false;
-    });
-    return matchesSearch && matchesFilters;
+    return model.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
-
-  const toggleFilter = (filter: string) => {
-    setSelectedFilters(prev => 
-      prev.includes(filter) 
-        ? prev.filter(f => f !== filter)
-        : [...prev, filter]
-    );
-  };
 
   return (
     <div className="min-h-screen">
@@ -369,22 +341,6 @@ export default function AppleRepairs() {
                    </div>
                  </div>
 
-                 {/* Filter Chips */}
-                 <div className="flex flex-wrap justify-center gap-2 mb-6">
-                   {["Pro", "Max", "Plus", "mini", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"].map((filter) => (
-                     <button
-                       key={filter}
-                       onClick={() => toggleFilter(filter)}
-                       className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                         selectedFilters.includes(filter)
-                           ? "bg-gradient-to-r from-pink-500 to-yellow-500 text-white"
-                           : "bg-white text-gray-700 border border-gray-300 hover:border-pink-300"
-                       }`}
-                     >
-                       {filter}
-                     </button>
-                   ))}
-                 </div>
                </div>
              </section>
 

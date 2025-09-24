@@ -1892,3 +1892,27 @@ Import trace for requested module:
  GET /reparationer/apple 200 in 89ms
  ✓ Compiled in 257ms (980 modules)
  GET /reparationer/apple 200 in 84ms
+ ✓ Compiled in 1718ms (980 modules)
+ GET /reparationer/apple 200 in 518ms
+ GET /reparationer/apple 200 in 1085ms
+ ✓ Compiled in 456ms (980 modules)
+ GET /reparationer/apple 200 in 89ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 200ms (980 modules)
+ ⨯ ReferenceError: selectedFilters is not defined
+    at eval (src/app/reparationer/apple/page.tsx:284:28)
+    at Array.filter (<anonymous>)
+    at AppleRepairs (src/app/reparationer/apple/page.tsx:282:39)
+  282 |   const filteredModels = iphoneModels.filter(model => {
+  283 |     const matchesSearch = model.name.toLowerCase().includes(searchTerm.toLowerCase());
+> 284 |     const matchesFilters = selectedFilters.length === 0 || selectedFilters.some(filter => {
+      |                            ^
+  285 |       if (filter === "Pro") return model.name.includes("Pro");
+  286 |       if (filter === "Max") return model.name.includes("Max");
+  287 |       if (filter === "Plus") return model.name.includes("Plus"); {
+  digest: '905510852'
+}
+ GET /reparationer/apple 500 in 278ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 222ms (980 modules)
+ GET /reparationer/apple 200 in 270ms
