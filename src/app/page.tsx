@@ -458,7 +458,7 @@ export default function Home() {
               Vi arbejder med alle populære mærker og modeller.
             </p>
             
-            <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
               {/* Smartphones */}
               <div className="bg-white p-8 rounded-xl text-center shadow-sm">
                 <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -490,17 +490,6 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">💻 Bærbare computere</h3>
                 <p className="text-gray-600">MacBook, Dell, HP, Lenovo, ASUS, og flere.</p>
-              </div>
-              
-              {/* Smartwatches */}
-              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
-                <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" className="text-orange-600">
-                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">⌚ Smartwatches</h3>
-                <p className="text-gray-600">Apple Watch, Samsung Galaxy Watch, Garmin osv.</p>
               </div>
             </div>
             

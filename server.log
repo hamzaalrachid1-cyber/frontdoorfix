@@ -1224,3 +1224,10 @@ Import trace for requested module:
  GET / 200 in 92ms
  ✓ Compiled in 929ms (963 modules)
  GET / 200 in 139ms
+ ✓ Compiled in 228ms (963 modules)
+ GET / 200 in 87ms
+ GET / 200 in 265ms
+ ✓ Compiled /favicon.ico in 399ms (589 modules)
+ GET /favicon.ico 200 in 576ms
+ ✓ Compiled in 341ms (980 modules)
+ GET / 200 in 147ms
