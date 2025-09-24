@@ -1815,3 +1815,72 @@ Import trace for requested module:
 ./src/app/reparationer/apple/page.tsx
  GET / 200 in 76ms
  GET / 500 in 17ms
+ GET / 500 in 16ms
+ GET / 500 in 21ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 107ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | import type { Metadata } from "next";
+ [2m4[0m | 
+ [2m5[0m | export const metadata: Metadata = {
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 200 in 93ms
+ GET / 500 in 18ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 231ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+    ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:7:1]
+ [2m 4[0m | import { useState } from "react";
+ [2m 5[0m | import type { Metadata } from "next";
+ [2m 6[0m | 
+ [2m 7[0m | export const metadata: Metadata = {
+    : [35;1m             ^^^^^^^^[0m
+ [2m 8[0m |   title: "iPhone Reparation - Alle Modeller | Frontdoorfix",
+ [2m 9[0m |   description: "Vi reparerer alle iPhone modeller fra iPhone 6 til iPhone 16 Pro Max. Skærmreparation, batteriskift, kamera og mere med 24 måneders garanti. Vi kommer til dig i København.",
+ [2m10[0m |   keywords: "iPhone reparation, skærmreparation iPhone, batteriskift iPhone, iPhone 16, iPhone 15, iPhone 14, iPhone 13, iPhone 12, iPhone 11, iPhone X, iPhone 8, iPhone 7, iPhone 6, København",
+    `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 200 in 124ms
+ GET / 500 in 20ms
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+    ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:7:1]
+ [2m 4[0m | import { useState } from "react";
+ [2m 5[0m | import type { Metadata } from "next";
+ [2m 6[0m | 
+ [2m 7[0m | export const metadata: Metadata = {
+    : [35;1m             ^^^^^^^^[0m
+ [2m 8[0m |   title: "iPhone Reparation - Alle Modeller | Frontdoorfix",
+ [2m 9[0m |   description: "Vi reparerer alle iPhone modeller fra iPhone 6 til iPhone 16 Pro Max. Skærmreparation, batteriskift, kamera og mere med 24 måneders garanti. Vi kommer til dig i København.",
+ [2m10[0m |   keywords: "iPhone reparation, skærmreparation iPhone, batteriskift iPhone, iPhone 16, iPhone 15, iPhone 14, iPhone 13, iPhone 12, iPhone 11, iPhone X, iPhone 8, iPhone 7, iPhone 6, København",
+    `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ ✓ Compiled /_not-found in 830ms (980 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 28ms
+ GET / 200 in 442ms
