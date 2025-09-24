@@ -8,21 +8,18 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="text-center md:text-left">
-                {/* Question Pill */}
-                <div className="inline-block bg-white rounded-full px-8 py-4 mb-8 shadow-lg">
-                  <p className="text-lg font-semibold text-gray-800">Hvordan booker jeg en tid til reparation?</p>
-                </div>
 
                 {/* Main Headline */}
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 leading-tight">
-                  Din enhed – Din løsning.<br />
-                  <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">Hurtigt og pålideligt</span> direkte på din adresse.
+                  <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
+                    <span id="rotating-headline">Ødelagt telefon? Vi fixer det!</span>
+                  </span>
                 </h1>
 
                 {/* Description */}
                 <p className="text-xl text-gray-600 mb-12 max-w-2xl">
-                  Frontdoorfix er din pålidelige partner for mobil- og elektronikreparation i København. 
-                  24 måneders garanti på skærme og topanmeldelser fra glade kunder.
+                  Hurtig og professionel reparation af mobil og elektronik – direkte på din adresse.
+                  Ingen ventetid. Ingen besvær. Kun kvalitet og garanti.
                 </p>
 
                 {/* CTA Buttons */}
@@ -38,30 +35,38 @@ export default function Home() {
                   </a>
                 </div>
 
-                {/* Social Proof */}
-                <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-8 text-gray-600">
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl font-bold text-gray-800">Over 500</span>
-                    <span>tilfredse kunder</span>
-                  </div>
-                  <div className="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-full">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#10b981">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                    <span className="font-semibold text-green-800">Trustpilot</span>
-                  </div>
-                </div>
               </div>
 
               {/* Right Content - Van */}
               <div className="flex flex-col items-end gap-6">
-                <div className="flex flex-wrap justify-start md:justify-end gap-4">
-                  <span className="px-6 py-3 rounded-full pill">Reparation på 20 min!</span>
-                  <span className="px-6 py-3 rounded-full pill">Gratis udrykning!</span>
-                  <span className="px-6 py-3 rounded-full pill">Kun glade kunder!</span>
-                </div>
-        <div className="w-full max-w-3xl drive-stage flex justify-center items-center">
-          {/* Professional delivery van in Frontdoorfix colors */}
+        <div className="w-full max-w-3xl drive-stage flex justify-center items-center relative">
+          {/* Floating pill badges around the van */}
+          <div className="absolute top-2 left-8 z-10">
+            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform rotate-2 opacity-80">
+              🚐 Reparation på stedet
+            </div>
+          </div>
+          
+          <div className="absolute top-2 right-8 z-10">
+            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform -rotate-2 opacity-80">
+              ⚡ Hurtigt og effektivt
+            </div>
+          </div>
+          
+          <div className="absolute top-12 left-8 z-10">
+            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform rotate-1 opacity-80">
+              😊 Kun glade kunder
+            </div>
+          </div>
+          
+          <div className="absolute top-12 right-8 z-10">
+            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform -rotate-1 opacity-80">
+              💰 Fair og gennemsigtige priser
+            </div>
+          </div>
+          
+          <div className="w-full max-w-3xl drive-stage flex justify-center items-center">
+            {/* Professional delivery van in Frontdoorfix colors */}
           <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto drop-shadow-xl" style={{transform: 'scale(1.2)', maxWidth: '350px'}}>
             <defs>
               <linearGradient id="vanGradient" x1="0" x2="1">
@@ -106,9 +111,28 @@ export default function Home() {
               <path d="M 90 47.669 c 0 -0.524 -0.102 -1.031 -0.273 -1.51 h -7.453 c 1.93 2.351 4.723 3.795 7.726 4.05 V 47.669 z" fill="rgba(255,255,255,0.3)"/>
               <path d="M 0 49.031 h 2.174 c 0.883 0 1.599 -0.716 1.599 -1.599 v -1.796 c 0 -0.871 -0.696 -1.575 -1.562 -1.596 L 0 44.041 V 49.031 z" fill="url(#vanGradient)" opacity="0.9"/>
               
+              {/* Speed effects - exhaust smoke and speed lines */}
+              <g className="speed-effects">
+                {/* Bigger, more visible exhaust smoke clouds */}
+                <circle cx="6" cy="50" r="5" fill="#9ca3af" opacity="0.8" className="smoke-1"/>
+                <circle cx="2" cy="48" r="4" fill="#d1d5db" opacity="0.7" className="smoke-2"/>
+                <circle cx="0" cy="52" r="3.5" fill="#e5e7eb" opacity="0.6" className="smoke-3"/>
+                <circle cx="-3" cy="50" r="3" fill="#f3f4f6" opacity="0.5" className="smoke-4"/>
+                
+                {/* More dramatic speed lines behind van */}
+                <line x1="-15" y1="30" x2="5" y2="30" stroke="#6b7280" strokeWidth="3" opacity="0.8" className="speed-line-1"/>
+                <line x1="-20" y1="35" x2="0" y2="35" stroke="#6b7280" strokeWidth="4" opacity="0.7" className="speed-line-2"/>
+                <line x1="-18" y1="40" x2="2" y2="40" stroke="#6b7280" strokeWidth="3" opacity="0.8" className="speed-line-3"/>
+                <line x1="-25" y1="45" x2="-5" y2="45" stroke="#6b7280" strokeWidth="5" opacity="0.6" className="speed-line-4"/>
+                <line x1="-22" y1="50" x2="-2" y2="50" stroke="#6b7280" strokeWidth="4" opacity="0.7" className="speed-line-5"/>
+                <line x1="-16" y1="55" x2="3" y2="55" stroke="#6b7280" strokeWidth="3" opacity="0.8" className="speed-line-6"/>
+                <line x1="-12" y1="60" x2="1" y2="60" stroke="#6b7280" strokeWidth="2" opacity="0.6" className="speed-line-7"/>
+              </g>
+              
             </g>
           </svg>
-          <div className="road"><div className="lane" /></div>
+            <div className="road"><div className="lane" /></div>
+          </div>
         </div>
               </div>
             </div>
@@ -249,16 +273,32 @@ export default function Home() {
         {/* Services Section */}
         <section className="py-16 bg-gray-50">
           <div className="mx-auto max-w-6xl px-6">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vores tjenester</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Populære reparationer vi tilbyder</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-xl text-center shadow-sm">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  <svg width="32" height="32" viewBox="0 0 575.245 575.245" fill="currentColor" className="text-blue-600">
+                    <path d="M431.146,305.701c0,8.141-2.834,16.045-7.701,22.521v109.802c0,5.397-4.376,9.784-9.777,9.784H161.561
+                      c-5.402,0-9.777-4.385-9.777-9.784V71.292c0-5.404,4.375-9.788,9.777-9.788h18.564l17.711-25.889V0.009h-60.814
+                      c-21.397,0-38.746,17.346-38.746,38.758v497.722c0,21.405,17.348,38.756,38.746,38.756h301.202
+                      c21.399,0,38.746-17.349,38.746-38.756V236.91l-45.822,11.403L431.146,305.701L431.146,305.701z M287.611,546.473
+                      c-21.13,0-38.211-17.09-38.211-38.205c0-21.102,17.081-38.223,38.211-38.223c21.078,0,38.213,17.121,38.213,38.223
+                      C325.825,529.381,308.689,546.473,287.611,546.473z"/>
+                    <path d="M438.223,0.008H283.674v48.113v5.394l-2.776,4.623l-2.016,3.366h134.785c5.401,0,9.777,4.384,9.777,9.788v93.652
+                      l44.185-24.166l9.34-5.108V38.764C476.969,17.354,459.623,0.008,438.223,0.008z"/>
+                    <path d="M188.777,96.731l29.35,80.25c0.402,1.085,0.535,2.246,0.383,3.378l-11.395,86.786c-0.171,1.834,0.742,3.688,2.474,4.584
+                      c0.665,0.343,1.369,0.504,2.073,0.504c1.675,0,3.291-0.914,4.111-2.501l43.595-84.921c2.434-4.755,2.646-10.347,0.553-15.276
+                      l-26.955-63.672c-0.877-2.091-0.722-4.48,0.457-6.43l30.777-51.31V0h-46.887v41.639l-26.477,38.709
+                      C187.54,85.158,186.762,91.253,188.777,96.731z"/>
+                    <path d="M366.038,231.165l5.646,54.125c0.096,0.865-0.208,1.722-0.835,2.33l-45.577,44.585
+                      c-4.623,4.508-6.467,11.139-4.869,17.387l18.013,70.072c0.418,1.723,1.77,3.148,3.613,3.635c0.418,0.105,0.836,0.154,1.254,0.154
+                      c2.248,0,4.299-1.514,4.87-3.787l11.354-54.686c0.115-0.552,0.384-1.058,0.802-1.455l45.937-44.927
+                      c3.462-3.396,5.422-8.047,5.422-12.897v-70.387c0-1.303,0.895-2.444,2.167-2.768l63.131-15.702v-58.977l-101.649,55.59
+                      C368.927,216.948,365.276,223.929,366.038,231.165z"/>
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">Skærmreparation</h3>
-                <p className="text-gray-600">Skærmudskiftning til alle iPhone og Android modeller med 24 måneders garanti</p>
+                <p className="text-gray-600">Udskiftning af ødelagte skærme på alle iPhone- og Android-modeller. Altid med 24 måneders garanti og lynhurtig service – direkte på din adresse.</p>
               </div>
               <div className="bg-white p-8 rounded-xl text-center shadow-sm">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -267,17 +307,96 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">Batteriskift</h3>
-                <p className="text-gray-600">Nyt batteri til din telefon eller tablet med 12 måneders garanti</p>
+                <p className="text-gray-600">Få nyt liv i din telefon eller tablet med et friskt batteri. Vi skifter på stedet og giver 12 måneders garanti på alle batterier.</p>
               </div>
               <div className="bg-white p-8 rounded-xl text-center shadow-sm">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" className="text-purple-600">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" className="text-purple-600">
+                    <path d="M26.9,15.7C26.8,15.3,26.4,15,26,15h-6l3.9-11.7c0.1-0.4,0-0.9-0.4-1.1c-0.4-0.3-0.8-0.2-1.2,0l-17,13
+                      c-0.3,0.3-0.5,0.7-0.3,1.1C5.2,16.7,5.6,17,6,17h6L8.1,28.7c-0.1,0.4,0,0.9,0.4,1.1C8.6,29.9,8.8,30,9,30c0.2,0,0.4-0.1,0.6-0.2
+                      l17-13C26.9,16.5,27.1,16.1,26.9,15.7z"/>
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">Ladeport reparation</h3>
-                <p className="text-gray-600">Reparation af ladeport og opladningsproblemer til alle mærker</p>
+                <p className="text-gray-600">Problemer med opladningen? Vi reparerer eller udskifter ladeporte på alle mærker, så du kan oplade uden besvær igen.</p>
               </div>
+            </div>
+            
+            {/* Additional Services Row */}
+            <div className="grid md:grid-cols-3 gap-8 mt-8">
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-orange-600">
+                    <path opacity="0.5" d="M9.77778 21H14.2222C17.3433 21 18.9038 21 20.0248 20.2646C20.51 19.9462 20.9267 19.5371 21.251 19.0607C22 17.9601 22 16.4279 22 13.3636C22 10.2994 22 8.76721 21.251 7.6666C20.9267 7.19014 20.51 6.78104 20.0248 6.46268C19.3044 5.99013 18.4027 5.82123 17.022 5.76086C16.3631 5.76086 15.7959 5.27068 15.6667 4.63636C15.4728 3.68489 14.6219 3 13.6337 3H10.3663C9.37805 3 8.52715 3.68489 8.33333 4.63636C8.20412 5.27068 7.63685 5.76086 6.978 5.76086C5.59733 5.82123 4.69555 5.99013 3.97524 6.46268C3.48995 6.78104 3.07328 7.19014 2.74902 7.6666C2 8.76721 2 10.2994 2 13.3636C2 16.4279 2 17.9601 2.74902 19.0607C3.07328 19.5371 3.48995 19.9462 3.97524 20.2646C5.09624 21 6.65675 21 9.77778 21Z" fill="currentColor"/>
+                    <path d="M17.5562 9.27246C17.096 9.27246 16.7229 9.63877 16.7229 10.0906C16.7229 10.5425 17.096 10.9088 17.5562 10.9088H18.6673C19.1276 10.9088 19.5007 10.5425 19.5007 10.0906C19.5007 9.63877 19.1276 9.27246 18.6673 9.27246H17.5562Z" fill="currentColor"/>
+                    <path fillRule="evenodd" clipRule="evenodd" d="M12.0007 9.27246C9.69946 9.27246 7.83398 11.104 7.83398 13.3634C7.83398 15.6227 9.69946 17.4543 12.0007 17.4543C14.3018 17.4543 16.1673 15.6227 16.1673 13.3634C16.1673 11.104 14.3018 9.27246 12.0007 9.27246ZM12.0007 10.9088C10.6199 10.9088 9.50065 12.0078 9.50065 13.3634C9.50065 14.719 10.6199 15.8179 12.0007 15.8179C13.3814 15.8179 14.5007 14.719 14.5007 13.3634C14.5007 12.0078 13.3814 10.9088 12.0007 10.9088Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Kamera reparation</h3>
+                <p className="text-gray-600">Har du problemer med kameraet? Vi reparerer eller udskifter kameraer på alle modeller, så du igen kan tage skarpe billeder og videoer i høj kvalitet.</p>
+              </div>
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg width="32" height="32" viewBox="0 0 512 512" fill="currentColor" className="text-indigo-600">
+                    <path d="M19.188 17.406L74.624 68.72l4.938 2.155L119 88.03l48.844-70.624H19.188zm171.406 0L136.5 95.626l38.063 16.53 1.875.813 1.343 1.5 62.157 69.218 25.532 25.968 8-25.53-.095-.032L303.97 82.72l-19.626-65.314h-93.75zm113.28 0l17.407 58.063 105.345-21.5-7.313-36.564H303.875zm134.5 0l8.407 42.032 1.814 9.124-9.125 1.844-119.626 24.406-16.47 54.626 47.72 56.062 142.625-95.938V17.406h-55.345zM18.907 42.594v168.03l69.03-26.03L68 87.75l-.156.188-48.938-45.344zm69.72 52.593l18.468 89.626 51.22 19.312 35.624-43.656-28.72-32-76.593-33.282zm405.093 36.876L337.53 237.188l-13.717 10.53 169.906 105.845v-221.5zm-396.533 69l-78.28 29.53v166.938l181.5-103.874 47.124-33.344-37.843-16.968-.03.094-57.47-21.657-4.03-1.155-2.282-1.22-48.688-18.343zm242.875 78.78l-5.406 5.782-44.5 47.625-4.844 57.313 68.813 92.562L493.72 423v-47.406l-153.658-95.75zm-151.375 42.094l-65.593 37.532L224.28 492.22h113.314l-69.375-93.376-2.095-2.813.28-3.53 4.033-47.72-81.75-22.842zm-81.968 46.875l-87.814 50.25v73.157H200.78L106.72 368.81zm387 74.532L380.25 492.22h113.47v-48.876z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Bagcover udskiftning</h3>
+                <p className="text-gray-600">Revnet eller ødelagt bagcover? Vi udskifter det med originale dele og professionel montering, så din telefon ser ud som ny igen.</p>
+              </div>
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-pink-600">
+                    <path d="M5 3C5 1.34315 6.34315 0 8 0C9.65685 0 11 1.34315 11 3V7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7V3Z" fill="currentColor"/>
+                    <path d="M9 13.9291V16H7V13.9291C3.60771 13.4439 1 10.5265 1 7V6H3V7C3 9.76142 5.23858 12 8 12C10.7614 12 13 9.76142 13 7V6H15V7C15 10.5265 12.3923 13.4439 9 13.9291Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Mikrofon & højttaler reparation</h3>
+                <p className="text-gray-600">Dårlig lyd under opkald eller musik? Vi reparerer mikrofoner og højttalere på alle modeller, så du kan høre og blive hørt klart igen.</p>
+              </div>
+            </div>
+            
+            {/* Third Row */}
+            <div className="grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" className="text-cyan-600">
+                    <path d="M25.378 19.75c1.507 6.027-3.162 11.25-9.375 11.25s-10.9-5.149-9.375-11.25c0.937-3.75 5.625-9.375 9.375-18.75 3.75 9.374 8.438 15 9.375 18.75z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Vand- og fugtskader</h3>
+                <p className="text-gray-600">Er din telefon kommet i kontakt med vand? Vi er specialister i vand- og fugtskader og kan ofte redde enheden med hurtig behandling.</p>
+              </div>
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" className="text-teal-600">
+                    <path d="M19,3H15.414a1,1,0,0,0-.707.293L12,6,9.293,3.293A1,1,0,0,0,8.586,3H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5A2,2,0,0,0,19,3Zm-2.293,7.707-5,5a1,1,0,0,1-1.414,0l-2-2a1,1,0,0,1,1.414-1.414L11,13.586l4.293-4.293a1,1,0,0,1,1.414,1.414Z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Dataredning</h3>
+                <p className="text-gray-600">Mistet billeder, kontakter eller filer? Vi hjælper dig med at gendanne vigtige data fra ødelagte eller beskadigede enheder.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Frontdoorfix Section */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl font-bold mb-8 text-gray-800">Hvorfor Frontdoorfix?</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Hos Frontdoorfix er service og kvalitet vores højeste prioritet.
+                Alle vores teknikere har mindst 4 års erfaring og er nøje udvalgt for deres tekniske kunnen og kundebevidste tilgang. 
+                Vi tror på, at en god reparation ikke kun handler om teknik – men også om at skabe en tryg og nem oplevelse for dig som kunde.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mt-6">
+                Vi har allerede udført mere end 2.000 reparationer og har hjulpet københavnere med alt fra skærmskift til mere avancerede fejl. 
+                Vores koncept er enkelt: vi kommer direkte hjem til dig, så du slipper for ventetid og besværet med at finde et værksted.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mt-6">
+                Med Frontdoorfix får du en hurtig, professionel og personlig service – lige dér, hvor du har brug for den.
+              </p>
             </div>
           </div>
         </section>
@@ -287,19 +406,8 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-800">Hvorfor vælge Frontdoorfix?</h2>
+                <h2 className="text-3xl font-bold mb-6 text-gray-800">Vores fordele</h2>
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Hurtig service</h3>
-                      <p className="text-gray-600">De fleste reparationer færdige på under 30 minutter</p>
-                    </div>
-                  </div>
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
@@ -307,32 +415,92 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Kvalitetsgaranti</h3>
+                      <h3 className="font-semibold text-gray-800 mb-1">Garanti på alle reparationer</h3>
                       <p className="text-gray-600">24 måneder på skærme, 12 måneder på batterier</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Sikker håndtering af din data</h3>
+                      <p className="text-gray-600">Vi respekterer dit privatliv og behandler din enhed med omhu</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-purple-600">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Alle mærker</h3>
-                      <p className="text-gray-600">Apple, Samsung, Google, OnePlus, Huawei, Motorola</p>
+                      <h3 className="font-semibold text-gray-800 mb-1">Vi kommer til dig</h3>
+                      <p className="text-gray-600">Ingen besvær, ingen ventetid – vi kommer direkte til din adresse</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-orange-600">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Erfarne teknikere</h3>
+                      <p className="text-gray-600">4+ års erfaring og over 2.000 reparationer udført med glade kunder</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-600">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">København</h3>
-                      <p className="text-gray-600">Centralt beliggende med nem adgang og parkering</p>
+                      <h3 className="font-semibold text-gray-800 mb-1">Book samme dag</h3>
+                      <p className="text-gray-600">Ofte reparation inden for få timer – hurtig og effektiv service</p>
                     </div>
                   </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-emerald-600">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Konkurrencedygtige priser</h3>
+                      <p className="text-gray-600">Fair og gennemsigtige priser – du betaler kun for det, vi aftaler</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-red-600">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Originale dele</h3>
+                      <p className="text-gray-600">Vi bruger kun originale eller kvalitetsgodkendte reservedele</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Miljøvenlig reparation</h3>
+                      <p className="text-gray-600">Vi forlænger levetiden på din enhed og sparer miljøet for unødigt affald</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 p-6 bg-gradient-to-r from-pink-50 to-yellow-50 rounded-xl border border-pink-200">
+                  <button className="w-full text-lg text-gray-700 text-center font-medium hover:text-gray-900 transition-colors cursor-pointer">
+                    Bestil tid nu og oplev forskellen med Frontdoorfix – hurtig, tryg og professionel service.
+                  </button>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
@@ -358,6 +526,36 @@ export default function Home() {
           </div>
         </section>
       </main>
+      
+      {/* Rotating Headlines Script */}
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          const headlines = [
+            "Ødelagt telefon? Vi fixer det!",
+            "Telefonproblemer? Vi løser dem!",
+            "Din telefon virker ikke? Vi hjælper!"
+          ];
+          
+          let currentIndex = 0;
+          const headlineElement = document.getElementById('rotating-headline');
+          
+          function rotateHeadline() {
+            if (headlineElement) {
+              headlineElement.style.opacity = '0';
+              setTimeout(() => {
+                headlineElement.textContent = headlines[currentIndex];
+                headlineElement.style.opacity = '1';
+                currentIndex = (currentIndex + 1) % headlines.length;
+              }, 500);
+            }
+          }
+          
+          // Start rotation after page load
+          setTimeout(() => {
+            setInterval(rotateHeadline, 3000);
+          }, 1000);
+        `
+      }} />
     </div>
   );
 }

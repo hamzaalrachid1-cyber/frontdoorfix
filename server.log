@@ -437,3 +437,731 @@
  GET / 200 in 365ms
  ✓ Compiled /favicon.ico in 190ms (407 modules)
  GET /favicon.ico 200 in 472ms
+ GET / 200 in 437ms
+ GET /favicon.ico 200 in 13ms
+ ✓ Compiled in 439ms (630 modules)
+ GET / 200 in 253ms
+ ✓ Compiled in 228ms (630 modules)
+ GET / 200 in 71ms
+ ✓ Compiled in 149ms (630 modules)
+ GET / 200 in 48ms
+ ✓ Compiled in 143ms (630 modules)
+ GET / 200 in 59ms
+ ✓ Compiled in 218ms (630 modules)
+ GET / 200 in 127ms
+ ✓ Compiled in 335ms (630 modules)
+ GET / 200 in 104ms
+ ✓ Compiled in 156ms (630 modules)
+ GET / 200 in 58ms
+ ✓ Compiled in 134ms (630 modules)
+ GET / 200 in 54ms
+ ✓ Compiled in 227ms (630 modules)
+ GET / 200 in 64ms
+ ✓ Compiled in 224ms (630 modules)
+ GET / 200 in 105ms
+ ✓ Compiled in 189ms (630 modules)
+ GET / 200 in 84ms
+ ✓ Compiled in 175ms (630 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 137ms (630 modules)
+ GET / 200 in 68ms
+ ✓ Compiled in 116ms (630 modules)
+ GET / 200 in 55ms
+ ✓ Compiled in 372ms (630 modules)
+ GET / 200 in 82ms
+ ✓ Compiled in 174ms (630 modules)
+ GET / 200 in 56ms
+ ✓ Compiled in 217ms (630 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 224ms (630 modules)
+ GET / 200 in 108ms
+ ✓ Compiled in 257ms (630 modules)
+ GET / 200 in 79ms
+ ✓ Compiled in 127ms (630 modules)
+ GET / 200 in 48ms
+ ✓ Compiled in 119ms (630 modules)
+ GET / 200 in 56ms
+ ✓ Compiled in 248ms (630 modules)
+ GET / 200 in 121ms
+ ✓ Compiled in 199ms (630 modules)
+ GET / 200 in 76ms
+ ✓ Compiled in 184ms (630 modules)
+ GET / 200 in 51ms
+ ✓ Compiled in 114ms (630 modules)
+ GET / 200 in 58ms
+ ✓ Compiled in 246ms (630 modules)
+ GET / 200 in 167ms
+ ✓ Compiled in 193ms (630 modules)
+ GET / 200 in 61ms
+ ✓ Compiled in 169ms (630 modules)
+ GET / 200 in 79ms
+ ✓ Compiled in 255ms (630 modules)
+ GET / 200 in 154ms
+ ✓ Compiled in 173ms (630 modules)
+ GET / 200 in 73ms
+ ✓ Compiled in 142ms (630 modules)
+ GET / 200 in 75ms
+ ✓ Compiled in 112ms (630 modules)
+ GET / 200 in 56ms
+ ✓ Compiled in 126ms (630 modules)
+ GET / 200 in 61ms
+ ✓ Compiled in 230ms (630 modules)
+ GET / 200 in 152ms
+ ✓ Compiled in 181ms (630 modules)
+ GET / 200 in 76ms
+ ✓ Compiled in 117ms (630 modules)
+ GET / 200 in 57ms
+ ✓ Compiled in 272ms (630 modules)
+ GET / 200 in 101ms
+ ✓ Compiled in 248ms (630 modules)
+ GET / 200 in 140ms
+ ✓ Compiled in 215ms (630 modules)
+ GET / 200 in 80ms
+ ✓ Compiled in 138ms (630 modules)
+ GET / 200 in 58ms
+ ✓ Compiled in 236ms (630 modules)
+ GET / 200 in 153ms
+ ✓ Compiled in 180ms (630 modules)
+ GET / 200 in 67ms
+ ✓ Compiled in 231ms (630 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 251ms (630 modules)
+ GET / 200 in 120ms
+ ✓ Compiled in 196ms (630 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 123ms (630 modules)
+ GET / 200 in 55ms
+ ✓ Compiled in 246ms (630 modules)
+ GET / 200 in 142ms
+ ✓ Compiled in 172ms (630 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 135ms (630 modules)
+ GET / 200 in 70ms
+ ✓ Compiled in 332ms (630 modules)
+ GET / 200 in 116ms
+ ✓ Compiled in 247ms (630 modules)
+ GET / 200 in 71ms
+ ✓ Compiled in 272ms (630 modules)
+ GET / 200 in 138ms
+ ✓ Compiled in 209ms (630 modules)
+ GET / 200 in 77ms
+ ✓ Compiled in 230ms (630 modules)
+ GET / 200 in 292ms
+ ✓ Compiled in 209ms (630 modules)
+ GET / 200 in 69ms
+ ✓ Compiled in 239ms (630 modules)
+ GET / 200 in 147ms
+ ✓ Compiled in 193ms (630 modules)
+ GET / 200 in 70ms
+ ✓ Compiled in 230ms (630 modules)
+ GET / 200 in 137ms
+ ✓ Compiled in 196ms (630 modules)
+ GET / 200 in 76ms
+ ✓ Compiled in 303ms (630 modules)
+ GET / 200 in 141ms
+ ✓ Compiled in 420ms (630 modules)
+ GET / 200 in 128ms
+ ✓ Compiled in 219ms (630 modules)
+ GET / 200 in 131ms
+ ✓ Compiled in 240ms (630 modules)
+ GET / 200 in 71ms
+ ✓ Compiled in 125ms (630 modules)
+ GET / 200 in 54ms
+ ✓ Compiled in 260ms (630 modules)
+ GET / 200 in 131ms
+ ✓ Compiled in 184ms (630 modules)
+ GET / 200 in 62ms
+ ✓ Compiled in 160ms (630 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 215ms (630 modules)
+ GET / 200 in 125ms
+ ✓ Compiled in 215ms (630 modules)
+ GET / 200 in 66ms
+ ✓ Compiled in 128ms (630 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 306ms (630 modules)
+ GET / 200 in 135ms
+ ✓ Compiled in 413ms (630 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 315ms (630 modules)
+ GET / 200 in 107ms
+ ✓ Compiled in 174ms (630 modules)
+ GET / 200 in 51ms
+ ✓ Compiled in 227ms (630 modules)
+ GET / 200 in 150ms
+ ✓ Compiled in 179ms (630 modules)
+ GET / 200 in 84ms
+ ✓ Compiled in 128ms (630 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 121ms (630 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 475ms (630 modules)
+ GET / 200 in 305ms
+ ✓ Compiled in 178ms (630 modules)
+ GET / 200 in 64ms
+ GET / 200 in 29ms
+ GET / 200 in 50ms
+ ✓ Compiled in 132ms (630 modules)
+ GET / 200 in 53ms
+ ✓ Compiled in 160ms (630 modules)
+ GET / 200 in 47ms
+ GET / 200 in 219ms
+ ✓ Compiled /favicon.ico in 116ms (407 modules)
+ GET /favicon.ico 200 in 295ms
+ GET / 200 in 185ms
+ GET /favicon.ico 200 in 10ms
+ ✓ Compiled in 238ms (647 modules)
+ GET / 200 in 93ms
+ ✓ Compiled in 222ms (647 modules)
+ GET / 200 in 48ms
+ ✓ Compiled in 130ms (630 modules)
+ GET / 200 in 186ms
+ ✓ Compiled in 116ms (630 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 296ms (630 modules)
+ GET / 200 in 118ms
+ ✓ Compiled in 169ms (630 modules)
+ GET / 200 in 53ms
+ GET / 200 in 160ms
+ ✓ Compiled /favicon.ico in 123ms (407 modules)
+ GET /favicon.ico 200 in 311ms
+ GET / 200 in 161ms
+ GET /favicon.ico 200 in 8ms
+ GET / 200 in 135ms
+ GET /favicon.ico 200 in 10ms
+ GET / 200 in 144ms
+ GET /favicon.ico 200 in 10ms
+ ✓ Compiled in 338ms (647 modules)
+ GET / 200 in 134ms
+ ✓ Compiled in 184ms (647 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 129ms (630 modules)
+ GET / 200 in 201ms
+ ✓ Compiled in 192ms (630 modules)
+ GET / 200 in 64ms
+ ✓ Compiled in 110ms (630 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 227ms (630 modules)
+ GET / 200 in 46ms
+ GET / 200 in 236ms
+ ✓ Compiled /favicon.ico in 126ms (407 modules)
+ GET /favicon.ico 200 in 318ms
+ ✓ Compiled in 238ms (647 modules)
+ GET / 200 in 106ms
+ ✓ Compiled in 154ms (647 modules)
+ GET / 200 in 68ms
+ ✓ Compiled in 360ms (630 modules)
+ GET / 200 in 240ms
+ ✓ Compiled in 198ms (630 modules)
+ GET / 200 in 63ms
+ ✓ Compiled in 273ms (630 modules)
+ GET / 200 in 119ms
+ ✓ Compiled in 197ms (630 modules)
+ GET / 200 in 56ms
+ ✓ Compiled in 135ms (630 modules)
+ GET / 200 in 55ms
+ ✓ Compiled in 122ms (630 modules)
+ GET / 200 in 58ms
+ ✓ Compiled in 299ms (630 modules)
+ GET / 200 in 120ms
+ ✓ Compiled in 170ms (630 modules)
+ GET / 200 in 50ms
+ ✓ Compiled in 137ms (630 modules)
+ GET / 200 in 55ms
+ ✓ Compiled in 115ms (630 modules)
+ GET / 200 in 56ms
+ ✓ Compiled in 136ms (630 modules)
+ GET / 200 in 58ms
+ ✓ Compiled in 175ms (630 modules)
+ GET / 200 in 51ms
+ GET / 200 in 238ms
+ ✓ Compiled /favicon.ico in 198ms (407 modules)
+ GET /favicon.ico 200 in 400ms
+ ✓ Compiled in 258ms (647 modules)
+ GET / 200 in 95ms
+ ✓ Compiled in 225ms (647 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 416ms (630 modules)
+ GET / 200 in 322ms
+ ✓ Compiled in 278ms (630 modules)
+ GET / 200 in 83ms
+ ✓ Compiled in 144ms (630 modules)
+ GET / 200 in 75ms
+ ✓ Compiled in 136ms (630 modules)
+ GET / 200 in 56ms
+ ✓ Compiled in 138ms (630 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 204ms (630 modules)
+ GET / 200 in 84ms
+ ✓ Compiled /reparationer in 460ms (392 modules)
+ GET /reparationer 200 in 668ms
+ GET / 200 in 45ms
+ ✓ Compiled in 871ms (632 modules)
+ GET / 200 in 129ms
+ ✓ Compiled in 192ms (632 modules)
+ GET / 200 in 72ms
+ ✓ Compiled in 135ms (632 modules)
+ GET / 200 in 59ms
+ ✓ Compiled in 264ms (632 modules)
+ GET / 200 in 64ms
+ ✓ Compiled in 143ms (632 modules)
+ GET / 200 in 47ms
+ ✓ Compiled in 137ms (632 modules)
+ GET / 200 in 58ms
+ ✓ Compiled in 174ms (632 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 208ms (632 modules)
+ GET / 200 in 55ms
+ ✓ Compiled in 134ms (632 modules)
+ GET / 200 in 230ms
+ ✓ Compiled in 240ms (632 modules)
+ GET / 200 in 96ms
+ ✓ Compiled in 252ms (632 modules)
+ GET / 200 in 46ms
+ ✓ Compiled in 323ms (632 modules)
+ GET / 200 in 164ms
+ ✓ Compiled in 203ms (632 modules)
+ GET / 200 in 63ms
+ ✓ Compiled in 125ms (632 modules)
+ GET / 200 in 48ms
+ GET / 200 in 189ms
+ ✓ Compiled /favicon.ico in 335ms (409 modules)
+ GET /favicon.ico 200 in 533ms
+ ✓ Compiled in 184ms (649 modules)
+ GET / 200 in 87ms
+ ✓ Compiled in 134ms (649 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 150ms (649 modules)
+ GET / 200 in 58ms
+ GET / 200 in 255ms
+ GET /favicon.ico 200 in 16ms
+ ✓ Compiled in 427ms (632 modules)
+ GET / 200 in 364ms
+ ✓ Compiled in 235ms (632 modules)
+ GET / 200 in 55ms
+ ✓ Compiled in 904ms (632 modules)
+ GET / 200 in 113ms
+ ✓ Compiled in 203ms (632 modules)
+ GET / 200 in 61ms
+ ✓ Compiled in 428ms (632 modules)
+ GET / 200 in 164ms
+ ✓ Compiled in 193ms (632 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 741ms (632 modules)
+ GET / 200 in 127ms
+ ✓ Compiled in 257ms (632 modules)
+ GET / 200 in 62ms
+ ✓ Compiled in 666ms (632 modules)
+ GET / 200 in 132ms
+ ✓ Compiled in 211ms (632 modules)
+ GET / 200 in 64ms
+ ✓ Compiled in 217ms (632 modules)
+ GET / 200 in 61ms
+ ✓ Compiled in 144ms (632 modules)
+ GET / 200 in 58ms
+ ✓ Compiled in 381ms (632 modules)
+ GET / 200 in 174ms
+ ✓ Compiled in 197ms (632 modules)
+ GET / 200 in 59ms
+ ✓ Compiled in 179ms (632 modules)
+ GET / 200 in 68ms
+ ✓ Compiled in 133ms (632 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 130ms (632 modules)
+ GET / 200 in 59ms
+ ✓ Compiled in 131ms (632 modules)
+ GET / 200 in 57ms
+ ✓ Compiled in 137ms (632 modules)
+ GET / 200 in 54ms
+ ✓ Compiled in 125ms (632 modules)
+ GET / 200 in 57ms
+ ✓ Compiled in 431ms (632 modules)
+ GET / 200 in 172ms
+ ✓ Compiled in 213ms (632 modules)
+ GET / 200 in 55ms
+ GET / 200 in 335ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 670ms (409 modules)
+ GET /favicon.ico 200 in 869ms
+ GET / 200 in 253ms
+ GET /favicon.ico 200 in 9ms
+ ✓ Compiled in 956ms (632 modules)
+ GET / 200 in 295ms
+ ✓ Compiled in 293ms (632 modules)
+ GET / 200 in 59ms
+ ✓ Compiled in 343ms (632 modules)
+ GET / 200 in 168ms
+ ✓ Compiled in 209ms (632 modules)
+ GET / 200 in 78ms
+ ✓ Compiled in 274ms (632 modules)
+ GET / 200 in 84ms
+ ✓ Compiled in 143ms (632 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 157ms (632 modules)
+ GET / 200 in 70ms
+ ✓ Compiled in 141ms (632 modules)
+ GET / 200 in 66ms
+ ✓ Compiled in 133ms (632 modules)
+ GET / 200 in 71ms
+ ✓ Compiled in 187ms (632 modules)
+ GET / 200 in 57ms
+ GET / 200 in 472ms
+ ✓ Compiled /favicon.ico in 469ms (409 modules)
+ GET /favicon.ico 200 in 679ms
+ ✓ Compiled in 295ms (649 modules)
+ GET / 200 in 170ms
+ ✓ Compiled in 241ms (649 modules)
+ GET / 200 in 82ms
+ ✓ Compiled in 373ms (632 modules)
+ GET / 200 in 536ms
+ ✓ Compiled in 218ms (632 modules)
+ GET / 200 in 77ms
+ ✓ Compiled in 222ms (632 modules)
+ GET / 200 in 234ms
+ ✓ Compiled in 145ms (632 modules)
+ GET / 200 in 61ms
+ ✓ Compiled in 152ms (632 modules)
+ GET / 200 in 68ms
+ ✓ Compiled in 126ms (632 modules)
+ GET / 200 in 62ms
+ ✓ Compiled in 124ms (632 modules)
+ GET / 200 in 60ms
+ ✓ Compiled in 138ms (632 modules)
+ GET / 200 in 61ms
+ ✓ Compiled in 526ms (632 modules)
+ GET / 200 in 258ms
+ ✓ Compiled in 233ms (632 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 179ms (632 modules)
+ GET / 200 in 77ms
+ ✓ Compiled in 144ms (632 modules)
+ GET / 200 in 57ms
+ ✓ Compiled in 390ms (632 modules)
+ GET / 200 in 163ms
+ ✓ Compiled in 193ms (632 modules)
+ GET / 200 in 62ms
+ ✓ Compiled in 1623ms (551 modules)
+ GET / 200 in 1020ms
+ GET / 200 in 28ms
+ GET / 200 in 24ms
+ GET / 200 in 97ms
+ GET / 200 in 52ms
+ GET / 200 in 60ms
+ GET / 200 in 357ms
+ ✓ Compiled /favicon.ico in 495ms (350 modules)
+ GET /favicon.ico 200 in 586ms
+ GET / 200 in 185ms
+ GET /favicon.ico 200 in 5ms
+ GET / 200 in 93ms
+ GET /favicon.ico 200 in 5ms
+ GET / 200 in 92ms
+ GET /favicon.ico 200 in 9ms
+ GET / 200 in 186ms
+ GET /favicon.ico 200 in 8ms
+ GET / 200 in 84ms
+ GET /favicon.ico 200 in 6ms
+ GET / 200 in 86ms
+ GET / 200 in 305ms
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 500 in 2924ms
+ GET / 500 in 107ms
+ GET / 500 in 18ms
+ GET / 500 in 342ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 200 in 55ms
+ GET / 500 in 46ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET /favicon.ico 500 in 784ms
+ GET / 500 in 749ms
+ GET /favicon.ico 500 in 2ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 200 in 42ms
+ GET / 500 in 33ms
+ GET /favicon.ico 500 in 3ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 200 in 37ms
+ GET / 500 in 22ms
+ GET /favicon.ico 500 in 4ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:138:1]
+ [2m135[0m |                   </div>
+ [2m136[0m |                 </div>
+ [2m137[0m |               </div>
+ [2m138[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m139[0m | [35;1m|[0m   
+ [2m140[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m141[0m |             <section className="py-16 bg-white">
+ [2m142[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m143[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 200 in 34ms
+ GET / 500 in 23ms
+ GET /favicon.ico 500 in 4ms
+ GET / 500 in 20ms
+ GET /favicon.ico 500 in 2ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:139:1]
+ [2m136[0m |                   </div>
+ [2m137[0m |                 </div>
+ [2m138[0m |               </div>
+ [2m139[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m140[0m | [35;1m|[0m   
+ [2m141[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m142[0m |             <section className="py-16 bg-white">
+ [2m143[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m144[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 200 in 57ms
+ GET / 500 in 52ms
+ GET /favicon.ico 500 in 11ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/page.tsx[0m:139:1]
+ [2m136[0m |                   </div>
+ [2m137[0m |                 </div>
+ [2m138[0m |               </div>
+ [2m139[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </section>
+ [2m140[0m | [35;1m|[0m   
+ [2m141[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         {/* Brand Carousel Section */}
+ [2m142[0m |             <section className="py-16 bg-white">
+ [2m143[0m |               <div className="mx-auto max-w-6xl px-6">
+ [2m144[0m |                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vi reparerer alle mærker</h2>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 200 in 35ms
+ GET / 500 in 18ms
+ GET /favicon.ico 500 in 3ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /favicon.ico in 820ms (922 modules)
+ GET / 200 in 36ms
+ GET / 200 in 76ms
+ GET /favicon.ico 200 in 48ms
+ ✓ Compiled in 276ms (922 modules)
+ GET / 200 in 80ms
+ ✓ Compiled in 1671ms (956 modules)
+ ⨯ ReferenceError: geistSans is not defined
+    at RootLayout (src/app/layout.tsx:35:23)
+  33 |     <html lang="da">
+  34 |       <body
+> 35 |         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+     |                       ^
+  36 |       >
+  37 |         <div className="bar-gradient" />
+  38 |         <div className="bg-gray-50 border-b border-gray-200"> {
+  digest: '1216629936'
+}
+ GET / 200 in 249ms
+ ✓ Compiled in 271ms (956 modules)
+ ⨯ ReferenceError: geistSans is not defined
+    at RootLayout (src/app/layout.tsx:35:23)
+  33 |     <html lang="da">
+  34 |       <body
+> 35 |         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+     |                       ^
+  36 |       >
+  37 |         <div className="bar-gradient" />
+  38 |         <div className="bg-gray-50 border-b border-gray-200"> {
+  digest: '1216629936'
+}
+ GET / 500 in 281ms
+ ✓ Compiled /favicon.ico in 140ms (587 modules)
+ GET /favicon.ico 200 in 369ms
+ GET /favicon.ico 200 in 16ms
+ ✓ Compiled in 904ms (980 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 301ms
+ GET /favicon.ico 200 in 14ms
+ ✓ Compiled in 413ms (980 modules)
+ GET / 200 in 92ms
+ ✓ Compiled in 823ms (391 modules)
+ ✓ Compiled in 144ms (391 modules)
+ GET / 200 in 141ms
+ GET / 200 in 35ms
