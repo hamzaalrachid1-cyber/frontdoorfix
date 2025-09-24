@@ -308,15 +308,7 @@ export default function AppleRepairs() {
                 {/* Phone Image */}
                 <div className="h-48 bg-white flex items-center justify-center p-6">
                   <div className="relative w-full h-full flex items-center justify-center">
-                    {model.id === "iphone-6" ? (
-                      <img 
-                        src="/images/iphones/iphone-6.webp" 
-                        alt={model.name}
-                        className="max-w-full max-h-full object-contain"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="relative">
+                    <div className="relative">
                         {/* Front View */}
                         <div className="absolute left-0 top-0 w-16 h-32 bg-gray-800 rounded-xl border border-gray-600 shadow-lg">
                           <div className="w-full h-full bg-black rounded-lg flex flex-col">
@@ -353,7 +345,6 @@ export default function AppleRepairs() {
                           </div>
                         </div>
                       </div>
-                    )}
                   </div>
                 </div>
                 

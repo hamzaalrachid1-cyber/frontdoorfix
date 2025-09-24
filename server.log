@@ -1344,3 +1344,43 @@ Import trace for requested module:
  GET /reparationer/apple 200 in 123ms
  ✓ Compiled in 209ms (971 modules)
  GET /reparationer/apple 200 in 120ms
+ GET /reparationer/apple 200 in 522ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 981ms (592 modules)
+ GET /favicon.ico 200 in 1208ms
+ ✓ Compiled in 354ms (988 modules)
+ GET /reparationer/apple 200 in 524ms
+ GET /reparationer/apple 200 in 705ms
+ GET /favicon.ico 200 in 23ms
+ GET /reparationer/apple 200 in 269ms
+ GET /favicon.ico 200 in 9ms
+ ✓ Compiled in 554ms (983 modules)
+ GET /reparationer/apple 200 in 193ms
+ ✓ Compiled in 138ms (983 modules)
+ GET /reparationer/apple 200 in 105ms
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:348:1]
+ [2m345[0m |                           </div>
+ [2m346[0m |                         </div>
+ [2m347[0m |                       </div>
+ [2m348[0m |                     )}
+     : [35;1m                     ^[0m
+ [2m349[0m |                   </div>
+ [2m350[0m |                 </div>
+ [2m351[0m |                 
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET /reparationer/apple 500 in 120ms
+ GET /reparationer/apple 500 in 12ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 598ms (983 modules)
+ GET /reparationer/apple 200 in 64ms
+ GET /reparationer/apple 200 in 203ms
+ GET /favicon.ico 200 in 15ms
