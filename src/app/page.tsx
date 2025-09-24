@@ -139,6 +139,64 @@ export default function Home() {
           </div>
         </section>
 
+        {/* How It Works Section */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+              Sådan fungerer det – nem reparation i 3 trin
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Step 1 */}
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <span className="text-3xl font-bold text-white">1</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Book en tid</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Vælg din reparation online eller ring direkte til os. 
+                  Hurtigt og enkelt.
+                </p>
+              </div>
+              
+              {/* Step 2 */}
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <span className="text-3xl font-bold text-white">2</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Vi kommer til dig</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Vores tekniker kører hjem til dig eller til dit kontor 
+                  med alt udstyr.
+                </p>
+              </div>
+              
+              {/* Step 3 */}
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <span className="text-3xl font-bold text-white">3</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Reparation på stedet</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Din mobil repareres på under 30 minutter – 
+                  sikkert og med garanti.
+                </p>
+              </div>
+            </div>
+            
+            {/* CTA Button */}
+            <div className="text-center">
+              <button className="btn-gradient px-10 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all flex items-center gap-3 mx-auto">
+                <span>👉</span>
+                Bestil en reparation nu
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6-6 6-1.41-1.41z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
         {/* Brand Carousel Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-6xl px-6">

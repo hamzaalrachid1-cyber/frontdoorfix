@@ -1213,3 +1213,7 @@ Import trace for requested module:
  GET / 200 in 345ms
  ✓ Compiled in 177ms (963 modules)
  GET / 200 in 85ms
+ ✓ Compiled in 160ms (963 modules)
+ GET / 200 in 76ms
+ ✓ Compiled in 1038ms (963 modules)
+ GET / 200 in 239ms
