@@ -306,43 +306,54 @@ export default function AppleRepairs() {
                 className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl hover:border-pink-300 transition-all duration-300"
               >
                 {/* Phone Image */}
-                <div className="h-48 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
-                  <div className="relative">
-                    {/* Front View */}
-                    <div className="absolute left-0 top-0 w-16 h-32 bg-gray-800 rounded-xl border border-gray-600 shadow-lg">
-                      <div className="w-full h-full bg-black rounded-lg flex flex-col">
-                        {/* Status Bar */}
-                        <div className="h-4 bg-black rounded-t-lg flex items-center justify-between px-1 text-white text-xs">
-                          <span>9:41</span>
-                          <span>100%</span>
-                        </div>
-                        {/* Screen Content */}
-                        <div className="flex-1 bg-gradient-to-b from-blue-200 to-blue-300 rounded-b-lg p-1">
-                          <div className="grid grid-cols-3 gap-0.5 h-full">
-                            <div className="bg-blue-500 rounded-sm"></div>
-                            <div className="bg-green-500 rounded-sm"></div>
-                            <div className="bg-red-500 rounded-sm"></div>
-                            <div className="bg-yellow-500 rounded-sm"></div>
-                            <div className="bg-purple-500 rounded-sm"></div>
-                            <div className="bg-pink-500 rounded-sm"></div>
+                <div className="h-48 bg-white flex items-center justify-center p-6">
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    {model.id === "iphone-6" ? (
+                      <img 
+                        src="/images/iphones/iphone-6.webp" 
+                        alt={model.name}
+                        className="max-w-full max-h-full object-contain"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="relative">
+                        {/* Front View */}
+                        <div className="absolute left-0 top-0 w-16 h-32 bg-gray-800 rounded-xl border border-gray-600 shadow-lg">
+                          <div className="w-full h-full bg-black rounded-lg flex flex-col">
+                            {/* Status Bar */}
+                            <div className="h-4 bg-black rounded-t-lg flex items-center justify-between px-1 text-white text-xs">
+                              <span>9:41</span>
+                              <span>100%</span>
+                            </div>
+                            {/* Screen Content */}
+                            <div className="flex-1 bg-gradient-to-b from-blue-200 to-blue-300 rounded-b-lg p-1">
+                              <div className="grid grid-cols-3 gap-0.5 h-full">
+                                <div className="bg-blue-500 rounded-sm"></div>
+                                <div className="bg-green-500 rounded-sm"></div>
+                                <div className="bg-red-500 rounded-sm"></div>
+                                <div className="bg-yellow-500 rounded-sm"></div>
+                                <div className="bg-purple-500 rounded-sm"></div>
+                                <div className="bg-pink-500 rounded-sm"></div>
+                              </div>
+                            </div>
+                            {/* Home Button */}
+                            <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-600 rounded-full border border-gray-500"></div>
                           </div>
                         </div>
-                        {/* Home Button */}
-                        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-600 rounded-full border border-gray-500"></div>
+                        
+                        {/* Back View */}
+                        <div className="absolute left-12 top-0 w-16 h-32 bg-gray-300 rounded-xl border border-gray-400 shadow-lg">
+                          <div className="w-full h-full bg-gray-200 rounded-lg flex flex-col items-center justify-center">
+                            {/* Apple Logo */}
+                            <div className="w-6 h-6 bg-gray-600 rounded mb-1"></div>
+                            {/* iPhone Text */}
+                            <div className="text-xs text-gray-600 font-semibold">iPhone</div>
+                            {/* Camera */}
+                            <div className="absolute top-3 left-3 w-2 h-2 bg-gray-800 rounded-full"></div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    
-                    {/* Back View */}
-                    <div className="absolute left-12 top-0 w-16 h-32 bg-gray-300 rounded-xl border border-gray-400 shadow-lg">
-                      <div className="w-full h-full bg-gray-200 rounded-lg flex flex-col items-center justify-center">
-                        {/* Apple Logo */}
-                        <div className="w-6 h-6 bg-gray-600 rounded mb-1"></div>
-                        {/* iPhone Text */}
-                        <div className="text-xs text-gray-600 font-semibold">iPhone</div>
-                        {/* Camera */}
-                        <div className="absolute top-3 left-3 w-2 h-2 bg-gray-800 rounded-full"></div>
-                      </div>
-                    </div>
+                    )}
                   </div>
                 </div>
                 

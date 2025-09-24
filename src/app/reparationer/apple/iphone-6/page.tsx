@@ -104,56 +104,12 @@ export default function iPhone6Repair() {
             <div className="text-center">
               {/* iPhone 6 Image */}
               <div className="w-80 h-80 mx-auto flex items-center justify-center">
-                <div className="relative">
-                  {/* Front View */}
-                  <div className="absolute left-0 top-0 w-24 h-48 bg-gray-800 rounded-2xl border-2 border-gray-600 shadow-lg">
-                    <div className="w-full h-full bg-black rounded-xl flex flex-col">
-                      {/* Status Bar */}
-                      <div className="h-6 bg-black rounded-t-xl flex items-center justify-between px-2 text-white text-xs">
-                        <span>9:41</span>
-                        <span>100%</span>
-                      </div>
-                      {/* Screen Content */}
-                      <div className="flex-1 bg-gradient-to-b from-blue-200 to-blue-300 rounded-b-xl p-1">
-                        <div className="grid grid-cols-4 gap-1 h-full">
-                          {/* App Icons */}
-                          <div className="bg-blue-500 rounded w-full h-full"></div>
-                          <div className="bg-green-500 rounded w-full h-full"></div>
-                          <div className="bg-red-500 rounded w-full h-full"></div>
-                          <div className="bg-yellow-500 rounded w-full h-full"></div>
-                          <div className="bg-purple-500 rounded w-full h-full"></div>
-                          <div className="bg-pink-500 rounded w-full h-full"></div>
-                          <div className="bg-indigo-500 rounded w-full h-full"></div>
-                          <div className="bg-orange-500 rounded w-full h-full"></div>
-                        </div>
-                      </div>
-                      {/* Home Button */}
-                      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gray-600 rounded-full border border-gray-500"></div>
-                    </div>
-                  </div>
-                  
-                  {/* Back View */}
-                  <div className="absolute left-16 top-0 w-24 h-48 bg-gray-300 rounded-2xl border-2 border-gray-400 shadow-lg">
-                    <div className="w-full h-full bg-gray-200 rounded-xl flex flex-col items-center justify-center">
-                      {/* Apple Logo */}
-                      <div className="w-8 h-8 bg-gray-600 rounded mb-2"></div>
-                      {/* iPhone Text */}
-                      <div className="text-xs text-gray-600 font-semibold">iPhone</div>
-                      {/* Camera */}
-                      <div className="absolute top-4 left-4 w-3 h-3 bg-gray-800 rounded-full"></div>
-                    </div>
-                  </div>
-                  
-                  {/* Side View */}
-                  <div className="absolute left-32 top-0 w-6 h-48 bg-gray-400 rounded-lg border border-gray-500 shadow-lg">
-                    <div className="w-full h-full bg-gray-300 rounded flex flex-col">
-                      {/* Power Button */}
-                      <div className="absolute top-8 right-1 w-1 h-4 bg-gray-600 rounded"></div>
-                      {/* SIM Tray */}
-                      <div className="absolute top-16 right-1 w-1 h-2 bg-gray-600 rounded"></div>
-                    </div>
-                  </div>
-                </div>
+                <img 
+                  src="/images/iphones/iphone-6.webp" 
+                  alt="iPhone 6"
+                  className="max-w-full max-h-full object-contain"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
