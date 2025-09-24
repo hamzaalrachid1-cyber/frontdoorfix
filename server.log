@@ -1217,3 +1217,10 @@ Import trace for requested module:
  GET / 200 in 76ms
  ✓ Compiled in 1038ms (963 modules)
  GET / 200 in 239ms
+ ✓ Compiled in 220ms (963 modules)
+ GET / 200 in 77ms
+ ✓ Compiled /_not-found in 450ms (954 modules)
+ GET /reparationer/apple 404 in 631ms
+ GET / 200 in 92ms
+ ✓ Compiled in 929ms (963 modules)
+ GET / 200 in 139ms

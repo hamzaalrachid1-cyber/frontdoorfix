@@ -449,6 +449,73 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Devices We Repair Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Vi reparerer alle dine enheder</h2>
+            <p className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+              Uanset om det er din mobil, tablet eller computer – vi har erfaringen til at reparere det hurtigt og professionelt. 
+              Vi arbejder med alle populære mærker og modeller.
+            </p>
+            
+            <div className="grid md:grid-cols-4 gap-8 mb-12">
+              {/* Smartphones */}
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
+                    <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">📱 Smartphones</h3>
+                <p className="text-gray-600">iPhone, Samsung, OnePlus, Huawei, Nokia, Motorola og flere.</p>
+              </div>
+              
+              {/* Tablets */}
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                    <path d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7 18V6h10v12H7z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">📲 Tablets</h3>
+                <p className="text-gray-600">iPad, Samsung Galaxy Tab, Microsoft Surface, og flere.</p>
+              </div>
+              
+              {/* Laptops */}
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" className="text-purple-600">
+                    <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 6h16v10H4V6z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">💻 Bærbare computere</h3>
+                <p className="text-gray-600">MacBook, Dell, HP, Lenovo, ASUS, og flere.</p>
+              </div>
+              
+              {/* Smartwatches */}
+              <div className="bg-white p-8 rounded-xl text-center shadow-sm">
+                <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" className="text-orange-600">
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">⌚ Smartwatches</h3>
+                <p className="text-gray-600">Apple Watch, Samsung Galaxy Watch, Garmin osv.</p>
+              </div>
+            </div>
+            
+            {/* CTA Button */}
+            <div className="text-center">
+              <button className="btn-gradient px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all">
+                Se alle reparationer
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="ml-2">
+                  <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6-6 6-1.41-1.41z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
         {/* Why Frontdoorfix Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-6xl px-6">
