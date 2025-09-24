@@ -389,6 +389,15 @@ export default function AppleRepairs() {
                         loading="lazy"
                         className="max-w-full max-h-full object-contain"
                       />
+                    ) : model.id === "iphone-xr" ? (
+                      <img 
+                        src="/images/iphones/iphone-xr.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
                     ) : (
                       <div className="relative">
                         {/* Front View */}
