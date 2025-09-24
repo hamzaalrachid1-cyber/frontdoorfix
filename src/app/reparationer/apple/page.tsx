@@ -310,7 +310,7 @@ export default function AppleRepairs() {
                   <div className="card__media w-full h-full flex items-center justify-center">
                     {model.id === "iphone-6" ? (
                       <img 
-                        src="/images/iphones/iphone-6.webp" 
+                        src="/images/iphones/iphone-6.png" 
                         alt={model.name}
                         width="200"
                         height="200"

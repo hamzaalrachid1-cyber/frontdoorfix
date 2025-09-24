@@ -1392,3 +1392,27 @@ Import trace for requested module:
  GET /images/iphones/iphone-6.webp 404 in 620ms
  ✓ Compiled in 437ms (971 modules)
  GET /reparationer/apple 200 in 154ms
+ ✓ Compiled in 342ms (971 modules)
+ GET /reparationer/apple 200 in 135ms
+ GET /reparationer/apple 200 in 541ms
+ GET /reparationer/apple 200 in 241ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 576ms (591 modules)
+ GET /favicon.ico 200 in 820ms
+ GET /reparationer/apple 200 in 691ms
+ GET /reparationer/apple 200 in 208ms
+ GET /favicon.ico 200 in 7ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1348ms (578 modules)
+ GET / 200 in 1778ms
+ GET / 200 in 43ms
+ GET / 200 in 51ms
+ GET / 200 in 65ms
+ GET / 200 in 65ms
+ GET /reparationer/apple 200 in 363ms
+ GET / 200 in 66ms
+ GET /reparationer/apple 200 in 209ms
+ ✓ Compiled in 1390ms (970 modules)
+ GET /reparationer/apple 200 in 267ms
+ ✓ Compiled in 348ms (970 modules)
+ GET /reparationer/apple 200 in 230ms

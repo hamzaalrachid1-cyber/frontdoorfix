@@ -106,7 +106,7 @@ export default function iPhone6Repair() {
               <div className="w-80 h-80 mx-auto flex items-center justify-center">
                 <div className="card__media w-full h-full flex items-center justify-center">
                   <img 
-                    src="/images/iphones/iphone-6.webp" 
+                    src="/images/iphones/iphone-6.png" 
                     alt="iPhone 6"
                     width="400"
                     height="400"
