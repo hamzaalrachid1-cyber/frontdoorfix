@@ -400,16 +400,6 @@ export default function AppleRepairs() {
                      // Determine badges for each model
                      const isNew = model.year === "2024";
                      const isPopular = ["iphone-13", "iphone-14", "iphone-15", "iphone-12"].includes(model.id);
-                     const screenPrice = model.year === "2024" ? "1.999,-" : 
-                                       model.year === "2023" ? "1.799,-" : 
-                                       model.year === "2022" ? "1.599,-" : 
-                                       model.year === "2021" ? "1.399,-" : 
-                                       model.year === "2020" ? "1.199,-" : 
-                                       model.year === "2019" ? "999,-" : 
-                                       model.year === "2018" ? "899,-" : 
-                                       model.year === "2017" ? "799,-" : 
-                                       model.year === "2016" ? "699,-" : 
-                                       model.year === "2015" ? "599,-" : "499,-";
                      
                      return (
               <div 
@@ -430,12 +420,6 @@ export default function AppleRepairs() {
                   )}
                 </div>
                 
-                {/* Price Badge */}
-                <div className="absolute top-3 right-3 z-10">
-                  <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    Skærm fra {screenPrice}
-                  </span>
-                </div>
 
                 {/* Phone Image */}
                 <div className="h-48 bg-white flex items-center justify-center p-6">

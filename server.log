@@ -1884,3 +1884,11 @@ Import trace for requested module:
  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
  GET / 200 in 28ms
  GET / 200 in 442ms
+ GET /reparationer/apple 200 in 247ms
+ ✓ Compiled in 316ms (980 modules)
+ GET /reparationer/apple 200 in 87ms
+ GET /reparationer/apple 200 in 232ms
+ ✓ Compiled in 1267ms (980 modules)
+ GET /reparationer/apple 200 in 89ms
+ ✓ Compiled in 257ms (980 modules)
+ GET /reparationer/apple 200 in 84ms
