@@ -2,20 +2,37 @@ import Link from "next/link";
 
 export default function AppleRepairs() {
   const iphoneModels = [
+    // iPhone 16 Series (2024)
+    {
+      id: "iphone-16-pro-max",
+      name: "iPhone 16 Pro Max",
+      image: "/images/iphone-16-pro-max.jpg",
+      year: "2024",
+      description: "Største Pro model med A18 Pro chip"
+    },
     {
       id: "iphone-16-pro",
       name: "iPhone 16 Pro",
       image: "/images/iphone-16-pro.jpg",
       year: "2024",
-      description: "Seneste Pro model med A18 Pro chip"
+      description: "Pro model med A18 Pro chip"
+    },
+    {
+      id: "iphone-16-plus",
+      name: "iPhone 16 Plus",
+      image: "/images/iphone-16-plus.jpg",
+      year: "2024",
+      description: "Større standard model"
     },
     {
       id: "iphone-16",
       name: "iPhone 16",
       image: "/images/iphone-16.jpg", 
       year: "2024",
-      description: "Seneste standard model"
+      description: "Standard model med A18 chip"
     },
+    
+    // iPhone 15 Series (2023)
     {
       id: "iphone-15-pro-max",
       name: "iPhone 15 Pro Max",
@@ -31,12 +48,21 @@ export default function AppleRepairs() {
       description: "Pro model med titanium design"
     },
     {
+      id: "iphone-15-plus",
+      name: "iPhone 15 Plus",
+      image: "/images/iphone-15-plus.jpg",
+      year: "2023",
+      description: "Større standard model"
+    },
+    {
       id: "iphone-15",
       name: "iPhone 15",
       image: "/images/iphone-15.jpg",
       year: "2023",
       description: "Standard model med Dynamic Island"
     },
+    
+    // iPhone 14 Series (2022)
     {
       id: "iphone-14-pro-max",
       name: "iPhone 14 Pro Max",
@@ -52,12 +78,21 @@ export default function AppleRepairs() {
       description: "Pro model med Dynamic Island"
     },
     {
+      id: "iphone-14-plus",
+      name: "iPhone 14 Plus",
+      image: "/images/iphone-14-plus.jpg",
+      year: "2022",
+      description: "Større standard model"
+    },
+    {
       id: "iphone-14",
       name: "iPhone 14",
       image: "/images/iphone-14.jpg",
       year: "2022",
       description: "Standard model med A15 chip"
     },
+    
+    // iPhone 13 Series (2021)
     {
       id: "iphone-13-pro-max",
       name: "iPhone 13 Pro Max",
@@ -73,18 +108,237 @@ export default function AppleRepairs() {
       description: "Pro model med ProMotion"
     },
     {
+      id: "iphone-13-mini",
+      name: "iPhone 13 mini",
+      image: "/images/iphone-13-mini.jpg",
+      year: "2021",
+      description: "Kompakt model med A15 chip"
+    },
+    {
       id: "iphone-13",
       name: "iPhone 13",
       image: "/images/iphone-13.jpg",
       year: "2021",
       description: "Standard model med A15 chip"
     },
+    
+    // iPhone 12 Series (2020)
     {
       id: "iphone-12-pro-max",
       name: "iPhone 12 Pro Max",
       image: "/images/iphone-12-pro-max.jpg",
       year: "2020",
       description: "Største Pro model med A14 chip"
+    },
+    {
+      id: "iphone-12-pro",
+      name: "iPhone 12 Pro",
+      image: "/images/iphone-12-pro.jpg",
+      year: "2020",
+      description: "Pro model med A14 chip"
+    },
+    {
+      id: "iphone-12-mini",
+      name: "iPhone 12 mini",
+      image: "/images/iphone-12-mini.jpg",
+      year: "2020",
+      description: "Kompakt model med A14 chip"
+    },
+    {
+      id: "iphone-12",
+      name: "iPhone 12",
+      image: "/images/iphone-12.jpg",
+      year: "2020",
+      description: "Standard model med A14 chip"
+    },
+    
+    // iPhone 11 Series (2019)
+    {
+      id: "iphone-11-pro-max",
+      name: "iPhone 11 Pro Max",
+      image: "/images/iphone-11-pro-max.jpg",
+      year: "2019",
+      description: "Største Pro model med A13 chip"
+    },
+    {
+      id: "iphone-11-pro",
+      name: "iPhone 11 Pro",
+      image: "/images/iphone-11-pro.jpg",
+      year: "2019",
+      description: "Pro model med A13 chip"
+    },
+    {
+      id: "iphone-11",
+      name: "iPhone 11",
+      image: "/images/iphone-11.jpg",
+      year: "2019",
+      description: "Standard model med A13 chip"
+    },
+    
+    // iPhone XS Series (2018)
+    {
+      id: "iphone-xs-max",
+      name: "iPhone XS Max",
+      image: "/images/iphone-xs-max.jpg",
+      year: "2018",
+      description: "Største model med A12 chip"
+    },
+    {
+      id: "iphone-xs",
+      name: "iPhone XS",
+      image: "/images/iphone-xs.jpg",
+      year: "2018",
+      description: "Premium model med A12 chip"
+    },
+    {
+      id: "iphone-xr",
+      name: "iPhone XR",
+      image: "/images/iphone-xr.jpg",
+      year: "2018",
+      description: "Budget model med A12 chip"
+    },
+    
+    // iPhone X (2017)
+    {
+      id: "iphone-x",
+      name: "iPhone X",
+      image: "/images/iphone-x.jpg",
+      year: "2017",
+      description: "Revolutionær model med Face ID"
+    },
+    
+    // iPhone 8 Series (2017)
+    {
+      id: "iphone-8-plus",
+      name: "iPhone 8 Plus",
+      image: "/images/iphone-8-plus.jpg",
+      year: "2017",
+      description: "Større model med A11 chip"
+    },
+    {
+      id: "iphone-8",
+      name: "iPhone 8",
+      image: "/images/iphone-8.jpg",
+      year: "2017",
+      description: "Standard model med A11 chip"
+    },
+    
+    // iPhone 7 Series (2016)
+    {
+      id: "iphone-7-plus",
+      name: "iPhone 7 Plus",
+      image: "/images/iphone-7-plus.jpg",
+      year: "2016",
+      description: "Større model med A10 chip"
+    },
+    {
+      id: "iphone-7",
+      name: "iPhone 7",
+      image: "/images/iphone-7.jpg",
+      year: "2016",
+      description: "Standard model med A10 chip"
+    },
+    
+    // iPhone 6S Series (2015)
+    {
+      id: "iphone-6s-plus",
+      name: "iPhone 6s Plus",
+      image: "/images/iphone-6s-plus.jpg",
+      year: "2015",
+      description: "Større model med A9 chip"
+    },
+    {
+      id: "iphone-6s",
+      name: "iPhone 6s",
+      image: "/images/iphone-6s.jpg",
+      year: "2015",
+      description: "Standard model med A9 chip"
+    },
+    
+    // iPhone 6 Series (2014)
+    {
+      id: "iphone-6-plus",
+      name: "iPhone 6 Plus",
+      image: "/images/iphone-6-plus.jpg",
+      year: "2014",
+      description: "Større model med A8 chip"
+    },
+    {
+      id: "iphone-6",
+      name: "iPhone 6",
+      image: "/images/iphone-6.jpg",
+      year: "2014",
+      description: "Standard model med A8 chip"
+    },
+    
+    // iPhone 5S/5C (2013)
+    {
+      id: "iphone-5s",
+      name: "iPhone 5s",
+      image: "/images/iphone-5s.jpg",
+      year: "2013",
+      description: "Premium model med Touch ID"
+    },
+    {
+      id: "iphone-5c",
+      name: "iPhone 5c",
+      image: "/images/iphone-5c.jpg",
+      year: "2013",
+      description: "Farverig model med A6 chip"
+    },
+    
+    // iPhone 5 (2012)
+    {
+      id: "iphone-5",
+      name: "iPhone 5",
+      image: "/images/iphone-5.jpg",
+      year: "2012",
+      description: "4-inch model med A6 chip"
+    },
+    
+    // iPhone 4S (2011)
+    {
+      id: "iphone-4s",
+      name: "iPhone 4S",
+      image: "/images/iphone-4s.jpg",
+      year: "2011",
+      description: "Siri introduceret med A5 chip"
+    },
+    
+    // iPhone 4 (2010)
+    {
+      id: "iphone-4",
+      name: "iPhone 4",
+      image: "/images/iphone-4.jpg",
+      year: "2010",
+      description: "Retina display med A4 chip"
+    },
+    
+    // iPhone 3GS (2009)
+    {
+      id: "iphone-3gs",
+      name: "iPhone 3GS",
+      image: "/images/iphone-3gs.jpg",
+      year: "2009",
+      description: "Hurtigere model med A3 chip"
+    },
+    
+    // iPhone 3G (2008)
+    {
+      id: "iphone-3g",
+      name: "iPhone 3G",
+      image: "/images/iphone-3g.jpg",
+      year: "2008",
+      description: "3G netværk med A2 chip"
+    },
+    
+    // iPhone (2007)
+    {
+      id: "iphone-original",
+      name: "iPhone (Original)",
+      image: "/images/iphone-original.jpg",
+      year: "2007",
+      description: "Den første iPhone med A1 chip"
     }
   ];
 

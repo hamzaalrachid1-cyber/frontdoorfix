@@ -1251,3 +1251,31 @@ Import trace for requested module:
  ✓ Compiled in 242ms (968 modules)
  GET / 200 in 336ms
  GET / 200 in 66ms
+ ○ Compiling /reparationer/apple ...
+ ✓ Compiled /reparationer/apple in 1045ms (959 modules)
+ GET /reparationer/apple 200 in 1429ms
+ ✓ Compiled in 258ms (973 modules)
+ GET /reparationer/apple 200 in 68ms
+ GET /reparationer/apple/iphone-16 404 in 52ms
+ GET /reparationer/apple/iphone-16 404 in 87ms
+ GET /reparationer/apple 200 in 95ms
+ ✓ Compiled in 936ms (968 modules)
+ GET /reparationer/apple 200 in 162ms
+ ✓ Compiled in 133ms (392 modules)
+ GET /reparationer/apple 200 in 52ms
+ ✓ Compiled in 87ms (392 modules)
+ ✓ Compiled in 64ms (392 modules)
+ GET /reparationer/apple 200 in 147ms
+ GET /reparationer/apple 200 in 41ms
+ GET /reparationer/apple 200 in 391ms
+ ✓ Compiled in 469ms (954 modules)
+ GET /reparationer/apple 200 in 178ms
+ ✓ Compiled in 137ms (392 modules)
+ GET /reparationer/apple 200 in 41ms
+ ✓ Compiled in 252ms (392 modules)
+ ✓ Compiled in 125ms (392 modules)
+ GET /reparationer/apple 200 in 132ms
+ GET /reparationer/apple 200 in 60ms
+ ✓ Compiled in 273ms (954 modules)
+ GET /reparationer/apple 200 in 202ms
+ GET /reparationer/apple 200 in 39ms
