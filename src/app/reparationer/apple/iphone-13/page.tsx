@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "iPhone 13 Reparation - Frontdoorfix",
+  description: "Vi tilbyder reparation af iPhone 13 – skærm, batteri, kamera, ladeport og mere med 24 måneders garanti. Hurtig service direkte på din adresse i København.",
+  keywords: "iPhone 13 reparation, skærmreparation iPhone 13, batteriskift iPhone 13, kamera reparation, ladeport reparation, København",
+};
 
 export default function iPhone13Repair() {
   const repairs = [
@@ -76,6 +83,12 @@ export default function iPhone13Repair() {
               <p className="text-xl text-gray-600 mb-6">
                 Professionel reparation af din iPhone 13 med originale Apple dele og 24 måneders garanti.
               </p>
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                <p className="text-sm text-blue-800">
+                  <strong>Vi tilbyder reparation af iPhone 13</strong> – skærm, batteri, kamera, ladeport og mere med 24 måneders garanti. 
+                  Hurtig service direkte på din adresse i København.
+                </p>
+              </div>
               <div className="flex flex-wrap gap-4 mb-8">
                 <span className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">
                   A15 Bionic chip

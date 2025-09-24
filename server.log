@@ -1289,3 +1289,19 @@ Import trace for requested module:
  ✓ Compiled in 548ms (968 modules)
  GET / 200 in 111ms
  GET /reparationer/apple 200 in 204ms
+ ✓ Compiled in 764ms (968 modules)
+ GET /reparationer/apple 200 in 196ms
+ ✓ Compiled in 410ms (968 modules)
+ GET /reparationer/apple 200 in 115ms
+ ✓ Compiled in 81ms (392 modules)
+ GET /reparationer/apple 200 in 40ms
+ ✓ Compiled in 77ms (392 modules)
+ GET /reparationer/apple 200 in 38ms
+ ✓ Compiled in 78ms (392 modules)
+ GET /reparationer/apple 200 in 38ms
+ ✓ Compiled in 70ms (392 modules)
+ GET /reparationer/apple 200 in 37ms
+ ✓ Compiled in 75ms (392 modules)
+ GET /reparationer/apple 200 in 45ms
+ ✓ Compiled in 62ms (392 modules)
+ GET /reparationer/apple 200 in 41ms

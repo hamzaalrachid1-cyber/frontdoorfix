@@ -301,9 +301,8 @@ export default function AppleRepairs() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {iphoneModels.map((model) => (
-              <Link 
+              <div 
                 key={model.id}
-                href={`/reparationer/apple/${model.id}`}
                 className="group bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg hover:border-pink-300 transition-all duration-300"
               >
                 <div className="w-20 h-20 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
@@ -315,8 +314,14 @@ export default function AppleRepairs() {
                   {model.name}
                 </h3>
                 <p className="text-sm text-gray-500 mb-2">{model.year}</p>
-                <p className="text-xs text-gray-600">{model.description}</p>
-              </Link>
+                <p className="text-xs text-gray-600 mb-4">{model.description}</p>
+                <Link 
+                  href={`/reparationer/apple/${model.id}`}
+                  className="btn-gradient px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity inline-block"
+                >
+                  Se priser & reparationer
+                </Link>
+              </div>
             ))}
           </div>
         </div>
