@@ -1,0 +1,205 @@
+import Link from "next/link";
+
+export default function iPhone16ProRepair() {
+  const repairs = [
+    {
+      service: "Skærmreparation",
+      price: "1.299 kr",
+      time: "20-30 min",
+      description: "Udskiftning af ødelagt skærm med original Apple dele",
+      popular: true
+    },
+    {
+      service: "Bagcover reparation", 
+      price: "899 kr",
+      time: "15-25 min",
+      description: "Udskiftning af ødelagt bagcover i titanium",
+      popular: false
+    },
+    {
+      service: "Batteriskift",
+      price: "599 kr", 
+      time: "15-20 min",
+      description: "Udskiftning af batteri med original Apple batteri",
+      popular: true
+    },
+    {
+      service: "Ladeport reparation",
+      price: "699 kr",
+      time: "20-30 min", 
+      description: "Reparation af opladningsproblemer",
+      popular: false
+    },
+    {
+      service: "Kamera reparation",
+      price: "1.199 kr",
+      time: "25-35 min",
+      description: "Reparation af kamera med original dele",
+      popular: false
+    },
+    {
+      service: "Vandskade reparation",
+      price: "Fra 799 kr",
+      time: "30-60 min",
+      description: "Diagnose og reparation af vandskade",
+      popular: false
+    }
+  ];
+
+  const advantages = [
+    "24 måneders garanti på skærmreparationer",
+    "Originale Apple dele",
+    "Erfarne teknikere med Apple-certifikering", 
+    "Reparation på stedet",
+    "Gratis diagnose",
+    "Sikker håndtering af din data"
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="py-16 bg-gradient-to-r from-pink-50 to-yellow-50">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <Link href="/reparationer/apple" className="text-pink-600 hover:text-pink-700 mb-4 inline-flex items-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
+                  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                </svg>
+                Tilbage til iPhone-modeller
+              </Link>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
+                  iPhone 16 Pro
+                </span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-6">
+                Professionel reparation af din iPhone 16 Pro med originale Apple dele og 24 måneders garanti.
+              </p>
+              <div className="flex flex-wrap gap-4 mb-8">
+                <span className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">
+                  A18 Pro chip
+                </span>
+                <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
+                  Titanium design
+                </span>
+                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                  2024 model
+                </span>
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="w-64 h-64 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl mx-auto flex items-center justify-center shadow-lg">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor" className="text-gray-600">
+                  <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Table */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Reparationer og priser
+          </h2>
+          
+          <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Reparation</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Pris</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Tid</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Beskrivelse</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-800">Bestil</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  {repairs.map((repair, index) => (
+                    <tr key={index} className="hover:bg-gray-50">
+                      <td className="px-6 py-4">
+                        <div className="flex items-center">
+                          <span className="text-sm font-medium text-gray-800">{repair.service}</span>
+                          {repair.popular && (
+                            <span className="ml-2 bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-medium">
+                              Populær
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className="text-lg font-semibold text-gray-800">{repair.price}</span>
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className="text-sm text-gray-600">{repair.time}</span>
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className="text-sm text-gray-600">{repair.description}</span>
+                      </td>
+                      <td className="px-6 py-4 text-center">
+                        <button className="btn-gradient px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
+                          Bestil
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advantages Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Hvorfor vælge Frontdoorfix?
+          </h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {advantages.map((advantage, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                  </div>
+                  <p className="text-gray-700 font-medium">{advantage}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-pink-500 to-yellow-500">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Klar til at reparere din iPhone 16 Pro?
+          </h2>
+          <p className="text-xl text-white mb-8 opacity-90">
+            Book en tid nu og få din iPhone repareret på under 30 minutter
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+              📅 Book tid nu
+            </button>
+            <a 
+              href="tel:+4593545457"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors"
+            >
+              📞 Ring +45 93 54 54 57
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
