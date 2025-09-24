@@ -1507,3 +1507,311 @@ Import trace for requested module:
  GET /reparationer/apple 200 in 553ms
  ✓ Compiled in 986ms (970 modules)
  GET /reparationer/apple 200 in 375ms
+ ✓ Compiled in 537ms (970 modules)
+ GET /reparationer/apple 200 in 145ms
+ GET /reparationer/apple 200 in 503ms
+ GET / 200 in 87ms
+ GET /reparationer/apple 200 in 161ms
+ GET / 200 in 117ms
+ ✓ Compiled in 1572ms (970 modules)
+ GET / 200 in 191ms
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 26ms
+ GET / 500 in 10ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 110ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 200 in 58ms
+ GET / 500 in 22ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ○ Compiling /favicon.ico ...
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 1186ms
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 138ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 78ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m Expected '</', got ')'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:789:1]
+ [2m786[0m |                   </Link>
+ [2m787[0m |                 </div>
+ [2m788[0m |               </div>
+ [2m789[0m |             ))}
+     : [35;1m             ^[0m
+ [2m790[0m |           </div>
+ [2m791[0m |         </div>
+ [2m792[0m |       </section>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 200 in 56ms
+ GET / 500 in 21ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m Expected '</', got ')'
+     ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:810:1]
+ [2m807[0m |                   </Link>
+ [2m808[0m |                 </div>
+ [2m809[0m |               </div>
+ [2m810[0m |             ))}
+     : [35;1m             ^[0m
+ [2m811[0m |           </div>
+ [2m812[0m |         </div>
+ [2m813[0m |       </section>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 68ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 68ms
+ GET / 500 in 12ms
+ GET / 500 in 12ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 200 in 72ms
+ GET / 500 in 22ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 117ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 56ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | export default function AppleRepairs() {
+ [2m5[0m |   const [searchTerm, setSearchTerm] = useState("");
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 95ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 72ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | import type { Metadata } from "next";
+ [2m4[0m | 
+ [2m5[0m | export const metadata: Metadata = {
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 500 in 60ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 79ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/app/reparationer/apple/page.tsx
+Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  [31m|[0m
+  [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [31m|[0m
+
+   ,-[[36;1;4m/Users/hamza/frontdoorfix/src/app/reparationer/apple/page.tsx[0m:2:1]
+ [2m1[0m | import Link from "next/link";
+ [2m2[0m | import { useState } from "react";
+   : [35;1m         ^^^^^^^^[0m
+ [2m3[0m | import type { Metadata } from "next";
+ [2m4[0m | 
+ [2m5[0m | export const metadata: Metadata = {
+   `----
+
+Import trace for requested module:
+./src/app/reparationer/apple/page.tsx
+ GET / 200 in 76ms
+ GET / 500 in 17ms

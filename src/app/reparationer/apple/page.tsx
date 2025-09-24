@@ -1,6 +1,23 @@
 import Link from "next/link";
+import { useState } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "iPhone Reparation - Alle Modeller | Frontdoorfix",
+  description: "Vi reparerer alle iPhone modeller fra iPhone 6 til iPhone 16 Pro Max. Skærmreparation, batteriskift, kamera og mere med 24 måneders garanti. Vi kommer til dig i København.",
+  keywords: "iPhone reparation, skærmreparation iPhone, batteriskift iPhone, iPhone 16, iPhone 15, iPhone 14, iPhone 13, iPhone 12, iPhone 11, iPhone X, iPhone 8, iPhone 7, iPhone 6, København",
+  openGraph: {
+    title: "iPhone Reparation - Alle Modeller | Frontdoorfix",
+    description: "Vi reparerer alle iPhone modeller fra iPhone 6 til iPhone 16 Pro Max. Skærmreparation, batteriskift, kamera og mere med 24 måneders garanti.",
+    type: "website",
+    locale: "da_DK",
+  },
+};
 
 export default function AppleRepairs() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
+
   const iphoneModels = [
     // iPhone 16 Series (2024)
     {
@@ -271,10 +288,55 @@ export default function AppleRepairs() {
       description: "Standard model med A8 chip"
     },
     
-  ];
+         ];
+
+  // Filter models based on search and selected filters
+  const filteredModels = iphoneModels.filter(model => {
+    const matchesSearch = model.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesFilters = selectedFilters.length === 0 || selectedFilters.some(filter => {
+      if (filter === "Pro") return model.name.includes("Pro");
+      if (filter === "Max") return model.name.includes("Max");
+      if (filter === "Plus") return model.name.includes("Plus");
+      if (filter === "mini") return model.name.includes("mini");
+      if (filter === "2024") return model.year === "2024";
+      if (filter === "2023") return model.year === "2023";
+      if (filter === "2022") return model.year === "2022";
+      if (filter === "2021") return model.year === "2021";
+      if (filter === "2020") return model.year === "2020";
+      if (filter === "2019") return model.year === "2019";
+      if (filter === "2018") return model.year === "2018";
+      if (filter === "2017") return model.year === "2017";
+      if (filter === "2016") return model.year === "2016";
+      if (filter === "2015") return model.year === "2015";
+      if (filter === "2014") return model.year === "2014";
+      return false;
+    });
+    return matchesSearch && matchesFilters;
+  });
+
+  const toggleFilter = (filter: string) => {
+    setSelectedFilters(prev => 
+      prev.includes(filter) 
+        ? prev.filter(f => f !== filter)
+        : [...prev, filter]
+    );
+  };
 
   return (
     <div className="min-h-screen">
+      {/* Breadcrumbs */}
+      <nav className="bg-gray-100 py-3 px-6">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex items-center space-x-2 text-sm text-gray-600">
+            <Link href="/" className="hover:text-pink-600">Forside</Link>
+            <span>→</span>
+            <Link href="/reparationer" className="hover:text-pink-600">Reparationer</Link>
+            <span>→</span>
+            <span className="text-gray-800 font-medium">iPhone</span>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-pink-50 to-yellow-50">
         <div className="mx-auto max-w-6xl px-6">
@@ -292,19 +354,100 @@ export default function AppleRepairs() {
         </div>
       </section>
 
-      {/* iPhone Models Grid */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Vælg din iPhone-model
-          </h2>
+             {/* Search & Filter Section */}
+             <section className="py-8 bg-gray-50">
+               <div className="mx-auto max-w-6xl px-6">
+                 <div className="text-center mb-8">
+                   <p className="text-lg text-gray-600 mb-6">
+                     Vi reparerer alle iPhone-modeller med originale eller kvalitetsgodkendte dele og op til 24 måneders garanti. 
+                     Vi kommer direkte til din adresse—hurtigt, sikkert og professionelt.
+                   </p>
+                 </div>
+                 
+                 {/* Search Bar */}
+                 <div className="max-w-md mx-auto mb-6">
+                   <div className="relative">
+                     <input
+                       type="text"
+                       placeholder="Søg model..."
+                       value={searchTerm}
+                       onChange={(e) => setSearchTerm(e.target.value)}
+                       className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                     />
+                     <svg className="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                     </svg>
+                   </div>
+                 </div>
+
+                 {/* Filter Chips */}
+                 <div className="flex flex-wrap justify-center gap-2 mb-6">
+                   {["Pro", "Max", "Plus", "mini", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"].map((filter) => (
+                     <button
+                       key={filter}
+                       onClick={() => toggleFilter(filter)}
+                       className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                         selectedFilters.includes(filter)
+                           ? "bg-gradient-to-r from-pink-500 to-yellow-500 text-white"
+                           : "bg-white text-gray-700 border border-gray-300 hover:border-pink-300"
+                       }`}
+                     >
+                       {filter}
+                     </button>
+                   ))}
+                 </div>
+               </div>
+             </section>
+
+             {/* iPhone Models Grid */}
+             <section className="py-16 bg-white">
+               <div className="mx-auto max-w-6xl px-6">
+                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+                   Vælg din iPhone-model
+                 </h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {iphoneModels.map((model) => (
+                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                   {filteredModels.map((model) => {
+                     // Determine badges for each model
+                     const isNew = model.year === "2024";
+                     const isPopular = ["iphone-13", "iphone-14", "iphone-15", "iphone-12"].includes(model.id);
+                     const screenPrice = model.year === "2024" ? "1.999,-" : 
+                                       model.year === "2023" ? "1.799,-" : 
+                                       model.year === "2022" ? "1.599,-" : 
+                                       model.year === "2021" ? "1.399,-" : 
+                                       model.year === "2020" ? "1.199,-" : 
+                                       model.year === "2019" ? "999,-" : 
+                                       model.year === "2018" ? "899,-" : 
+                                       model.year === "2017" ? "799,-" : 
+                                       model.year === "2016" ? "699,-" : 
+                                       model.year === "2015" ? "599,-" : "499,-";
+                     
+                     return (
               <div 
                 key={model.id}
-                className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl hover:border-pink-300 transition-all duration-300"
+                className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl hover:border-pink-300 transition-all duration-300 relative"
               >
+                {/* Badges */}
+                <div className="absolute top-3 left-3 z-10 flex flex-col gap-2">
+                  {isNew && (
+                    <span className="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                      Ny
+                    </span>
+                  )}
+                  {isPopular && (
+                    <span className="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                      Mest valgt
+                    </span>
+                  )}
+                </div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-3 right-3 z-10">
+                  <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Skærm fra {screenPrice}
+                  </span>
+                </div>
+
                 {/* Phone Image */}
                 <div className="h-48 bg-white flex items-center justify-center p-6">
                   <div className="card__media w-full h-full flex items-center justify-center">
@@ -688,15 +831,63 @@ export default function AppleRepairs() {
                     <span>👉</span>
                     Se priser & reparationer
                   </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+                       </div>
+                     </div>
+                     );
+                   })}
+                 </div>
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-16 bg-gray-50">
+             {/* Why Choose Us Section */}
+             <section className="py-16 bg-white">
+               <div className="mx-auto max-w-6xl px-6">
+                 <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+                   Hvorfor vælge os
+                 </h2>
+                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                   <div className="text-center">
+                     <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                       <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                       </svg>
+                     </div>
+                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Reparation på din adresse</h3>
+                     <p className="text-gray-600 text-sm">Ingen ventetid - vi kommer til dig</p>
+                   </div>
+                   <div className="text-center">
+                     <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                       <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                       </svg>
+                     </div>
+                     <h3 className="text-lg font-semibold mb-2 text-gray-800">24 mdr. garanti</h3>
+                     <p className="text-gray-600 text-sm">Skærme / 12 mdr. på batterier</p>
+                   </div>
+                   <div className="text-center">
+                     <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                       <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                         <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                       </svg>
+                     </div>
+                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Originale dele</h3>
+                     <p className="text-gray-600 text-sm">Kvalitetsgodkendte reservedele</p>
+                   </div>
+                   <div className="text-center">
+                     <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                       <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                         <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                       </svg>
+                     </div>
+                     <h3 className="text-lg font-semibold mb-2 text-gray-800">2.000+ reparationer</h3>
+                     <p className="text-gray-600 text-sm">5⭐ kundeanmeldelser</p>
+                   </div>
+                 </div>
+               </div>
+             </section>
+
+             {/* Services Overview */}
+             <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Populære iPhone reparationer
@@ -736,6 +927,125 @@ export default function AppleRepairs() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-4xl px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Ofte stillede spørgsmål
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Hvor lang tid tager en iPhone-reparation?
+              </h3>
+              <p className="text-gray-600">
+                De fleste reparationer er færdige på 20–30 min. på stedet. Skærmreparationer tager typisk 20-30 minutter, mens batteriskift tager 15-20 minutter.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Mister jeg data ved reparationen?
+              </h3>
+              <p className="text-gray-600">
+                Nej, ved standardreparationer bevarer vi alt. Vi anbefaler dog backup før reparationen, da det er den sikreste måde at beskytte dine data på.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Hvilke dele bruger I?
+              </h3>
+              <p className="text-gray-600">
+                Originale eller kvalitetsgodkendte A-kvalitetsdele med garanti. Vi bruger kun dele af højeste kvalitet, der lever op til Apple's standarder.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Giver I garanti på reparationer?
+              </h3>
+              <p className="text-gray-600">
+                24 mdr. garanti på skærme, 12 mdr. på batterier og øvrige reservedele. Alle vores reparationer kommer med fuld garanti.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Hvor dækker I?
+              </h3>
+              <p className="text-gray-600">
+                Vi kommer til din adresse i hele København og omegn. Skriv eller ring, hvis du er i tvivl om vi dækker dit område.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Hvad siger vores kunder
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4 italic">
+                "Fantastisk service! Min iPhone 13 blev repareret på under 30 minutter direkte på min arbejdsplads. Kan varmt anbefales!"
+              </p>
+              <p className="text-sm text-gray-500">- Sarah M.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4 italic">
+                "Professionel og hurtig service. Min skærm blev udskiftet med original kvalitet og jeg fik 24 måneders garanti. Perfekt!"
+              </p>
+              <p className="text-sm text-gray-500">- Michael K.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4 italic">
+                "Bedste mobilreparation i København! De kom til mig og reparerede min iPhone på stedet. Meget tilfreds med resultatet."
+              </p>
+              <p className="text-sm text-gray-500">- Anna L.</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                  </svg>
+                ))}
+              </div>
+              <span className="text-lg font-semibold text-gray-800">5.0 på Google & Trustpilot</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-pink-500 to-yellow-500">
         <div className="mx-auto max-w-6xl px-6 text-center">
@@ -758,6 +1068,43 @@ export default function AppleRepairs() {
           </div>
         </div>
       </section>
+
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Frontdoorfix",
+            "description": "iPhone reparation og mobilreparation i København. Vi kommer til din adresse med originale dele og 24 måneders garanti.",
+            "url": "https://frontdoorfix.dk",
+            "telephone": "+4593545457",
+            "email": "info@frontdoorfix.dk",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "København",
+              "addressCountry": "DK"
+            },
+            "openingHours": "Mo-Su 08:00-22:00",
+            "priceRange": "$$",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "2000"
+            },
+            "serviceArea": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "55.6761",
+                "longitude": "12.5683"
+              },
+              "geoRadius": "50000"
+            }
+          })
+        }}
+      />
     </div>
   );
 }
