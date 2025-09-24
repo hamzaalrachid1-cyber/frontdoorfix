@@ -81,7 +81,7 @@ export default function iPhone6Repair() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-6">
-                Professionel reparation af din iPhone 6 med originale Apple dele og 24 måneders garanti.
+                Reparer din iPhone 6 hurtigt og sikkert med originale reservedele og garanti.
               </p>
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
                 <p className="text-sm text-blue-800">
@@ -250,7 +250,7 @@ export default function iPhone6Repair() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-              📅 Book tid nu
+              📅 Bestil tid til iPhone 6 reparation
             </button>
             <a 
               href="tel:+4593545457"

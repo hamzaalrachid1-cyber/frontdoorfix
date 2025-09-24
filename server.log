@@ -1313,3 +1313,24 @@ Import trace for requested module:
  GET /reparationer/apple 200 in 692ms
  ✓ Compiled in 849ms (954 modules)
  GET /reparationer/apple 200 in 232ms
+ ○ Compiling /reparationer/apple/iphone-6 ...
+ ✓ Compiled /reparationer/apple/iphone-6 in 783ms (956 modules)
+ GET /reparationer/apple/iphone-6 200 in 882ms
+ ✓ Compiled in 176ms (966 modules)
+ GET /reparationer/apple/iphone-6 200 in 59ms
+ GET /reparationer/apple/iphone-6 200 in 165ms
+ ✓ Compiled /favicon.ico in 184ms (591 modules)
+ GET /favicon.ico 200 in 337ms
+ GET /reparationer/apple 200 in 94ms
+ ✓ Compiled /_not-found in 145ms (974 modules)
+ GET /reparationer/apple/iphone-12-pro 404 in 203ms
+ GET /reparationer/apple/iphone-12-pro 404 in 100ms
+ GET /reparationer/apple 200 in 205ms
+ ✓ Compiled in 938ms (966 modules)
+ GET /reparationer/apple 200 in 220ms
+ ✓ Compiled in 990ms (966 modules)
+ GET /reparationer/apple 200 in 151ms
+ ✓ Compiled in 184ms (966 modules)
+ GET /reparationer/apple 200 in 121ms
+ ✓ Compiled in 171ms (966 modules)
+ GET /reparationer/apple 200 in 112ms
