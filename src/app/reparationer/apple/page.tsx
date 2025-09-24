@@ -317,9 +317,18 @@ export default function AppleRepairs() {
                         loading="lazy"
                         className="max-w-full max-h-full object-contain"
                       />
-                    ) : (model.id === "iphone-6s" || model.id === "iphone-6s-plus") ? (
+                    ) : model.id === "iphone-6s" ? (
                       <img 
                         src="/images/iphones/iphone-6s.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-6s-plus" ? (
+                      <img 
+                        src="/images/iphones/iphone-6s-plus.png" 
                         alt={model.name}
                         width="200"
                         height="200"

@@ -109,7 +109,7 @@ export default function iPhone6sPlusRepair() {
             <div className="w-80 h-80 mx-auto flex items-center justify-center">
               <div className="card__media w-full h-full flex items-center justify-center">
                 <img 
-                  src="/images/iphones/iphone-6s.png" 
+                  src="/images/iphones/iphone-6s-plus.png" 
                   alt="iPhone 6s Plus"
                   width="400"
                   height="400"
