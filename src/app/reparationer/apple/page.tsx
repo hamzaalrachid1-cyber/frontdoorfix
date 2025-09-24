@@ -488,6 +488,150 @@ export default function AppleRepairs() {
                         loading="lazy"
                         className="max-w-full max-h-full object-contain"
                       />
+                    ) : model.id === "iphone-13-mini" ? (
+                      <img 
+                        src="/images/iphones/iphone-13-mini.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-13" ? (
+                      <img 
+                        src="/images/iphones/iphone-13.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-13-pro" ? (
+                      <img 
+                        src="/images/iphones/iphone-13-pro.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-13-pro-max" ? (
+                      <img 
+                        src="/images/iphones/iphone-13-pro-max.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-14" ? (
+                      <img 
+                        src="/images/iphones/iphone-14.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-14-plus" ? (
+                      <img 
+                        src="/images/iphones/iphone-14-plus.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-14-pro" ? (
+                      <img 
+                        src="/images/iphones/iphone-14-pro.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-14-pro-max" ? (
+                      <img 
+                        src="/images/iphones/iphone-14-pro-max.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-15" ? (
+                      <img 
+                        src="/images/iphones/iphone-15.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-15-pro" ? (
+                      <img 
+                        src="/images/iphones/iphone-15-pro.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-15-plus" ? (
+                      <img 
+                        src="/images/iphones/iphone-15-plus.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-15-pro-max" ? (
+                      <img 
+                        src="/images/iphones/iphone-15-pro-max.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-16" ? (
+                      <img 
+                        src="/images/iphones/iphone-16.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-16-plus" ? (
+                      <img 
+                        src="/images/iphones/iphone-16-plus.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-16-pro" ? (
+                      <img 
+                        src="/images/iphones/iphone-16-pro.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : model.id === "iphone-16-pro-max" ? (
+                      <img 
+                        src="/images/iphones/iphone-16-pro-max.png" 
+                        alt={model.name}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
                     ) : (
                       <div className="relative">
                         {/* Front View */}

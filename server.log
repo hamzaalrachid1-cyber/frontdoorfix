@@ -1485,3 +1485,25 @@ Import trace for requested module:
  GET /favicon.ico 200 in 1141ms
  ✓ Compiled in 1504ms (970 modules)
  GET /reparationer/apple 200 in 337ms
+ ✓ Compiled in 462ms (970 modules)
+ GET /reparationer/apple 200 in 154ms
+ GET /reparationer/apple 200 in 533ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 725ms (595 modules)
+ GET /favicon.ico 200 in 1146ms
+ GET / 200 in 273ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1522ms (961 modules)
+ GET /reparationer 404 in 1961ms
+ GET /reparationer/apple 200 in 239ms
+ GET /reparationer/apple 200 in 186ms
+ GET /reparationer/samsung 404 in 58ms
+ ✓ Compiled /favicon.ico in 119ms (596 modules)
+ GET /favicon.ico 200 in 262ms
+ GET /reparationer/apple 200 in 266ms
+ GET /reparationer/apple 200 in 178ms
+ GET /reparationer/apple 200 in 197ms
+ GET / 200 in 170ms
+ GET /reparationer/apple 200 in 553ms
+ ✓ Compiled in 986ms (970 modules)
+ GET /reparationer/apple 200 in 375ms
