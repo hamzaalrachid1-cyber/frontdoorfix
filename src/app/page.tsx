@@ -12,14 +12,14 @@ export default function Home() {
                 {/* Main Headline */}
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 leading-tight">
                   <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                    <span id="rotating-headline">Din mobil repareret på under 30 minutter</span>
+                    <span id="rotating-headline">Vi fikser din mobil – dér hvor du er</span>
                   </span>
                 </h1>
 
                 {/* Description */}
                 <p className="text-xl text-gray-600 mb-12 max-w-2xl">
-                  Direkte på din adresse i København. Ingen ventetid. Ingen besvær. 
-                  Kun kvalitet og garanti fra erfarne teknikere.
+                  Nem og tryg reparation uden at forlade hjemmet eller kontoret. 
+                  Hurtigt, professionelt og med garanti.
                 </p>
 
                 {/* CTA Buttons */}
@@ -572,9 +572,9 @@ export default function Home() {
       <script dangerouslySetInnerHTML={{
         __html: `
           const headlines = [
-            "Din mobil repareret på under 30 minutter",
-            "Professionel service direkte på din adresse",
-            "Hurtig reparation med 24 måneders garanti"
+            "Vi fikser din mobil – dér hvor du er",
+            "Nem og tryg reparation på din adresse",
+            "Hurtigt, professionelt og med garanti"
           ];
           
           let currentIndex = 0;

@@ -1207,3 +1207,9 @@ Import trace for requested module:
  ✓ Compiled /favicon.ico in 134ms (590 modules)
  GET /favicon.ico 200 in 276ms
  GET / 200 in 99ms
+ ✓ Compiled in 920ms (963 modules)
+ GET / 200 in 249ms
+ ✓ Compiled in 584ms (963 modules)
+ GET / 200 in 345ms
+ ✓ Compiled in 177ms (963 modules)
+ GET / 200 in 85ms
