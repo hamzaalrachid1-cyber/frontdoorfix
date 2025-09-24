@@ -1478,3 +1478,10 @@ Import trace for requested module:
  ✓ Compiled in 1108ms (970 modules)
  ✓ Compiled in 239ms (970 modules)
  ✓ Compiled in 572ms (970 modules)
+ ✓ Compiled in 349ms (970 modules)
+ GET /reparationer/apple 200 in 528ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 852ms (595 modules)
+ GET /favicon.ico 200 in 1141ms
+ ✓ Compiled in 1504ms (970 modules)
+ GET /reparationer/apple 200 in 337ms
