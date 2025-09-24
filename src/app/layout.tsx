@@ -119,11 +119,53 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="border-t tint-gradient">
-          <div className="mx-auto max-w-6xl p-6 text-sm flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-            <p>&copy; {new Date().getFullYear()} Frontdoorfix. Alle rettigheder forbeholdes.</p>
-            <div className="flex gap-4">
-              <a href="/privatlivspolitik" className="hover:text-gray-900">Privatlivspolitik</a>
-              <a href="/handelsbetingelser" className="hover:text-gray-900">Handelsbetingelser</a>
+          <div className="mx-auto max-w-6xl p-6">
+            <div className="grid md:grid-cols-3 gap-8 mb-6">
+              <div>
+                <h3 className="font-semibold text-gray-800 mb-3">Kontakt os</h3>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <a href="tel:+4593545457" className="hover:text-gray-900">+45 93 54 54 57</a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <a href="mailto:info@frontdoorfix.dk" className="hover:text-gray-900">info@frontdoorfix.dk</a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span>København, Danmark</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-800 mb-3">Åbningstider</h3>
+                <div className="text-sm text-gray-600">
+                  <p>Alle dage: 8:00 - 22:00</p>
+                  <p className="text-xs text-gray-500 mt-1">Vi kommer til dig hele dagen</p>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-800 mb-3">Links</h3>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div><a href="/reparationer" className="hover:text-gray-900">Alle reparationer</a></div>
+                  <div><a href="/erhverv" className="hover:text-gray-900">Erhvervsaftaler</a></div>
+                  <div><a href="/kontakt" className="hover:text-gray-900">Kontakt os</a></div>
+                </div>
+              </div>
+            </div>
+            <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row gap-3 md:items-center md:justify-between text-sm">
+              <p>&copy; {new Date().getFullYear()} Frontdoorfix. Alle rettigheder forbeholdes.</p>
+              <div className="flex gap-4">
+                <a href="/privatlivspolitik" className="hover:text-gray-900">Privatlivspolitik</a>
+                <a href="/handelsbetingelser" className="hover:text-gray-900">Handelsbetingelser</a>
+              </div>
             </div>
           </div>
         </footer>
