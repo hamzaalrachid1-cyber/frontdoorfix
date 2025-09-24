@@ -1384,3 +1384,11 @@ Import trace for requested module:
  GET /reparationer/apple 200 in 64ms
  GET /reparationer/apple 200 in 203ms
  GET /favicon.ico 200 in 15ms
+ ✓ Compiled in 704ms (983 modules)
+ GET /reparationer/apple 200 in 206ms
+ ✓ Compiled in 1176ms (966 modules)
+ GET /reparationer/apple 200 in 348ms
+ ✓ Compiled /_not-found in 441ms (957 modules)
+ GET /images/iphones/iphone-6.webp 404 in 620ms
+ ✓ Compiled in 437ms (971 modules)
+ GET /reparationer/apple 200 in 154ms

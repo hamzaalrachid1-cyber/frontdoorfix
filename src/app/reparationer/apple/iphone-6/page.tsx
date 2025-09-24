@@ -104,12 +104,16 @@ export default function iPhone6Repair() {
             <div className="text-center">
               {/* iPhone 6 Image */}
               <div className="w-80 h-80 mx-auto flex items-center justify-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=400&fit=crop&crop=center" 
-                  alt="iPhone 6"
-                  className="max-w-full max-h-full object-contain"
-                  loading="lazy"
-                />
+                <div className="card__media w-full h-full flex items-center justify-center">
+                  <img 
+                    src="/images/iphones/iphone-6.webp" 
+                    alt="iPhone 6"
+                    width="400"
+                    height="400"
+                    loading="lazy"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
