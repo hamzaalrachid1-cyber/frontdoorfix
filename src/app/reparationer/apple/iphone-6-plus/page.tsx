@@ -199,10 +199,6 @@ export default function IPhone6PlusRepairs() {
       warning: "Touch ID kan ikke genskabes på iPhone 6 Plus"
     },
     {
-    {
-    {
-    {
-    {
       id: "software",
       name: "Software",
       description: "Backup, gendannelse, opdatering",
