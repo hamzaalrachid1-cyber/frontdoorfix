@@ -533,13 +533,20 @@ export default function IPhone6Repairs() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Ofte stillede spørgsmål
           </h2>
-          <div className="faq space-y-6" data-faq>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Hvor lang tid tager en iPhone 6 reparation?
-                <div className="text-sm text-gray-500 font-normal mt-1">Typisk 20–30 min. på din adresse</div>
+          <div className="faq" data-faq>
+            <details>
+              <summary>
+                <div>
+                  <div className="text-lg font-semibold text-gray-800">
+                    Hvor lang tid tager en iPhone 6 reparation?
+                  </div>
+                  <div className="teaser">Typisk 20–30 min. på din adresse</div>
+                </div>
+                <svg className="chev w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <div className="faq-a text-gray-600">
+              <div className="answer">
                 De fleste reparationer er færdige på <strong>20–30 min.</strong> på din adresse.<br/>
                 • Skærm: <strong>15–25 min</strong><br/>
                 • Batteri: <strong>15–20 min</strong><br/>
@@ -547,60 +554,102 @@ export default function IPhone6Repairs() {
                 Ved flere reparationer på én gang kan der komme <strong>10–15 min</strong> ekstra.
               </div>
             </details>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Mister jeg data ved reparationen?
-                <div className="text-sm text-gray-500 font-normal mt-1">Vi sletter ikke dine data</div>
+            <details>
+              <summary>
+                <div>
+                  <div className="text-lg font-semibold text-gray-800">
+                    Mister jeg data ved reparationen?
+                  </div>
+                  <div className="teaser">Vi sletter ikke dine data</div>
+                </div>
+                <svg className="chev w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <div className="faq-a text-gray-600">
+              <div className="answer">
                 Nej, normalt ikke. Vi nulstiller ikke din telefon, og vi arbejder uden at slette data. Vi anbefaler dog altid backup før reparation som ekstra sikkerhed. For at teste efter reparation kan vi have brug for din <strong>adgangskode</strong> – alle data behandles fortroligt.
               </div>
             </details>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Kan Touch ID genskabes på iPhone 6?
-                <div className="text-sm text-gray-500 font-normal mt-1">Touch ID kan ikke genskabes ved hjem-knap skift</div>
+            <details>
+              <summary>
+                <div>
+                  <div className="text-lg font-semibold text-gray-800">
+                    Kan Touch ID genskabes på iPhone 6?
+                  </div>
+                  <div className="teaser">Touch ID kan ikke genskabes ved hjem-knap skift</div>
+                </div>
+                <svg className="chev w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <div className="faq-a text-gray-600">
+              <div className="answer">
                 Nej. På iPhone 6 er <strong>Touch ID bundet til bundkortet</strong>. Ved udskiftning af hjem-knappen fungerer knappen stadig, men <strong>Touch ID/Apple Pay</strong> kan ikke genskabes. Vi informerer altid inden vi går i gang.
               </div>
             </details>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Hvilke dele bruger I, og hvilken garanti får jeg?
-                <div className="text-sm text-gray-500 font-normal mt-1">Originale eller A-kvalitets dele + op til 24 mdr. garanti</div>
+            <details>
+              <summary>
+                <div>
+                  <div className="text-lg font-semibold text-gray-800">
+                    Hvilke dele bruger I, og hvilken garanti får jeg?
+                  </div>
+                  <div className="teaser">Originale eller A-kvalitets dele + op til 24 mdr. garanti</div>
+                </div>
+                <svg className="chev w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <div className="faq-a text-gray-600">
+              <div className="answer">
                 Vi bruger originale eller A-kvalitets kompatible reservedele fra godkendte leverandører.<br/>
                 • Skærm: <strong>24 mdr. garanti</strong><br/>
                 • Batteri & øvrige dele: <strong>12 mdr. garanti</strong><br/>
                 Garantien dækker funktionsfejl på delen – ikke ny fysisk skade, fugt eller åbninger foretaget andre steder. Du får kvittering og garantibevis.
               </div>
             </details>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Kommer I ud til min adresse?
-                <div className="text-sm text-gray-500 font-normal mt-1">Storkøbenhavn, gratis kørsel inden for 25 km</div>
+            <details>
+              <summary>
+                <div>
+                  <div className="text-lg font-semibold text-gray-800">
+                    Kommer I ud til min adresse?
+                  </div>
+                  <div className="teaser">Storkøbenhavn, gratis kørsel inden for 25 km</div>
+                </div>
+                <svg className="chev w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <div className="faq-a text-gray-600">
+              <div className="answer">
                 Ja. Vi dækker hele Storkøbenhavn og kommer ud til dig uden beregning inden for <strong>25 km</strong>. Åbent alle dage <strong>8:00–22:00</strong>. Vi reparerer på stedet (servicebil/hos dig). Uden for zonen kan vi stadig hjælpe – mod tillæg eller med indsendelse.
               </div>
             </details>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Hvad hvis fejlen er ukendt eller ikke på listen?
-                <div className="text-sm text-gray-500 font-normal mt-1">Diagnose 99 kr – fratrækkes ved reparation</div>
+            <details>
+              <summary>
+                <div>
+                  <div className="text-lg font-semibold text-gray-800">
+                    Hvad hvis fejlen er ukendt eller ikke på listen?
+                  </div>
+                  <div className="teaser">Diagnose 99 kr – fratrækkes ved reparation</div>
+                </div>
+                <svg className="chev w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <div className="faq-a text-gray-600">
+              <div className="answer">
                 Vi laver en diagnose og finder fejlen. Pris <strong>99 kr</strong> – fratrækkes hvis du vælger reparation. Vi kontakter dig med pris og løsning før vi gør noget. Takker du nej, betaler du kun diagnose.
               </div>
             </details>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Giver I garanti ved væskeskader?
-                <div className="text-sm text-gray-500 font-normal mt-1">Rens/rediag – ingen garanti på væskeskader</div>
+            <details>
+              <summary>
+                <div>
+                  <div className="text-lg font-semibold text-gray-800">
+                    Giver I garanti ved væskeskader?
+                  </div>
+                  <div className="teaser">Rens/rediag – ingen garanti på væskeskader</div>
+                </div>
+                <svg className="chev w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <div className="faq-a text-gray-600">
+              <div className="answer">
                 Vi tilbyder rens og redning af væskeskader (typisk <strong>199 kr</strong>). Da fugt kan give senfølger/korrosion, kan vi ikke give garanti på væskeskader. Vi rådgiver om dataredning (pris efter fund).
               </div>
             </details>
@@ -620,48 +669,118 @@ export default function IPhone6Repairs() {
 
         {/* FAQ Accordion Styles */}
         <style jsx>{`
-          .faq .faq-item {
-            border: none;
+          :root {
+            --fdf-pink: #ff4d8d;
+            --fdf-orange: #f6b73c;
+            --fdf-grad: linear-gradient(90deg, var(--fdf-pink), var(--fdf-orange));
+            --fdf-faq-bg: #f9fafb;
+            --fdf-faq-hov: #fff7ed;
+            --fdf-faq-br: #e5e7eb;
+            --fdf-faq-tz: #6b7280;
           }
           
-          .faq .faq-q {
-            cursor: pointer;
+          @media (prefers-color-scheme: dark) {
+            :root {
+              --fdf-faq-bg: #0f172a;
+              --fdf-faq-hov: #1e293b;
+              --fdf-faq-br: #334155;
+              --fdf-faq-tz: #94a3b8;
+            }
+          }
+          
+          .faq details {
+            border: 1px solid var(--fdf-faq-br);
+            border-radius: 12px;
+            background: #fff;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+          }
+          
+          .faq summary {
             list-style: none;
+            cursor: pointer;
+            background: #fff;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 16px 18px;
             position: relative;
-            padding-right: 2rem;
-            transition: color 0.2s ease;
+            transition: background-color 0.2s ease;
           }
           
-          .faq .faq-q:hover {
-            color: #ec4899;
-          }
-          
-          .faq .faq-q::-webkit-details-marker {
+          .faq summary::-webkit-details-marker {
             display: none;
           }
           
-          .faq .faq-q::after {
-            content: '';
+          .faq summary:hover {
+            background: var(--fdf-faq-hov);
+          }
+          
+          .faq summary:focus-visible {
+            outline: 2px solid transparent;
+            box-shadow: 0 0 0 3px rgba(255,77,141,.35), 0 0 0 6px rgba(246,183,60,.25);
+            border-radius: 12px;
+          }
+          
+          .faq .teaser {
+            color: var(--fdf-faq-tz);
+            font-size: 0.95rem;
+            margin-top: 4px;
+            font-weight: normal;
+          }
+          
+          .faq details[open] summary::before {
+            content: "";
             position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 0;
-            height: 0;
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-            border-top: 8px solid #6b7280;
-            transition: transform 0.3s ease;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--fdf-grad);
           }
           
-          .faq .faq-item[open] .faq-q::after {
-            transform: translateY(-50%) rotate(180deg);
+          .faq summary .chev {
+            transition: transform 0.2s ease, color 0.2s ease;
+            color: #64748b;
+            margin-left: 1rem;
+            flex-shrink: 0;
           }
           
-          .faq .faq-a {
-            margin-top: 0.75rem;
-            padding-top: 0.75rem;
-            border-top: 1px solid #e5e7eb;
+          .faq details[open] summary .chev {
+            transform: rotate(180deg);
+            color: var(--fdf-pink);
+          }
+          
+          .faq .answer {
+            padding: 14px 18px 18px;
+            background: #fff;
+            color: #374151;
+          }
+          
+          .faq .answer b,
+          .faq .answer strong {
+            color: #111827;
+          }
+          
+          @media (prefers-color-scheme: dark) {
+            .faq details,
+            .faq summary,
+            .faq .answer {
+              background: #0b1220;
+            }
+            
+            .faq .answer {
+              color: #d1d5db;
+            }
+            
+            .faq .answer b,
+            .faq .answer strong {
+              color: #e2e8f0;
+            }
+            
+            .faq summary {
+              color: #f3f4f6;
+            }
           }
         `}</style>
 
