@@ -199,7 +199,6 @@ export default function IPhone6Repairs() {
     subtitle, 
     time, 
     warranty, 
-    stock, 
     price, 
     contact, 
     onDetails 
@@ -208,11 +207,13 @@ export default function IPhone6Repairs() {
     subtitle?: string; 
     time?: string; 
     warranty?: string; 
-    stock?: string;
     price?: number; 
     contact?: boolean; 
     onDetails?: () => void
   }) => {
+    // Combine time and warranty into one compact meta line
+    const meta = [time, warranty].filter(Boolean).join(" • ");
+    
     return (
       <div className="rounded-lg border border-slate-200 bg-white px-4 py-3 flex items-start justify-between min-h-[88px]">
         <div className="min-w-0 flex-1">
@@ -220,12 +221,14 @@ export default function IPhone6Repairs() {
           {subtitle && (
             <div className="text-[13px] text-slate-500 leading-snug line-clamp-1 mt-0.5">{subtitle}</div>
           )}
-          <div className="flex flex-wrap gap-1.5 mt-2">
-            {time && <span className="px-2 py-0.5 rounded-full bg-slate-100 text-[11px] text-slate-600">{time}</span>}
-            {warranty && <span className="px-2 py-0.5 rounded-full bg-slate-100 text-[11px] text-slate-600">{warranty}</span>}
-            {stock && <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-[11px] text-emerald-600">{stock}</span>}
-            {onDetails && <button onClick={onDetails} className="text-[12px] text-slate-500 hover:text-slate-700 ml-1">Detaljer</button>}
-          </div>
+          {meta && (
+            <div className="mt-2 text-[12px] text-slate-500">{meta}</div>
+          )}
+          {onDetails && (
+            <button onClick={onDetails} className="mt-1.5 text-[12px] text-slate-500 hover:text-slate-700">
+              Detaljer
+            </button>
+          )}
         </div>
 
         <div className="text-right pl-3 shrink-0">
@@ -254,7 +257,6 @@ export default function IPhone6Repairs() {
               subtitle={repair.description}
               time={repair.timeMin}
               warranty={`${variant.warrantyMonths} mdr`}
-              stock={repair.stock === "in_stock" ? "På lager" : undefined}
               price={variant.price}
               onDetails={() => setShowDetailsModal(repair.id)}
             />
@@ -269,7 +271,6 @@ export default function IPhone6Repairs() {
             subtitle={repair.description}
             time={repair.timeMin}
             warranty="12 mdr"
-            stock={repair.stock === "in_stock" ? "På lager" : undefined}
             price={repair.price}
             contact={repair.contactOnly}
             onDetails={() => setShowDetailsModal(repair.id)}
@@ -466,7 +467,7 @@ export default function IPhone6Repairs() {
 
           {/* Price Grid - Dense Layout */}
           <div className="mx-auto max-w-6xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3">
               <style jsx>{`
                 .no-scrollbar {
                   -ms-overflow-style: none;
