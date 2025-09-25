@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useBookingModal } from '@/context/BookingModalContext';
-import { BRANDS, MODELS, getModelsByBrand, type Model, type RepairItem } from '@/data/devices';
+import { APPLE_MODELS, getAllModels } from '@/data/apple/models';
+import { ModelSpec } from '@/data/apple/types';
 
 type Step = 1 | 2 | 3;
 
@@ -13,7 +14,7 @@ export default function BookingModal() {
   const modalRef = useRef<HTMLDivElement>(null);
   const [step, setStep] = useState<Step>(1);
   const [selectedBrand, setSelectedBrand] = useState<string>('');
-  const [selectedModel, setSelectedModel] = useState<Model | null>(null);
+  const [selectedModel, setSelectedModel] = useState<ModelSpec | null>(null);
   const [selectedRepairs, setSelectedRepairs] = useState<string[]>([]);
   const [modelSearch, setModelSearch] = useState('');
 
@@ -25,7 +26,7 @@ export default function BookingModal() {
         setStep(2);
       }
       if (preselect.model) {
-        const model = MODELS.find(m => m.name === preselect.model && m.brand === preselect.brand);
+        const model = APPLE_MODELS.find(m => m.name === preselect.model && m.brand === preselect.brand);
         if (model) {
           setSelectedModel(model);
           setStep(3);
@@ -96,7 +97,7 @@ export default function BookingModal() {
     setStep(2);
   };
 
-  const handleModelSelect = (model: Model) => {
+  const handleModelSelect = (model: ModelSpec) => {
     setSelectedModel(model);
     setSelectedRepairs([]);
     setStep(3);
@@ -133,7 +134,8 @@ export default function BookingModal() {
   };
 
   const filteredModels = selectedBrand 
-    ? getModelsByBrand(selectedBrand).filter(model => 
+    ? APPLE_MODELS.filter(model => 
+        model.brand === selectedBrand && 
         model.name.toLowerCase().includes(modelSearch.toLowerCase())
       )
     : [];
@@ -208,7 +210,7 @@ export default function BookingModal() {
         <div className="p-6 overflow-y-auto max-h-[50vh]">
           {step === 1 && (
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {BRANDS.map((brand) => (
+              {['Apple', 'Samsung', 'Google', 'OnePlus', 'Huawei'].map((brand) => (
                 <button
                   key={brand}
                   onClick={() => handleBrandSelect(brand)}
@@ -248,7 +250,7 @@ export default function BookingModal() {
                       }`}
                     >
                       <div className="font-semibold">{model.name}</div>
-                      <div className="text-sm text-gray-600">{model.repairs.length} reparationer tilgængelige</div>
+                      <div className="text-sm text-gray-600">Reparationer tilgængelige</div>
                     </button>
                   ))}
                 </div>
@@ -267,7 +269,11 @@ export default function BookingModal() {
                 <p className="text-sm text-gray-600">Vælg de reparationer du har brug for</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {selectedModel.repairs.map((repair) => (
+                {/* Placeholder repairs - will be loaded from JSON in real implementation */}
+                {[
+                  { id: 'screen_original', label: 'Skærmskift – Original', price: 799, time: '~30 min', warranty: '24 mdr' },
+                  { id: 'battery_original', label: 'Batteriskift – Original', price: 399, time: '~15-20 min', warranty: '12 mdr' }
+                ].map((repair) => (
                   <div
                     key={repair.id}
                     className={`p-4 rounded-lg border-2 cursor-pointer transition-all hover:shadow-md ${
@@ -300,7 +306,7 @@ export default function BookingModal() {
                         </div>
                       </div>
                       <div className="text-right ml-3 shrink-0">
-                        {repair.price === 'kontakt' ? (
+                        {repair.price === 'contact' ? (
                           <div className="text-sm font-semibold text-gray-600">Kontakt os</div>
                         ) : (
                           <div className="text-lg font-bold text-gray-900">{repair.price} kr</div>
