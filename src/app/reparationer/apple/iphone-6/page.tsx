@@ -221,7 +221,6 @@ export default function IPhone6Repairs() {
       quality: "service"
     },
     {
-    {
       id: "væskeskade",
       name: "Væskeskade-rens",
       description: "Rensning af væskeskade",
