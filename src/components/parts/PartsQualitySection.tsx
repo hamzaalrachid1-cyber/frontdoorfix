@@ -142,7 +142,7 @@ export default function PartsQualitySection() {
               <thead>
                 <tr className="border-b border-gray-200">
                   <th className="text-left py-3 px-4 font-medium text-gray-700">Egenskab</th>
-                  <th className="text-center py-3 px-4 font-medium text-gray-700">Original (kalibreret)</th>
+                  <th className="text-center py-3 px-4 font-medium text-gray-700">Original</th>
                   <th className="text-center py-3 px-4 font-medium text-gray-700">Original (ny)</th>
                   <th className="text-center py-3 px-4 font-medium text-gray-700">Kompatibel (A)</th>
                 </tr>

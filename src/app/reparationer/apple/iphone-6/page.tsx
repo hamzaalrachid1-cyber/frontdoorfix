@@ -60,7 +60,7 @@ export default function IPhone6Repairs() {
       timeMin: "~30 min",
       stock: "in_stock",
       variants: [
-        { id: "screen-original", label: "Original (kalibreret)", price: 799, warrantyMonths: 24 },
+        { id: "screen-original", label: "Original", price: 799, warrantyMonths: 24 },
         { id: "screen-compat", label: "Kompatibel", price: 599, warrantyMonths: 24 },
       ],
     },
@@ -72,7 +72,7 @@ export default function IPhone6Repairs() {
       timeMin: "~15–20 min",
       stock: "in_stock",
       variants: [
-        { id: "battery-original", label: "Original (kalibreret)", price: 399, warrantyMonths: 12 },
+        { id: "battery-original", label: "Original", price: 399, warrantyMonths: 12 },
         { id: "battery-compat", label: "Kompatibel", price: 299, warrantyMonths: 12 },
       ],
     },

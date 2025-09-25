@@ -522,7 +522,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-xl">🔧</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800">Original (kalibreret)</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Original</h3>
                 </div>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                   Vi bruger ægte Apple-dele, der er demonteret fra donorenheder ("pulled"), kvalitetstestet og kalibreret til din telefon. Apple viser disse som "Brugt/Ukendt del" i indstillinger – det er forventet og påvirker ikke funktionaliteten.
