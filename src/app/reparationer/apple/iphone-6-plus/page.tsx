@@ -717,4 +717,4 @@ export default function IPhone6PlusRepairs() {
       </div>
     </div>
   );
-}
+}}

@@ -694,7 +694,6 @@ export default function IPhone6Repairs() {
       </div>
     </div>
   );
-}      {/* FAQ JavaScript */}
       <script
         dangerouslySetInnerHTML={{
           __html: `
@@ -752,4 +751,4 @@ export default function IPhone6Repairs() {
             });
           `
         }}
-      />
+      />}
