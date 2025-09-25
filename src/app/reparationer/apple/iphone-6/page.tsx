@@ -689,9 +689,9 @@ export default function IPhone6Repairs() {
           }
           
           .faq details {
-            border: 1px solid var(--fdf-faq-br);
+            border: 1px solid #e5e7eb;
             border-radius: 12px;
-            background: #fff;
+            background: #f9fafb;
             overflow: hidden;
             margin-bottom: 1.5rem;
           }
@@ -699,13 +699,14 @@ export default function IPhone6Repairs() {
           .faq summary {
             list-style: none;
             cursor: pointer;
-            background: #fff;
+            background: #f9fafb;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             padding: 16px 18px;
             position: relative;
             transition: background-color 0.2s ease;
+            color: #111827;
           }
           
           .faq summary::-webkit-details-marker {
@@ -713,7 +714,7 @@ export default function IPhone6Repairs() {
           }
           
           .faq summary:hover {
-            background: var(--fdf-faq-hov);
+            background: #fff7ed;
           }
           
           .faq summary:focus-visible {
@@ -723,7 +724,7 @@ export default function IPhone6Repairs() {
           }
           
           .faq .teaser {
-            color: var(--fdf-faq-tz);
+            color: #6b7280;
             font-size: 0.95rem;
             margin-top: 4px;
             font-weight: normal;
@@ -753,7 +754,7 @@ export default function IPhone6Repairs() {
           
           .faq .answer {
             padding: 14px 18px 18px;
-            background: #fff;
+            background: #f9fafb;
             color: #374151;
           }
           
@@ -762,6 +763,8 @@ export default function IPhone6Repairs() {
             color: #111827;
           }
           
+          /* Dark mode disabled for now to ensure light theme consistency */
+          /*
           @media (prefers-color-scheme: dark) {
             .faq details,
             .faq summary,
@@ -782,6 +785,7 @@ export default function IPhone6Repairs() {
               color: #f3f4f6;
             }
           }
+          */
         `}</style>
 
         {/* FAQ Accordion JavaScript */}
