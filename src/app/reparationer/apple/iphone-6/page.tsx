@@ -240,16 +240,16 @@ export default function IPhone6Repairs() {
       </nav>
 
       {/* Hero Section - Compact */}
-      <section className="py-6 md:py-8 bg-gradient-to-r from-pink-50 to-yellow-50" style={{maxHeight: '280px'}}>
+      <section className="py-6 md:py-8 bg-gradient-to-r from-pink-50 to-yellow-50" style={{maxHeight: '260px'}}>
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+              <h1 className="font-bold text-gray-800 mb-2" style={{fontSize: 'clamp(28px, 3.2vw, 36px)'}}>
                 <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                   iPhone 6 Reparation
                 </span>
               </h1>
-              <p className="text-lg text-gray-600 mb-4 leading-tight">
+              <p className="text-base text-gray-600 mb-4 leading-tight" style={{fontSize: '16px', marginTop: '6px'}}>
                 Standard model med A8 chip – reparation på stedet på 20–30 min.
               </p>
               
@@ -290,7 +290,8 @@ export default function IPhone6Repairs() {
               <img
                 src="/images/iphones/iphone-6.png"
                 alt="iPhone 6 – front, bagside og sideprofil"
-                className="w-full max-w-[140px] md:max-w-[200px] lg:max-w-[280px] h-auto object-contain"
+                className="h-auto object-contain"
+                style={{width: 'clamp(140px, 18vw, 220px)'}}
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
@@ -310,8 +311,38 @@ export default function IPhone6Repairs() {
             Vælg din reparation nedenfor. Vi kommer til din adresse og reparerer på stedet på 20-30 minutter.
           </p>
 
-          {/* Filters & Search - Sticky on Mobile */}
-          <div className="sticky top-0 z-10 bg-white py-4 mb-8 -mx-6 px-6 md:static md:py-0 md:mx-0 md:px-0">
+          {/* SEO Text */}
+          <div className="text-center mb-8">
+            <p className="text-gray-600 text-lg">
+              iPhone 6 reparation i København – vi kommer til dig og reparerer på 20–30 min.
+            </p>
+            <div className="mt-2 flex items-center justify-center gap-2">
+              <span className="text-sm text-gray-500">Kvalitetsspørgsmål?</span>
+              <button 
+                className="text-pink-600 hover:text-pink-700 transition-colors"
+                onClick={() => {
+                  const tooltip = document.getElementById('quality-tooltip');
+                  if (tooltip) {
+                    tooltip.classList.toggle('hidden');
+                  }
+                }}
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </button>
+              <div id="quality-tooltip" className="hidden absolute bg-white border border-gray-200 rounded-lg shadow-lg p-4 max-w-sm z-30 mt-8">
+                <p className="text-sm text-gray-700">
+                  <strong>Original:</strong> OEM-kvalitet, 24 mdr. garanti på skærm.<br/>
+                  <strong>Kompatibel:</strong> A-kvalitet, 12 mdr. garanti.<br/>
+                  Begge testes og kalibreres.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Filters & Search - Sticky */}
+          <div className="sticky z-20 py-4 mb-8 -mx-6 px-6" style={{top: '72px', backdropFilter: 'blur(6px)', background: 'rgba(255,255,255,0.7)'}}>
             <div className="space-y-4">
               {/* Search */}
               <div className="flex justify-center">
@@ -354,11 +385,24 @@ export default function IPhone6Repairs() {
           </div>
 
           {/* Repair Grid - Compact */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="grid gap-4" style={{gridTemplateColumns: 'repeat(1, 1fr)'}} data-grid-responsive>
+            <style jsx>{`
+              @media (min-width: 920px) {
+                [data-grid-responsive] {
+                  grid-template-columns: repeat(2, 1fr);
+                }
+              }
+              @media (min-width: 1280px) {
+                [data-grid-responsive] {
+                  grid-template-columns: repeat(3, 1fr);
+                }
+              }
+            `}</style>
             {filteredRepairs.map((repair) => (
               <div 
                 key={repair.key} 
-                className="bg-white rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 p-3 border border-gray-100 relative min-h-[120px] cursor-pointer"
+                className="bg-white rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-gray-100 relative min-h-[120px] cursor-pointer"
+                style={{padding: '14px 16px', gap: '10px'}}
                 onClick={() => toggleRepairSelection(repair.key)}
               >
                 {repair.badges?.map((badge) => (
@@ -419,11 +463,8 @@ export default function IPhone6Repairs() {
                   </div>
                   
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between mb-1">
+                    <div className="mb-1">
                       <h3 className="text-sm font-semibold text-gray-800 leading-tight line-clamp-1">{repair.title}</h3>
-                      <div className="text-base font-bold text-gray-800 ml-2 flex-shrink-0">
-                        {getPrice(repair)}
-                      </div>
                     </div>
                     
                     <p className="text-gray-600 text-xs mb-2 line-clamp-2 leading-relaxed">{repair.excerpt}</p>
@@ -436,35 +477,40 @@ export default function IPhone6Repairs() {
                     
                     <div className="flex items-center justify-between">
                       <div className="flex flex-wrap gap-1">
-                        <span className="bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full text-xs font-medium h-5 flex items-center">
+                        <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full font-medium flex items-center" style={{fontSize: '12px', height: '22px'}}>
                           ~{repair.time}
                         </span>
-                        <span className="bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full text-xs font-medium h-5 flex items-center">
+                        <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full font-medium flex items-center" style={{fontSize: '12px', height: '22px'}}>
                           {repair.warranty}
                         </span>
                         {repair.badges?.includes('paa_lager') && (
-                          <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-xs font-medium h-5 flex items-center">
+                          <span className="bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium flex items-center" style={{fontSize: '12px', height: '22px'}}>
                             På lager
                           </span>
                         )}
                       </div>
                       
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          toggleRepairSelection(repair.key);
-                        }}
-                        className={`px-3 py-1.5 rounded-full font-semibold transition-colors text-xs min-h-[32px] ${
-                          selectedRepairs.includes(repair.key)
-                            ? 'bg-green-600 text-white'
-                            : repair.price.fixed === 0
-                            ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                            : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
-                        }`}
-                      >
-                        {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 
-                         repair.price.fixed === 0 ? 'Kontakt os' : 'Vælg'}
-                      </button>
+                      <div className="flex items-center gap-2">
+                        <div className="text-base font-bold text-gray-800">
+                          {getPrice(repair)}
+                        </div>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleRepairSelection(repair.key);
+                          }}
+                          className={`px-3 py-1.5 rounded-full font-semibold transition-colors text-xs min-h-[32px] ${
+                            selectedRepairs.includes(repair.key)
+                              ? 'bg-green-600 text-white'
+                              : repair.price.fixed === 0
+                              ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                              : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
+                          }`}
+                        >
+                          {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 
+                           repair.price.fixed === 0 ? 'Kontakt os' : 'Vælg'}
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1078,6 +1124,48 @@ export default function IPhone6Repairs() {
           </div>
         </div>
       )}
+
+      {/* Sticky Mobile CTA - Hidden when hero in viewport */}
+      <div id="mobile-sticky-cta" className="fixed inset-x-4 bottom-4 z-50 md:hidden">
+        <div className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-3 rounded-full shadow-lg flex items-center justify-between">
+          <div>
+            <div className="font-semibold text-sm">iPhone 6 Reparation</div>
+            <div className="text-xs opacity-90">Vi kommer til dig på 20-30 min</div>
+          </div>
+          <button 
+            onClick={() => document.getElementById('rep-list')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-white text-pink-600 px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors"
+          >
+            Se priser
+          </button>
+        </div>
+      </div>
+
+      {/* IntersectionObserver Script for Mobile CTA */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+              const hero = document.querySelector('section[style*="maxHeight"]');
+              const mobileCTA = document.getElementById('mobile-sticky-cta');
+              
+              if (hero && mobileCTA) {
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      mobileCTA.style.display = 'none';
+                    } else {
+                      mobileCTA.style.display = 'block';
+                    }
+                  });
+                }, { threshold: 0.1 });
+                
+                observer.observe(hero);
+              }
+            });
+          `
+        }}
+      />
     </div>
   );
 }
