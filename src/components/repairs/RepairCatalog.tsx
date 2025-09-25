@@ -11,18 +11,24 @@ interface RepairCatalogProps {
 
 export default function RepairCatalog({ modelSpec }: RepairCatalogProps) {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [activeFilter, setActiveFilter] = useState<string>('alle');
   const [showDetailsModal, setShowDetailsModal] = useState<string | null>(null);
 
   const repairs = buildRepairs(modelSpec);
-  const categories = ['Skærm', 'Batteri', 'Kamera', 'Lyd/Knapper', 'Porte', 'Software/Andet'];
 
   // Filter repairs based on search and category
   const filteredRepairs = repairs.filter((repair) => {
-    const matchesCategory = !selectedCategory || repair.category === selectedCategory;
+    const matchesFilter = activeFilter === 'alle' || 
+      (activeFilter === 'screen' && repair.category === 'Skærm') ||
+      (activeFilter === 'battery' && repair.category === 'Batteri') ||
+      (activeFilter === 'camera' && repair.category === 'Kamera') ||
+      (activeFilter === 'audio' && repair.category === 'Lyd/Knapper') ||
+      (activeFilter === 'ports' && repair.category === 'Porte') ||
+      (activeFilter === 'software' && repair.category === 'Software/Andet');
+    
     const matchesSearch = repair.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          (repair.subtitle && repair.subtitle.toLowerCase().includes(searchTerm.toLowerCase()));
-    return matchesCategory && matchesSearch;
+    return matchesFilter && matchesSearch;
   });
 
   // PriceRowDense Component
@@ -103,52 +109,85 @@ export default function RepairCatalog({ modelSpec }: RepairCatalogProps) {
               <span>→</span>
               <Link href="/reparationer" className="hover:text-pink-600">Reparationer</Link>
               <span>→</span>
-              <Link href="/reparationer/apple" className="hover:text-pink-600">Apple</Link>
+              <Link href="/reparationer/apple" className="hover:text-pink-600">iPhone</Link>
               <span>→</span>
-              <span className="text-gray-900 font-medium">{modelSpec.name}</span>
+              <span className="text-gray-800 font-medium">{modelSpec.name}</span>
             </div>
           </div>
         </nav>
 
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-pink-50 via-yellow-50 to-white py-8 sm:py-12">
+        {/* Hero Section - Compact */}
+        <section className="py-6 md:py-8 bg-gradient-to-r from-pink-50 to-yellow-50" style={{maxHeight: '260px'}}>
           <div className="mx-auto max-w-6xl px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-              <div className="flex-1 text-center lg:text-left">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                  {modelSpec.name} Reparation
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h1 className="font-bold text-gray-800 mb-2" style={{fontSize: 'clamp(28px, 3.2vw, 36px)'}}>
+                  <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
+                    {modelSpec.name} Reparation
+                  </span>
                 </h1>
-                <p className="text-lg text-gray-600 mb-6 max-w-2xl">
-                  Vi kommer til din adresse i Storkøbenhavn – reparation på stedet på 20-30 min. 24 mdr. garanti på skærme, 12 mdr. på batterier.
+                <p className="text-base text-gray-600 mb-4 leading-tight" style={{fontSize: '16px', marginTop: '6px'}}>
+                  {modelSpec.year && `Model fra ${modelSpec.year} – `}reparation på stedet på 20–30 min.
                 </p>
-                <button 
-                  data-book-now
-                  data-brand={modelSpec.brand}
-                  data-model={modelSpec.name}
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-yellow-500 text-white rounded-full font-semibold text-lg hover:from-pink-600 hover:to-yellow-600 transition-all shadow-lg hover:shadow-xl"
-                >
-                  Se priser & book
-                </button>
-              </div>
-              
-              <div className="flex-shrink-0">
-                <div className="phone-hero">
-                  <img 
-                    src={`/images/iphones/${modelSpec.id}.png`}
-                    alt={`${modelSpec.name} reparation`}
-                    className="phone-hero__img"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSI0MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMjAiIHJ4PSIyMCIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K';
-                    }}
-                  />
+                
+                <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                  <div className="flex items-center gap-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    Vi kommer til dig
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    20–30 min
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-600">
+                      <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                    </svg>
+                    5★ anmeldelser
+                  </div>
                 </div>
+
+                <div className="flex gap-3">
+                  <button 
+                    data-book-now
+                    data-brand={modelSpec.brand}
+                    data-model={modelSpec.name}
+                    className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+                  >
+                    Bestil tid
+                  </button>
+                  <button 
+                    onClick={() => document.getElementById('rep-list')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
+                  >
+                    Se reparationer
+                  </button>
+                </div>
+              </div>
+              <div className="flex justify-center md:justify-end">
+                <img
+                  src={`/images/iphones/${modelSpec.id}.png`}
+                  alt={`${modelSpec.name} – front, bagside og sideprofil`}
+                  className="h-auto object-contain"
+                  style={{width: 'clamp(140px, 18vw, 220px)'}}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSI0MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMjAiIHJ4PSIyMCIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K';
+                  }}
+                />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Repairs & Prices */}
+        {/* Repairs & Prices - New Simple Structure */}
         <section id="rep-list" className="pt-4 pb-6 sm:pt-6 sm:pb-8 bg-white">
           <div className="mx-auto max-w-6xl px-6">
             <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-900 mb-3 text-center" id="dele">
@@ -166,44 +205,89 @@ export default function RepairCatalog({ modelSpec }: RepairCatalogProps) {
               </a>
             </div>
 
-            {/* Search and Filter */}
-            <div className="mb-8 space-y-4">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <div className="mx-auto max-w-[520px] w-full">
-                  <input
-                    type="text"
-                    placeholder="Søg reparation… (fx 'kamera')"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                  />
+            {/* SEO Text */}
+            <div className="text-center mb-8">
+              <p className="text-gray-600 text-lg">
+                {modelSpec.name} reparation i København – vi kommer til dig og reparerer på 20–30 min.
+              </p>
+              <div className="mt-2 flex items-center justify-center gap-2 relative">
+                <span className="text-sm text-gray-500">Kvalitetsspørgsmål?</span>
+                <button 
+                  className="text-pink-600 hover:text-pink-700 transition-colors"
+                  onClick={() => {
+                    const tooltip = document.getElementById('quality-tooltip');
+                    if (tooltip) {
+                      tooltip.classList.toggle('hidden');
+                    }
+                  }}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </button>
+                <div id="quality-tooltip" className="hidden absolute bg-white border border-gray-200 rounded-lg shadow-lg p-4 max-w-sm z-30 top-8 left-1/2 transform -translate-x-1/2">
+                  <button 
+                    className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+                    onClick={() => {
+                      const tooltip = document.getElementById('quality-tooltip');
+                      if (tooltip) {
+                        tooltip.classList.add('hidden');
+                      }
+                    }}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                  <p className="text-sm text-gray-700">
+                    <strong>Original:</strong> OEM-kvalitet, 24 mdr. garanti på skærm.<br/>
+                    <strong>Kompatibel:</strong> A-kvalitet, 12 mdr. garanti.<br/>
+                    Begge testes og kalibreres.
+                  </p>
                 </div>
               </div>
-              
-              <div className="flex flex-wrap gap-2 justify-center">
-                <button
-                  onClick={() => setSelectedCategory('')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    selectedCategory === ''
-                      ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
-                      : 'text-gray-600 hover:text-gray-800 bg-gray-100 hover:bg-gray-200'
-                  }`}
-                >
-                  Alle
-                </button>
-                {categories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                      selectedCategory === category
-                        ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
-                        : 'text-gray-600 hover:text-gray-800 bg-gray-100 hover:bg-gray-200'
-                    }`}
-                  >
-                    {category}
-                  </button>
-                ))}
+            </div>
+
+            {/* Filters & Search */}
+            <div className="relative bg-transparent mb-8">
+              <div className="space-y-4">
+                {/* Search */}
+                <div className="flex justify-center">
+                  <div className="mx-auto max-w-[520px] w-full">
+                    <input
+                      type="text"
+                      placeholder="Søg reparation… (fx 'kamera')"
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                {/* Filter Chips */}
+                <div className="flex gap-2 overflow-x-auto no-scrollbar">
+                  {[
+                    { key: 'alle', label: 'Alle' },
+                    { key: 'screen', label: 'Skærm' },
+                    { key: 'battery', label: 'Batteri' },
+                    { key: 'camera', label: 'Kamera' },
+                    { key: 'audio', label: 'Lyd/Knapper' },
+                    { key: 'ports', label: 'Porte' },
+                    { key: 'software', label: 'Software/Andet' }
+                  ].map((filter) => (
+                    <button
+                      key={filter.key}
+                      onClick={() => setActiveFilter(filter.key)}
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
+                        activeFilter === filter.key
+                          ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      {filter.label}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -211,6 +295,13 @@ export default function RepairCatalog({ modelSpec }: RepairCatalogProps) {
             <div className="mx-auto max-w-6xl">
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3">
                 <style jsx>{`
+                  .no-scrollbar {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                  }
+                  .no-scrollbar::-webkit-scrollbar {
+                    display: none;
+                  }
                   .line-clamp-1 {
                     display: -webkit-box;
                     -webkit-line-clamp: 1;
