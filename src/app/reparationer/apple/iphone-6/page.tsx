@@ -1,17 +1,6 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+"use client";
 
-export const metadata: Metadata = {
-  title: "iPhone 6 Reparation - Priser & Tider | Frontdoorfix",
-  description: "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele. Vi kommer til dig i København.",
-  keywords: "iPhone 6 reparation, skærmreparation iPhone 6, batteriskift iPhone 6, kamera iPhone 6, knapper iPhone 6, København",
-  openGraph: {
-    title: "iPhone 6 Reparation - Priser & Tider | Frontdoorfix",
-    description: "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele.",
-    type: "website",
-    locale: "da_DK",
-  },
-};
+import Link from "next/link";
 
 export default function IPhone6Repairs() {
   const repairs = [
@@ -544,71 +533,71 @@ export default function IPhone6Repairs() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Ofte stillede spørgsmål
           </h2>
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+          <div className="faq space-y-6" data-faq>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Hvor lang tid tager en iPhone 6 reparation?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 De fleste reparationer klares på <strong>20–30 min</strong> på din adresse. Skærm tager typisk 15–25 min, batteri 15–20 min.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+              </div>
+            </details>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Mister jeg data ved reparationen?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 Nej, standardreparationer bevarer dine data. Vi anbefaler dog altid backup for en sikkerheds skyld.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+              </div>
+            </details>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Kan Touch ID genskabes på iPhone 6?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 Nej. Ved skift af hjem-knap kan Touch ID ikke genskabes på iPhone 6. Knappen virker stadig til klik.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+              </div>
+            </details>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Hvilke dele og hvilken garanti får jeg?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 Originale/A-kvalitetsdele. <strong>24 mdr. garanti på skærme</strong> og <strong>12 mdr. på batteri og øvrige dele</strong>.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+              </div>
+            </details>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Kommer I ud til min adresse?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 Ja, vi kører i Storkøbenhavn og reparerer på stedet. Udrykning er gratis i vores område.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+              </div>
+            </details>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Hvad hvis fejlen er ukendt?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 Vi laver en hurtig diagnose først. Kan den repareres, fortsætter vi efter aftalt pris.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+              </div>
+            </details>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Giver I garanti ved væskeskader?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 Vi kan rense og forsøge at redde enheden, men der er ingen garanti på væskeskader.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
+              </div>
+            </details>
+            <details className="faq-item bg-gray-50 rounded-lg p-6">
+              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Hvordan betaler jeg?
-              </h3>
-              <p className="text-gray-600" style={{display: "none"}}>
+              </summary>
+              <div className="faq-a text-gray-600">
                 MobilePay/kort. Du får kvittering og garanti på mail.
-              </p>
-            </div>
+              </div>
+            </details>
           </div>
           
           {/* Mini CTA under FAQ */}
@@ -622,7 +611,83 @@ export default function IPhone6Repairs() {
             </a>
           </div>
         </div>
-      </section>      {/* Schema.org Structured Data */}
+
+        {/* FAQ Accordion Styles */}
+        <style jsx>{`
+          .faq .faq-item {
+            border: none;
+          }
+          
+          .faq .faq-q {
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 2rem;
+            transition: color 0.2s ease;
+          }
+          
+          .faq .faq-q:hover {
+            color: #ec4899;
+          }
+          
+          .faq .faq-q::-webkit-details-marker {
+            display: none;
+          }
+          
+          .faq .faq-q::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid #6b7280;
+            transition: transform 0.3s ease;
+          }
+          
+          .faq .faq-item[open] .faq-q::after {
+            transform: translateY(-50%) rotate(180deg);
+          }
+          
+          .faq .faq-a {
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid #e5e7eb;
+          }
+        `}</style>
+
+        {/* FAQ Accordion JavaScript */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('DOMContentLoaded', function() {
+                const faqContainer = document.querySelector('[data-faq]');
+                if (!faqContainer) return;
+                
+                const faqItems = faqContainer.querySelectorAll('.faq-item');
+                
+                faqItems.forEach(item => {
+                  item.addEventListener('toggle', function() {
+                    if (this.open) {
+                      // Close all other FAQ items
+                      faqItems.forEach(otherItem => {
+                        if (otherItem !== this && otherItem.open) {
+                          otherItem.open = false;
+                        }
+                      });
+                    }
+                  });
+                });
+              });
+            `
+          }}
+        />
+      </section>
+
+      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
