@@ -2,46 +2,32 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "iPhone 6 Plus Reparation - Priser & Tider | Frontdoorfix",
-  description: "Vi reparerer iPhone 6 Plus med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele. Vi kommer til dig i København.",
-  keywords: "iPhone 6 Plus reparation, skærmreparation iPhone 6 Plus, batteriskift iPhone 6 Plus, kamera iPhone 6 Plus, knapper iPhone 6 Plus, København",
+  title: "iPhone 6 Reparation - Priser & Tider | Frontdoorfix",
+  description: "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele. Vi kommer til dig i København.",
+  keywords: "iPhone 6 reparation, skærmreparation iPhone 6, batteriskift iPhone 6, kamera iPhone 6, knapper iPhone 6, København",
   openGraph: {
-    title: "iPhone 6 Plus Reparation - Priser & Tider | Frontdoorfix",
-    description: "Vi reparerer iPhone 6 Plus med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele.",
+    title: "iPhone 6 Reparation - Priser & Tider | Frontdoorfix",
+    description: "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele.",
     type: "website",
     locale: "da_DK",
   },
 };
 
-export default function IPhone6PlusRepairs() {
+export default function IPhone6Repairs() {
   const repairs = [
     {
-      id: "skærm-original",
-      name: "Skærmskift, Original Kvalitet",
-      description: "Udskiftning af ødelagt skærm med original Apple kvalitet",
-      time: "15-25 min",
-      warranty: "24 mdr",
-      price: "899",
-      originalPrice: "899",
-      compatiblePrice: "899",
-      popular: true,
-      inStock: true,
-      includes: "Originalt Apple glas + LCD",
-      quality: "original"
-    },
-    {
-      id: "skærm-kompatibel",
-      name: "Skærmskift, Kompatibel (Uoriginal)",
-      description: "Udskiftning af ødelagt skærm med kompatibel kvalitet",
+      id: "skærm",
+      name: "Skærm",
+      description: "Udskiftning af ødelagt skærm",
       time: "15-25 min",
       warranty: "24 mdr",
       price: "699",
-      originalPrice: "699",
-      compatiblePrice: "699",
+      originalPrice: "799",
+      compatiblePrice: "599",
       popular: true,
       inStock: true,
-      includes: "Kompatibel glas + LCD",
-      quality: "compatible"
+      includes: "Glas + LCD, ikke ramme",
+      quality: "original"
     },
     {
       id: "batteri",
@@ -49,9 +35,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af slidt batteri",
       time: "15-20 min",
       warranty: "12 mdr",
-      price: "449",
-      originalPrice: "449",
-      compatiblePrice: "349",
+      price: "399",
+      originalPrice: "399",
+      compatiblePrice: "299",
       popular: true,
       inStock: true,
       includes: "Originalt Apple batteri",
@@ -63,9 +49,9 @@ export default function IPhone6PlusRepairs() {
       description: "Reparation af ladeport",
       time: "20-30 min",
       warranty: "12 mdr",
-      price: "349",
-      originalPrice: "349",
-      compatiblePrice: "249",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
       popular: false,
       inStock: true,
       includes: "Ladeport + rengøring",
@@ -77,9 +63,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af mikrofon",
       time: "20-30 min",
       warranty: "12 mdr",
-      price: "249",
-      originalPrice: "249",
-      compatiblePrice: "199",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
       popular: false,
       inStock: true,
       includes: "Mikrofon + test",
@@ -91,9 +77,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af ørehøjtaler",
       time: "20-30 min",
       warranty: "12 mdr",
-      price: "249",
-      originalPrice: "249",
-      compatiblePrice: "199",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
       popular: false,
       inStock: true,
       includes: "Ørehøjtaler + test",
@@ -105,9 +91,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af højtaler",
       time: "20-30 min",
       warranty: "12 mdr",
-      price: "249",
-      originalPrice: "249",
-      compatiblePrice: "199",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
       popular: false,
       inStock: true,
       includes: "Højtaler + test",
@@ -119,9 +105,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af forkamera",
       time: "20-30 min",
       warranty: "12 mdr",
-      price: "349",
-      originalPrice: "349",
-      compatiblePrice: "249",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
       popular: false,
       inStock: true,
       includes: "Kamera + test",
@@ -133,9 +119,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af bagkamera",
       time: "20-30 min",
       warranty: "12 mdr",
-      price: "449",
-      originalPrice: "449",
-      compatiblePrice: "349",
+      price: "399",
+      originalPrice: "399",
+      compatiblePrice: "299",
       popular: false,
       inStock: true,
       includes: "Kamera + test",
@@ -147,9 +133,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af kamera-glas (hvis kun glas er revnet)",
       time: "20-30 min",
       warranty: "12 mdr",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "149",
+      price: "149",
+      originalPrice: "149",
+      compatiblePrice: "99",
       popular: false,
       inStock: true,
       includes: "Kamera-glas + test",
@@ -161,9 +147,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af power-knap",
       time: "30-45 min",
       warranty: "12 mdr",
-      price: "349",
-      originalPrice: "349",
-      compatiblePrice: "249",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
       popular: false,
       inStock: true,
       includes: "Power-knap + test",
@@ -175,9 +161,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af lydløs-knap",
       time: "30-45 min",
       warranty: "12 mdr",
-      price: "249",
-      originalPrice: "249",
-      compatiblePrice: "199",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
       popular: false,
       inStock: true,
       includes: "Lydløs-knap + test",
@@ -189,9 +175,9 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af volume-knapper",
       time: "30-45 min",
       warranty: "12 mdr",
-      price: "249",
-      originalPrice: "249",
-      compatiblePrice: "199",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
       popular: false,
       inStock: true,
       includes: "Volume-knapper + test",
@@ -203,14 +189,14 @@ export default function IPhone6PlusRepairs() {
       description: "Udskiftning af hjem-knap",
       time: "30-45 min",
       warranty: "12 mdr",
-      price: "349",
-      originalPrice: "349",
-      compatiblePrice: "249",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
       popular: false,
       inStock: true,
       includes: "Hjem-knap + test",
       quality: "original",
-      warning: "Touch ID kan ikke genskabes på iPhone 6 Plus"
+      warning: "Touch ID kan ikke genskabes på iPhone 6"
     },
     {
       id: "software",
@@ -246,9 +232,9 @@ export default function IPhone6PlusRepairs() {
       description: "Rensning af væskeskade",
       time: "30-60 min",
       warranty: "Ingen garanti på væskeskader",
-      price: "249",
-      originalPrice: "249",
-      compatiblePrice: "249",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "199",
       popular: false,
       inStock: true,
       includes: "Rensning + diagnose",
@@ -283,7 +269,7 @@ export default function IPhone6PlusRepairs() {
             <span>→</span>
             <Link href="/reparationer/apple" className="hover:text-pink-600">iPhone</Link>
             <span>→</span>
-            <span className="text-gray-800 font-medium">iPhone 6 Plus</span>
+            <span className="text-gray-800 font-medium">iPhone 6</span>
           </div>
         </div>
       </nav>
@@ -295,18 +281,18 @@ export default function IPhone6PlusRepairs() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                 <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                  iPhone 6 Plus Reparation
+                  iPhone 6 Reparation
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-6">
-                Større model med A8 chip og 5.5" skærm – reparation på stedet på 20–30 min.
+                Standard model med A8 chip – reparation på stedet på 20–30 min.
               </p>
               <div className="flex flex-wrap gap-4 mb-6">
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                   A8 chip
                 </span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                  5.5" Retina
+                  4.7" Retina
                 </span>
                 <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
                   2014
@@ -335,8 +321,8 @@ export default function IPhone6PlusRepairs() {
             </div>
             <div className="phone-hero">
               <img
-                src="/images/iphones/iphone-6-plus.png"
-                alt="iPhone 6 Plus – front, bagside og sideprofil"
+                src="/images/iphones/iphone-6.png"
+                alt="iPhone 6 – front, bagside og sideprofil"
                 width="400"
                 height="400"
                 loading="eager"
@@ -460,20 +446,20 @@ export default function IPhone6PlusRepairs() {
             Se også
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Link href="/reparationer/apple/iphone-6" className="group">
+            <Link href="/reparationer/apple/iphone-6s" className="group">
               <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-600 transition-colors">
-                  iPhone 6
+                  iPhone 6s
                 </h3>
-                <p className="text-gray-600">Standard model med 4.7" skærm</p>
+                <p className="text-gray-600">Opgraderet model med A9 chip og Touch ID</p>
               </div>
             </Link>
-            <Link href="/reparationer/apple/iphone-6s-plus" className="group">
+            <Link href="/reparationer/apple/iphone-6-plus" className="group">
               <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-600 transition-colors">
-                  iPhone 6s Plus
+                  iPhone 6 Plus
                 </h3>
-                <p className="text-gray-600">Opgraderet Plus model med A9 chip</p>
+                <p className="text-gray-600">Større model med 5.5" skærm</p>
               </div>
             </Link>
           </div>
@@ -489,7 +475,7 @@ export default function IPhone6PlusRepairs() {
           <div className="space-y-6">
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvor lang tid tager en iPhone 6 Plus reparation?
+                Hvor lang tid tager en iPhone 6 reparation?
               </h3>
               <p className="text-gray-600">
                 De fleste reparationer er færdige på 20–30 minutter på stedet. Skærmreparationer tager typisk 15-25 minutter, mens batteriskift tager 15-20 minutter.
@@ -505,10 +491,10 @@ export default function IPhone6PlusRepairs() {
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Kan Touch ID genskabes på iPhone 6 Plus?
+                Kan Touch ID genskabes på iPhone 6?
               </h3>
               <p className="text-gray-600">
-                Nej, Touch ID kan ikke genskabes ved skift af hjem-knap på iPhone 6 Plus. Dette er en teknisk begrænsning.
+                Nej, Touch ID kan ikke genskabes ved skift af hjem-knap på iPhone 6. Dette er en teknisk begrænsning.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
@@ -538,19 +524,19 @@ export default function IPhone6PlusRepairs() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            "name": "iPhone 6 Plus Reparation",
-            "description": "Vi reparerer iPhone 6 Plus med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele.",
+            "name": "iPhone 6 Reparation",
+            "description": "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele.",
             "brand": {
               "@type": "Brand",
               "name": "Apple"
             },
-            "model": "iPhone 6 Plus",
+            "model": "iPhone 6",
             "offers": {
               "@type": "Offer",
-              "price": "799",
+              "price": "699",
               "priceCurrency": "DKK",
               "availability": "https://schema.org/InStock",
-              "description": "Skærmreparation fra 799 kr"
+              "description": "Skærmreparation fra 699 kr"
             },
             "additionalProperty": [
               {

@@ -16,18 +16,32 @@ export const metadata: Metadata = {
 export default function IPhone6Repairs() {
   const repairs = [
     {
-      id: "skærm",
-      name: "Skærm",
-      description: "Udskiftning af ødelagt skærm",
+      id: "skærm-original",
+      name: "Skærmskift, Original Kvalitet",
+      description: "Udskiftning af ødelagt skærm med original Apple kvalitet",
       time: "15-25 min",
       warranty: "24 mdr",
-      price: "699",
+      price: "799",
       originalPrice: "799",
+      compatiblePrice: "799",
+      popular: true,
+      inStock: true,
+      includes: "Originalt Apple glas + LCD",
+      quality: "original"
+    },
+    {
+      id: "skærm-kompatibel",
+      name: "Skærmskift, Kompatibel (Uoriginal)",
+      description: "Udskiftning af ødelagt skærm med kompatibel kvalitet",
+      time: "15-25 min",
+      warranty: "24 mdr",
+      price: "599",
+      originalPrice: "599",
       compatiblePrice: "599",
       popular: true,
       inStock: true,
-      includes: "Glas + LCD, ikke ramme",
-      quality: "original"
+      includes: "Kompatibel glas + LCD",
+      quality: "compatible"
     },
     {
       id: "batteri",
