@@ -302,12 +302,12 @@ export default function IPhone6Repairs() {
       </section>
 
       {/* Repairs & Prices - New Simple Structure */}
-      <section id="rep-list" className="py-16 bg-white">
+      <section id="rep-list" className="pt-4 pb-6 sm:pt-6 sm:pb-8 bg-white">
         <div className="mx-auto max-w-6xl px-6">
-          <h1 className="text-4xl font-bold text-center mb-4 text-gray-800">
+          <h1 className="text-3xl font-bold text-center mb-3 text-gray-800">
             Reparationer & Priser – iPhone 6
           </h1>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
             Vælg din reparation nedenfor. Vi kommer til din adresse og reparerer på stedet på 20-30 minutter.
           </p>
 
@@ -341,12 +341,12 @@ export default function IPhone6Repairs() {
             </div>
           </div>
 
-          {/* Filters & Search - Sticky */}
-          <div className="sticky z-20 py-4 mb-8 -mx-6 px-6" style={{top: '72px', backdropFilter: 'blur(6px)', background: 'rgba(255,255,255,0.7)'}}>
+          {/* Filters & Search */}
+          <div className="relative bg-transparent mb-8">
             <div className="space-y-4">
               {/* Search */}
               <div className="flex justify-center">
-                <div className="w-full max-w-md">
+                <div className="mx-auto max-w-[520px] w-full">
                   <input
                     type="text"
                     placeholder="Søg reparation… (fx 'kamera')"
@@ -358,7 +358,7 @@ export default function IPhone6Repairs() {
               </div>
 
               {/* Filter Chips */}
-              <div className="flex flex-wrap justify-center gap-2">
+              <div className="flex gap-2 overflow-x-auto no-scrollbar">
                 {[
                   { key: 'alle', label: 'Alle' },
                   { key: 'screen', label: 'Skærm' },
@@ -371,7 +371,7 @@ export default function IPhone6Repairs() {
                   <button
                     key={filter.key}
                     onClick={() => setActiveFilter(filter.key)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
                       activeFilter === filter.key
                         ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -385,134 +385,132 @@ export default function IPhone6Repairs() {
           </div>
 
           {/* Repair Grid - Compact */}
-          <div className="grid gap-4" style={{gridTemplateColumns: 'repeat(1, 1fr)'}} data-grid-responsive>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
             <style jsx>{`
-              @media (min-width: 920px) {
-                [data-grid-responsive] {
-                  grid-template-columns: repeat(2, 1fr);
-                }
+              .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
               }
-              @media (min-width: 1280px) {
-                [data-grid-responsive] {
-                  grid-template-columns: repeat(3, 1fr);
-                }
+              .no-scrollbar::-webkit-scrollbar {
+                display: none;
               }
             `}</style>
             {filteredRepairs.map((repair) => (
               <div 
                 key={repair.key} 
-                className="bg-white rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-gray-100 relative min-h-[120px] cursor-pointer"
-                style={{padding: '14px 16px', gap: '10px'}}
-                onClick={() => toggleRepairSelection(repair.key)}
+                className="flex flex-col rounded-xl border border-neutral-200/70 bg-white shadow-sm hover:shadow-md transition p-4 sm:p-5 h-full"
               >
-                {repair.badges?.map((badge) => (
-                  <div key={badge} className={`absolute -top-1 -right-1 text-xs px-2 py-0.5 rounded-full font-medium ${
-                    badge === 'mest_valgt' ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white' :
-                    badge === 'paa_lager' ? 'bg-green-100 text-green-700' :
-                    badge === 'advarsel' ? 'bg-red-100 text-red-700' : ''
-                  }`}>
-                    {badge === 'mest_valgt' ? 'Mest valgt' :
-                     badge === 'paa_lager' ? 'På lager' :
-                     badge === 'advarsel' ? 'Advarsel' : badge}
+                {/* Mest valgt badge */}
+                {repair.badges?.includes('mest_valgt') && (
+                  <div className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-2 py-1 rounded-full font-medium" style={{fontSize: '11px'}}>
+                    Mest valgt
                   </div>
-                ))}
+                )}
                 
-                <div className="flex items-start gap-3">
-                  {/* Icon */}
-                  <div className="w-8 h-8 bg-gradient-to-r from-pink-100 to-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    {repair.category === 'screen' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                      </svg>
-                    )}
-                    {repair.category === 'battery' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7h3v10h-3V7zM5 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z" />
-                      </svg>
-                    )}
-                    {repair.category === 'ports' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                    )}
-                    {repair.category === 'camera' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                      </svg>
-                    )}
-                    {repair.category === 'audio' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M9 12a1 1 0 11-2 0 1 1 0 012 0z" />
-                      </svg>
-                    )}
-                    {repair.category === 'buttons' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-                      </svg>
-                    )}
-                    {repair.category === 'software' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      </svg>
-                    )}
-                    {repair.category === 'other' && (
-                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    )}
+                {/* Header: Icon + Title left, Price/Hint right */}
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-start gap-3">
+                    {/* Icon */}
+                    <div className="w-5 h-5 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center flex-shrink-0">
+                      {repair.category === 'screen' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                      {repair.category === 'battery' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7h3v10h-3V7zM5 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z" />
+                        </svg>
+                      )}
+                      {repair.category === 'ports' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                      {repair.category === 'camera' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        </svg>
+                      )}
+                      {repair.category === 'audio' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M9 12a1 1 0 11-2 0 1 1 0 012 0z" />
+                        </svg>
+                      )}
+                      {repair.category === 'buttons' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                        </svg>
+                      )}
+                      {repair.category === 'software' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        </svg>
+                      )}
+                      {repair.category === 'other' && (
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      )}
+                    </div>
+                    
+                    <h3 className="font-semibold text-neutral-900 leading-5" style={{fontSize: '15px'}}>{repair.title}</h3>
                   </div>
                   
-                  <div className="flex-1 min-w-0">
-                    <div className="mb-1">
-                      <h3 className="text-sm font-semibold text-gray-800 leading-tight line-clamp-1">{repair.title}</h3>
-                    </div>
-                    
-                    <p className="text-gray-600 text-xs mb-2 line-clamp-2 leading-relaxed">{repair.excerpt}</p>
-                    
-                    {repair.warning && (
-                      <div className="bg-red-50 border border-red-200 rounded-md p-1.5 mb-2">
-                        <p className="text-red-800 text-xs font-medium">⚠️ {repair.warning}</p>
+                  <div className="flex-shrink-0">
+                    {repair.price.fixed === 0 ? (
+                      <div className="px-2.5 h-6 rounded-full bg-neutral-100 text-neutral-700 flex items-center" style={{fontSize: '12px'}}>
+                        Kontakt os
+                      </div>
+                    ) : (
+                      <div className="font-semibold text-neutral-900" style={{fontSize: '14px'}}>
+                        {getPrice(repair)}
                       </div>
                     )}
-                    
-                    <div className="flex items-center justify-between">
-                      <div className="flex flex-wrap gap-1">
-                        <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full font-medium flex items-center" style={{fontSize: '12px', height: '22px'}}>
-                          ~{repair.time}
-                        </span>
-                        <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full font-medium flex items-center" style={{fontSize: '12px', height: '22px'}}>
-                          {repair.warranty}
-                        </span>
-                        {repair.badges?.includes('paa_lager') && (
-                          <span className="bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium flex items-center" style={{fontSize: '12px', height: '22px'}}>
-                            På lager
-                          </span>
-                        )}
-                      </div>
-                      
-                      <div className="flex items-center gap-2">
-                        <div className="text-base font-bold text-gray-800">
-                          {getPrice(repair)}
-                        </div>
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleRepairSelection(repair.key);
-                          }}
-                          className={`px-3 py-1.5 rounded-full font-semibold transition-colors text-xs min-h-[32px] ${
-                            selectedRepairs.includes(repair.key)
-                              ? 'bg-green-600 text-white'
-                              : repair.price.fixed === 0
-                              ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                              : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
-                          }`}
-                        >
-                          {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 
-                           repair.price.fixed === 0 ? 'Kontakt os' : 'Vælg'}
-                        </button>
-                      </div>
-                    </div>
                   </div>
+                </div>
+
+                {/* Meta chips */}
+                <div className="mt-2 flex flex-wrap items-center gap-2">
+                  <span className="h-6 px-2 rounded-full bg-neutral-100 text-neutral-700 flex items-center" style={{fontSize: '11px'}}>
+                    ~{repair.time}
+                  </span>
+                  <span className="h-6 px-2 rounded-full bg-neutral-100 text-neutral-700 flex items-center" style={{fontSize: '11px'}}>
+                    {repair.warranty}
+                  </span>
+                  {repair.badges?.includes('paa_lager') && (
+                    <span className="h-6 px-2 rounded-full bg-green-100 text-green-700 flex items-center" style={{fontSize: '11px'}}>
+                      På lager
+                    </span>
+                  )}
+                  {repair.warning && (
+                    <span className="h-6 px-2 rounded-full bg-orange-100 text-orange-700 flex items-center" style={{fontSize: '11px'}}>
+                      ⚠️ Touch ID
+                    </span>
+                  )}
+                </div>
+
+                {/* Description */}
+                <p className="mt-2 text-neutral-600 leading-5 line-clamp-2 sm:line-clamp-none" style={{fontSize: '13px'}}>
+                  {repair.excerpt}
+                </p>
+
+                {/* Footer */}
+                <div className="mt-auto flex items-center justify-between pt-3">
+                  <button className="text-neutral-600 hover:text-neutral-800 transition-colors" style={{fontSize: '12.5px'}}>
+                    Detaljer
+                  </button>
+                  <button
+                    onClick={() => toggleRepairSelection(repair.key)}
+                    className={`h-8 px-4 rounded-full font-medium transition-colors ${
+                      selectedRepairs.includes(repair.key)
+                        ? 'bg-green-600 text-white'
+                        : 'bg-gradient-to-r from-pink-500 to-amber-400 text-white hover:opacity-90'
+                    }`}
+                    style={{fontSize: '13px'}}
+                  >
+                    {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 'Vælg'}
+                  </button>
                 </div>
               </div>
             ))}
