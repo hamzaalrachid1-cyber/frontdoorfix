@@ -249,3 +249,32 @@ body {
   color: #374151;
   backdrop-filter: blur(8px);
 }
+
+/* FAQ Accordion Styles */
+.faq-question {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+  color: #ec4899;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer.open {
+  max-height: 200px;
+}
+
+.faq-arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-arrow.rotated {
+  transform: rotate(180deg);
+}

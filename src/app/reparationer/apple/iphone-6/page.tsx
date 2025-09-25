@@ -523,7 +523,7 @@ export default function IPhone6Repairs() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-600 transition-colors">
                   iPhone 6s
                 </h3>
-                <p className="text-gray-600">Opgraderet model med A9 chip og Touch ID</p>
+                <p className="text-gray-600" style={{display: "none"}}>Opgraderet model med A9 chip og Touch ID</p>
               </div>
             </Link>
             <Link href="/reparationer/apple/iphone-6-plus" className="group">
@@ -531,7 +531,7 @@ export default function IPhone6Repairs() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-600 transition-colors">
                   iPhone 6 Plus
                 </h3>
-                <p className="text-gray-600">Større model med 5.5" skærm</p>
+                <p className="text-gray-600" style={{display: "none"}}>Større model med 5.5" skærm</p>
               </div>
             </Link>
           </div>
@@ -546,66 +546,66 @@ export default function IPhone6Repairs() {
           </h2>
           <div className="space-y-6">
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Hvor lang tid tager en iPhone 6 reparation?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 De fleste reparationer klares på <strong>20–30 min</strong> på din adresse. Skærm tager typisk 15–25 min, batteri 15–20 min.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Mister jeg data ved reparationen?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 Nej, standardreparationer bevarer dine data. Vi anbefaler dog altid backup for en sikkerheds skyld.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Kan Touch ID genskabes på iPhone 6?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 Nej. Ved skift af hjem-knap kan Touch ID ikke genskabes på iPhone 6. Knappen virker stadig til klik.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Hvilke dele og hvilken garanti får jeg?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 Originale/A-kvalitetsdele. <strong>24 mdr. garanti på skærme</strong> og <strong>12 mdr. på batteri og øvrige dele</strong>.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Kommer I ud til min adresse?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 Ja, vi kører i Storkøbenhavn og reparerer på stedet. Udrykning er gratis i vores område.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Hvad hvis fejlen er ukendt?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 Vi laver en hurtig diagnose først. Kan den repareres, fortsætter vi efter aftalt pris.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Giver I garanti ved væskeskader?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 Vi kan rense og forsøge at redde enheden, men der er ingen garanti på væskeskader.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 cursor-pointer hover:text-pink-600 transition-colors" onclick="toggleFAQ(this)">
                 Hvordan betaler jeg?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600" style={{display: "none"}}>
                 MobilePay/kort. Du får kvittering og garanti på mail.
               </p>
             </div>
