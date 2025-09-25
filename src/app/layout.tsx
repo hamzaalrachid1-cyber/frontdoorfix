@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { BookingModalProvider } from "@/context/BookingModalContext";
 import BookNowButton from "@/components/BookNowButton";
+import GlobalBookNowBinder from "@/components/GlobalBookNowBinder";
 import Link from "next/link";
 
 const geistSans = Geist({
@@ -46,6 +47,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <BookingModalProvider>
+          <GlobalBookNowBinder />
           <div className="bar-gradient" />
         <div className="bg-gray-50 border-b border-gray-200">
           <div className="mx-auto max-w-6xl px-6 py-2 flex items-center justify-between text-sm text-gray-600">

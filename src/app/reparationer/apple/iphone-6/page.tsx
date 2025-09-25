@@ -283,6 +283,17 @@ export default function IPhone6Repairs() {
   };
 
   return (
+    <>
+      {/* Meta tags for booking context */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            document.body.dataset.brand = 'Apple';
+            document.body.dataset.model = 'iPhone 6';
+          `
+        }}
+      />
+      
     <div className="min-h-screen">
       {/* Breadcrumbs */}
       <nav className="bg-gray-100 py-3 px-6">
@@ -490,7 +501,9 @@ export default function IPhone6Repairs() {
           {/* Primary CTA */}
           <div className="mt-8 flex justify-center">
             <button 
-              onClick={() => setShowBookingWizard(true)}
+              data-book-now
+              data-brand="Apple"
+              data-model="iPhone 6"
               className="px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 to-amber-400 text-white font-semibold shadow-lg hover:shadow-xl transition-all text-lg"
             >
               Bestil tid
@@ -1110,7 +1123,9 @@ export default function IPhone6Repairs() {
             <div className="text-xs opacity-90">Vi kommer til dig på 20-30 min</div>
           </div>
           <button 
-            onClick={() => setShowBookingWizard(true)}
+            data-book-now
+            data-brand="Apple"
+            data-model="iPhone 6"
             className="bg-white text-pink-600 px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors"
           >
             Bestil tid
@@ -1250,5 +1265,6 @@ export default function IPhone6Repairs() {
         </div>
       )}
     </div>
+    </>
   );
 }
