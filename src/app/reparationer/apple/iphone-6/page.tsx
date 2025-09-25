@@ -1,252 +1,222 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
+
+type Quality = 'original' | 'kompatibel';
+type Category = 'screen' | 'battery' | 'camera' | 'audio' | 'ports' | 'buttons' | 'software' | 'other';
+type Badge = 'mest_valgt' | 'paa_lager' | 'advarsel';
+
+type Repair = {
+  key: string;
+  title: string;
+  category: Category;
+  time: string;
+  warranty: string;
+  price: { original?: number; kompatibel?: number; fixed?: number };
+  badges?: Badge[];
+  warning?: string;
+  excerpt: string;
+  includes?: string[];
+};
 
 export default function IPhone6Repairs() {
-  const repairs = [
+  const [selectedQuality, setSelectedQuality] = useState<Quality>('original');
+  const [selectedRepairs, setSelectedRepairs] = useState<string[]>([]);
+  const [activeFilter, setActiveFilter] = useState<string>('alle');
+  const [searchTerm, setSearchTerm] = useState<string>('');
+
+  const repairs: Repair[] = [
     {
-      id: "skærm-original",
-      name: "Skærmskift, Original Kvalitet",
-      description: "Udskiftning af ødelagt skærm med original Apple kvalitet",
-      time: "15-25 min",
+      key: "skærm",
+      title: "Skærmskift",
+      category: "screen",
+      time: "30 min",
       warranty: "24 mdr",
-      price: "799",
-      originalPrice: "799",
-      compatiblePrice: "799",
-      includes: "Originalt Apple glas + LCD",
-      quality: "original"
+      price: { original: 799, kompatibel: 599 },
+      badges: ["mest_valgt", "paa_lager"],
+      excerpt: "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
+      includes: ["Glas + LCD", "Kalibrering", "Test af touch"]
     },
     {
-      id: "skærm-kompatibel",
-      name: "Skærmskift, Kompatibel (Uoriginal)",
-      description: "Udskiftning af ødelagt skærm med kompatibel kvalitet",
-      time: "15-25 min",
-      warranty: "24 mdr",
-      price: "599",
-      originalPrice: "599",
-      compatiblePrice: "599",
-      includes: "Kompatibel glas + LCD",
-      quality: "compatible"
-    },
-    {
-      id: "batteri-original",
-      name: "Batteriskift, Original Kvalitet",
-      description: "Udskiftning af slidt batteri med original Apple kvalitet",
-      time: "15-20 min",
+      key: "batteri",
+      title: "Batteriskift",
+      category: "battery",
+      time: "15–20 min",
       warranty: "12 mdr",
-      price: "399",
-      originalPrice: "399",
-      compatiblePrice: "399",
-      includes: "Originalt Apple batteri",
-      quality: "original"
+      price: { original: 399, kompatibel: 299 },
+      badges: ["mest_valgt", "paa_lager"],
+      excerpt: "Nyt batteri med frisk kapacitet. Kalibrering + test.",
+      includes: ["Batteri", "Kalibrering", "Kapacitetstest"]
     },
     {
-      id: "batteri-kompatibel",
-      name: "Batteriskift, Kompatibel (Uoriginal)",
-      description: "Udskiftning af slidt batteri med kompatibel kvalitet",
-      time: "15-20 min",
+      key: "ladeport",
+      title: "Ladeport",
+      category: "ports",
+      time: "20–30 min",
       warranty: "12 mdr",
-      price: "299",
-      originalPrice: "299",
-      compatiblePrice: "299",
-      includes: "Kompatibel batteri",
-      quality: "compatible"
+      price: { fixed: 199 },
+      badges: ["paa_lager"],
+      excerpt: "Reparation af opladningsproblemer. Inkl. rensning.",
+      includes: ["Ladeport", "Rensning", "Test"]
     },
     {
-      id: "bagglas",
-      name: "Bagglas reparation",
-      description: "Udskiftning af ødelagt bagglas",
-      time: "20-30 min",
+      key: "mikrofon",
+      title: "Mikrofon",
+      category: "audio",
+      time: "20–30 min",
       warranty: "12 mdr",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "199",
-      includes: "Bagglas + montering",
-      quality: "original"
+      price: { original: 199, kompatibel: 149 },
+      badges: ["paa_lager"],
+      excerpt: "Udskiftning af mikrofon. Inkl. test.",
+      includes: ["Mikrofon", "Test"]
     },
     {
-      id: "ladeport",
-      name: "Ladestik / Opladningsport",
-      description: "Reparation af ladeport",
-      time: "20-30 min",
+      key: "forkamera",
+      title: "For-kamera",
+      category: "camera",
+      time: "20–30 min",
       warranty: "12 mdr",
-      price: "299",
-      originalPrice: "299",
-      compatiblePrice: "199",
-      includes: "Ladeport + rengøring",
-      quality: "original"
+      price: { original: 299, kompatibel: 199 },
+      badges: ["paa_lager"],
+      excerpt: "Udskiftning af forkamera. Inkl. test.",
+      includes: ["Kamera", "Test"]
     },
     {
-      id: "mikrofon",
-      name: "Mikrofon",
-      description: "Udskiftning af mikrofon",
-      time: "20-30 min",
+      key: "bagkamera",
+      title: "Bag-kamera",
+      category: "camera",
+      time: "20–30 min",
       warranty: "12 mdr",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "149",
-      includes: "Mikrofon + test",
-      quality: "original"
+      price: { original: 399, kompatibel: 299 },
+      badges: ["paa_lager"],
+      excerpt: "Udskiftning af bagkamera. Inkl. test.",
+      includes: ["Kamera", "Test"]
     },
     {
-      id: "ørehøjtaler",
-      name: "Ørehøjtaler (øverst)",
-      description: "Udskiftning af ørehøjtaler",
-      time: "20-30 min",
+      key: "hjemknap",
+      title: "Hjem-knap",
+      category: "buttons",
+      time: "30–45 min",
       warranty: "12 mdr",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "149",
-      includes: "Ørehøjtaler + test",
-      quality: "original"
+      price: { original: 299, kompatibel: 199 },
+      badges: ["advarsel"],
+      warning: "Touch ID kan ikke genskabes på iPhone 6",
+      excerpt: "Udskiftning af hjem-knap + test.",
+      includes: ["Hjem-knap", "Test"]
     },
     {
-      id: "højtaler",
-      name: "Højtaler (bund)",
-      description: "Udskiftning af højtaler",
-      time: "20-30 min",
+      key: "ørehøjtaler",
+      title: "Ørehøjtaler",
+      category: "audio",
+      time: "20–30 min",
       warranty: "12 mdr",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "149",
-      includes: "Højtaler + test",
-      quality: "original"
+      price: { original: 199, kompatibel: 149 },
+      badges: ["paa_lager"],
+      excerpt: "Udskiftning af ørehøjtaler. Inkl. test.",
+      includes: ["Ørehøjtaler", "Test"]
     },
     {
-      id: "forkamera",
-      name: "For-kamera",
-      description: "Udskiftning af forkamera",
-      time: "20-30 min",
+      key: "højtaler",
+      title: "Højtaler (bund)",
+      category: "audio",
+      time: "20–30 min",
       warranty: "12 mdr",
-      price: "299",
-      originalPrice: "299",
-      compatiblePrice: "199",
-      includes: "Kamera + test",
-      quality: "original"
+      price: { original: 199, kompatibel: 149 },
+      badges: ["paa_lager"],
+      excerpt: "Udskiftning af højtaler. Inkl. test.",
+      includes: ["Højtaler", "Test"]
     },
     {
-      id: "bagkamera",
-      name: "Bag-kamera",
-      description: "Udskiftning af bagkamera",
-      time: "20-30 min",
-      warranty: "12 mdr",
-      price: "399",
-      originalPrice: "399",
-      compatiblePrice: "299",
-      includes: "Kamera + test",
-      quality: "original"
-    },
-    {
-      id: "kameraglas",
-      name: "Kamera-glas",
-      description: "Udskiftning af kamera-glas (hvis kun glas er revnet)",
-      time: "20-30 min",
-      warranty: "12 mdr",
-      price: "149",
-      originalPrice: "149",
-      compatiblePrice: "99",
-      includes: "Kamera-glas + test",
-      quality: "original"
-    },
-    {
-      id: "powerknap",
-      name: "Tænd/sluk-knap (power)",
-      description: "Udskiftning af power-knap",
-      time: "30-45 min",
-      warranty: "12 mdr",
-      price: "299",
-      originalPrice: "299",
-      compatiblePrice: "199",
-      includes: "Power-knap + test",
-      quality: "original"
-    },
-    {
-      id: "lydløsknap",
-      name: "Lydløs-knap",
-      description: "Udskiftning af lydløs-knap",
-      time: "30-45 min",
-      warranty: "12 mdr",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "149",
-      includes: "Lydløs-knap + test",
-      quality: "original"
-    },
-    {
-      id: "volumeknapper",
-      name: "Volume-knapper",
-      description: "Udskiftning af volume-knapper",
-      time: "30-45 min",
-      warranty: "12 mdr",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "149",
-      includes: "Volume-knapper + test",
-      quality: "original"
-    },
-    {
-      id: "hjemknap",
-      name: "Hjem-knap",
-      description: "Udskiftning af hjem-knap",
-      time: "30-45 min",
-      warranty: "12 mdr",
-      price: "299",
-      originalPrice: "299",
-      compatiblePrice: "199",
-      includes: "Hjem-knap + test",
-      quality: "original",
-      warning: "Touch ID kan ikke genskabes på iPhone 6"
-    },
-    {
-      id: "software",
-      name: "Software",
-      description: "Backup, gendannelse, opdatering",
-      time: "15-45 min",
+      key: "software",
+      title: "Software",
+      category: "software",
+      time: "15–45 min",
       warranty: "Ingen",
-      price: "99",
-      originalPrice: "99",
-      compatiblePrice: "99",
-      includes: "Backup + opdatering",
-      quality: "service"
+      price: { fixed: 99 },
+      excerpt: "Backup, gendannelse, opdatering (hvis muligt).",
+      includes: ["Diagnose", "Backup", "Opdatering"]
     },
     {
-      id: "fejlsøgning",
-      name: "Fejlsøgning/diagnose",
-      description: "Fejlsøgning og diagnose (fratrækkes ved reparation)",
-      time: "15-30 min",
+      key: "diagnose",
+      title: "Fejlsøgning/diagnose",
+      category: "other",
+      time: "15–30 min",
       warranty: "Ingen",
-      price: "99",
-      originalPrice: "99",
-      compatiblePrice: "99",
-      includes: "Diagnose + rapport",
-      quality: "service"
+      price: { fixed: 99 },
+      excerpt: "Fratrækkes ved reparation.",
+      includes: ["Diagnose", "Rapport"]
     },
     {
-      id: "væskeskade",
-      name: "Væskeskade-rens",
-      description: "Rensning af væskeskade",
-      time: "30-60 min",
-      warranty: "Ingen garanti på væskeskader",
-      price: "199",
-      originalPrice: "199",
-      compatiblePrice: "199",
-      includes: "Rensning + diagnose",
-      quality: "service",
-      warning: "Ingen garanti på væskeskader"
+      key: "væskeskade",
+      title: "Væskeskade-rens",
+      category: "other",
+      time: "30–60 min",
+      warranty: "Ingen",
+      price: { fixed: 199 },
+      excerpt: "Rensning og diagnosticering.",
+      includes: ["Rensning", "Diagnose"]
     },
     {
-      id: "dataredning",
-      name: "Dataredning",
-      description: "Gendannelse af data (hvis I tilbyder)",
+      key: "dataredning",
+      title: "Dataredning",
+      category: "software",
       time: "Variabel",
       warranty: "Ingen",
-      price: "Pris efter fund",
-      originalPrice: "Pris efter fund",
-      compatiblePrice: "Pris efter fund",
-      includes: "Data-gendannelse",
-      quality: "service"
+      price: { fixed: 0 },
+      excerpt: "Gendannelse af data (hvis muligt).",
+      includes: ["Dataredning", "Backup"]
     }
   ];
+  // Helper functions
+  const getPrice = (repair: Repair, quality: Quality): string => {
+    if (repair.price.fixed !== undefined) {
+      return repair.price.fixed === 0 ? "Pris efter fund" : `${repair.price.fixed} kr`;
+    }
+    const price = quality === 'original' ? repair.price.original : repair.price.kompatibel;
+    return price ? `${price} kr` : "Kontakt os";
+  };
+
+  const getFromPrice = (repair: Repair): string => {
+    if (repair.price.fixed !== undefined) {
+      return repair.price.fixed === 0 ? "Pris efter fund" : `${repair.price.fixed} kr`;
+    }
+    const originalPrice = repair.price.original || 0;
+    const kompatiblePrice = repair.price.kompatibel || 0;
+    const minPrice = Math.min(originalPrice, kompatiblePrice);
+    return `fra ${minPrice} kr`;
+  };
+
+  const filteredRepairs = repairs.filter(repair => {
+    const matchesFilter = activeFilter === 'alle' || repair.category === activeFilter;
+    const matchesSearch = repair.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         repair.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
+
+  const quickCards = repairs.filter(repair => repair.badges?.includes('mest_valgt')).slice(0, 3);
+
+  const toggleRepairSelection = (repairKey: string) => {
+    setSelectedRepairs(prev => 
+      prev.includes(repairKey) 
+        ? prev.filter(key => key !== repairKey)
+        : [...prev, repairKey]
+    );
+  };
+
+  const getSubtotal = (): number => {
+    return selectedRepairs.reduce((total, repairKey) => {
+      const repair = repairs.find(r => r.key === repairKey);
+      if (!repair) return total;
+      
+      if (repair.price.fixed !== undefined) {
+        return total + (repair.price.fixed || 0);
+      }
+      
+      const price = selectedQuality === 'original' ? repair.price.original : repair.price.kompatibel;
+      return total + (price || 0);
+    }, 0);
+  };
 
   return (
     <div className="min-h-screen">
@@ -283,7 +253,7 @@ export default function IPhone6Repairs() {
                   A8 chip
                 </span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                  4.7" Retina
+                  4.7&quot; Retina
                 </span>
                 <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
                   2014
@@ -326,89 +296,243 @@ export default function IPhone6Repairs() {
         </div>
       </section>
 
-      {/* Repairs Table */}
+      {/* Repairs & Prices - New Simple Structure */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Reparationer & Priser
-          </h2>
-          
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Reparation</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Tid</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Garanti</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Pris fra</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-800">Bestil</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  {repairs.map((repair) => (
-                    <tr key={repair.id} className="hover:bg-gray-50 transition-colors">
-                      <td className="px-6 py-4">
-                        <div className="flex items-center gap-3">
-                          <div>
-                            <h3 className="font-semibold text-gray-800">{repair.name}</h3>
-                            <p className="text-sm text-gray-600">{repair.description}</p>
-                            {repair.includes && (
-                              <p className="text-xs text-gray-500 mt-1">Inkluderer: {repair.includes}</p>
-                            )}
-                          </div>
-                          <div className="flex flex-col gap-1">
-                            {repair.warning && (
-                              <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                                ⚠️ {repair.warning}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                      </td>
-                      <td className="px-6 py-4 text-sm text-gray-600">{repair.time}</td>
-                      <td className="px-6 py-4 text-sm text-gray-600">{repair.warranty}</td>
-                      <td className="px-6 py-4">
-                        <div className="flex items-center gap-2">
-                          <span className="font-semibold text-gray-800">{repair.price} kr</span>
-                        </div>
-                      </td>
-                      <td className="px-6 py-4 text-center">
-                        <button className="btn-gradient px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
-                          Bestil
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+          <h1 className="text-4xl font-bold text-center mb-4 text-gray-800">
+            Reparationer & Priser – iPhone 6
+          </h1>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Vælg din reparation nedenfor. Vi kommer til din adresse og reparerer på stedet på 20-30 minutter.
+          </p>
+
+          {/* Quick Cards - Top 3 Most Popular */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Mest valgte reparationer</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {quickCards.map((repair) => (
+                <div key={repair.key} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100 relative">
+                  {repair.badges?.includes('mest_valgt') && (
+                    <div className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-yellow-500 text-white text-xs px-3 py-1 rounded-full font-semibold">
+                      Mest valgt
+                    </div>
+                  )}
+                  
+                  <div className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-pink-100 to-yellow-100 rounded-full flex items-center justify-center">
+                      {repair.category === 'screen' && (
+                        <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                      {repair.category === 'battery' && (
+                        <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7h3v10h-3V7zM5 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z" />
+                        </svg>
+                      )}
+                      {repair.category === 'ports' && (
+                        <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </div>
+                    
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">{repair.title}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{repair.excerpt}</p>
+                    
+                    <div className="flex justify-center gap-2 mb-4">
+                      <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                        {repair.time}
+                      </span>
+                      <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                        {repair.warranty}
+                      </span>
+                    </div>
+                    
+                    <div className="text-2xl font-bold text-gray-800 mb-4">
+                      {getFromPrice(repair)}
+                    </div>
+                    
+                    <button
+                      onClick={() => toggleRepairSelection(repair.key)}
+                      className={`w-full py-3 px-6 rounded-full font-semibold transition-colors ${
+                        selectedRepairs.includes(repair.key)
+                          ? 'bg-green-600 text-white'
+                          : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
+                      }`}
+                    >
+                      {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 'Vælg'}
+                    </button>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Trust Badges */}
-          <div className="mt-8 text-center">
+          {/* Quality Toggle & Filters */}
+          <div className="mb-8 space-y-4">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              {/* Quality Toggle */}
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium text-gray-700">Kvalitet:</span>
+                <div className="bg-gray-100 rounded-full p-1 flex">
+                  <button
+                    onClick={() => setSelectedQuality('original')}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                      selectedQuality === 'original'
+                        ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
+                        : 'text-gray-600 hover:text-gray-800'
+                    }`}
+                  >
+                    Original
+                  </button>
+                  <button
+                    onClick={() => setSelectedQuality('kompatibel')}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                      selectedQuality === 'kompatibel'
+                        ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
+                        : 'text-gray-600 hover:text-gray-800'
+                    }`}
+                  >
+                    Kompatibel
+                  </button>
+                </div>
+              </div>
+
+              {/* Search */}
+              <div className="flex-1 max-w-md">
+                <input
+                  type="text"
+                  placeholder="Søg reparation… (fx 'kamera')"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                />
+              </div>
+            </div>
+
+            {/* Filter Chips */}
+            <div className="flex flex-wrap gap-2">
+              {[
+                { key: 'alle', label: 'Alle' },
+                { key: 'screen', label: 'Skærm' },
+                { key: 'battery', label: 'Batteri' },
+                { key: 'camera', label: 'Kamera' },
+                { key: 'audio', label: 'Lyd/Knapper' },
+                { key: 'ports', label: 'Porte' },
+                { key: 'software', label: 'Software/Andet' }
+              ].map((filter) => (
+                <button
+                  key={filter.key}
+                  onClick={() => setActiveFilter(filter.key)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                    activeFilter === filter.key
+                      ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  {filter.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Repair Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {filteredRepairs.map((repair) => (
+              <div key={repair.key} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 border border-gray-100 relative">
+                {repair.badges?.map((badge) => (
+                  <div key={badge} className={`absolute -top-2 -right-2 text-xs px-3 py-1 rounded-full font-semibold ${
+                    badge === 'mest_valgt' ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white' :
+                    badge === 'paa_lager' ? 'bg-green-100 text-green-800' :
+                    badge === 'advarsel' ? 'bg-red-100 text-red-800' : ''
+                  }`}>
+                    {badge === 'mest_valgt' ? 'Mest valgt' :
+                     badge === 'paa_lager' ? 'På lager' :
+                     badge === 'advarsel' ? 'Advarsel' : badge}
+                  </div>
+                ))}
+                
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">{repair.title}</h3>
+                    <p className="text-gray-600 text-sm mb-3">{repair.excerpt}</p>
+                    
+                    {repair.warning && (
+                      <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-3">
+                        <p className="text-red-800 text-sm font-medium">⚠️ {repair.warning}</p>
+                      </div>
+                    )}
+                    
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                        ~{repair.time}
+                      </span>
+                      <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                        {repair.warranty}
+                      </span>
+                      {repair.badges?.includes('paa_lager') && (
+                        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-medium">
+                          På lager
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  
+                  <div className="text-right ml-4">
+                    <div className="text-xl font-bold text-gray-800 mb-2">
+                      {getPrice(repair, selectedQuality)}
+                    </div>
+                    <button
+                      onClick={() => toggleRepairSelection(repair.key)}
+                      className={`px-6 py-2 rounded-full font-semibold transition-colors text-sm ${
+                        selectedRepairs.includes(repair.key)
+                          ? 'bg-green-600 text-white'
+                          : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
+                      }`}
+                    >
+                      {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 'Vælg'}
+                    </button>
+                    <button className="block w-full mt-2 text-xs text-gray-500 hover:text-pink-600 transition-colors">
+                      Detaljer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* SEO & Help */}
+          <div className="mt-12 text-center">
             <p className="text-sm text-gray-600 mb-4">
-              Priser inkl. moms. 24 mdr på skærm / 12 mdr på batteri & øvrige.
+              Priser inkl. moms. 24 mdr. på skærm / 12 mdr. på batteri & øvrige dele.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
-                Vi kommer til din adresse
+                🚗 Vi kommer til dig
               </div>
               <div className="flex items-center gap-2">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
-                20–30 min
+                ⭐ 5★ anmeldelser
               </div>
               <div className="flex items-center gap-2">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-600">
-                  <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
-                5★ anmeldelser
+                ⏱️ 20–30 min
               </div>
+            </div>
+            
+            <div className="mt-6">
+              <p className="text-sm text-gray-500">
+                Se også: <Link href="/reparationer/apple/iphone-6s" className="text-pink-600 hover:underline">iPhone 6s</Link> · 
+                <Link href="/reparationer/apple/iphone-6-plus" className="text-pink-600 hover:underline ml-1">iPhone 6 Plus</Link>
+              </p>
             </div>
           </div>
         </div>
@@ -508,7 +632,7 @@ export default function IPhone6Repairs() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-600 transition-colors">
                   iPhone 6 Plus
                 </h3>
-                <p className="text-gray-600" style={{display: "none"}}>Større model med 5.5" skærm</p>
+                <p className="text-gray-600">Større model med 5.5&quot; skærm</p>
               </div>
             </Link>
           </div>
@@ -933,6 +1057,57 @@ export default function IPhone6Repairs() {
           </a>
         </div>
       </div>
+
+      {/* Sticky Booking Bar */}
+      {selectedRepairs.length > 0 && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg">
+          <div className="mx-auto max-w-6xl px-6 py-4">
+            <div className="flex items-center justify-between">
+              <div className="flex-1">
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {selectedRepairs.map((repairKey) => {
+                    const repair = repairs.find(r => r.key === repairKey);
+                    if (!repair) return null;
+                    return (
+                      <div key={repairKey} className="bg-gray-100 rounded-full px-3 py-1 flex items-center gap-2">
+                        <span className="text-sm font-medium">{repair.title}</span>
+                        <button
+                          onClick={() => toggleRepairSelection(repairKey)}
+                          className="text-gray-500 hover:text-red-600 transition-colors"
+                        >
+                          ×
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="flex items-center gap-4 text-sm text-gray-600">
+                  <span>🚗 Vi kommer til dig</span>
+                  <span>⭐ 5★ anmeldelser</span>
+                  <span>⏱️ 20–30 min</span>
+                </div>
+              </div>
+              
+              <div className="text-right ml-6">
+                <div className="text-lg font-bold text-gray-800 mb-2">
+                  Total: {getSubtotal()} kr
+                  {selectedRepairs.length > 1 && (
+                    <span className="text-sm text-green-600 ml-2">(Samlerabat)</span>
+                  )}
+                </div>
+                <div className="flex gap-2">
+                  <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-300 transition-colors">
+                    Få tilbud pr. SMS
+                  </button>
+                  <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                    Færdiggør booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
