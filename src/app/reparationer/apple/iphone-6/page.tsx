@@ -420,26 +420,28 @@ export default function IPhone6Repairs() {
             {filteredRepairs.map((repair) => (
               <div 
                 key={repair.key} 
-                className="flex flex-col rounded-xl border border-neutral-200/70 bg-white shadow-sm hover:shadow-md transition p-4 sm:p-5 h-full"
+                className="relative flex flex-col rounded-xl border border-neutral-200/70 bg-white shadow-sm hover:shadow-md transition p-4 sm:p-5 h-full overflow-hidden"
               >
-                {/* Quality & Popular badges */}
-                <div className="absolute -top-2 -right-2 flex flex-col gap-1">
-                  {repair.badges?.includes('mest_valgt') && (
-                    <div className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-2 py-1 rounded-full font-medium" style={{fontSize: '11px'}}>
-                      Mest valgt
-                    </div>
-                  )}
-                  {repair.badges?.includes('original_kalibreret') && (
-                    <div className="bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium" style={{fontSize: '10px'}}>
-                      Original (kalibreret)
-                    </div>
-                  )}
-                  {repair.badges?.includes('kompatibel_a') && (
-                    <div className="bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium" style={{fontSize: '10px'}}>
-                      Kompatibel (A)
-                    </div>
-                  )}
-                </div>
+                {/* Quality & Popular badges - Fixed positioning */}
+                {(repair.badges?.includes('mest_valgt') || repair.badges?.includes('original_kalibreret') || repair.badges?.includes('kompatibel_a')) && (
+                  <div className="absolute -top-1 -right-1 flex flex-col gap-1 z-10">
+                    {repair.badges?.includes('mest_valgt') && (
+                      <div className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-2 py-0.5 rounded-full font-medium" style={{fontSize: '10px'}}>
+                        Mest valgt
+                      </div>
+                    )}
+                    {repair.badges?.includes('original_kalibreret') && (
+                      <div className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium" style={{fontSize: '9px'}}>
+                        Original
+                      </div>
+                    )}
+                    {repair.badges?.includes('kompatibel_a') && (
+                      <div className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium" style={{fontSize: '9px'}}>
+                        Kompatibel
+                      </div>
+                    )}
+                  </div>
+                )}
                 
                 {/* Header: Icon + Title left, Price/Hint right */}
                 <div className="flex items-start justify-between gap-3">
