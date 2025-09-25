@@ -94,7 +94,7 @@ export default function PartsQualitySection() {
               <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
                 <span className="text-white text-xl">🔋</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800">Kompatibel (A-kvalitet)</h3>
+              <h3 className="text-xl font-semibold text-gray-800">Kompatibel</h3>
             </div>
             <p className="text-gray-700 mb-4 text-sm leading-relaxed">
               Budgetvenligt alternativ i A-kvalitet – godt til ældre modeller og dagligt brug.

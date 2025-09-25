@@ -573,7 +573,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-xl">🔋</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800">Kompatibel (A-kvalitet)</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Kompatibel</h3>
                 </div>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                   Et stærkt budgetvalg til ældre enheder. Skærme og batterier i A-kvalitet fungerer fint til hverdag, men:
@@ -613,11 +613,11 @@ export default function Home() {
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
                       <span className="text-gray-700">Skærm:</span>
-                      <span className="text-gray-600">Original (kalibreret/pulled) eller Kompatibel (A-kvalitet)</span>
+                      <span className="text-gray-600">Original (kalibreret/pulled) eller Kompatibel</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-700">Batteri:</span>
-                      <span className="text-gray-600">Original (kalibreret/pulled) eller Kompatibel (A-kvalitet)</span>
+                      <span className="text-gray-600">Original (kalibreret/pulled) eller Kompatibel</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-700">Ladeport:</span>

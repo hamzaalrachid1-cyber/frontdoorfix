@@ -5,7 +5,7 @@ import PartsFAQ from "@/components/parts/PartsFAQ";
 
 export const metadata: Metadata = {
   title: "Reservedele & Kvalitet | Frontdoorfix",
-  description: "Læs om vores reservedele-kvalitet: Original (kalibreret/pulled), Original (ny) og Kompatibel (A-kvalitet). Vi rådgiver om det bedste valg til din enhed og budget.",
+  description: "Læs om vores reservedele-kvalitet: Original (kalibreret/pulled), Original (ny) og Kompatibel. Vi rådgiver om det bedste valg til din enhed og budget.",
   keywords: "reservedele, original dele, kompatible dele, iPhone reparation, Android reparation, kvalitet, garanti",
   openGraph: {
     title: "Reservedele & Kvalitet | Frontdoorfix",

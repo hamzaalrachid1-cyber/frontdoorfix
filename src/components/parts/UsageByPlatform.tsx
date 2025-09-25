@@ -15,11 +15,11 @@ export default function UsageByPlatform() {
             <div className="space-y-4">
               <div className="flex justify-between items-start">
                 <span className="text-gray-700 font-medium">Skærm:</span>
-                <span className="text-gray-600 text-right text-sm max-w-xs">Original (kalibreret/pulled) eller Kompatibel (A-kvalitet)</span>
+                <span className="text-gray-600 text-right text-sm max-w-xs">Original (kalibreret/pulled) eller Kompatibel</span>
               </div>
               <div className="flex justify-between items-start">
                 <span className="text-gray-700 font-medium">Batteri:</span>
-                <span className="text-gray-600 text-right text-sm max-w-xs">Original (kalibreret/pulled) eller Kompatibel (A-kvalitet)</span>
+                <span className="text-gray-600 text-right text-sm max-w-xs">Original (kalibreret/pulled) eller Kompatibel</span>
               </div>
               <div className="flex justify-between items-start">
                 <span className="text-gray-700 font-medium">Ladeport:</span>

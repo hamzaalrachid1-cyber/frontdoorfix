@@ -61,7 +61,7 @@ export default function IPhone6Repairs() {
       stock: "in_stock",
       variants: [
         { id: "screen-original", label: "Original (kalibreret)", price: 799, warrantyMonths: 24 },
-        { id: "screen-compat", label: "Kompatibel (A-kvalitet)", price: 599, warrantyMonths: 24 },
+        { id: "screen-compat", label: "Kompatibel", price: 599, warrantyMonths: 24 },
       ],
     },
     {
@@ -73,7 +73,7 @@ export default function IPhone6Repairs() {
       stock: "in_stock",
       variants: [
         { id: "battery-original", label: "Original (kalibreret)", price: 399, warrantyMonths: 12 },
-        { id: "battery-compat", label: "Kompatibel (A-kvalitet)", price: 299, warrantyMonths: 12 },
+        { id: "battery-compat", label: "Kompatibel", price: 299, warrantyMonths: 12 },
       ],
     },
     {
@@ -533,7 +533,7 @@ export default function IPhone6Repairs() {
                 </div>
                 <h4 className="text-lg font-semibold mb-3 text-gray-800">Vil du spare mest muligt på en ældre mobil?</h4>
                 <p className="text-gray-600 text-sm">
-                  <strong>Vælg Kompatibel (A-kvalitet)</strong> – fint til hverdagsbrug.
+                  <strong>Vælg Kompatibel</strong> – fint til hverdagsbrug.
                 </p>
               </div>
             </div>
