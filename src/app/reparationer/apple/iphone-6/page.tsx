@@ -469,18 +469,7 @@ export default function IPhone6Repairs() {
                 <span>📞</span>
                 Ring +45 93 54 54 57
               </a>
-              <a
-                href="https://wa.me/4593545457?text=Hej! Jeg vil gerne booke iPhone 6 reparation"
-                className="bg-transparent text-white px-6 py-4 h-14 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors inline-flex items-center justify-center gap-2 focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:outline-none"
-                data-analytics="cta_whatsapp_model"
-                data-model="iphone-6"
-                aria-label="Skriv på WhatsApp om iPhone 6 reparation"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>💬</span>
-                Skriv på WhatsApp
-              </a>
+
             </div>
             
             {/* Trust Line */}
