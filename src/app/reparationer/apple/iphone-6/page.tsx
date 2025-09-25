@@ -1,165 +1,458 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "iPhone 6 Reparation - Frontdoorfix",
-  description: "Vi tilbyder reparation af iPhone 6 – skærm, batteri, kamera, ladeport og mere med 24 måneders garanti. Hurtig service direkte på din adresse i København.",
-  keywords: "iPhone 6 reparation, skærmreparation iPhone 6, batteriskift iPhone 6, kamera reparation, ladeport reparation, København",
+  title: "iPhone 6 Reparation - Priser & Tider | Frontdoorfix",
+  description: "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele. Vi kommer til dig i København.",
+  keywords: "iPhone 6 reparation, skærmreparation iPhone 6, batteriskift iPhone 6, kamera iPhone 6, knapper iPhone 6, København",
+  openGraph: {
+    title: "iPhone 6 Reparation - Priser & Tider | Frontdoorfix",
+    description: "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele.",
+    type: "website",
+    locale: "da_DK",
+  },
 };
 
-export default function iPhone6Repair() {
+export default function IPhone6Repairs() {
   const repairs = [
     {
-      service: "Skærmreparation",
-      price: "599 kr",
+      id: "skærm",
+      name: "Skærm",
+      description: "Udskiftning af ødelagt skærm",
       time: "15-25 min",
-      description: "Udskiftning af ødelagt skærm med original Apple dele",
-      popular: true
+      warranty: "24 mdr",
+      price: "699",
+      originalPrice: "799",
+      compatiblePrice: "599",
+      popular: true,
+      inStock: true,
+      includes: "Glas + LCD, ikke ramme",
+      quality: "original"
     },
     {
-      service: "Bagcover reparation", 
-      price: "399 kr",
+      id: "batteri",
+      name: "Batteri",
+      description: "Udskiftning af slidt batteri",
       time: "15-20 min",
-      description: "Udskiftning af ødelagt bagcover",
-      popular: false
+      warranty: "12 mdr",
+      price: "399",
+      originalPrice: "399",
+      compatiblePrice: "299",
+      popular: true,
+      inStock: true,
+      includes: "Originalt Apple batteri",
+      quality: "original"
     },
     {
-      service: "Batteriskift",
-      price: "299 kr", 
-      time: "15-20 min",
-      description: "Udskiftning af batteri med original Apple batteri",
-      popular: true
-    },
-    {
-      service: "Ladeport reparation",
-      price: "399 kr",
-      time: "20-30 min", 
-      description: "Reparation af opladningsproblemer",
-      popular: false
-    },
-    {
-      service: "Kamera reparation",
-      price: "499 kr",
+      id: "ladeport",
+      name: "Ladestik / Opladningsport",
+      description: "Reparation af ladeport",
       time: "20-30 min",
-      description: "Reparation af kamera med original dele",
-      popular: false
+      warranty: "12 mdr",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
+      popular: false,
+      inStock: true,
+      includes: "Ladeport + rengøring",
+      quality: "original"
     },
     {
-      service: "Vandskade reparation",
-      price: "Fra 499 kr",
+      id: "mikrofon",
+      name: "Mikrofon",
+      description: "Udskiftning af mikrofon",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
+      popular: false,
+      inStock: true,
+      includes: "Mikrofon + test",
+      quality: "original"
+    },
+    {
+      id: "ørehøjtaler",
+      name: "Ørehøjtaler (øverst)",
+      description: "Udskiftning af ørehøjtaler",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
+      popular: false,
+      inStock: true,
+      includes: "Ørehøjtaler + test",
+      quality: "original"
+    },
+    {
+      id: "højtaler",
+      name: "Højtaler (bund)",
+      description: "Udskiftning af højtaler",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
+      popular: false,
+      inStock: true,
+      includes: "Højtaler + test",
+      quality: "original"
+    },
+    {
+      id: "forkamera",
+      name: "For-kamera",
+      description: "Udskiftning af forkamera",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
+      popular: false,
+      inStock: true,
+      includes: "Kamera + test",
+      quality: "original"
+    },
+    {
+      id: "bagkamera",
+      name: "Bag-kamera",
+      description: "Udskiftning af bagkamera",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "399",
+      originalPrice: "399",
+      compatiblePrice: "299",
+      popular: false,
+      inStock: true,
+      includes: "Kamera + test",
+      quality: "original"
+    },
+    {
+      id: "kameraglas",
+      name: "Kamera-glas",
+      description: "Udskiftning af kamera-glas (hvis kun glas er revnet)",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "149",
+      originalPrice: "149",
+      compatiblePrice: "99",
+      popular: false,
+      inStock: true,
+      includes: "Kamera-glas + test",
+      quality: "original"
+    },
+    {
+      id: "powerknap",
+      name: "Tænd/sluk-knap (power)",
+      description: "Udskiftning af power-knap",
+      time: "30-45 min",
+      warranty: "12 mdr",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
+      popular: false,
+      inStock: true,
+      includes: "Power-knap + test",
+      quality: "original"
+    },
+    {
+      id: "lydløsknap",
+      name: "Lydløs-knap",
+      description: "Udskiftning af lydløs-knap",
+      time: "30-45 min",
+      warranty: "12 mdr",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
+      popular: false,
+      inStock: true,
+      includes: "Lydløs-knap + test",
+      quality: "original"
+    },
+    {
+      id: "volumeknapper",
+      name: "Volume-knapper",
+      description: "Udskiftning af volume-knapper",
+      time: "30-45 min",
+      warranty: "12 mdr",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
+      popular: false,
+      inStock: true,
+      includes: "Volume-knapper + test",
+      quality: "original"
+    },
+    {
+      id: "hjemknap",
+      name: "Hjem-knap",
+      description: "Udskiftning af hjem-knap",
+      time: "30-45 min",
+      warranty: "12 mdr",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
+      popular: false,
+      inStock: true,
+      includes: "Hjem-knap + test",
+      quality: "original",
+      warning: "Touch ID kan ikke genskabes på iPhone 6"
+    },
+    {
+      id: "vibrator",
+      name: "Vibrator / Taptic",
+      description: "Udskiftning af vibrator",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "149",
+      popular: false,
+      inStock: true,
+      includes: "Vibrator + test",
+      quality: "original"
+    },
+    {
+      id: "wifi-antenne",
+      name: "Wi-Fi/Bluetooth-antenne",
+      description: "Udskiftning af Wi-Fi/Bluetooth-antenne",
+      time: "30-45 min",
+      warranty: "12 mdr",
+      price: "299",
+      originalPrice: "299",
+      compatiblePrice: "199",
+      popular: false,
+      inStock: true,
+      includes: "Antenne + test",
+      quality: "original"
+    },
+    {
+      id: "sim-læser",
+      name: "SIM-læser / Bakke",
+      description: "Udskiftning af SIM-læser",
+      time: "15-20 min",
+      warranty: "12 mdr",
+      price: "149",
+      originalPrice: "149",
+      compatiblePrice: "99",
+      popular: false,
+      inStock: true,
+      includes: "SIM-læser + test",
+      quality: "original"
+    },
+    {
+      id: "bagcover",
+      name: "Bagcover / Chassis",
+      description: "Udskiftning af bagcover (hvis du tilbyder det)",
+      time: "60-90 min",
+      warranty: "12 mdr",
+      price: "499",
+      originalPrice: "499",
+      compatiblePrice: "399",
+      popular: false,
+      inStock: true,
+      includes: "Bagcover + montering",
+      quality: "original"
+    },
+    {
+      id: "software",
+      name: "Software",
+      description: "Backup, gendannelse, opdatering",
+      time: "15-45 min",
+      warranty: "Ingen",
+      price: "99",
+      originalPrice: "99",
+      compatiblePrice: "99",
+      popular: false,
+      inStock: true,
+      includes: "Backup + opdatering",
+      quality: "service"
+    },
+    {
+      id: "fejlsøgning",
+      name: "Fejlsøgning/diagnose",
+      description: "Fejlsøgning og diagnose (fratrækkes ved reparation)",
+      time: "15-30 min",
+      warranty: "Ingen",
+      price: "99",
+      originalPrice: "99",
+      compatiblePrice: "99",
+      popular: false,
+      inStock: true,
+      includes: "Diagnose + rapport",
+      quality: "service"
+    },
+    {
+      id: "væskeskade",
+      name: "Væskeskade-rens",
+      description: "Rensning af væskeskade",
       time: "30-60 min",
-      description: "Diagnose og reparation af vandskade",
-      popular: false
+      warranty: "Ingen garanti på væskeskader",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "199",
+      popular: false,
+      inStock: true,
+      includes: "Rensning + diagnose",
+      quality: "service",
+      warning: "Ingen garanti på væskeskader"
+    },
+    {
+      id: "dataredning",
+      name: "Dataredning",
+      description: "Gendannelse af data (hvis I tilbyder)",
+      time: "Variabel",
+      warranty: "Ingen",
+      price: "Pris efter fund",
+      originalPrice: "Pris efter fund",
+      compatiblePrice: "Pris efter fund",
+      popular: false,
+      inStock: true,
+      includes: "Data-gendannelse",
+      quality: "service"
     }
-  ];
-
-  const advantages = [
-    "24 måneders garanti på skærmreparationer",
-    "Originale Apple dele",
-    "Erfarne teknikere med Apple-certifikering", 
-    "Reparation på stedet",
-    "Gratis diagnose",
-    "Sikker håndtering af din data"
   ];
 
   return (
     <div className="min-h-screen">
+      {/* Breadcrumbs */}
+      <nav className="bg-gray-100 py-3 px-6">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex items-center space-x-2 text-sm text-gray-600">
+            <Link href="/" className="hover:text-pink-600">Forside</Link>
+            <span>→</span>
+            <Link href="/reparationer" className="hover:text-pink-600">Reparationer</Link>
+            <span>→</span>
+            <Link href="/reparationer/apple" className="hover:text-pink-600">iPhone</Link>
+            <span>→</span>
+            <span className="text-gray-800 font-medium">iPhone 6</span>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-pink-50 to-yellow-50">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <Link href="/reparationer/apple" className="text-pink-600 hover:text-pink-700 mb-4 inline-flex items-center">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
-                  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
-                </svg>
-                Tilbage til iPhone-modeller
-              </Link>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                 <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                  iPhone 6
+                  iPhone 6 Reparation
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-6">
-                Reparer din iPhone 6 hurtigt og sikkert med originale reservedele og garanti.
+                Standard model med A8 chip – reparation på stedet på 20–30 min.
               </p>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-                <p className="text-sm text-blue-800">
-                  <strong>Vi tilbyder reparation af iPhone 6</strong> – skærm, batteri, kamera, ladeport og mere med 24 måneders garanti. 
-                  Hurtig service direkte på din adresse i København.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-4 mb-8">
-                <span className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">
+              <div className="flex flex-wrap gap-4 mb-6">
+                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                   A8 chip
                 </span>
-                <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
-                  4.7" Retina display
-                </span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                  2014 model
+                  4.7" Retina
+                </span>
+                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
+                  2014
                 </span>
               </div>
-            </div>
-            <div className="text-center">
-              {/* iPhone 6 Image */}
-              <div className="w-80 h-80 mx-auto flex items-center justify-center">
-                <div className="card__media w-full h-full flex items-center justify-center">
-                  <img 
-                    src="/images/iphones/iphone-6.png" 
-                    alt="iPhone 6"
-                    width="400"
-                    height="400"
-                    loading="lazy"
-                    className="max-w-full max-h-full object-contain"
-                  />
+              <div className="flex items-center gap-4 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  Vi kommer til din adresse
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                  20–30 min
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-600">
+                    <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                  </svg>
+                  5★ anmeldelser
                 </div>
               </div>
+            </div>
+            <div className="phone-hero">
+              <img
+                src="/images/iphones/iphone-6.png"
+                alt="iPhone 6 – front, bagside og sideprofil"
+                width="400"
+                height="400"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+                className="phone-hero__img"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing Table */}
+      {/* Repairs Table */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Reparationer og priser
+            Reparationer & Priser
           </h2>
           
-          <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-gray-50">
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Reparation</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Pris</th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Tid</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Beskrivelse</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Garanti</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">Pris fra</th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-gray-800">Bestil</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  {repairs.map((repair, index) => (
-                    <tr key={index} className="hover:bg-gray-50">
+                  {repairs.map((repair) => (
+                    <tr key={repair.id} className="hover:bg-gray-50 transition-colors">
                       <td className="px-6 py-4">
-                        <div className="flex items-center">
-                          <span className="text-sm font-medium text-gray-800">{repair.service}</span>
-                          {repair.popular && (
-                            <span className="ml-2 bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-medium">
-                              Populær
-                            </span>
-                          )}
+                        <div className="flex items-center gap-3">
+                          <div>
+                            <h3 className="font-semibold text-gray-800">{repair.name}</h3>
+                            <p className="text-sm text-gray-600">{repair.description}</p>
+                            {repair.includes && (
+                              <p className="text-xs text-gray-500 mt-1">Inkluderer: {repair.includes}</p>
+                            )}
+                          </div>
+                          <div className="flex flex-col gap-1">
+                            {repair.popular && (
+                              <span className="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                Populær
+                              </span>
+                            )}
+                            {repair.inStock && (
+                              <span className="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                På lager
+                              </span>
+                            )}
+                            {repair.warning && (
+                              <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                ⚠️ {repair.warning}
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </td>
+                      <td className="px-6 py-4 text-sm text-gray-600">{repair.time}</td>
+                      <td className="px-6 py-4 text-sm text-gray-600">{repair.warranty}</td>
                       <td className="px-6 py-4">
-                        <span className="text-lg font-semibold text-gray-800">{repair.price}</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{repair.time}</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{repair.description}</span>
+                        <div className="flex items-center gap-2">
+                          <span className="font-semibold text-gray-800">{repair.price} kr</span>
+                          {repair.originalPrice !== repair.compatiblePrice && (
+                            <div className="flex gap-1">
+                              <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Original</span>
+                              <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Kompatibel</span>
+                            </div>
+                          )}
+                        </div>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <button className="btn-gradient px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
@@ -172,55 +465,150 @@ export default function iPhone6Repair() {
               </table>
             </div>
           </div>
+
+          {/* Trust Badges */}
+          <div className="mt-8 text-center">
+            <p className="text-sm text-gray-600 mb-4">
+              Priser inkl. moms. 24 mdr på skærm / 12 mdr på batteri & øvrige.
+            </p>
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+              <div className="flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                Vi kommer til din adresse
+              </div>
+              <div className="flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                20–30 min
+              </div>
+              <div className="flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-600">
+                  <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                </svg>
+                5★ anmeldelser
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Advantages Section */}
+      {/* Related Models */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Hvorfor vælge Frontdoorfix?
+            Se også
           </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                    </svg>
-                  </div>
-                  <p className="text-gray-700 font-medium">{advantage}</p>
-                </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link href="/reparationer/apple/iphone-6s" className="group">
+              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-600 transition-colors">
+                  iPhone 6s
+                </h3>
+                <p className="text-gray-600">Opgraderet model med A9 chip og Touch ID</p>
               </div>
-            ))}
+            </Link>
+            <Link href="/reparationer/apple/iphone-6-plus" className="group">
+              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-600 transition-colors">
+                  iPhone 6 Plus
+                </h3>
+                <p className="text-gray-600">Større model med 5.5" skærm</p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-pink-500 to-yellow-500">
-        <div className="mx-auto max-w-6xl px-6 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Klar til at reparere din iPhone 6?
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-4xl px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Ofte stillede spørgsmål
           </h2>
-          <p className="text-xl text-white mb-8 opacity-90">
-            Book en tid nu og få din iPhone repareret på under 30 minutter
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-              📅 Bestil tid til iPhone 6 reparation
-            </button>
-            <a 
-              href="tel:+4593545457"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors"
-            >
-              📞 Ring +45 93 54 54 57
-            </a>
+          <div className="space-y-6">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Hvor lang tid tager en iPhone 6 reparation?
+              </h3>
+              <p className="text-gray-600">
+                De fleste reparationer er færdige på 20–30 minutter på stedet. Skærmreparationer tager typisk 15-25 minutter, mens batteriskift tager 15-20 minutter.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Mister jeg data ved reparationen?
+              </h3>
+              <p className="text-gray-600">
+                Nej, ved standardreparationer bevarer vi dine data. Vi anbefaler dog backup før reparation for en sikkerheds skyld.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Kan Touch ID genskabes på iPhone 6?
+              </h3>
+              <p className="text-gray-600">
+                Nej, Touch ID kan ikke genskabes ved skift af hjem-knap på iPhone 6. Dette er en teknisk begrænsning.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Giver I garanti på væskeskader?
+              </h3>
+              <p className="text-gray-600">
+                Vi renser og diagnosticerer væskeskader, men giver ingen garanti på væskeskader da de kan være uforudsigelige.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Hvilke dele bruger I?
+              </h3>
+              <p className="text-gray-600">
+                Originale eller kvalitetsgodkendte A-kvalitetsdele med garanti. Vi bruger kun dele af højeste kvalitet, der lever op til Apple's standarder.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "iPhone 6 Reparation",
+            "description": "Vi reparerer iPhone 6 med originale dele. Skærm, batteri, kamera, knapper og mere. 24 mdr garanti på skærme, 12 mdr på øvrige dele.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Apple"
+            },
+            "model": "iPhone 6",
+            "offers": {
+              "@type": "Offer",
+              "price": "699",
+              "priceCurrency": "DKK",
+              "availability": "https://schema.org/InStock",
+              "description": "Skærmreparation fra 699 kr"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Reparationstid",
+                "value": "15-25 min"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Garanti",
+                "value": "24 mdr på skærme"
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
