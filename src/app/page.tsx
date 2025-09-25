@@ -505,8 +505,257 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Why Frontdoorfix Section */}
+        {/* Parts Quality Section */}
         <section className="py-16 bg-white">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
+              Vores reservedele – kvalitet uden kompromis
+            </h2>
+            <p className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+              Vi reparerer med originale dele, når det giver bedst mening – og tilbyder et prisvenligt alternativ i A-kvalitet. Alle dele bliver testet og leveres med garanti.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Original (Pulled) */}
+              <div className="bg-gradient-to-br from-pink-50 to-yellow-50 p-6 rounded-xl border border-pink-100">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xl">🔧</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800">Original (kalibreret)</h3>
+                </div>
+                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                  Vi bruger ægte Apple-dele, der er demonteret fra donorenheder ("pulled"), kvalitetstestet og kalibreret til din telefon. Apple viser disse som "Brugt/Ukendt del" i indstillinger – det er forventet og påvirker ikke funktionaliteten.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="text-sm">
+                    <span className="font-medium text-green-700">✓ Fordele:</span>
+                    <span className="text-gray-600"> bedste farver/lysstyrke, korrekt touch, god oleofobisk coating, stabil batteriydelse.</span>
+                  </div>
+                  <div className="text-sm">
+                    <span className="font-medium text-orange-700">⚠ Ulemper:</span>
+                    <span className="text-gray-600"> begrænset tilgængelighed; enkelte modeller kan vise informationsbesked i indstillinger.</span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">📱 iPhone</span>
+                  <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">🔋 Batteri</span>
+                </div>
+              </div>
+
+              {/* Original (New) */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xl">📱</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800">Original (ny)</h3>
+                </div>
+                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                  På Android (Samsung, Huawei, OnePlus m.fl.) og flere iPhone-smådele bruger vi nye, originale servicepack-dele fra godkendte leverandører – inkl. klæber/forsegling, hvor det er relevant.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="text-sm">
+                    <span className="font-medium text-green-700">✓ Fordele:</span>
+                    <span className="text-gray-600"> 1:1 pasform og performance, længst levetid, fabriksfinish.</span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">Samsung</span>
+                  <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">Huawei</span>
+                  <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">OnePlus</span>
+                </div>
+              </div>
+
+              {/* Compatible */}
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-100">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xl">🔋</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800">Kompatibel (A-kvalitet)</h3>
+                </div>
+                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                  Et stærkt budgetvalg til ældre enheder. Skærme og batterier i A-kvalitet fungerer fint til hverdag, men:
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="text-sm text-gray-600">
+                    • bruger typisk 10–15% mere strøm end original
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    • kan have lavere lysstyrke og mindre præcise farver
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    • touch-respons kan føles en anelse anderledes
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    • nyere iPhones kan vise informationsbesked om "Ukendt del"
+                  </div>
+                </div>
+                <p className="text-sm text-gray-700 font-medium">
+                  Vi rådgiver altid om, hvad der passer bedst til dit behov og dit budget.
+                </p>
+              </div>
+            </div>
+
+            {/* What We Use Section */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
+                Hvad bruger vi på hvilke reparationer?
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* iPhone */}
+                <div className="bg-gray-50 p-6 rounded-xl">
+                  <h4 className="text-lg font-semibold mb-4 text-gray-800 flex items-center gap-2">
+                    <span className="text-2xl">📱</span> iPhone
+                  </h4>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Skærm:</span>
+                      <span className="text-gray-600">Original (kalibreret/pulled) eller Kompatibel (A-kvalitet)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Batteri:</span>
+                      <span className="text-gray-600">Original (kalibreret/pulled) eller Kompatibel (A-kvalitet)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Ladeport:</span>
+                      <span className="text-gray-600">Som udgangspunkt original ny/OEM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Kamera:</span>
+                      <span className="text-gray-600">Som udgangspunkt original ny/OEM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Øvrige:</span>
+                      <span className="text-gray-600">Original/OEM, hvor tilgængeligt</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Bagcover:</span>
+                      <span className="text-gray-600">Eftermarkedsglas i høj kvalitet</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Android */}
+                <div className="bg-gray-50 p-6 rounded-xl">
+                  <h4 className="text-lg font-semibold mb-4 text-gray-800 flex items-center gap-2">
+                    <span className="text-2xl">🤖</span> Android
+                  </h4>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Skærme & batterier:</span>
+                      <span className="text-gray-600">Originale servicepacks (nye)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Kameraer & porte:</span>
+                      <span className="text-gray-600">Originale/OEM dele, hvor muligt</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Øvrige moduler:</span>
+                      <span className="text-gray-600">Original/OEM dele, hvor muligt</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">Samsung</span>
+                    <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">Huawei</span>
+                    <span className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border">OnePlus</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* FAQ Section */}
+            <div className="mt-16 bg-gray-50 p-8 rounded-xl">
+              <h3 className="text-xl font-semibold mb-6 text-gray-800 text-center">
+                Ofte stillede spørgsmål om reservedele
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">
+                    Hvorfor står der "Brugt/Ukendt del" efter skærm/batteriskift?
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Apple knytter visse dele til enhedens serie-komponenter. Når vi monterer en original pulled del, kan iPhone vise "Brugt/Ukendt del" i indstillinger – det er kun information og påvirker ikke funktion eller garanti hos os.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">
+                    Bevarer I funktioner som True Tone og lysstyrke-styring?
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Ja, ved originale skærme kalibrerer vi, så lysstyrke og farvehvidbalance fungerer korrekt. True Tone afhænger af model/EEPROM-data – vi overfører, hvor det er muligt.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">
+                    Holder min vandtæthed?
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Vi monterer ny tætningsklæber, men fabrikstætning kan ikke garanteres efter en reparation.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">
+                    Original vs. kompatibel – hvad er forskellen?
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Originale dele giver typisk bedre farvenøjagtighed, højere lysstyrke og bedst batteriydelse. Kompatible A-kvalitet dele er et godt valg til ældre enheder, men bruger ofte 10–15% mere strøm.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="mt-8 text-center">
+                <p className="text-sm text-gray-600 mb-4">
+                  Spørg os om kvaliteten før du booker – vi svarer på 2 min. på telefon eller WhatsApp.
+                </p>
+                <div className="flex justify-center gap-4">
+                  <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                    Ring +45 93 54 54 57
+                  </button>
+                  <button className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-50 transition-colors">
+                    Skriv på WhatsApp
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Quality Checklist */}
+            <div className="mt-12 bg-white p-6 rounded-xl border border-gray-200">
+              <div className="flex items-center justify-center gap-8 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Testet</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Kalibreret</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Garanti</span>
+                </div>
+              </div>
+              <p className="text-center text-xs text-gray-500 mt-3">
+                iPhone kan vise "Brugt/Ukendt del" – funktion er uændret
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Frontdoorfix Section */}
+        <section className="py-16 bg-gray-50">
           <div className="mx-auto max-w-6xl px-6">
             <div className="max-w-4xl">
               <h2 className="text-3xl font-bold mb-8 text-gray-800">Hvorfor Frontdoorfix?</h2>

@@ -516,10 +516,61 @@ export default function IPhone6Repairs() {
             ))}
           </div>
           
+          {/* Parts Quality Mini-Section */}
+          <div className="mt-16 bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl border border-gray-200">
+            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">
+              Delens kvalitet – kort fortalt
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl">⭐</span>
+                </div>
+                <h4 className="text-lg font-semibold mb-3 text-gray-800">Vil du have bedst mulig skærm og batteritid?</h4>
+                <p className="text-gray-600 text-sm">
+                  <strong>Vælg Original.</strong> Bedste farver, lysstyrke og batteriydelse.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl">💰</span>
+                </div>
+                <h4 className="text-lg font-semibold mb-3 text-gray-800">Vil du spare mest muligt på en ældre mobil?</h4>
+                <p className="text-gray-600 text-sm">
+                  <strong>Vælg Kompatibel (A-kvalitet)</strong> – fint til hverdagsbrug.
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full border border-blue-200">
+                <span className="text-blue-600 text-lg">🤖</span>
+                <span className="text-sm font-medium text-blue-800">Android (Samsung/Huawei/OnePlus)? Vi bruger originale servicepacks.</span>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <h4 className="text-lg font-semibold mb-3 text-gray-800 text-center">Vi hjælper dig med at vælge</h4>
+              <p className="text-center text-gray-600 mb-4">
+                Er du i tvivl, så skriv eller ring – vi anbefaler ærligt ud fra alder, brug og budget.
+              </p>
+              <div className="flex justify-center gap-3">
+                <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
+                  Ring +45 93 54 54 57
+                </button>
+                <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-200 transition-colors">
+                  Skriv på WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+          
           {/* SEO & Help */}
           <div className="mt-12 text-center">
             <p className="text-sm text-gray-600 mb-4">
-              Priser inkl. moms. 24 mdr. på skærm / 12 mdr. på batteri & øvrige dele.
+              Priser inkl. moms. 24 mdr. garanti på skærme / 12 mdr. på batterier & øvrige dele. Vand-/væskeskader er undtaget. Tætning genskabes efter bedste praksis, men fabriks-IP kan ikke garanteres.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
