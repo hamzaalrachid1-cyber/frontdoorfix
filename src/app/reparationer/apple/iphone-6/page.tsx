@@ -424,91 +424,7 @@ export default function IPhone6Repairs() {
           </div>
         </div>
       </section>
-      {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-4xl px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Ofte stillede spørgsmål
-          </h2>
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvor lang tid tager en iPhone 6 reparation?
-              </h3>
-              <p className="text-gray-600">
-                De fleste reparationer klares på <strong>20–30 min</strong> på din adresse. Skærm tager typisk 15–25 min, batteri 15–20 min.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Mister jeg data ved reparationen?
-              </h3>
-              <p className="text-gray-600">
-                Nej, standardreparationer bevarer dine data. Vi anbefaler dog altid backup for en sikkerheds skyld.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Kan Touch ID genskabes på iPhone 6?
-              </h3>
-              <p className="text-gray-600">
-                Nej. Ved skift af hjem-knap kan Touch ID ikke genskabes på iPhone 6. Knappen virker stadig til klik.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvilke dele og hvilken garanti får jeg?
-              </h3>
-              <p className="text-gray-600">
-                Originale/A-kvalitetsdele. <strong>24 mdr. garanti på skærme</strong> og <strong>12 mdr. på batteri og øvrige dele</strong>.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Kommer I ud til min adresse?
-              </h3>
-              <p className="text-gray-600">
-                Ja, vi kører i Storkøbenhavn og reparerer på stedet. Udrykning er gratis i vores område.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvad hvis fejlen er ukendt?
-              </h3>
-              <p className="text-gray-600">
-                Vi laver en hurtig diagnose først. Kan den repareres, fortsætter vi efter aftalt pris.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Giver I garanti ved væskeskader?
-              </h3>
-              <p className="text-gray-600">
-                Vi kan rense og forsøge at redde enheden, men der er ingen garanti på væskeskader.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvordan betaler jeg?
-              </h3>
-              <p className="text-gray-600">
-                MobilePay/kort. Du får kvittering og garanti på mail.
-              </p>
-            </div>
-          </div>
-          
-          {/* Mini CTA under FAQ */}
-          <div className="mt-12 text-center">
-            <p className="text-lg text-gray-700 mb-6">Klar til at komme videre?</p>
-            <a
-              href="/bestil?model=iphone-6"
-              className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2"
-            >
-              📅 Bestil tid til iPhone 6
-            </a>
-          </div>
-        </div>
-      </section>
+
       {/* Next Step CTA */}
       <section id="next-step-cta" className="py-12 px-6 md:py-14">
         <div className="mx-auto max-w-4xl">
@@ -634,7 +550,7 @@ export default function IPhone6Repairs() {
                 Hvor lang tid tager en iPhone 6 reparation?
               </h3>
               <p className="text-gray-600">
-                De fleste reparationer er færdige på 20–30 minutter på stedet. Skærmreparationer tager typisk 15-25 minutter, mens batteriskift tager 15-20 minutter.
+                De fleste reparationer klares på <strong>20–30 min</strong> på din adresse. Skærm tager typisk 15–25 min, batteri 15–20 min.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
@@ -642,7 +558,7 @@ export default function IPhone6Repairs() {
                 Mister jeg data ved reparationen?
               </h3>
               <p className="text-gray-600">
-                Nej, ved standardreparationer bevarer vi dine data. Vi anbefaler dog backup før reparation for en sikkerheds skyld.
+                Nej, standardreparationer bevarer dine data. Vi anbefaler dog altid backup for en sikkerheds skyld.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
@@ -650,30 +566,63 @@ export default function IPhone6Repairs() {
                 Kan Touch ID genskabes på iPhone 6?
               </h3>
               <p className="text-gray-600">
-                Nej, Touch ID kan ikke genskabes ved skift af hjem-knap på iPhone 6. Dette er en teknisk begrænsning.
+                Nej. Ved skift af hjem-knap kan Touch ID ikke genskabes på iPhone 6. Knappen virker stadig til klik.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Giver I garanti på væskeskader?
+                Hvilke dele og hvilken garanti får jeg?
               </h3>
               <p className="text-gray-600">
-                Vi renser og diagnosticerer væskeskader, men giver ingen garanti på væskeskader da de kan være uforudsigelige.
+                Originale/A-kvalitetsdele. <strong>24 mdr. garanti på skærme</strong> og <strong>12 mdr. på batteri og øvrige dele</strong>.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvilke dele bruger I?
+                Kommer I ud til min adresse?
               </h3>
               <p className="text-gray-600">
-                Originale eller kvalitetsgodkendte A-kvalitetsdele med garanti. Vi bruger kun dele af højeste kvalitet, der lever op til Apple's standarder.
+                Ja, vi kører i Storkøbenhavn og reparerer på stedet. Udrykning er gratis i vores område.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Hvad hvis fejlen er ukendt?
+              </h3>
+              <p className="text-gray-600">
+                Vi laver en hurtig diagnose først. Kan den repareres, fortsætter vi efter aftalt pris.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Giver I garanti ved væskeskader?
+              </h3>
+              <p className="text-gray-600">
+                Vi kan rense og forsøge at redde enheden, men der er ingen garanti på væskeskader.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+                Hvordan betaler jeg?
+              </h3>
+              <p className="text-gray-600">
+                MobilePay/kort. Du får kvittering og garanti på mail.
               </p>
             </div>
           </div>
+          
+          {/* Mini CTA under FAQ */}
+          <div className="mt-12 text-center">
+            <p className="text-lg text-gray-700 mb-6">Klar til at komme videre?</p>
+            <a
+              href="/bestil?model=iphone-6"
+              className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+            >
+              📅 Bestil tid til iPhone 6
+            </a>
+          </div>
         </div>
-      </section>
-
-      {/* Schema.org Structured Data */}
+      </section>      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
