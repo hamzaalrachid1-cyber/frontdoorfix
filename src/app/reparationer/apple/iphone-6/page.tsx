@@ -24,6 +24,7 @@ export default function IPhone6Repairs() {
   const [selectedRepairs, setSelectedRepairs] = useState<string[]>([]);
   const [activeFilter, setActiveFilter] = useState<string>('alle');
   const [searchTerm, setSearchTerm] = useState<string>('');
+  const [showModal, setShowModal] = useState<string | null>(null);
 
   const repairs: Repair[] = [
     {
@@ -33,7 +34,7 @@ export default function IPhone6Repairs() {
       time: "30 min",
       warranty: "24 mdr",
       price: { fixed: 799 },
-      badges: ["paa_lager"],
+      badges: ["paa_lager", "original_kalibreret"],
       excerpt: "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
       includes: ["Glas + LCD", "Kalibrering", "Test af touch"]
     },
@@ -44,7 +45,7 @@ export default function IPhone6Repairs() {
       time: "30 min",
       warranty: "24 mdr",
       price: { fixed: 599 },
-      badges: ["paa_lager"],
+      badges: ["paa_lager", "kompatibel_a"],
       excerpt: "Glas + LCD udskiftes (kompatibel kvalitet).",
       includes: ["Kompatibel glas + LCD", "Kalibrering", "Test af touch"]
     },
@@ -55,7 +56,7 @@ export default function IPhone6Repairs() {
       time: "15–20 min",
       warranty: "12 mdr",
       price: { fixed: 399 },
-      badges: ["paa_lager"],
+      badges: ["paa_lager", "original_kalibreret"],
       excerpt: "Nyt batteri med frisk kapacitet. Kalibrering + test.",
       includes: ["Original batteri", "Kalibrering", "Kapacitetstest"]
     },
@@ -66,7 +67,7 @@ export default function IPhone6Repairs() {
       time: "15–20 min",
       warranty: "12 mdr",
       price: { fixed: 299 },
-      badges: ["paa_lager"],
+      badges: ["paa_lager", "kompatibel_a"],
       excerpt: "Kompatibelt batteri. Kalibrering + test.",
       includes: ["Kompatibel batteri", "Kalibrering", "Kapacitetstest"]
     },
@@ -304,12 +305,20 @@ export default function IPhone6Repairs() {
       {/* Repairs & Prices - New Simple Structure */}
       <section id="rep-list" className="pt-4 pb-6 sm:pt-6 sm:pb-8 bg-white">
         <div className="mx-auto max-w-6xl px-6">
-          <h1 className="text-3xl font-bold text-center mb-3 text-gray-800">
+          <h1 className="text-3xl font-bold text-center mb-3 text-gray-800" id="dele">
             Reparationer & Priser – iPhone 6
           </h1>
-          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-gray-600 mb-4 max-w-2xl mx-auto">
             Vælg din reparation nedenfor. Vi kommer til din adresse og reparerer på stedet på 20-30 minutter.
           </p>
+          <div className="text-center mb-8">
+            <a 
+              href="/reservedele" 
+              className="text-pink-600 hover:text-pink-700 transition-colors text-sm font-medium underline"
+            >
+              Læs om vores reservedele →
+            </a>
+          </div>
 
           {/* SEO Text */}
           <div className="text-center mb-8">
@@ -400,12 +409,24 @@ export default function IPhone6Repairs() {
                 key={repair.key} 
                 className="flex flex-col rounded-xl border border-neutral-200/70 bg-white shadow-sm hover:shadow-md transition p-4 sm:p-5 h-full"
               >
-                {/* Mest valgt badge */}
-                {repair.badges?.includes('mest_valgt') && (
-                  <div className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-2 py-1 rounded-full font-medium" style={{fontSize: '11px'}}>
-                    Mest valgt
-                  </div>
-                )}
+                {/* Quality & Popular badges */}
+                <div className="absolute -top-2 -right-2 flex flex-col gap-1">
+                  {repair.badges?.includes('mest_valgt') && (
+                    <div className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-2 py-1 rounded-full font-medium" style={{fontSize: '11px'}}>
+                      Mest valgt
+                    </div>
+                  )}
+                  {repair.badges?.includes('original_kalibreret') && (
+                    <div className="bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium" style={{fontSize: '10px'}}>
+                      Original (kalibreret)
+                    </div>
+                  )}
+                  {repair.badges?.includes('kompatibel_a') && (
+                    <div className="bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium" style={{fontSize: '10px'}}>
+                      Kompatibel (A)
+                    </div>
+                  )}
+                </div>
                 
                 {/* Header: Icon + Title left, Price/Hint right */}
                 <div className="flex items-start justify-between gap-3">
@@ -497,9 +518,22 @@ export default function IPhone6Repairs() {
 
                 {/* Footer */}
                 <div className="mt-auto flex items-center justify-between pt-3">
-                  <button className="text-neutral-600 hover:text-neutral-800 transition-colors" style={{fontSize: '12.5px'}}>
-                    Detaljer
-                  </button>
+                  {(repair.category === 'screen' || repair.category === 'battery') ? (
+                    <button 
+                      className="text-neutral-600 hover:text-neutral-800 transition-colors flex items-center gap-1" 
+                      style={{fontSize: '12.5px'}}
+                      onClick={() => setShowModal(repair.key)}
+                    >
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      Detaljer
+                    </button>
+                  ) : (
+                    <button className="text-neutral-600 hover:text-neutral-800 transition-colors" style={{fontSize: '12.5px'}}>
+                      Detaljer
+                    </button>
+                  )}
                   <button
                     onClick={() => toggleRepairSelection(repair.key)}
                     className={`h-8 px-4 rounded-full font-medium transition-colors ${
@@ -1215,6 +1249,66 @@ export default function IPhone6Repairs() {
           `
         }}
       />
+
+      {/* Parts Quality Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" onClick={() => setShowModal(null)}>
+          <div className="bg-white rounded-2xl p-6 max-w-md mx-4 shadow-xl" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold text-gray-800">Reservedel-kvalitet</h3>
+              <button 
+                onClick={() => setShowModal(null)}
+                className="text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            {showModal.includes('original') ? (
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-600">⭐</span>
+                  <span className="text-sm text-gray-700"><strong>Farver:</strong> Bedste farvegengivelse og lysstyrke</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-600">🔋</span>
+                  <span className="text-sm text-gray-700"><strong>Strømforbrug:</strong> Optimal batteriydelse</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-orange-600">ℹ️</span>
+                  <span className="text-sm text-gray-700"><strong>"Ukendt del":</strong> Kan vises på nyere iPhones (påvirker ikke funktion)</span>
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-yellow-600">⭐</span>
+                  <span className="text-sm text-gray-700"><strong>Farver:</strong> God kvalitet, lidt lavere lysstyrke</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-orange-600">🔋</span>
+                  <span className="text-sm text-gray-700"><strong>Strømforbrug:</strong> 10-15% højere end original</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-orange-600">ℹ️</span>
+                  <span className="text-sm text-gray-700"><strong>"Ukendt del":</strong> Kan vises på nyere iPhones (påvirker ikke funktion)</span>
+                </div>
+              </div>
+            )}
+            
+            <div className="mt-6 text-center">
+              <a 
+                href="/reservedele" 
+                className="text-pink-600 hover:text-pink-700 transition-colors text-sm font-medium underline"
+              >
+                Læs mere om reservedele →
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
