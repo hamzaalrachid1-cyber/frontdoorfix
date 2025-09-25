@@ -428,27 +428,30 @@ export default function IPhone6PlusRepairs() {
       {/* Next Step CTA */}
       <section id="next-step-cta" className="py-12 px-6 md:py-14">
         <div className="mx-auto max-w-4xl">
-          <div className="bg-gradient-to-r from-pink-500 to-yellow-500 rounded-2xl shadow-lg p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-pink-500 to-yellow-500 rounded-2xl shadow-lg p-8 md:p-12 text-center relative overflow-hidden">
+            {/* Subtle overlay for better text contrast */}
+            <div className="absolute inset-0 bg-black/5 pointer-events-none"></div>
+            
             {/* Overline */}
-            <p className="text-sm font-semibold text-white opacity-90 mb-4">
+            <p className="text-xs md:text-sm font-semibold text-white opacity-75 mb-4 relative z-10" style={{fontSize: '12px'}}>
               Klar til at komme videre?
             </p>
             
             {/* Main Title */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4 relative z-10" style={{textShadow: '0 1px 1px rgba(0,0,0,.25)'}}>
               Klar til at reparere din iPhone 6 Plus?
             </h2>
             
             {/* Subtitle */}
-            <p className="text-lg text-white opacity-80 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-white opacity-80 mb-8 max-w-2xl mx-auto relative z-10" style={{textShadow: '0 1px 1px rgba(0,0,0,.25)'}}>
               Book en tid nu og få din iPhone repareret på under 30 minutter.
             </p>
             
             {/* Button Row */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8 relative z-10">
               <a
                 href="/bestil?model=iphone-6-plus"
-                className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-white text-pink-600 px-6 py-4 h-14 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2 focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:outline-none"
                 data-analytics="cta_book_model"
                 data-model="iphone-6-plus"
                 aria-label="Bestil tid til iPhone 6 Plus reparation"
@@ -458,17 +461,17 @@ export default function IPhone6PlusRepairs() {
               </a>
               <a
                 href="tel:+4593545457"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-transparent border-2 border-white text-white px-6 py-4 h-14 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors inline-flex items-center justify-center gap-2 focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:outline-none"
                 data-analytics="cta_call_model"
                 data-model="iphone-6-plus"
-                aria-label="Ring til iPhone 6 Plus reparation"
+                aria-label="Ring til FrontDoorFix på +45 93 54 54 57"
               >
                 <span>📞</span>
                 Ring +45 93 54 54 57
               </a>
               <a
                 href="https://wa.me/4593545457?text=Hej! Jeg vil gerne booke iPhone 6 Plus reparation"
-                className="bg-transparent text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-transparent text-white px-6 py-4 h-14 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors inline-flex items-center justify-center gap-2 focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:outline-none"
                 data-analytics="cta_whatsapp_model"
                 data-model="iphone-6-plus"
                 aria-label="Skriv på WhatsApp om iPhone 6 Plus reparation"
@@ -481,7 +484,7 @@ export default function IPhone6PlusRepairs() {
             </div>
             
             {/* Trust Line */}
-            <div className="flex flex-wrap justify-center gap-6 text-white opacity-85 text-sm">
+            <div className="flex flex-wrap justify-center gap-3 text-white opacity-85 text-sm relative z-10">
               <div className="flex items-center gap-2">
                 <span>✔</span>
                 Vi kommer til din adresse
@@ -501,7 +504,7 @@ export default function IPhone6PlusRepairs() {
             </div>
             
             {/* Micro Legal */}
-            <p className="text-xs text-white opacity-70 mt-6">
+            <p className="text-xs text-white opacity-70 mt-6 relative z-10">
               Priser inkl. moms. Garanti gælder fra reparationsdato.
             </p>
           </div>
