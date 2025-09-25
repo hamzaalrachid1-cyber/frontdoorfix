@@ -64,6 +64,18 @@ export default function IPhone6Repairs() {
       quality: "compatible"
     },
     {
+      id: "bagglas",
+      name: "Bagglas reparation",
+      description: "Udskiftning af ødelagt bagglas",
+      time: "20-30 min",
+      warranty: "12 mdr",
+      price: "199",
+      originalPrice: "199",
+      compatiblePrice: "199",
+      includes: "Bagglas + montering",
+      quality: "original"
+    },
+    {
       id: "ladeport",
       name: "Ladestik / Opladningsport",
       description: "Reparation af ladeport",
