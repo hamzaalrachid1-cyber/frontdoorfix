@@ -40,16 +40,28 @@ export default function IPhone6PlusRepairs() {
       quality: "compatible"
     },
     {
-      id: "batteri",
-      name: "Batteri",
-      description: "Udskiftning af slidt batteri",
+      id: "batteri-original",
+      name: "Batteriskift, Original Kvalitet",
+      description: "Udskiftning af slidt batteri med original Apple kvalitet",
       time: "15-20 min",
       warranty: "12 mdr",
       price: "449",
       originalPrice: "449",
-      compatiblePrice: "349",
+      compatiblePrice: "449",
       includes: "Originalt Apple batteri",
       quality: "original"
+    },
+    {
+      id: "batteri-kompatibel",
+      name: "Batteriskift, Kompatibel (Uoriginal)",
+      description: "Udskiftning af slidt batteri med kompatibel kvalitet",
+      time: "15-20 min",
+      warranty: "12 mdr",
+      price: "349",
+      originalPrice: "349",
+      compatiblePrice: "349",
+      includes: "Kompatibel batteri",
+      quality: "compatible"
     },
     {
       id: "ladeport",
