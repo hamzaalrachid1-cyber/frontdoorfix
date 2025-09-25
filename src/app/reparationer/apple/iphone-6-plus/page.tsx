@@ -221,17 +221,6 @@ export default function IPhone6PlusRepairs() {
       quality: "service"
     },
     {
-      id: "fejlsøgning",
-      name: "Fejlsøgning/diagnose",
-      description: "Fejlsøgning og diagnose (fratrækkes ved reparation)",
-      time: "15-30 min",
-      warranty: "Ingen",
-      price: "99",
-      originalPrice: "99",
-      compatiblePrice: "99",
-      includes: "Diagnose + rapport",
-      quality: "service"
-    },
     {
       id: "væskeskade",
       name: "Væskeskade-rens",
@@ -390,33 +379,7 @@ export default function IPhone6PlusRepairs() {
                         </button>
                       </td>
                     </tr>
-                  ))}            <tr className="border-b border-gray-200">
-              <td className="py-4 px-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-gray-600">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800">Fejlsøgning/diagnose</h3>
-                    <p className="text-sm text-gray-600">Fejlsøgning og diagnose (fratrækkes ved reparation)</p>
-                  </div>
-                </div>
-              </td>
-              <td className="py-4 px-6 text-center">
-                <span className="text-lg font-semibold text-gray-800">Gratis</span>
-              </td>
-              <td className="py-4 px-6 text-center">
-                <span className="text-sm text-gray-600">~15 min</span>
-              </td>
-              <td className="py-4 px-6 text-center">
-                <span className="text-sm text-gray-600">-</span>
-              </td>
-              <td className="py-4 px-6 text-center">
-                <span className="text-sm text-gray-600">Inkluderer: Diagnose + rapport</span>
-              </td>
-            </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
