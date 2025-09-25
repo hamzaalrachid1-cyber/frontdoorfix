@@ -712,14 +712,11 @@ export default function Home() {
               
               <div className="mt-8 text-center">
                 <p className="text-sm text-gray-600 mb-4">
-                  Spørg os om kvaliteten før du booker – vi svarer på 2 min. på telefon eller WhatsApp.
+                  Spørg os om kvaliteten før du booker – vi svarer på 2 min. på telefon.
                 </p>
-                <div className="flex justify-center gap-4">
+                <div className="flex justify-center">
                   <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
                     Ring +45 93 54 54 57
-                  </button>
-                  <button className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-50 transition-colors">
-                    Skriv på WhatsApp
                   </button>
                 </div>
               </div>

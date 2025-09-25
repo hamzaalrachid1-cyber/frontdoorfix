@@ -60,12 +60,9 @@ export default function PartsFAQ() {
           <p className="text-gray-600 mb-6">
             Har du spørgsmål om kvalitet eller garanti? Vi rådgiver gerne!
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center">
             <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
               Ring +45 93 54 54 57
-            </button>
-            <button className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-50 transition-colors">
-              Skriv på WhatsApp
             </button>
           </div>
         </div>

@@ -588,14 +588,11 @@ export default function IPhone6Repairs() {
             <div className="bg-white p-6 rounded-lg border border-gray-200">
               <h4 className="text-lg font-semibold mb-3 text-gray-800 text-center">Vi hjælper dig med at vælge</h4>
               <p className="text-center text-gray-600 mb-4">
-                Er du i tvivl, så skriv eller ring – vi anbefaler ærligt ud fra alder, brug og budget.
+                Er du i tvivl, så ring – vi anbefaler ærligt ud fra alder, brug og budget.
               </p>
-              <div className="flex justify-center gap-3">
+              <div className="flex justify-center">
                 <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
                   Ring +45 93 54 54 57
-                </button>
-                <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-200 transition-colors">
-                  Skriv på WhatsApp
                 </button>
               </div>
             </div>
