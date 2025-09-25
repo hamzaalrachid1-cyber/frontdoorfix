@@ -193,53 +193,92 @@ export default function IPhone6Repairs() {
     return matchesFilter && matchesSearch;
   });
 
-  // PriceRow Component
-  const PriceRow = ({ repair, onDetails }: { repair: Repair; onDetails?: () => void }) => {
-    const renderVariants = () => {
-      if (!repair.variants) {
-        return (
-          <div className="flex items-start justify-between rounded-xl border border-[#eef2f7] bg-[#ffffff] px-5 py-3">
-            <div>
-              <div className="font-semibold text-slate-900">{repair.title}</div>
-              {repair.description && <div className="text-sm text-[#6b7280] mt-1">{repair.description}</div>}
-              <div className="flex gap-2 mt-2">
-                {repair.timeMin && <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs">{repair.timeMin}</span>}
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs">12 mdr</span>
-                {repair.stock === "in_stock" && <span className="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs">På lager</span>}
-              </div>
-              {onDetails && <button onClick={onDetails} className="text-sm mt-2 text-slate-500 hover:text-slate-700">Detaljer</button>}
-            </div>
-            <div className="text-right">
-              {repair.contactOnly ? (
-                <div className="font-semibold text-slate-600">Kontakt os</div>
-              ) : (
-                <div className="text-2xl font-bold text-[#0f172a]">{repair.price} kr</div>
-              )}
-            </div>
-          </div>
-        );
-      }
-
-      return repair.variants.map((variant) => (
-        <div key={variant.id} className="flex items-start justify-between rounded-xl border border-[#eef2f7] bg-[#ffffff] px-5 py-3">
-          <div>
-            <div className="font-semibold text-slate-900">{repair.title} – {variant.label}</div>
-            {repair.description && <div className="text-sm text-[#6b7280] mt-1">{repair.description}</div>}
-            <div className="flex gap-2 mt-2">
-              {repair.timeMin && <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs">{repair.timeMin}</span>}
-              <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs">{variant.warrantyMonths} mdr</span>
-              {repair.stock === "in_stock" && <span className="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs">På lager</span>}
-            </div>
-            {onDetails && <button onClick={onDetails} className="text-sm mt-2 text-slate-500 hover:text-slate-700">Detaljer</button>}
-          </div>
-          <div className="text-right">
-            <div className="text-2xl font-bold text-[#0f172a]">{variant.price} kr</div>
+  // PriceRowDense Component
+  const PriceRowDense = ({ 
+    title, 
+    subtitle, 
+    time, 
+    warranty, 
+    stock, 
+    price, 
+    contact, 
+    onDetails 
+  }: {
+    title: string; 
+    subtitle?: string; 
+    time?: string; 
+    warranty?: string; 
+    stock?: string;
+    price?: number; 
+    contact?: boolean; 
+    onDetails?: () => void
+  }) => {
+    return (
+      <div className="rounded-lg border border-slate-200 bg-white px-4 py-3 flex items-start justify-between min-h-[88px]">
+        <div className="min-w-0 flex-1">
+          <div className="text-[15px] font-semibold text-slate-900 leading-snug truncate">{title}</div>
+          {subtitle && (
+            <div className="text-[13px] text-slate-500 leading-snug line-clamp-1 mt-0.5">{subtitle}</div>
+          )}
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {time && <span className="px-2 py-0.5 rounded-full bg-slate-100 text-[11px] text-slate-600">{time}</span>}
+            {warranty && <span className="px-2 py-0.5 rounded-full bg-slate-100 text-[11px] text-slate-600">{warranty}</span>}
+            {stock && <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-[11px] text-emerald-600">{stock}</span>}
+            {onDetails && <button onClick={onDetails} className="text-[12px] text-slate-500 hover:text-slate-700 ml-1">Detaljer</button>}
           </div>
         </div>
-      ));
-    };
 
-    return <div className="space-y-2">{renderVariants()}</div>;
+        <div className="text-right pl-3 shrink-0">
+          {contact ? (
+            <div className="text-[15px] font-semibold text-slate-600">Kontakt os</div>
+          ) : (
+            <div className="text-[20px] font-extrabold text-slate-900 tracking-tight">{price} kr</div>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  // Render repair rows with variants
+  const renderRepairRows = () => {
+    const rows: JSX.Element[] = [];
+    
+    filteredRepairs.forEach((repair) => {
+      if (repair.variants) {
+        // Render each variant as separate row
+        repair.variants.forEach((variant) => {
+          rows.push(
+            <PriceRowDense
+              key={`${repair.id}-${variant.id}`}
+              title={`${repair.title} – ${variant.label}`}
+              subtitle={repair.description}
+              time={repair.timeMin}
+              warranty={`${variant.warrantyMonths} mdr`}
+              stock={repair.stock === "in_stock" ? "På lager" : undefined}
+              price={variant.price}
+              onDetails={() => setShowDetailsModal(repair.id)}
+            />
+          );
+        });
+      } else {
+        // Single row for repairs without variants
+        rows.push(
+          <PriceRowDense
+            key={repair.id}
+            title={repair.title}
+            subtitle={repair.description}
+            time={repair.timeMin}
+            warranty="12 mdr"
+            stock={repair.stock === "in_stock" ? "På lager" : undefined}
+            price={repair.price}
+            contact={repair.contactOnly}
+            onDetails={() => setShowDetailsModal(repair.id)}
+          />
+        );
+      }
+    });
+    
+    return rows;
   };
 
   return (
@@ -324,10 +363,10 @@ export default function IPhone6Repairs() {
       {/* Repairs & Prices - New Simple Structure */}
       <section id="rep-list" className="pt-4 pb-6 sm:pt-6 sm:pb-8 bg-white">
         <div className="mx-auto max-w-6xl px-6">
-          <h1 className="text-3xl font-bold text-center mb-3 text-gray-800" id="dele">
-            Reparationer & Priser – iPhone 6
-          </h1>
-          <p className="text-center text-gray-600 mb-4 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-900 mb-3 text-center" id="dele">
+            Reparationer & Priser — iPhone 6
+          </h2>
+          <p className="text-[13px] text-slate-500 mb-4 text-center">
             Vælg din reparation nedenfor. Vi kommer til din adresse og reparerer på stedet på 20-30 minutter.
           </p>
           <div className="text-center mb-8">
@@ -425,30 +464,26 @@ export default function IPhone6Repairs() {
             </div>
           </div>
 
-          {/* Price List - Clean Rows */}
-          <div className="space-y-3">
-            <style jsx>{`
-              .no-scrollbar {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-              }
-              .no-scrollbar::-webkit-scrollbar {
-                display: none;
-              }
-              :root {
-                --fdx-price: #0f172a;
-                --fdx-muted: #6b7280;
-                --fdx-row-bg: #ffffff;
-                --fdx-row-brd: #eef2f7;
-              }
-            `}</style>
-            {filteredRepairs.map((repair) => (
-              <PriceRow 
-                key={repair.id} 
-                repair={repair} 
-                onDetails={() => setShowDetailsModal(repair.id)}
-              />
-            ))}
+          {/* Price Grid - Dense Layout */}
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+              <style jsx>{`
+                .no-scrollbar {
+                  -ms-overflow-style: none;
+                  scrollbar-width: none;
+                }
+                .no-scrollbar::-webkit-scrollbar {
+                  display: none;
+                }
+                .line-clamp-1 {
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                }
+              `}</style>
+              {renderRepairRows()}
+            </div>
           </div>
 
           {/* Primary CTA */}
@@ -1066,7 +1101,7 @@ export default function IPhone6Repairs() {
       </div>
 
 
-      {/* Sticky Mobile CTA - Hidden when hero in viewport */}
+      {/* Sticky Mobile CTA - Bestil tid */}
       <div id="mobile-sticky-cta" className="fixed inset-x-4 bottom-4 z-50 md:hidden">
         <div className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-3 rounded-full shadow-lg flex items-center justify-between">
           <div>
@@ -1074,10 +1109,10 @@ export default function IPhone6Repairs() {
             <div className="text-xs opacity-90">Vi kommer til dig på 20-30 min</div>
           </div>
           <button 
-            onClick={() => document.getElementById('rep-list')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => setShowBookingWizard(true)}
             className="bg-white text-pink-600 px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors"
           >
-            Se priser
+            Bestil tid
           </button>
         </div>
       </div>
@@ -1161,34 +1196,55 @@ export default function IPhone6Repairs() {
 
       {/* Details Modal */}
       {showDetailsModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" onClick={() => setShowDetailsModal(null)}>
-          <div className="bg-white rounded-2xl p-6 max-w-md mx-4 shadow-xl" onClick={(e) => e.stopPropagation()}>
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-gray-800">Reparation detaljer</h3>
-              <button 
-                onClick={() => setShowDetailsModal(null)}
-                className="text-gray-500 hover:text-gray-700 transition-colors"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            
-            <div className="space-y-3">
-              <p className="text-sm text-gray-700">
-                Detaljeret information om denne reparation kommer snart.
-              </p>
-            </div>
-            
-            <div className="mt-6 text-center">
-              <a 
-                href="/reservedele" 
-                className="text-pink-600 hover:text-pink-700 transition-colors text-sm font-medium underline"
-              >
-                Læs mere om reservedele →
-              </a>
-            </div>
+        <div className="fixed inset-0 z-50 grid place-items-center bg-black/40" onClick={() => setShowDetailsModal(null)}>
+          <div className="bg-white rounded-2xl p-6 w-full max-w-lg mx-4" onClick={(e) => e.stopPropagation()}>
+            {(() => {
+              const repair = repairs.find(r => r.id === showDetailsModal);
+              if (!repair) return null;
+              
+              return (
+                <>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="text-lg font-semibold text-slate-900">{repair.title}</div>
+                    <button 
+                      onClick={() => setShowDetailsModal(null)}
+                      className="text-slate-500 hover:text-slate-700 transition-colors"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <p className="text-sm text-slate-600 whitespace-pre-line">
+                      {repair.description}
+                      
+                      {repair.variants && (
+                        `\n\nTilgængelige kvaliteter:\n${repair.variants.map(v => `• ${v.label}: ${v.price} kr (${v.warrantyMonths} mdr garanti)`).join('\n')}`
+                      )}
+                      
+                      {repair.id === 'hjemknap' && '\n\n⚠️ Bemærk: Touch ID kan ikke genskabes på iPhone 6 efter hjem-knap udskiftning.'}
+                    </p>
+                  </div>
+                  
+                  <div className="mt-5 flex justify-between">
+                    <a 
+                      href="/reservedele" 
+                      className="text-pink-600 hover:text-pink-700 transition-colors text-sm font-medium underline"
+                    >
+                      Læs om reservedele →
+                    </a>
+                    <button 
+                      onClick={() => setShowDetailsModal(null)} 
+                      className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors text-sm font-medium"
+                    >
+                      Luk
+                    </button>
+                  </div>
+                </>
+              );
+            })()}
           </div>
         </div>
       )}
