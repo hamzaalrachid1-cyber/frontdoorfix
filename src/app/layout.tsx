@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { BookingModalProvider } from "@/context/BookingModalContext";
+import BookNowButton from "@/components/BookNowButton";
 import Link from "next/link";
 
 const geistSans = Geist({
@@ -43,7 +45,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="bar-gradient" />
+        <BookingModalProvider>
+          <div className="bar-gradient" />
         <div className="bg-gray-50 border-b border-gray-200">
           <div className="mx-auto max-w-6xl px-6 py-2 flex items-center justify-between text-sm text-gray-600">
             <div className="flex items-center gap-4">
@@ -109,9 +112,7 @@ export default function RootLayout({
                 <a href="/erhverv" className="hover:text-gray-900">Erhvervsaftaler</a>
                 <a href="/kontakt" className="hover:text-gray-900">Kontakt os</a>
               </nav>
-              <button className="btn-gradient px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-opacity">
-                Bestil tid
-              </button>
+              <BookNowButton className="btn-gradient px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-opacity" />
             </div>
           </div>
         </header>
@@ -128,9 +129,7 @@ export default function RootLayout({
               </svg>
               📞 Ring nu
             </a>
-            <button className="flex-1 btn-gradient px-6 py-4 rounded-full font-semibold shadow-lg hover:opacity-90 transition-opacity">
-              Bestil tid
-            </button>
+            <BookNowButton className="flex-1 btn-gradient px-6 py-4 rounded-full font-semibold shadow-lg hover:opacity-90 transition-opacity" />
           </div>
         </div>
         <footer className="border-t tint-gradient">
@@ -184,6 +183,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        </BookingModalProvider>
       </body>
     </html>
   );
