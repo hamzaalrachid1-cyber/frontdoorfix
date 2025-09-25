@@ -194,7 +194,6 @@ export default function IPhone6Repairs() {
     return matchesFilter && matchesSearch;
   });
 
-  const quickCards = repairs.filter(repair => repair.badges?.includes('mest_valgt')).slice(0, 3);
 
   const toggleRepairSelection = (repairKey: string) => {
     setSelectedRepairs(prev => 
@@ -306,68 +305,6 @@ export default function IPhone6Repairs() {
             Vælg din reparation nedenfor. Vi kommer til din adresse og reparerer på stedet på 20-30 minutter.
           </p>
 
-          {/* Quick Cards - Top 3 Most Popular */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Mest valgte reparationer</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {quickCards.map((repair) => (
-                <div key={repair.key} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100 relative">
-                  {repair.badges?.includes('mest_valgt') && (
-                    <div className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-yellow-500 text-white text-xs px-3 py-1 rounded-full font-semibold">
-                      Mest valgt
-                    </div>
-                  )}
-                  
-                  <div className="text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-pink-100 to-yellow-100 rounded-full flex items-center justify-center">
-                      {repair.category === 'screen' && (
-                        <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                      )}
-                      {repair.category === 'battery' && (
-                        <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7h3v10h-3V7zM5 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z" />
-                        </svg>
-                      )}
-                      {repair.category === 'ports' && (
-                        <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                      )}
-                    </div>
-                    
-                    <h3 className="text-xl font-bold text-gray-800 mb-2">{repair.title}</h3>
-                    <p className="text-gray-600 text-sm mb-4">{repair.excerpt}</p>
-                    
-                    <div className="flex justify-center gap-2 mb-4">
-                      <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
-                        {repair.time}
-                      </span>
-                      <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
-                        {repair.warranty}
-                      </span>
-                    </div>
-                    
-                    <div className="text-2xl font-bold text-gray-800 mb-4">
-                      {getFromPrice(repair)}
-                    </div>
-                    
-                    <button
-                      onClick={() => toggleRepairSelection(repair.key)}
-                      className={`w-full py-3 px-6 rounded-full font-semibold transition-colors ${
-                        selectedRepairs.includes(repair.key)
-                          ? 'bg-green-600 text-white'
-                          : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
-                      }`}
-                    >
-                      {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 'Vælg'}
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
 
           {/* Quality Toggle & Filters */}
           <div className="mb-8 space-y-4">
