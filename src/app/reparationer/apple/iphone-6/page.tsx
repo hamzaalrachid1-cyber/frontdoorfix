@@ -239,61 +239,61 @@ export default function IPhone6Repairs() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-pink-50 to-yellow-50">
+      {/* Hero Section - Compact */}
+      <section className="py-6 md:py-8 bg-gradient-to-r from-pink-50 to-yellow-50" style={{maxHeight: '280px'}}>
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
                 <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                   iPhone 6 Reparation
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 mb-4 leading-tight">
                 Standard model med A8 chip – reparation på stedet på 20–30 min.
               </p>
-              <div className="flex flex-wrap gap-4 mb-6">
-                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                  A8 chip
-                </span>
-                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                  4.7&quot; Retina
-                </span>
-                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
-                  2014
-                </span>
-              </div>
-              <div className="flex items-center gap-4 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+              
+              <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                <div className="flex items-center gap-1">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
-                  Vi kommer til din adresse
+                  Vi kommer til dig
                 </div>
-                <div className="flex items-center gap-2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
+                <div className="flex items-center gap-1">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-blue-600">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
                   20–30 min
                 </div>
-                <div className="flex items-center gap-2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-600">
+                <div className="flex items-center gap-1">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-600">
                     <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
                   </svg>
                   5★ anmeldelser
                 </div>
               </div>
+
+              <div className="flex gap-3">
+                <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                  Bestil tid
+                </button>
+                <button 
+                  onClick={() => document.getElementById('rep-list')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
+                >
+                  Se reparationer
+                </button>
+              </div>
             </div>
-            <div className="phone-hero">
+            <div className="flex justify-center md:justify-end">
               <img
                 src="/images/iphones/iphone-6.png"
                 alt="iPhone 6 – front, bagside og sideprofil"
-                width="400"
-                height="400"
+                className="w-full max-w-[140px] md:max-w-[200px] lg:max-w-[280px] h-auto object-contain"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
-                className="phone-hero__img"
               />
             </div>
           </div>
@@ -301,7 +301,7 @@ export default function IPhone6Repairs() {
       </section>
 
       {/* Repairs & Prices - New Simple Structure */}
-      <section className="py-16 bg-white">
+      <section id="rep-list" className="py-16 bg-white">
         <div className="mx-auto max-w-6xl px-6">
           <h1 className="text-4xl font-bold text-center mb-4 text-gray-800">
             Reparationer & Priser – iPhone 6
@@ -310,57 +310,62 @@ export default function IPhone6Repairs() {
             Vælg din reparation nedenfor. Vi kommer til din adresse og reparerer på stedet på 20-30 minutter.
           </p>
 
-
-          {/* Filters & Search */}
-          <div className="mb-8 space-y-4">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          {/* Filters & Search - Sticky on Mobile */}
+          <div className="sticky top-0 z-10 bg-white py-4 mb-8 -mx-6 px-6 md:static md:py-0 md:mx-0 md:px-0">
+            <div className="space-y-4">
               {/* Search */}
-              <div className="flex-1 max-w-md">
-                <input
-                  type="text"
-                  placeholder="Søg reparation… (fx 'kamera')"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                />
+              <div className="flex justify-center">
+                <div className="w-full max-w-md">
+                  <input
+                    type="text"
+                    placeholder="Søg reparation… (fx 'kamera')"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                  />
+                </div>
               </div>
-            </div>
 
-            {/* Filter Chips */}
-            <div className="flex flex-wrap gap-2">
-              {[
-                { key: 'alle', label: 'Alle' },
-                { key: 'screen', label: 'Skærm' },
-                { key: 'battery', label: 'Batteri' },
-                { key: 'camera', label: 'Kamera' },
-                { key: 'audio', label: 'Lyd/Knapper' },
-                { key: 'ports', label: 'Porte' },
-                { key: 'software', label: 'Software/Andet' }
-              ].map((filter) => (
-                <button
-                  key={filter.key}
-                  onClick={() => setActiveFilter(filter.key)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    activeFilter === filter.key
-                      ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  {filter.label}
-                </button>
-              ))}
+              {/* Filter Chips */}
+              <div className="flex flex-wrap justify-center gap-2">
+                {[
+                  { key: 'alle', label: 'Alle' },
+                  { key: 'screen', label: 'Skærm' },
+                  { key: 'battery', label: 'Batteri' },
+                  { key: 'camera', label: 'Kamera' },
+                  { key: 'audio', label: 'Lyd/Knapper' },
+                  { key: 'ports', label: 'Porte' },
+                  { key: 'software', label: 'Software/Andet' }
+                ].map((filter) => (
+                  <button
+                    key={filter.key}
+                    onClick={() => setActiveFilter(filter.key)}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
+                      activeFilter === filter.key
+                        ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    }`}
+                  >
+                    {filter.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Repair Grid - Compact */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {filteredRepairs.map((repair) => (
-              <div key={repair.key} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 border border-gray-100 relative min-h-[140px]">
+              <div 
+                key={repair.key} 
+                className="bg-white rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 p-3 border border-gray-100 relative min-h-[120px] cursor-pointer"
+                onClick={() => toggleRepairSelection(repair.key)}
+              >
                 {repair.badges?.map((badge) => (
-                  <div key={badge} className={`absolute -top-2 -right-2 text-xs px-2 py-1 rounded-full font-semibold ${
+                  <div key={badge} className={`absolute -top-1 -right-1 text-xs px-2 py-0.5 rounded-full font-medium ${
                     badge === 'mest_valgt' ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white' :
-                    badge === 'paa_lager' ? 'bg-green-100 text-green-800' :
-                    badge === 'advarsel' ? 'bg-red-100 text-red-800' : ''
+                    badge === 'paa_lager' ? 'bg-green-100 text-green-700' :
+                    badge === 'advarsel' ? 'bg-red-100 text-red-700' : ''
                   }`}>
                     {badge === 'mest_valgt' ? 'Mest valgt' :
                      badge === 'paa_lager' ? 'På lager' :
@@ -370,97 +375,96 @@ export default function IPhone6Repairs() {
                 
                 <div className="flex items-start gap-3">
                   {/* Icon */}
-                  <div className="w-9 h-9 bg-gradient-to-r from-pink-100 to-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 bg-gradient-to-r from-pink-100 to-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
                     {repair.category === 'screen' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                       </svg>
                     )}
                     {repair.category === 'battery' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7h3v10h-3V7zM5 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z" />
                       </svg>
                     )}
                     {repair.category === 'ports' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                     )}
                     {repair.category === 'camera' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                       </svg>
                     )}
                     {repair.category === 'audio' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M9 12a1 1 0 11-2 0 1 1 0 012 0z" />
                       </svg>
                     )}
                     {repair.category === 'buttons' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
                       </svg>
                     )}
                     {repair.category === 'software' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                       </svg>
                     )}
                     {repair.category === 'other' && (
-                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     )}
                   </div>
                   
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between mb-2">
-                      <h3 className="text-base font-semibold text-gray-800 leading-tight">{repair.title}</h3>
-                      <div className="text-lg font-bold text-gray-800 ml-2">
+                    <div className="flex items-start justify-between mb-1">
+                      <h3 className="text-sm font-semibold text-gray-800 leading-tight line-clamp-1">{repair.title}</h3>
+                      <div className="text-base font-bold text-gray-800 ml-2 flex-shrink-0">
                         {getPrice(repair)}
                       </div>
                     </div>
                     
-                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">{repair.excerpt}</p>
+                    <p className="text-gray-600 text-xs mb-2 line-clamp-2 leading-relaxed">{repair.excerpt}</p>
                     
                     {repair.warning && (
-                      <div className="bg-red-50 border border-red-200 rounded-md p-2 mb-3">
+                      <div className="bg-red-50 border border-red-200 rounded-md p-1.5 mb-2">
                         <p className="text-red-800 text-xs font-medium">⚠️ {repair.warning}</p>
                       </div>
                     )}
                     
                     <div className="flex items-center justify-between">
                       <div className="flex flex-wrap gap-1">
-                        <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium">
+                        <span className="bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full text-xs font-medium h-5 flex items-center">
                           ~{repair.time}
                         </span>
-                        <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium">
+                        <span className="bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full text-xs font-medium h-5 flex items-center">
                           {repair.warranty}
                         </span>
                         {repair.badges?.includes('paa_lager') && (
-                          <span className="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-medium">
+                          <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-xs font-medium h-5 flex items-center">
                             På lager
                           </span>
                         )}
                       </div>
                       
-                      <div className="flex items-center gap-2">
-                        <button
-                          onClick={() => toggleRepairSelection(repair.key)}
-                          className={`px-4 py-2 rounded-full font-semibold transition-colors text-sm min-h-[36px] ${
-                            selectedRepairs.includes(repair.key)
-                              ? 'bg-green-600 text-white'
-                              : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
-                          }`}
-                        >
-                          {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 'Vælg'}
-                        </button>
-                        <button className="text-xs text-gray-500 hover:text-pink-600 transition-colors p-1">
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </button>
-                      </div>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleRepairSelection(repair.key);
+                        }}
+                        className={`px-3 py-1.5 rounded-full font-semibold transition-colors text-xs min-h-[32px] ${
+                          selectedRepairs.includes(repair.key)
+                            ? 'bg-green-600 text-white'
+                            : repair.price.fixed === 0
+                            ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                            : 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white hover:opacity-90'
+                        }`}
+                      >
+                        {selectedRepairs.includes(repair.key) ? '✓ Valgt' : 
+                         repair.price.fixed === 0 ? 'Kontakt os' : 'Vælg'}
+                      </button>
                     </div>
                   </div>
                 </div>
