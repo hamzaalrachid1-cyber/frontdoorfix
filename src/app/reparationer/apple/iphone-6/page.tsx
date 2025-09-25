@@ -382,12 +382,6 @@ export default function IPhone6Repairs() {
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-2">
                           <span className="font-semibold text-gray-800">{repair.price} kr</span>
-                          {repair.originalPrice !== repair.compatiblePrice && (
-                            <div className="flex gap-1">
-                              <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Original</span>
-                              <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Kompatibel</span>
-                            </div>
-                          )}
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
