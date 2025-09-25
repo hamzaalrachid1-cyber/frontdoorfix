@@ -425,6 +425,89 @@ export default function IPhone6Repairs() {
         </div>
       </section>
 
+      {/* Next Step CTA */}
+      <section id="next-step-cta" className="py-12 px-6 md:py-14">
+        <div className="mx-auto max-w-4xl">
+          <div className="bg-gradient-to-r from-pink-500 to-yellow-500 rounded-2xl shadow-lg p-8 md:p-12 text-center">
+            {/* Overline */}
+            <p className="text-sm font-semibold text-white opacity-90 mb-4">
+              Klar til at komme videre?
+            </p>
+            
+            {/* Main Title */}
+            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+              Klar til at reparere din iPhone 6?
+            </h2>
+            
+            {/* Subtitle */}
+            <p className="text-lg text-white opacity-80 mb-8 max-w-2xl mx-auto">
+              Book en tid nu og få din iPhone repareret på under 30 minutter.
+            </p>
+            
+            {/* Button Row */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <a
+                href="/bestil?model=iphone-6"
+                className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                data-analytics="cta_book_model"
+                data-model="iphone-6"
+                aria-label="Bestil tid til iPhone 6 reparation"
+              >
+                <span>📅</span>
+                Bestil tid til iPhone 6 reparation
+              </a>
+              <a
+                href="tel:+4593545457"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors inline-flex items-center justify-center gap-2"
+                data-analytics="cta_call_model"
+                data-model="iphone-6"
+                aria-label="Ring til iPhone 6 reparation"
+              >
+                <span>📞</span>
+                Ring +45 93 54 54 57
+              </a>
+              <a
+                href="https://wa.me/4593545457?text=Hej! Jeg vil gerne booke iPhone 6 reparation"
+                className="bg-transparent text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-colors inline-flex items-center justify-center gap-2"
+                data-analytics="cta_whatsapp_model"
+                data-model="iphone-6"
+                aria-label="Skriv på WhatsApp om iPhone 6 reparation"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>💬</span>
+                Skriv på WhatsApp
+              </a>
+            </div>
+            
+            {/* Trust Line */}
+            <div className="flex flex-wrap justify-center gap-6 text-white opacity-85 text-sm">
+              <div className="flex items-center gap-2">
+                <span>✔</span>
+                Vi kommer til din adresse
+              </div>
+              <div className="flex items-center gap-2">
+                <span>⭐</span>
+                5★ kundeanmeldelser
+              </div>
+              <div className="flex items-center gap-2">
+                <span>⏱</span>
+                20–30 min
+              </div>
+              <div className="flex items-center gap-2">
+                <span>🛡</span>
+                24 mdr. skærm / 12 mdr. batteri
+              </div>
+            </div>
+            
+            {/* Micro Legal */}
+            <p className="text-xs text-white opacity-70 mt-6">
+              Priser inkl. moms. Garanti gælder fra reparationsdato.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Related Models */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-6xl px-6">
@@ -539,6 +622,30 @@ export default function IPhone6Repairs() {
           })
         }}
       />
+
+      {/* Sticky Mobile CTA */}
+      <div id="sticky-cta" className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-gray-200 safe-area-padding">
+        <div className="flex items-center justify-between px-4 py-3 h-16">
+          <a
+            href="/bestil?model=iphone-6"
+            className="flex-1 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 py-3 rounded-full font-semibold text-center mr-2"
+            data-analytics="cta_book_model"
+            data-model="iphone-6"
+            aria-label="Bestil tid til iPhone 6 reparation"
+          >
+            Bestil tid
+          </a>
+          <a
+            href="tel:+4593545457"
+            className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center"
+            data-analytics="cta_call_model"
+            data-model="iphone-6"
+            aria-label="Ring til iPhone 6 reparation"
+          >
+            📞
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
