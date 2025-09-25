@@ -518,54 +518,120 @@ export default function IPhone6Repairs() {
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-4xl px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Ofte stillede spørgsmål
-          </h2>
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvor lang tid tager en iPhone 6 reparation?
-              </h3>
-              <p className="text-gray-600">
-                De fleste reparationer er færdige på 20–30 minutter på stedet. Skærmreparationer tager typisk 15-25 minutter, mens batteriskift tager 15-20 minutter.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Mister jeg data ved reparationen?
-              </h3>
-              <p className="text-gray-600">
-                Nej, ved standardreparationer bevarer vi dine data. Vi anbefaler dog backup før reparation for en sikkerheds skyld.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Kan Touch ID genskabes på iPhone 6?
-              </h3>
-              <p className="text-gray-600">
-                Nej, Touch ID kan ikke genskabes ved skift af hjem-knap på iPhone 6. Dette er en teknisk begrænsning.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Giver I garanti på væskeskader?
-              </h3>
-              <p className="text-gray-600">
-                Vi renser og diagnosticerer væskeskader, men giver ingen garanti på væskeskader da de kan være uforudsigelige.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvilke dele bruger I?
-              </h3>
-              <p className="text-gray-600">
-                Originale eller kvalitetsgodkendte A-kvalitetsdele med garanti. Vi bruger kun dele af højeste kvalitet, der lever op til Apple's standarder.
-              </p>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Ofte stillede spørgsmål om iPhone 6
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Sidst opdateret: 25.09.2024
+            </p>
           </div>
-        </div>
-      </section>
 
+          {/* Table of Contents */}
+            <div className="faq-item bg-gray-50 rounded-lg" data-category="data" id="faq-data">
+              <button className="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-inset" aria-expanded="false" aria-controls="faq-answer-2">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Mister jeg data ved iPhone 6 reparation?
+                </h3>
+                <svg className="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="px-6 pb-4 hidden" id="faq-answer-2">
+                <div className="text-gray-600 space-y-3">
+                  <p><strong>Nej ved standardreparationer.</strong> Vi bevarer alt data ved skærm-, batteri- og ladeport-reparationer.</p>
+                  <p>Vi anbefaler dog altid backup for en sikkerheds skyld før reparationen.</p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">💾 Data bevares</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">🛡 Sikkerhed først</span>
+                  </div>
+                  <div className="mt-4">
+                    <a href="#batteri" className="btn-gradient px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+                      🔋 Book batteriskift
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item bg-gray-50 rounded-lg" data-category="touchid" id="faq-touchid">
+              <button className="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-inset" aria-expanded="false" aria-controls="faq-answer-3">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Kan Touch ID genskabes på iPhone 6 efter hjem-knap skift?
+                </h3>
+                <svg className="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="px-6 pb-4 hidden" id="faq-answer-3">
+                <div className="text-gray-600 space-y-3">
+                  <p><strong>Nej, teknisk begrænsning fra Apple.</strong> Touch ID kan ikke genskabes på iPhone 6 ved udskiftning af hjem-knappen.</p>
+                  <p>Touch ID bevares kun ved original knap. Ved skift mister du Touch ID-funktionaliteten.</p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">⚠️ Touch ID tabes</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">🍎 Apple-begrænsning</span>
+                  </div>
+                  <div className="mt-4">
+                    <a href="#hjem-knap" className="btn-gradient px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+                      🔘 Book hjem-knap reparation
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+      {/* FAQ Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "Hvor lang tid tager en iPhone 6 reparation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skærmreparation tager typisk 15–25 min, batteriskift 15–20 min. Vi reparerer på din adresse."
+              }
+            },{
+              "@type": "Question",
+              "name": "Mister jeg data ved iPhone 6 reparation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nej ved standardreparationer. Vi anbefaler dog backup for en sikkerheds skyld."
+              }
+            },{
+              "@type": "Question",
+              "name": "Kan Touch ID genskabes på iPhone 6 efter hjem-knap skift?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nej, Touch ID kan ikke genskabes på iPhone 6 ved udskiftning af hjem-knappen (Apple-begrænsning)."
+              }
+            },{
+              "@type": "Question",
+              "name": "Giver I garanti på iPhone 6 reparationer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, fuld garanti på alle reparationer: 24 måneder på skærme, 12 måneder på batterier og øvrige dele."
+              }
+            },{
+              "@type": "Question",
+              "name": "Hvilke dele bruger I til iPhone 6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Originale eller A-kvalitetsdele der lever op til Apple's standarder med fuld garanti og kompatibilitet."
+              }
+            },{
+              "@type": "Question",
+              "name": "Giver I garanti på væskeskader på iPhone 6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vi renser og diagnosticerer væskeskader, men der gives ingen garanti på væskeskader da de kan være uforudsigelige."
+              }
+            }]
+          })
+        }}
+      />
       {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
@@ -628,4 +694,62 @@ export default function IPhone6Repairs() {
       </div>
     </div>
   );
-}
+}      {/* FAQ JavaScript */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            document.addEventListener("DOMContentLoaded", function() {
+              // FAQ Accordion functionality
+              const faqButtons = document.querySelectorAll(".faq-item button");
+              faqButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                  const answer = document.getElementById(this.getAttribute("aria-controls"));
+                  const isExpanded = this.getAttribute("aria-expanded") === "true";
+                  
+                  // Close all other answers
+                  faqButtons.forEach(otherButton => {
+                    if (otherButton !== this) {
+                      otherButton.setAttribute("aria-expanded", "false");
+                      otherButton.querySelector("svg").style.transform = "rotate(0deg)";
+                      const otherAnswer = document.getElementById(otherButton.getAttribute("aria-controls"));
+                      otherAnswer.classList.add("hidden");
+                    }
+                  });
+                  
+                  // Toggle current answer
+                  if (isExpanded) {
+                    this.setAttribute("aria-expanded", "false");
+                    this.querySelector("svg").style.transform = "rotate(0deg)";
+                    answer.classList.add("hidden");
+                  } else {
+                    this.setAttribute("aria-expanded", "true");
+                    this.querySelector("svg").style.transform = "rotate(180deg)";
+                    answer.classList.remove("hidden");
+                  }
+                });
+              });
+              
+              // FAQ Search functionality
+              const searchInput = document.getElementById("faq-search");
+              const faqItems = document.querySelectorAll(".faq-item");
+              
+              if (searchInput) {
+                searchInput.addEventListener("input", function() {
+                  const searchTerm = this.value.toLowerCase();
+                  
+                  faqItems.forEach(item => {
+                    const question = item.querySelector("h3").textContent.toLowerCase();
+                    const answer = item.querySelector(".text-gray-600").textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                      item.style.display = "block";
+                    } else {
+                      item.style.display = "none";
+                    }
+                  });
+                });
+              }
+            });
+          `
+        }}
+      />

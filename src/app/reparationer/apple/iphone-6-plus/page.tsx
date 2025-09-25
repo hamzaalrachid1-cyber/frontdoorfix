@@ -518,17 +518,54 @@ export default function IPhone6PlusRepairs() {
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-4xl px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Ofte stillede spørgsmål
-          </h2>
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
-                Hvor lang tid tager en iPhone 6 Plus reparation?
-              </h3>
-              <p className="text-gray-600">
-                De fleste reparationer er færdige på 20–30 minutter på stedet. Skærmreparationer tager typisk 15-25 minutter, mens batteriskift tager 15-20 minutter.
-              </p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Ofte stillede spørgsmål om iPhone 6 Plus
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Sidst opdateret: 25.09.2024
+            </p>
+          </div>
+
+          {/* Table of Contents */}
+          <div className="mb-8 p-6 bg-gray-50 rounded-xl">
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Hurtig navigation:</h3>
+            <div className="flex flex-wrap gap-3">
+              <a href="#faq-tid" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-pink-100 hover:text-pink-700 transition-colors">
+                ⏱ Tid
+              </a>
+              <a href="#faq-data" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-pink-100 hover:text-pink-700 transition-colors">
+                💾 Data/backup
+              </a>
+              <a href="#faq-touchid" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-pink-100 hover:text-pink-700 transition-colors">
+                👆 Touch ID
+              </a>
+              <a href="#faq-garanti" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-pink-100 hover:text-pink-700 transition-colors">
+                🛡 Garanti
+              </a>
+              <a href="#faq-dele" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-pink-100 hover:text-pink-700 transition-colors">
+                🔧 Dele/kvalitet
+              </a>
+              <a href="#faq-væske" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-pink-100 hover:text-pink-700 transition-colors">
+                💧 Væskeskader
+              </a>
+            </div>
+          </div>
+
+          {/* Search Bar */}
+          <div className="mb-8">
+            <div className="relative max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="Søg i spørgsmål..."
+                className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                id="faq-search"
+              />
+              <svg className="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>              </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">
@@ -541,8 +578,60 @@ export default function IPhone6PlusRepairs() {
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">
                 Kan Touch ID genskabes på iPhone 6 Plus?
-              </h3>
               <p className="text-gray-600">
+      {/* FAQ Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "Hvor lang tid tager en iPhone 6 Plus reparation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skærmreparation tager typisk 15–25 min, batteriskift 15–20 min. Vi reparerer på din adresse."
+              }
+            },{
+              "@type": "Question",
+              "name": "Mister jeg data ved iPhone 6 Plus reparation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nej ved standardreparationer. Vi anbefaler dog backup for en sikkerheds skyld."
+              }
+            },{
+              "@type": "Question",
+              "name": "Kan Touch ID genskabes på iPhone 6 Plus efter hjem-knap skift?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nej, Touch ID kan ikke genskabes på iPhone 6 Plus ved udskiftning af hjem-knappen (Apple-begrænsning)."
+              }
+            },{
+              "@type": "Question",
+              "name": "Giver I garanti på iPhone 6 Plus reparationer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, fuld garanti på alle reparationer: 24 måneder på skærme, 12 måneder på batterier og øvrige dele."
+              }
+            },{
+              "@type": "Question",
+              "name": "Hvilke dele bruger I til iPhone 6 Plus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Originale eller A-kvalitetsdele der lever op til Apple's standarder med fuld garanti og kompatibilitet."
+              }
+            },{
+              "@type": "Question",
+              "name": "Giver I garanti på væskeskader på iPhone 6 Plus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vi renser og diagnosticerer væskeskader, men der gives ingen garanti på væskeskader da de kan være uforudsigelige."
+              }
+            }]
+          })
+        }}
+      />
                 Nej, Touch ID kan ikke genskabes ved skift af hjem-knap på iPhone 6 Plus. Dette er en teknisk begrænsning.
               </p>
             </div>
