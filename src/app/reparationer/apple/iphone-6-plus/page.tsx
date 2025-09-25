@@ -24,8 +24,6 @@ export default function IPhone6PlusRepairs() {
       price: "899",
       originalPrice: "899",
       compatiblePrice: "899",
-      popular: true,
-      inStock: true,
       includes: "Originalt Apple glas + LCD",
       quality: "original"
     },
@@ -38,8 +36,6 @@ export default function IPhone6PlusRepairs() {
       price: "699",
       originalPrice: "699",
       compatiblePrice: "699",
-      popular: true,
-      inStock: true,
       includes: "Kompatibel glas + LCD",
       quality: "compatible"
     },
@@ -52,8 +48,6 @@ export default function IPhone6PlusRepairs() {
       price: "449",
       originalPrice: "449",
       compatiblePrice: "349",
-      popular: true,
-      inStock: true,
       includes: "Originalt Apple batteri",
       quality: "original"
     },
@@ -66,8 +60,6 @@ export default function IPhone6PlusRepairs() {
       price: "349",
       originalPrice: "349",
       compatiblePrice: "249",
-      popular: false,
-      inStock: true,
       includes: "Ladeport + rengøring",
       quality: "original"
     },
@@ -80,8 +72,6 @@ export default function IPhone6PlusRepairs() {
       price: "249",
       originalPrice: "249",
       compatiblePrice: "199",
-      popular: false,
-      inStock: true,
       includes: "Mikrofon + test",
       quality: "original"
     },
@@ -94,8 +84,6 @@ export default function IPhone6PlusRepairs() {
       price: "249",
       originalPrice: "249",
       compatiblePrice: "199",
-      popular: false,
-      inStock: true,
       includes: "Ørehøjtaler + test",
       quality: "original"
     },
@@ -108,8 +96,6 @@ export default function IPhone6PlusRepairs() {
       price: "249",
       originalPrice: "249",
       compatiblePrice: "199",
-      popular: false,
-      inStock: true,
       includes: "Højtaler + test",
       quality: "original"
     },
@@ -122,8 +108,6 @@ export default function IPhone6PlusRepairs() {
       price: "349",
       originalPrice: "349",
       compatiblePrice: "249",
-      popular: false,
-      inStock: true,
       includes: "Kamera + test",
       quality: "original"
     },
@@ -136,8 +120,6 @@ export default function IPhone6PlusRepairs() {
       price: "449",
       originalPrice: "449",
       compatiblePrice: "349",
-      popular: false,
-      inStock: true,
       includes: "Kamera + test",
       quality: "original"
     },
@@ -150,8 +132,6 @@ export default function IPhone6PlusRepairs() {
       price: "199",
       originalPrice: "199",
       compatiblePrice: "149",
-      popular: false,
-      inStock: true,
       includes: "Kamera-glas + test",
       quality: "original"
     },
@@ -164,8 +144,6 @@ export default function IPhone6PlusRepairs() {
       price: "349",
       originalPrice: "349",
       compatiblePrice: "249",
-      popular: false,
-      inStock: true,
       includes: "Power-knap + test",
       quality: "original"
     },
@@ -178,8 +156,6 @@ export default function IPhone6PlusRepairs() {
       price: "249",
       originalPrice: "249",
       compatiblePrice: "199",
-      popular: false,
-      inStock: true,
       includes: "Lydløs-knap + test",
       quality: "original"
     },
@@ -192,8 +168,6 @@ export default function IPhone6PlusRepairs() {
       price: "249",
       originalPrice: "249",
       compatiblePrice: "199",
-      popular: false,
-      inStock: true,
       includes: "Volume-knapper + test",
       quality: "original"
     },
@@ -206,8 +180,6 @@ export default function IPhone6PlusRepairs() {
       price: "349",
       originalPrice: "349",
       compatiblePrice: "249",
-      popular: false,
-      inStock: true,
       includes: "Hjem-knap + test",
       quality: "original",
       warning: "Touch ID kan ikke genskabes på iPhone 6 Plus"
@@ -221,8 +193,6 @@ export default function IPhone6PlusRepairs() {
       price: "99",
       originalPrice: "99",
       compatiblePrice: "99",
-      popular: false,
-      inStock: true,
       includes: "Backup + opdatering",
       quality: "service"
     },
@@ -235,8 +205,6 @@ export default function IPhone6PlusRepairs() {
       price: "99",
       originalPrice: "99",
       compatiblePrice: "99",
-      popular: false,
-      inStock: true,
       includes: "Diagnose + rapport",
       quality: "service"
     },
@@ -249,8 +217,6 @@ export default function IPhone6PlusRepairs() {
       price: "249",
       originalPrice: "249",
       compatiblePrice: "249",
-      popular: false,
-      inStock: true,
       includes: "Rensning + diagnose",
       quality: "service",
       warning: "Ingen garanti på væskeskader"
@@ -264,8 +230,6 @@ export default function IPhone6PlusRepairs() {
       price: "Pris efter fund",
       originalPrice: "Pris efter fund",
       compatiblePrice: "Pris efter fund",
-      popular: false,
-      inStock: true,
       includes: "Data-gendannelse",
       quality: "service"
     }
@@ -381,16 +345,6 @@ export default function IPhone6PlusRepairs() {
                             )}
                           </div>
                           <div className="flex flex-col gap-1">
-                            {repair.popular && (
-                              <span className="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                                Populær
-                              </span>
-                            )}
-                            {repair.inStock && (
-                              <span className="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                                På lager
-                              </span>
-                            )}
                             {repair.warning && (
                               <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                                 ⚠️ {repair.warning}
