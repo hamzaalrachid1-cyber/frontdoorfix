@@ -537,65 +537,71 @@ export default function IPhone6Repairs() {
             <details className="faq-item bg-gray-50 rounded-lg p-6">
               <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Hvor lang tid tager en iPhone 6 reparation?
+                <div className="text-sm text-gray-500 font-normal mt-1">Typisk 20–30 min. på din adresse</div>
               </summary>
               <div className="faq-a text-gray-600">
-                De fleste reparationer klares på <strong>20–30 min</strong> på din adresse. Skærm tager typisk 15–25 min, batteri 15–20 min.
+                De fleste reparationer er færdige på <strong>20–30 min.</strong> på din adresse.<br/>
+                • Skærm: <strong>15–25 min</strong><br/>
+                • Batteri: <strong>15–20 min</strong><br/>
+                • Ladeport/kamera/højttaler: <strong>20–30 min</strong><br/>
+                Ved flere reparationer på én gang kan der komme <strong>10–15 min</strong> ekstra.
               </div>
             </details>
             <details className="faq-item bg-gray-50 rounded-lg p-6">
               <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Mister jeg data ved reparationen?
+                <div className="text-sm text-gray-500 font-normal mt-1">Vi sletter ikke dine data</div>
               </summary>
               <div className="faq-a text-gray-600">
-                Nej, standardreparationer bevarer dine data. Vi anbefaler dog altid backup for en sikkerheds skyld.
+                Nej, normalt ikke. Vi nulstiller ikke din telefon, og vi arbejder uden at slette data. Vi anbefaler dog altid backup før reparation som ekstra sikkerhed. For at teste efter reparation kan vi have brug for din <strong>adgangskode</strong> – alle data behandles fortroligt.
               </div>
             </details>
             <details className="faq-item bg-gray-50 rounded-lg p-6">
               <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Kan Touch ID genskabes på iPhone 6?
+                <div className="text-sm text-gray-500 font-normal mt-1">Touch ID kan ikke genskabes ved hjem-knap skift</div>
               </summary>
               <div className="faq-a text-gray-600">
-                Nej. Ved skift af hjem-knap kan Touch ID ikke genskabes på iPhone 6. Knappen virker stadig til klik.
+                Nej. På iPhone 6 er <strong>Touch ID bundet til bundkortet</strong>. Ved udskiftning af hjem-knappen fungerer knappen stadig, men <strong>Touch ID/Apple Pay</strong> kan ikke genskabes. Vi informerer altid inden vi går i gang.
               </div>
             </details>
             <details className="faq-item bg-gray-50 rounded-lg p-6">
               <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Hvilke dele og hvilken garanti får jeg?
+                Hvilke dele bruger I, og hvilken garanti får jeg?
+                <div className="text-sm text-gray-500 font-normal mt-1">Originale eller A-kvalitets dele + op til 24 mdr. garanti</div>
               </summary>
               <div className="faq-a text-gray-600">
-                Originale/A-kvalitetsdele. <strong>24 mdr. garanti på skærme</strong> og <strong>12 mdr. på batteri og øvrige dele</strong>.
+                Vi bruger originale eller A-kvalitets kompatible reservedele fra godkendte leverandører.<br/>
+                • Skærm: <strong>24 mdr. garanti</strong><br/>
+                • Batteri & øvrige dele: <strong>12 mdr. garanti</strong><br/>
+                Garantien dækker funktionsfejl på delen – ikke ny fysisk skade, fugt eller åbninger foretaget andre steder. Du får kvittering og garantibevis.
               </div>
             </details>
             <details className="faq-item bg-gray-50 rounded-lg p-6">
               <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Kommer I ud til min adresse?
+                <div className="text-sm text-gray-500 font-normal mt-1">Storkøbenhavn, gratis kørsel inden for 25 km</div>
               </summary>
               <div className="faq-a text-gray-600">
-                Ja, vi kører i Storkøbenhavn og reparerer på stedet. Udrykning er gratis i vores område.
+                Ja. Vi dækker hele Storkøbenhavn og kommer ud til dig uden beregning inden for <strong>25 km</strong>. Åbent alle dage <strong>8:00–22:00</strong>. Vi reparerer på stedet (servicebil/hos dig). Uden for zonen kan vi stadig hjælpe – mod tillæg eller med indsendelse.
               </div>
             </details>
             <details className="faq-item bg-gray-50 rounded-lg p-6">
               <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Hvad hvis fejlen er ukendt?
+                Hvad hvis fejlen er ukendt eller ikke på listen?
+                <div className="text-sm text-gray-500 font-normal mt-1">Diagnose 99 kr – fratrækkes ved reparation</div>
               </summary>
               <div className="faq-a text-gray-600">
-                Vi laver en hurtig diagnose først. Kan den repareres, fortsætter vi efter aftalt pris.
+                Vi laver en diagnose og finder fejlen. Pris <strong>99 kr</strong> – fratrækkes hvis du vælger reparation. Vi kontakter dig med pris og løsning før vi gør noget. Takker du nej, betaler du kun diagnose.
               </div>
             </details>
             <details className="faq-item bg-gray-50 rounded-lg p-6">
               <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
                 Giver I garanti ved væskeskader?
+                <div className="text-sm text-gray-500 font-normal mt-1">Rens/rediag – ingen garanti på væskeskader</div>
               </summary>
               <div className="faq-a text-gray-600">
-                Vi kan rense og forsøge at redde enheden, men der er ingen garanti på væskeskader.
-              </div>
-            </details>
-            <details className="faq-item bg-gray-50 rounded-lg p-6">
-              <summary className="faq-q text-lg font-semibold mb-3 text-gray-800">
-                Hvordan betaler jeg?
-              </summary>
-              <div className="faq-a text-gray-600">
-                MobilePay/kort. Du får kvittering og garanti på mail.
+                Vi tilbyder rens og redning af væskeskader (typisk <strong>199 kr</strong>). Da fugt kan give senfølger/korrosion, kan vi ikke give garanti på væskeskader. Vi rådgiver om dataredning (pris efter fund).
               </div>
             </details>
           </div>
@@ -718,6 +724,75 @@ export default function IPhone6Repairs() {
                 "@type": "PropertyValue",
                 "name": "Garanti",
                 "value": "24 mdr på skærme"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* FAQ Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Hvor lang tid tager en iPhone 6 reparation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "De fleste reparationer er færdige på 20–30 min. på din adresse. Skærm: 15–25 min, Batteri: 15–20 min, Ladeport/kamera/højttaler: 20–30 min. Ved flere reparationer på én gang kan der komme 10–15 min ekstra."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Mister jeg data ved reparationen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nej, normalt ikke. Vi nulstiller ikke din telefon, og vi arbejder uden at slette data. Vi anbefaler dog altid backup før reparation som ekstra sikkerhed. For at teste efter reparation kan vi have brug for din adgangskode – alle data behandles fortroligt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Kan Touch ID genskabes på iPhone 6?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nej. På iPhone 6 er Touch ID bundet til bundkortet. Ved udskiftning af hjem-knappen fungerer knappen stadig, men Touch ID/Apple Pay kan ikke genskabes. Vi informerer altid inden vi går i gang."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Hvilke dele bruger I, og hvilken garanti får jeg?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vi bruger originale eller A-kvalitets kompatible reservedele fra godkendte leverandører. Skærm: 24 mdr. garanti, Batteri & øvrige dele: 12 mdr. garanti. Garantien dækker funktionsfejl på delen – ikke ny fysisk skade, fugt eller åbninger foretaget andre steder. Du får kvittering og garantibevis."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Kommer I ud til min adresse?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ja. Vi dækker hele Storkøbenhavn og kommer ud til dig uden beregning inden for 25 km. Åbent alle dage 8:00–22:00. Vi reparerer på stedet (servicebil/hos dig). Uden for zonen kan vi stadig hjælpe – mod tillæg eller med indsendelse."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Hvad hvis fejlen er ukendt eller ikke på listen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vi laver en diagnose og finder fejlen. Pris 99 kr – fratrækkes hvis du vælger reparation. Vi kontakter dig med pris og løsning før vi gør noget. Takker du nej, betaler du kun diagnose."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Giver I garanti ved væskeskader?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vi tilbyder rens og redning af væskeskader (typisk 199 kr). Da fugt kan give senfølger/korrosion, kan vi ikke give garanti på væskeskader. Vi rådgiver om dataredning (pris efter fund)."
+                }
               }
             ]
           })
