@@ -171,7 +171,7 @@ export async function generateMetadata({ params }: { params: Promise<{ brand: st
   const { brand, series } = await params;
   const seriesData = await getSeriesData(brand, series);
   
-  if (!series) {
+  if (!seriesData) {
     return {
       title: 'Serie ikke fundet - FrontDoorFix',
       description: 'Den ønskede serie kunne ikke findes.'
@@ -186,21 +186,21 @@ export async function generateMetadata({ params }: { params: Promise<{ brand: st
     'oneplus': 'OnePlus'
   };
   
-  const brandName = brandNames[params.brand] || params.brand;
+  const brandName = brandNames[brand] || brand;
   
   return {
-    title: `${series.name} Reparationer | ${brandName} - FrontDoorFix`,
-    description: series.descriptionShort || `${series.name} serie reparationer hos FrontDoorFix. Vi kommer til dig med professionel service.`,
-    keywords: `${series.name}, ${brandName}, reparationer, skærm, batteri, opladning`,
+    title: `${seriesData.name} Reparationer | ${brandName} - FrontDoorFix`,
+    description: seriesData.descriptionShort || `${seriesData.name} serie reparationer hos FrontDoorFix. Vi kommer til dig med professionel service.`,
+    keywords: `${seriesData.name}, ${brandName}, reparationer, skærm, batteri, opladning`,
     openGraph: {
-      title: `${series.name} Reparationer | ${brandName}`,
-      description: series.descriptionShort || `${series.name} serie reparationer hos FrontDoorFix.`,
+      title: `${seriesData.name} Reparationer | ${brandName}`,
+      description: seriesData.descriptionShort || `${seriesData.name} serie reparationer hos FrontDoorFix.`,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${series.name} Reparationer | ${brandName}`,
-      description: series.descriptionShort || `${series.name} serie reparationer hos FrontDoorFix.`,
+      title: `${seriesData.name} Reparationer | ${brandName}`,
+      description: seriesData.descriptionShort || `${seriesData.name} serie reparationer hos FrontDoorFix.`,
     }
   };
 }
@@ -213,7 +213,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ brand: 
     notFound();
   }
   
-  const models = await getModelsForSeries(params.brand, params.series);
+  const models = await getModelsForSeries(brand, series);
   
   const brandNames: Record<string, string> = {
     'apple': 'Apple',
@@ -223,7 +223,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ brand: 
     'oneplus': 'OnePlus'
   };
   
-  const brandName = brandNames[params.brand] || params.brand;
+  const brandName = brandNames[brand] || brand;
   
   return (
     <div className="min-h-screen bg-gray-50">
@@ -304,7 +304,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ brand: 
                     
                     <div className="text-center">
                       <a
-                        href={`/reparationer/${params.brand}/${params.series}/${model.slug}`}
+                        href={`/reparationer/${brand}/${series}/${model.slug}`}
                         className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-6 py-2 rounded-lg hover:from-pink-600 hover:to-yellow-600 transition-all duration-300 inline-block"
                       >
                         Se priser & reparationer

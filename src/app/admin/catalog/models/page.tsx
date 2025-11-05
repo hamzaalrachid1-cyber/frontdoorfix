@@ -15,7 +15,7 @@ interface Model {
   isVisible: boolean;
   comingSoon: boolean;
   image?: string;
-  repairs: any[];
+  repairs: Array<{ id: string; name: string; price: number; [key: string]: unknown }>;
 }
 
 const generateSlug = (name: string) => {
@@ -29,7 +29,7 @@ export default function ModelsAdmin() {
   const series = searchParams.get('series') || 'iphone';
 
   const [models, setModels] = useState<Model[]>([]);
-  const [allSeries, setAllSeries] = useState<any[]>([]);
+  const [allSeries, setAllSeries] = useState<Array<{ id: string; name: string; slug: string; [key: string]: unknown }>>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [showCreateModal, setShowCreateModal] = useState(false);

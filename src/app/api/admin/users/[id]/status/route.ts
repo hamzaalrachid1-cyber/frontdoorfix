@@ -26,10 +26,11 @@ async function setUsers(data: any[]) {
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const userId = params.id;
+    const { id } = await params;
+    const userId = id;
     const { isActive } = await request.json();
     
     const users = await getUsers();

@@ -6,10 +6,10 @@ const MODELS_DIR = path.join(process.cwd(), 'src', 'data', 'repairs', 'samsung')
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
-    const { slug } = params;
+    const { slug } = await params;
     const filePath = path.join(MODELS_DIR, `${slug}.json`);
 
     if (!fs.existsSync(filePath)) {
@@ -21,7 +21,8 @@ export async function GET(
 
     return NextResponse.json(modelData);
   } catch (error) {
-    console.error(`Error reading model data for ${params.slug}:`, error);
+    const { slug } = await params;
+    console.error(`Error reading model data for ${slug}:`, error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }

@@ -334,7 +334,15 @@ function replaceTokens(text: string, data: ModelSeoContent): string {
     .replace(/\{\{cities\}\}/g, data.cities);
 }
 
-export function getModelSeoContent(modelData: any): ModelSeoContent {
+interface ModelDataInput {
+  slug: string;
+  model: string;
+  hero?: {
+    tags?: string[];
+  };
+}
+
+export function getModelSeoContent(modelData: ModelDataInput): ModelSeoContent {
   const overrides = modelSeoOverrides[modelData.slug] || {};
   
   const baseContent = {

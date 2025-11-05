@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
       }
 
       // Create media file record
-      const mediaFile = {
+      const mediaFile: any = {
         id: uuidv4(),
         name: file.name,
         url: `/uploads/${fileName}`,

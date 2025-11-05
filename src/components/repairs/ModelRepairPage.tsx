@@ -43,7 +43,7 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
   // SEO Quality Gate
   const seoContent = getModelSeoContent(modelData);
   const contentText = seoContent.intro + " " + Object.values(seoContent.sections).join(" ");
-  const { isValid, analysis, noIndexMeta } = validateModelContent(contentText, modelData.model);
+  const { isValid } = validateModelContent(contentText, modelData.model);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState<string>('alle');

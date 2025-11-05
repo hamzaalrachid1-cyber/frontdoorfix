@@ -13,20 +13,15 @@ export async function GET() {
       return NextResponse.json({
         name: 'FrontDoorFix',
         tagline: 'Tekniker til døren',
-        logoDefaultUrl: null,
-        logoSmallUrl: null,
-        logoDarkUrl: null,
+        logoUrl: null,
         logoHeight: 32,
         logoMaxWidth: 150,
-        useCustomIcon: false,
-        companyName: 'FrontDoorFix',
-        companyTagline: 'Tekniker til døren',
-        ctaText: 'Bestil tid',
-        contactPhone: '+45 93 54 54 57',
-        contactEmail: 'info@frontdoorfix.dk',
-        contactAddress: 'København, Danmark',
-        openingHours: 'Alle dage: 8:00 - 22:00',
-        openingHoursSubtext: 'Vi kommer til dig hele dagen'
+        phone: '+45 93 54 54 57',
+        email: 'info@frontdoorfix.dk',
+        hours: 'Alle dage: 8:00 - 22:00',
+        ctaPrimary: 'Bestil tid',
+        ctaSecondary: null,
+        status: 'Published'
       });
     }
 
@@ -46,54 +41,48 @@ export async function PUT(request: NextRequest) {
     const data = await request.json();
     
     // Valider påkrævede felter
-    if (!data.name || !data.companyName) {
+    if (!data.name) {
       return NextResponse.json(
-        { error: 'Name and company name are required' },
+        { error: 'Name is required' },
         { status: 400 }
       );
     }
 
-    // Opdater eller opret settings
-    const settings = await prisma.brandSettings.upsert({
-      where: { id: 1 }, // Vi bruger altid ID 1
-      update: {
-        name: data.name,
-        tagline: data.tagline || '',
-        logoDefaultUrl: data.logoDefaultUrl || null,
-        logoSmallUrl: data.logoSmallUrl || null,
-        logoDarkUrl: data.logoDarkUrl || null,
-        logoHeight: data.logoHeight || 32,
-        logoMaxWidth: data.logoMaxWidth || 150,
-        useCustomIcon: data.useCustomIcon || false,
-        companyName: data.companyName,
-        companyTagline: data.companyTagline || '',
-        ctaText: data.ctaText || 'Bestil tid',
-        contactPhone: data.contactPhone || '+45 93 54 54 57',
-        contactEmail: data.contactEmail || 'info@frontdoorfix.dk',
-        contactAddress: data.contactAddress || 'København, Danmark',
-        openingHours: data.openingHours || 'Alle dage: 8:00 - 22:00',
-        openingHoursSubtext: data.openingHoursSubtext || 'Vi kommer til dig hele dagen'
-      },
-      create: {
-        id: 1,
-        name: data.name,
-        tagline: data.tagline || '',
-        logoDefaultUrl: data.logoDefaultUrl || null,
-        logoSmallUrl: data.logoSmallUrl || null,
-        logoDarkUrl: data.logoDarkUrl || null,
-        logoHeight: data.logoHeight || 32,
-        logoMaxWidth: data.logoMaxWidth || 150,
-        useCustomIcon: data.useCustomIcon || false,
-        companyName: data.companyName,
-        companyTagline: data.companyTagline || '',
-        ctaText: data.ctaText || 'Bestil tid',
-        contactPhone: data.contactPhone || '+45 93 54 54 57',
-        contactEmail: data.contactEmail || 'info@frontdoorfix.dk',
-        contactAddress: data.contactAddress || 'København, Danmark',
-        openingHours: data.openingHours || 'Alle dage: 8:00 - 22:00',
-        openingHoursSubtext: data.openingHoursSubtext || 'Vi kommer til dig hele dagen'
-      }
-    });
+    // Find første settings eller opret ny
+    const existingSettings = await prisma.brandSettings.findFirst();
+    
+    const settings = existingSettings 
+      ? await prisma.brandSettings.update({
+          where: { id: existingSettings.id },
+          data: {
+            name: data.name,
+            tagline: data.tagline || null,
+            logoUrl: data.logoUrl || data.logoDefaultUrl || null,
+            logoHeight: data.logoHeight || 32,
+            logoMaxWidth: data.logoMaxWidth || null,
+            phone: data.phone || data.contactPhone || null,
+            email: data.email || data.contactEmail || null,
+            hours: data.hours || data.openingHours || null,
+            ctaPrimary: data.ctaPrimary || data.ctaText || null,
+            ctaSecondary: data.ctaSecondary || null,
+            status: data.status || 'Draft'
+          }
+        })
+      : await prisma.brandSettings.create({
+          data: {
+            name: data.name,
+            tagline: data.tagline || null,
+            logoUrl: data.logoUrl || data.logoDefaultUrl || null,
+            logoHeight: data.logoHeight || 32,
+            logoMaxWidth: data.logoMaxWidth || null,
+            phone: data.phone || data.contactPhone || null,
+            email: data.email || data.contactEmail || null,
+            hours: data.hours || data.openingHours || null,
+            ctaPrimary: data.ctaPrimary || data.ctaText || null,
+            ctaSecondary: data.ctaSecondary || null,
+            status: data.status || 'Draft'
+          }
+        });
 
     return NextResponse.json(settings);
   } catch (error) {

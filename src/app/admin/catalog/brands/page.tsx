@@ -54,7 +54,7 @@ export default function BrandsAdmin() {
       console.log('Brands data:', brandsData);
 
       const brandsWithStats = await Promise.all(
-        brandsData.map(async (brand: any) => {
+        brandsData.map(async (brand: { slug: string; name: string; [key: string]: unknown }) => {
           try {
             const seriesRes = await fetch(`/api/admin/series?brandId=${brand.slug}`);
             const series = seriesRes.ok ? await seriesRes.json() : [];

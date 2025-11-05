@@ -58,7 +58,7 @@ export async function GET() {
   try {
     const users = await getUsers();
     // Remove password hashes from response
-    const sanitizedUsers = users.map(({ password, ...user }) => user);
+    const sanitizedUsers = users.map(({ password: _password, ...user }: any) => user);
     return NextResponse.json(sanitizedUsers);
   } catch (error) {
     console.error('Error fetching users:', error);

@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ModelSpec } from '@/data/apple/types';
-import { buildRepairs, RepairItem } from '@/lib/buildRepairs';
+import { buildRepairs } from '@/lib/buildRepairs';
 
 interface RepairCatalogProps {
   modelSpec: ModelSpec;
@@ -169,18 +170,14 @@ export default function RepairCatalog({ modelSpec }: RepairCatalogProps) {
                 </div>
               </div>
               <div className="flex justify-center md:justify-end">
-                <img
+                <Image
                   src={`/images/iphones/${modelSpec.id}.png`}
                   alt={`${modelSpec.name} – front, bagside og sideprofil`}
+                  width={220}
+                  height={440}
                   className="h-auto object-contain"
                   style={{width: 'clamp(140px, 18vw, 220px)'}}
-                  loading="eager"
-                  decoding="async"
-                  fetchPriority="high"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwIiB5PSI0MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMjAiIHJ4PSIyMCIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K';
-                  }}
+                  priority
                 />
               </div>
             </div>

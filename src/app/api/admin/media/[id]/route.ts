@@ -26,10 +26,11 @@ async function setMediaFiles(data: any[]) {
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const mediaId = params.id;
+    const { id } = await params;
+    const mediaId = id;
     const updatedFile = await request.json();
     
     const mediaFiles = await getMediaFiles();
@@ -52,10 +53,11 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const mediaId = params.id;
+    const { id } = await params;
+    const mediaId = id;
     
     const mediaFiles = await getMediaFiles();
     const fileIndex = mediaFiles.findIndex((file: any) => file.id === mediaId);
