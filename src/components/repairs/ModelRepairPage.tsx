@@ -27,9 +27,11 @@ interface ModelData {
   model: string;
   slug: string;
   hasBackGlass: boolean;
+  image?: string;
   hero: {
     title: string;
     tags: string[];
+    image?: string;
   };
   repairs: RepairData[];
 }
@@ -79,7 +81,6 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
     price, 
     contact, 
     onDetails,
-    warning,
     badges
   }: {
     title: string; 
@@ -89,7 +90,6 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
     price?: number; 
     contact?: boolean; 
     onDetails?: () => void;
-    warning?: string;
     badges?: string[];
   }) => {
     // Combine time and warranty into one compact meta line
@@ -229,7 +229,7 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
               </div>
               <div className="flex justify-center md:justify-end">
                 <HeroPhone
-                  src={(modelData as any).image || (modelData as any).hero?.image || `/images/iphones/${modelData.slug}.png`}
+                  src={modelData.image || modelData.hero?.image || `/images/iphones/${modelData.slug}.png`}
                   alt={`${modelData.model} – front, bagside og sideprofil`}
                   priority
                 />
@@ -487,10 +487,10 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-semibold text-slate-900 mb-3">Original</h3>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-2">
-                      <p>• Ægte Apple-dele, ofte "pulled" fra donor-enheder og kvalitetstestet.</p>
+                      <p>• Ægte Apple-dele, ofte &quot;pulled&quot; fra donor-enheder og kvalitetstestet.</p>
                       <p>• Bevarer korrekt farve/lys og touch-respons; True Tone/lyssensor fungerer (hvor muligt).</p>
                       <p>• Kalibreret og gennemtestet før/efter montering.</p>
-                      <p className="text-xs text-slate-500 mt-3">iPhone kan vise "Brugt/Ukendt del" efter skærm/batteriskift – det er forventet og påvirker ikke funktion eller vores garanti.</p>
+                      <p className="text-xs text-slate-500 mt-3">iPhone kan vise &quot;Brugt/Ukendt del&quot; efter skærm/batteriskift – det er forventet og påvirker ikke funktion eller vores garanti.</p>
                     </div>
                   </div>
                 </div>

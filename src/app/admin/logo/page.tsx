@@ -392,8 +392,8 @@ export default function LogoAdmin() {
               <li>• Upload PNG, SVG eller JPG filer op til 5MB</li>
               <li>• Træk og slip filer direkte i upload-området</li>
               <li>• Logoet gemmes automatisk og vises på hele hjemmesiden</li>
-              <li>• Klik "Rediger" for at tilpasse tekst og farver</li>
-              <li>• "Nulstil" gendanner standardindstillingerne</li>
+              <li>• Klik &quot;Rediger&quot; for at tilpasse tekst og farver</li>
+              <li>• &quot;Nulstil&quot; gendanner standardindstillingerne</li>
             </ul>
           </div>
         </div>

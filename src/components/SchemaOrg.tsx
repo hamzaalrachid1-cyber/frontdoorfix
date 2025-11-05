@@ -1,6 +1,6 @@
 interface SchemaOrgProps {
   type: 'LocalBusiness' | 'Product' | 'FAQPage' | 'BreadcrumbList';
-  data: any;
+  data: Record<string, unknown> & { model?: string; repairs?: Array<{ title: string; price: number | string; [key: string]: unknown }> };
 }
 
 export default function SchemaOrg({ type, data }: SchemaOrgProps) {
@@ -55,7 +55,7 @@ export default function SchemaOrg({ type, data }: SchemaOrgProps) {
             "name": "Apple"
           },
           "category": "Mobile reparation",
-          "offers": data.repairs.map((repair: any) => ({
+          "offers": data.repairs?.map((repair: { title: string; price: number | string; [key: string]: unknown }) => ({
             "@type": "Offer",
             "name": repair.title,
             "description": repair.description,

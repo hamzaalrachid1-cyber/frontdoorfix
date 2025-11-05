@@ -50,10 +50,12 @@ export default function SimpleLogo({ className = '', priority = false }: SimpleL
       {brandSettings.logoUrl ? (
         <div style={logoStyle} className="flex items-center">
           {brandSettings.logoUrl.endsWith('.svg') ? (
-            // For SVG files, use img tag directly
-            <img
+            // For SVG files, use Image component
+            <Image
               src={brandSettings.logoUrl}
               alt={`${brandSettings.name} logo`}
+              width={logoMaxWidth || 150}
+              height={logoHeight}
               style={{ 
                 height: `${logoHeight}px`,
                 width: 'auto',

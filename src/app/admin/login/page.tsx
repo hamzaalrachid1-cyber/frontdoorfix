@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import FLogo from '@/components/FLogo';
 
 export default function AdminLogin() {
@@ -32,7 +33,7 @@ export default function AdminLogin() {
       } else {
         setError(data.error || 'Forkert kode');
       }
-    } catch (err) {
+    } catch {
       setError('Der opstod en fejl. Prøv igen.');
     } finally {
       setLoading(false);
@@ -83,12 +84,12 @@ export default function AdminLogin() {
         </form>
 
         <div className="mt-6 text-center">
-          <a
+          <Link
             href="/"
             className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
           >
             ← Tilbage til website
-          </a>
+          </Link>
         </div>
       </div>
     </div>

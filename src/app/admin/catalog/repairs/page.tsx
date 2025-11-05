@@ -17,7 +17,7 @@ interface Repair {
   description: string;
   order?: number;          // Sorteringsrækkefølge (højere = øverst)
   isVisible?: boolean;
-  badges?: any[];
+  badges?: string[];
   notes?: string | null;
   showDetailsLink?: boolean;
   type?: string;           // Legacy - mapped to quality
@@ -28,7 +28,12 @@ export default function RepairsAdmin() {
   const modelSlug = searchParams.get('model') || '';
   const brand = searchParams.get('brand') || '';
 
-  const [model, setModel] = useState<any>(null);
+  interface ModelData {
+    slug: string;
+    repairs?: Repair[];
+    [key: string]: unknown;
+  }
+  const [model, setModel] = useState<ModelData | null>(null);
   const [repairs, setRepairs] = useState<Repair[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreateModal, setShowCreateModal] = useState(false);
@@ -45,17 +50,13 @@ export default function RepairsAdmin() {
     order: 100
   });
 
-  useEffect(() => {
-    fetchModel();
-  }, [modelSlug, brand]);
-
   const fetchModel = async () => {
     setLoading(true);
     try {
       const response = await fetch(`/api/admin/models?brand=${brand}`);
       if (response.ok) {
         const models = await response.json();
-        const foundModel = models.find((m: any) => m.slug === modelSlug);
+        const foundModel = models.find((m: { slug: string; [key: string]: unknown }) => m.slug === modelSlug);
         if (foundModel) {
           setModel(foundModel);
           setRepairs(foundModel.repairs || []);
@@ -67,6 +68,10 @@ export default function RepairsAdmin() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchModel();
+  }, [modelSlug, brand]);
 
   const handleSaveRepair = async () => {
     // Validation

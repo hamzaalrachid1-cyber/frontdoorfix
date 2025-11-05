@@ -33,7 +33,7 @@ export default function DeleteRepairModal({ repair, onConfirm, onCancel, isOpen 
 
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen]);
+  }, [isOpen, onCancel]);
 
   const handleDelete = async () => {
     if (confirmText.toUpperCase() !== 'SLET') return;

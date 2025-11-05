@@ -35,7 +35,7 @@ async function getSeriesForBrand(brandSlug: string) {
                 } catch {
                   return null;
                 }
-              }).filter(m => m && m.series === data.slug && m.isVisible !== false);
+              }).filter((m: { series?: string; isVisible?: boolean } | null): m is { series: string; isVisible: boolean; [key: string]: unknown } => m !== null && m.series === data.slug && m.isVisible !== false);
               modelCount = models.length;
             }
           } catch (error) {

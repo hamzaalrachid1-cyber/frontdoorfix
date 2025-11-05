@@ -85,7 +85,7 @@ export async function PUT(request: Request) {
     const fileContents = fs.readFileSync(BRANDS_FILE, 'utf8');
     const brands = JSON.parse(fileContents);
     
-    const brandIndex = brands.findIndex((brand: any) => brand.id === brandData.id);
+    const brandIndex = brands.findIndex((brand: { id: string; [key: string]: unknown }) => brand.id === brandData.id);
     if (brandIndex === -1) {
       return NextResponse.json({ error: 'Brand not found' }, { status: 404 });
     }
@@ -127,7 +127,7 @@ export async function DELETE(request: Request) {
     const fileContents = fs.readFileSync(BRANDS_FILE, 'utf8');
     const brands = JSON.parse(fileContents);
     
-    const filteredBrands = brands.filter((brand: any) => brand.id !== id);
+    const filteredBrands = brands.filter((brand: { id: string; [key: string]: unknown }) => brand.id !== id);
     
     if (filteredBrands.length === brands.length) {
       return NextResponse.json({ error: 'Brand not found' }, { status: 404 });

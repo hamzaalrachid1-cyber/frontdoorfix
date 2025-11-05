@@ -35,7 +35,7 @@ export default function Dashboard() {
       const models = modelsRes.ok ? await modelsRes.json() : [];
 
       // Calculate repairs count
-      const repairsCount = models.reduce((sum: number, m: any) => sum + (m.repairs?.length || 0), 0);
+      const repairsCount = models.reduce((sum: number, m: { repairs?: Array<unknown> }) => sum + (m.repairs?.length || 0), 0);
 
       setStats({
         brandsCount: 5,

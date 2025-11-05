@@ -70,7 +70,7 @@ export default function MacBookPage() {
           <div className="max-w-xl mx-auto mb-8">
             <input
               type="text"
-              placeholder="Søg model... fx 'Pro', 'Air', 'M1', '2024'"
+              placeholder="Søg model... fx &apos;Pro&apos;, &apos;Air&apos;, &apos;M1&apos;, &apos;2024&apos;"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"

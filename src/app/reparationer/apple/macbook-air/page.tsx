@@ -69,8 +69,8 @@ async function getIPadModels() {
     const models = await res.json();
     // Filter visible models and sort by sortOrder DESC
     return models
-      .filter((m: any) => m.isVisible !== false)
-      .sort((a: any, b: any) => (b.sortOrder || 0) - (a.sortOrder || 0));
+      .filter((m: { isVisible?: boolean; [key: string]: unknown }) => m.isVisible !== false)
+      .sort((a: { sortOrder?: number; [key: string]: unknown }, b: { sortOrder?: number; [key: string]: unknown }) => (b.sortOrder || 0) - (a.sortOrder || 0));
   } catch (error) {
     console.error('Error fetching MacBook Air models:', error);
     return [];
