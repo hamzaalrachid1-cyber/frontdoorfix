@@ -46,48 +46,39 @@ async function getModelData(slug: string): Promise<ModelData | null> {
 }
 
 export async function generateStaticParams() {
-  // List of available models
-  const models = [
-    'iphone-6',
-    'iphone-6-plus', 
-    'iphone-6s',
-    'iphone-6s-plus',
-    'iphone-7',
-    'iphone-7-plus',
-    'iphone-8',
-    'iphone-8-plus',
-    'iphone-x',
-    'iphone-xr',
-    'iphone-xs',
-    'iphone-xs-max',
-    'iphone-11',
-    'iphone-11-pro',
-    'iphone-11-pro-max',
-    'iphone-12-mini',
-    'iphone-12',
-    'iphone-12-pro',
-    'iphone-12-pro-max',
-    'iphone-13-mini',
-    'iphone-13',
-    'iphone-13-pro',
-    'iphone-13-pro-max',
-    'iphone-14',
-    'iphone-14-plus',
-    'iphone-14-pro',
-    'iphone-14-pro-max',
-    'iphone-15',
-    'iphone-15-plus',
-    'iphone-15-pro',
-    'iphone-15-pro-max',
-    'iphone-16',
-    'iphone-16-plus',
-    'iphone-16-pro',
-    'iphone-16-pro-max'
-  ];
+  try {
+    // Dynamically read all model files
+    const fs = require('fs');
+    const path = require('path');
+    
+    const modelsDir = path.join(process.cwd(), 'src', 'data', 'repairs', 'apple');
+    
+    if (!fs.existsSync(modelsDir)) {
+      return [];
+    }
 
-  return models.map((model) => ({
-    model: model,
-  }));
+    const files = fs.readdirSync(modelsDir).filter((file: string) => file.endsWith('.json'));
+    const models = [];
+
+    for (const file of files) {
+      try {
+        const filePath = path.join(modelsDir, file);
+        const fileContents = fs.readFileSync(filePath, 'utf8');
+        const modelData = JSON.parse(fileContents);
+        
+        models.push({
+          model: modelData.slug,
+        });
+      } catch (error) {
+        console.error(`Error reading ${file}:`, error);
+      }
+    }
+
+    return models;
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ model: string }> }) {
@@ -100,9 +91,28 @@ export async function generateMetadata({ params }: { params: Promise<{ model: st
     };
   }
 
+  const canonicalUrl = `https://frontdoorfix.dk/reparationer/apple/${model}`;
+
   return {
-    title: `${modelData.model} Reparation - Frontdoorfix`,
-    description: `${modelData.model} reparation i København. Vi kommer til din adresse og reparerer på 20-30 min. 24 mdr. garanti på skærme.`,
+    title: `${modelData.model} reparation – hurtig service på din adresse | Frontdoorfix`,
+    description: `${modelData.model} reparation i København og omegn. Vi kommer til dig og reparerer på 20-30 min. 24 mdr. garanti på skærme, 12 mdr. på batterier. Originale og kompatible dele.`,
+    keywords: `${modelData.model}, reparation, skærm, batteri, kamera, ladeport, København, mobile reparation, iPhone service`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: `${modelData.model} reparation – hurtig service på din adresse | Frontdoorfix`,
+      description: `${modelData.model} reparation i København og omegn. Vi kommer til dig og reparerer på 20-30 min. 24 mdr. garanti på skærme, 12 mdr. på batterier.`,
+      url: canonicalUrl,
+      siteName: 'Frontdoorfix',
+      locale: 'da_DK',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary',
+      title: `${modelData.model} reparation – hurtig service på din adresse | Frontdoorfix`,
+      description: `${modelData.model} reparation i København og omegn. Vi kommer til dig og reparerer på 20-30 min. 24 mdr. garanti på skærme, 12 mdr. på batterier.`,
+    },
   };
 }
 

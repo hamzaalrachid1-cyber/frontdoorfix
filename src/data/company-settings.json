@@ -1,0 +1,66 @@
+{
+  "companyName": "FrontDoorFix",
+  "companyEmail": "info@frontdoorfix.dk",
+  "companyPhone": "+45 12 34 56 78",
+  "whatsappNumber": "+45 12 34 56 78",
+  "address": "Hovedgade 123",
+  "city": "København",
+  "postalCode": "2100",
+  "country": "Danmark",
+  "vatNumber": "DK12345678",
+  "registrationNumber": "12345678",
+  "openingHours": {
+    "monday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "tuesday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "wednesday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "thursday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "friday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "15:00",
+      "closed": false
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "closed": false
+    }
+  },
+  "serviceAreas": [
+    "København",
+    "Frederiksberg",
+    "Gentofte",
+    "Lyngby",
+    "Rødovre"
+  ],
+  "trustpilotReviewUrl": "https://dk.trustpilot.com/review/frontdoorfix.dk",
+  "googleMapsUrl": "https://maps.google.com/?q=Hovedgade+123+København",
+  "featureFlags": {
+    "enableBooking": true,
+    "enableReviews": true,
+    "enableBlog": false,
+    "enableMultiLanguage": false,
+    "enableDarkMode": false,
+    "enableMaintenanceMode": false
+  }
+}

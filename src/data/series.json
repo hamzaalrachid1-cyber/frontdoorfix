@@ -1,0 +1,93 @@
+[
+  {
+    "name": "iPhone",
+    "slug": "iphone",
+    "brand": "apple",
+    "description": "Apple iPhone reparationer",
+    "link": "/reparationer/apple/iphone",
+    "order": 1,
+    "isVisible": true
+  },
+  {
+    "name": "iPad",
+    "slug": "ipad",
+    "brand": "apple",
+    "description": "Apple iPad reparationer",
+    "link": "/reparationer/apple/ipad",
+    "order": 2,
+    "isVisible": true
+  },
+  {
+    "name": "MacBook",
+    "slug": "macbook",
+    "brand": "apple",
+    "description": "Apple MacBook reparationer",
+    "link": "/reparationer/apple/macbook",
+    "order": 3,
+    "isVisible": true
+  },
+  {
+    "name": "Galaxy S",
+    "slug": "s",
+    "brand": "samsung",
+    "description": "Samsung Galaxy S reparationer",
+    "link": "/reparationer/samsung/s",
+    "order": 4,
+    "isVisible": true
+  },
+  {
+    "name": "Galaxy A",
+    "slug": "a",
+    "brand": "samsung",
+    "description": "Samsung Galaxy A reparationer",
+    "link": "/reparationer/samsung/a",
+    "order": 5,
+    "isVisible": true
+  },
+  {
+    "name": "Galaxy Z",
+    "slug": "z",
+    "brand": "samsung",
+    "description": "Samsung Galaxy Z reparationer",
+    "link": "/reparationer/samsung/z",
+    "order": 6,
+    "isVisible": true
+  },
+  {
+    "name": "XCover",
+    "slug": "xcover",
+    "brand": "samsung",
+    "description": "Samsung XCover reparationer",
+    "link": "/reparationer/samsung/xcover",
+    "order": 7,
+    "isVisible": true
+  },
+  {
+    "name": "Pixel",
+    "slug": "pixel",
+    "brand": "pixel",
+    "description": "Google Pixel reparationer",
+    "link": "/reparationer/pixel",
+    "order": 8,
+    "isVisible": true
+  },
+  {
+    "name": "Nord",
+    "slug": "nord",
+    "brand": "oneplus",
+    "description": "OnePlus Nord reparationer",
+    "link": "/reparationer/oneplus/nord",
+    "order": 9,
+    "isVisible": true
+  },
+  {
+    "name": "Pro",
+    "slug": "pro",
+    "brand": "oneplus",
+    "description": "OnePlus Pro reparationer",
+    "link": "/reparationer/oneplus/pro",
+    "order": 10,
+    "isVisible": true
+  }
+]
+

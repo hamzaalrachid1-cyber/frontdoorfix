@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 16\" (2019-2020)",
+  "slug": "macbook-pro-16",
+  "year": 2020,
+  "sort_order": 60,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/123---edited-1762268677244.png",
+  "hero": {
+    "title": "MacBook Pro 16\" (2019-2020)",
+    "tags": []
+  },
+  "repairs": []
+}

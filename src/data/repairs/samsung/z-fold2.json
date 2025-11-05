@@ -1,0 +1,15 @@
+{
+  "brand": "samsung",
+  "series": "z",
+  "model": "Samsung Galaxy Z Fold2",
+  "slug": "z-fold2",
+  "year": 2020,
+  "family": "galaxyzfold",
+  "sortOrder": 160,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "",
+  "repairs": [],
+  "sort_order": 40,
+  "updated_at": "2025-10-04T17:17:33.239Z"
+}

@@ -29,14 +29,14 @@ export default function PartsQualitySection() {
               <h3 className="text-xl font-semibold text-gray-800">Original (kalibreret/pulled)</h3>
             </div>
             <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-              Ægte Apple-dele fra donor-enheder ("pulled"), testet og kalibreret til din telefon. På nyere iPhones kan{" "}
+              Ægte Apple-dele fra donor-enheder (&quot;pulled&quot;), testet og kalibreret til din telefon. På nyere iPhones kan{" "}
               <button 
                 className="text-pink-600 underline hover:text-pink-700 transition-colors relative"
                 onClick={() => toggleTooltip('pulled-tooltip')}
                 onFocus={() => setShowTooltip('pulled-tooltip')}
                 onBlur={() => setShowTooltip(null)}
               >
-                "Ukendt del/Brugt del"
+                &quot;Ukendt del/Brugt del&quot;
               </button>
               {" "}vises i indstillinger – det er forventet og påvirker ikke funktion.
               {showTooltip === 'pulled-tooltip' && (
@@ -109,7 +109,7 @@ export default function PartsQualitySection() {
                   onFocus={() => setShowTooltip('compatible-tooltip')}
                   onBlur={() => setShowTooltip(null)}
                 >
-                  "Ukendt del"
+                  &quot;Ukendt del&quot;
                 </button>
                 .</span>
                 {showTooltip === 'compatible-tooltip' && (
@@ -173,7 +173,7 @@ export default function PartsQualitySection() {
                   <td className="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-medium text-gray-700">"Ukendt del" besked</td>
+                  <td className="py-3 px-4 font-medium text-gray-700">&quot;Ukendt del&quot; besked</td>
                   <td className="py-3 px-4 text-center text-gray-600">Nogle modeller</td>
                   <td className="py-3 px-4 text-center text-gray-600">Nogle modeller</td>
                   <td className="py-3 px-4 text-center text-gray-600">Nogle modeller</td>

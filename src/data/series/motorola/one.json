@@ -1,0 +1,10 @@
+{
+  "id": "motorola-one",
+  "brandId": "motorola",
+  "name": "One",
+  "slug": "one",
+  "descriptionShort": "One serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 3
+}

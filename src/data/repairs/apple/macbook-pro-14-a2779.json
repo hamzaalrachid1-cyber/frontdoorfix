@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 14\" (2022) – A2779",
+  "slug": "macbook-pro-14-a2779",
+  "year": 2022,
+  "sort_order": 155,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/d5---edited-1762269956437.png",
+  "hero": {
+    "title": "MacBook Pro 14\" (2022) – A2779",
+    "tags": []
+  },
+  "repairs": []
+}

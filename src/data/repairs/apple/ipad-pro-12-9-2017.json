@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "ipad",
+  "model": "iPad Pro 12,9″ (2017)",
+  "slug": "ipad-pro-12-9-2017",
+  "year": 2017,
+  "sort_order": 405,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/apple-ipad-pro-12-9-64gb-wifi-4g-gold-2017-included-charger---edited-1762268209099.png",
+  "hero": {
+    "title": "iPad Pro 12,9″ (2017) Reparation",
+    "tags": []
+  },
+  "repairs": []
+}

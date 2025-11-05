@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook 12\" (2015-2017)",
+  "slug": "macbook-12",
+  "year": 2017,
+  "sort_order": 90,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/9---edited-1762269083406.png",
+  "hero": {
+    "title": "MacBook 12\" (2015-2017)",
+    "tags": []
+  },
+  "repairs": []
+}

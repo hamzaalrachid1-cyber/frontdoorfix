@@ -1,0 +1,10 @@
+{
+  "id": "samsung-note",
+  "brandId": "samsung",
+  "name": "Galaxy Note",
+  "slug": "note",
+  "descriptionShort": "Galaxy Note serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 5
+}

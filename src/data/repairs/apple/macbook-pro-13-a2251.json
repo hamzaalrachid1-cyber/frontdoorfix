@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 13\" (2020) – A2251",
+  "slug": "macbook-pro-13-a2251",
+  "year": 2020,
+  "sort_order": 115,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/76---edited-1762269362069.png",
+  "hero": {
+    "title": "MacBook Pro 13\" (2020) – A2251",
+    "tags": []
+  },
+  "repairs": []
+}

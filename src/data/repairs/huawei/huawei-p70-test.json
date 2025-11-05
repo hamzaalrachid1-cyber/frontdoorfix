@@ -1,0 +1,42 @@
+{
+  "brand": "huawei",
+  "series": "p",
+  "model": "Huawei P70 Test",
+  "slug": "huawei-p70-test",
+  "year": 2024,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "https://via.placeholder.com/200x200/FF6B6B/FFFFFF?text=Huawei+P70",
+  "hero": {
+    "title": "Huawei P70 Test Reparation",
+    "tags": [
+      "test",
+      "huawei",
+      "p70",
+      "2024"
+    ]
+  },
+  "repairs": [
+    {
+      "id": "repair-1",
+      "type": "Skærm",
+      "quality": "Original",
+      "price": 1299,
+      "duration": "25-30 min",
+      "warranty": "24 måneder",
+      "description": "Udskiftning af ødelagt skærm med original Huawei del",
+      "isVisible": true
+    },
+    {
+      "id": "repair-2",
+      "type": "Batteri",
+      "quality": "Kompatibel",
+      "price": 699,
+      "duration": "20-25 min",
+      "warranty": "12 måneder",
+      "description": "Udskiftning af batteri med kompatibel del",
+      "isVisible": true
+    }
+  ],
+  "sort_order": 350
+}

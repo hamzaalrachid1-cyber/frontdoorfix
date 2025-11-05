@@ -1,0 +1,31 @@
+{
+  "brand": "apple",
+  "series": "ipad",
+  "model": "iPad Air (2013)",
+  "slug": "ipad-air",
+  "year": 2013,
+  "sort_order": 350,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/air-5---edited-1762262331241.png",
+  "hero": {
+    "title": "iPad Air Reparation",
+    "tags": [],
+    "image": "https://cdn.prod.website-files.com/65b3b01a97ff5dc51bb2bcb2/65ddeb48741ec9c50ddf80e3_iPad-Air-1-o4m7tln2v6uwy9lfywhadeujd3sq7xgkere27ahp8g.png"
+  },
+  "repairs": [
+    {
+      "id": "screen_original",
+      "category": "Skærm",
+      "title": "Skærmskift – Original",
+      "type": "original",
+      "price": 999,
+      "time": "~45 min",
+      "warranty": "24 mdr",
+      "description": "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 13\" M1 (2020) – A2337",
+  "slug": "macbook-air-13-m1-a2337",
+  "year": 2020,
+  "sort_order": 130,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/1324---edited-1762269543539.png",
+  "hero": {
+    "title": "MacBook Air 13\" M1 (2020) – A2337",
+    "tags": []
+  },
+  "repairs": []
+}

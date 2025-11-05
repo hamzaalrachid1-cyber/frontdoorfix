@@ -7,6 +7,14 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.idriverep.dk',
+        port: '',
+        pathname: '/wp-content/uploads/**',
+      },
+    ],
   },
   // experimental: {
   //   optimizeCss: true,

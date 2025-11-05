@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 13\" (2018-2019) – A1932",
+  "slug": "macbook-air-13-a1932",
+  "year": 2019,
+  "sort_order": 105,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/98---edited-1762269282230.png",
+  "hero": {
+    "title": "MacBook Air 13\" (2018-2019) – A1932",
+    "tags": []
+  },
+  "repairs": []
+}

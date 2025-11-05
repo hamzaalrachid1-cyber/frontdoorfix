@@ -1,0 +1,172 @@
+{
+  "brand": "Google",
+  "model": "Google Pixel 7",
+  "slug": "pixel-7",
+  "hasBackGlass": true,
+  "hero": {
+    "title": "Google Pixel 7 Reparation",
+    "tags": [
+      "Tensor G2",
+      "Pixel model"
+    ]
+  },
+  "repairs": [
+    {
+      "id": "screen-original",
+      "category": "Skærm",
+      "title": "Skærmskift – Original",
+      "type": "original",
+      "price": 1299,
+      "time": "~45 min",
+      "warranty": "24 mdr",
+      "description": "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "screen-compatible",
+      "category": "Skærm",
+      "title": "Skærmskift – Kompatibel",
+      "type": "compatible",
+      "price": 999,
+      "time": "~45 min",
+      "warranty": "24 mdr",
+      "description": "Glas + LCD udskiftes (kompatibel kvalitet).",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "battery-original",
+      "category": "Batteri",
+      "title": "Batteriskift – Original",
+      "type": "original",
+      "price": 599,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Nyt batteri med frisk kapacitet. Kalibrering + test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "battery-compatible",
+      "category": "Batteri",
+      "title": "Batteriskift – Kompatibel",
+      "type": "compatible",
+      "price": 449,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Kompatibelt batteri. Kalibrering + test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "charging-port",
+      "category": "Porte",
+      "title": "Ladeport (USB-C)",
+      "type": "service",
+      "price": 349,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Reparation af opladningsproblemer. Inkl. rensning.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "back-camera",
+      "category": "Kamera",
+      "title": "Bag-kamera",
+      "type": "service",
+      "price": 699,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Udskiftning af bag-kamera. Inkl. test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "front-camera",
+      "category": "Kamera",
+      "title": "For-kamera",
+      "type": "service",
+      "price": 499,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Udskiftning af for-kamera. Inkl. test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "speaker",
+      "category": "Lyd/Knapper",
+      "title": "Højttaler",
+      "type": "service",
+      "price": 349,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Udskiftning af højttaler. Inkl. test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "microphone",
+      "category": "Lyd/Knapper",
+      "title": "Mikrofon",
+      "type": "service",
+      "price": 349,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Udskiftning af mikrofon. Inkl. test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "back-glass",
+      "category": "Bagcover",
+      "title": "Bagglas",
+      "type": "service",
+      "price": 499,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Udskiftning af bagglas. Inkl. test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "software",
+      "category": "Software/Andet",
+      "title": "Software",
+      "type": "service",
+      "price": 149,
+      "time": "~30–60 min",
+      "warranty": "Ingen",
+      "description": "Backup, gendannelse, opdatering (hvis muligt).",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "diagnostics",
+      "category": "Software/Andet",
+      "title": "Fejlsøgning/diagnose",
+      "type": "service",
+      "price": 149,
+      "time": "~30–45 min",
+      "warranty": "Ingen",
+      "description": "Fratrækkes ved reparation.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ],
+  "sort_order": 350
+}

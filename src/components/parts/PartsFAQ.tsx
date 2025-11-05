@@ -11,7 +11,7 @@ export default function PartsFAQ() {
         <div className="max-w-4xl mx-auto space-y-6">
           <details className="bg-gray-50 rounded-2xl p-6 shadow-sm">
             <summary className="font-semibold text-gray-800 cursor-pointer hover:text-pink-600 transition-colors text-lg">
-              Hvorfor står der "Ukendt del/Brugt del"?
+              Hvorfor står der &quot;Ukendt del/Brugt del&quot;?
             </summary>
             <div className="mt-4 text-gray-600 leading-relaxed">
               iPhones knytter reservedele til enhedens serienumre. Når vi monterer en original kalibreret/pulled eller kompatibel del, kan nyere modeller vise en informationsbesked i Indstillinger. Det påvirker ikke funktion – og vi giver normal garanti.

@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 16\" (2022) – A2780",
+  "slug": "macbook-pro-16-a2780",
+  "year": 2022,
+  "sort_order": 150,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/d3---edited-1762269945472.png",
+  "hero": {
+    "title": "MacBook Pro 16\" (2022) – A2780",
+    "tags": []
+  },
+  "repairs": []
+}

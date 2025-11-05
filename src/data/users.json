@@ -1,0 +1,26 @@
+[
+  {
+    "id": "admin_1",
+    "name": "Administrator",
+    "email": "admin@frontdoorfix.dk",
+    "role": "owner",
+    "isActive": true,
+    "createdAt": "2025-10-01T05:50:32.683Z",
+    "permissions": [
+      "content:read",
+      "content:write",
+      "content:delete",
+      "media:read",
+      "media:write",
+      "media:delete",
+      "settings:read",
+      "settings:write",
+      "users:read",
+      "users:write",
+      "users:delete",
+      "seo:read",
+      "seo:write",
+      "analytics:read"
+    ]
+  }
+]

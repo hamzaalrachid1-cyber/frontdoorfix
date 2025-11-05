@@ -1,0 +1,33 @@
+{
+  "brand": "apple",
+  "series": "iphone",
+  "model": "iphone 17",
+  "slug": "iphone-17",
+  "year": 2025,
+  "sort_order": 341,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "https://www.idriverep.dk/wp-content/uploads/2025/09/Untitled-design-18-768x768.png",
+  "hero": {
+    "title": "iphone 17",
+    "tags": []
+  },
+  "repairs": [
+    {
+      "title": "trst",
+      "category": "Skærm",
+      "quality": "original",
+      "price": 0,
+      "time": "~30 min",
+      "warranty": "24 mdr",
+      "description": "",
+      "order": 100,
+      "id": "repair_1759399626492",
+      "type": "original",
+      "isVisible": true,
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ]
+}

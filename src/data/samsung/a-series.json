@@ -1,0 +1,623 @@
+[
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A7 (2017)",
+    "year": 2017,
+    "slug": "galaxy-a7-2017",
+    "supportsBackGlass": true,
+    "order": 1
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A6+",
+    "year": 2018,
+    "slug": "galaxy-a6-plus",
+    "supportsBackGlass": true,
+    "order": 3
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A7 (2018)",
+    "year": 2018,
+    "slug": "galaxy-a7-2018",
+    "supportsBackGlass": true,
+    "order": 4
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A8 (2018)",
+    "year": 2018,
+    "slug": "galaxy-a8-2018",
+    "supportsBackGlass": true,
+    "order": 5
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A8+ (2018)",
+    "year": 2018,
+    "slug": "galaxy-a8-plus-2018",
+    "supportsBackGlass": true,
+    "order": 6
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A9 (2018)",
+    "year": 2018,
+    "slug": "galaxy-a9-2018",
+    "supportsBackGlass": true,
+    "order": 7
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A02",
+    "year": 2021,
+    "slug": "galaxy-a02",
+    "supportsBackGlass": true,
+    "order": 11
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A02s",
+    "year": 2021,
+    "slug": "galaxy-a02s",
+    "supportsBackGlass": true,
+    "order": 12
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A04",
+    "year": 2022,
+    "slug": "galaxy-a04",
+    "supportsBackGlass": true,
+    "order": 16
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A04s",
+    "year": 2022,
+    "slug": "galaxy-a04s",
+    "supportsBackGlass": true,
+    "order": 17
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A05",
+    "year": 2023,
+    "slug": "galaxy-a05",
+    "supportsBackGlass": true,
+    "order": 19
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A05s",
+    "year": 2023,
+    "slug": "galaxy-a05s",
+    "supportsBackGlass": true,
+    "order": 20
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A06",
+    "year": 2024,
+    "slug": "galaxy-a06",
+    "supportsBackGlass": true,
+    "order": 21
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A06 5G",
+    "year": 2024,
+    "slug": "galaxy-a06-5g",
+    "supportsBackGlass": true,
+    "order": 22
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A10",
+    "year": 2019,
+    "slug": "galaxy-a10",
+    "supportsBackGlass": true,
+    "order": 23
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A10s",
+    "year": 2019,
+    "slug": "galaxy-a10s",
+    "supportsBackGlass": true,
+    "order": 24
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A10e",
+    "year": 2019,
+    "slug": "galaxy-a10e",
+    "supportsBackGlass": true,
+    "order": 25
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A11",
+    "year": 2020,
+    "slug": "galaxy-a11",
+    "supportsBackGlass": true,
+    "order": 26
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A12",
+    "year": 2020,
+    "slug": "galaxy-a12",
+    "supportsBackGlass": true,
+    "order": 27
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A13 (4G)",
+    "year": 2022,
+    "slug": "galaxy-a13-4g",
+    "supportsBackGlass": true,
+    "order": 28
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A13 (5G)",
+    "year": 2022,
+    "slug": "galaxy-a13-5g",
+    "supportsBackGlass": true,
+    "order": 29
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A14 (4G)",
+    "year": 2023,
+    "slug": "galaxy-a14-4g",
+    "supportsBackGlass": true,
+    "order": 30
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A14 (5G)",
+    "year": 2023,
+    "slug": "galaxy-a14-5g",
+    "supportsBackGlass": true,
+    "order": 31
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A15 (4G)",
+    "year": 2024,
+    "slug": "galaxy-a15-4g",
+    "supportsBackGlass": true,
+    "order": 32
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A15 (5G)",
+    "year": 2024,
+    "slug": "galaxy-a15-5g",
+    "supportsBackGlass": true,
+    "order": 33
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A16 5G",
+    "year": 2024,
+    "slug": "galaxy-a16-5g",
+    "supportsBackGlass": true,
+    "order": 34
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A17 5G",
+    "year": 2024,
+    "slug": "galaxy-a17-5g",
+    "supportsBackGlass": true,
+    "order": 35
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A20",
+    "year": 2019,
+    "slug": "galaxy-a20",
+    "supportsBackGlass": true,
+    "order": 36
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A20s",
+    "year": 2019,
+    "slug": "galaxy-a20s",
+    "supportsBackGlass": true,
+    "order": 37
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A20e",
+    "year": 2019,
+    "slug": "galaxy-a20e",
+    "supportsBackGlass": true,
+    "order": 38
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A21",
+    "year": 2020,
+    "slug": "galaxy-a21",
+    "supportsBackGlass": true,
+    "order": 39
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A21s",
+    "year": 2020,
+    "slug": "galaxy-a21s",
+    "supportsBackGlass": true,
+    "order": 40
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A22 (4G)",
+    "year": 2021,
+    "slug": "galaxy-a22-4g",
+    "supportsBackGlass": true,
+    "order": 41
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A22 (5G)",
+    "year": 2021,
+    "slug": "galaxy-a22-5g",
+    "supportsBackGlass": true,
+    "order": 42
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A23 (4G)",
+    "year": 2022,
+    "slug": "galaxy-a23-4g",
+    "supportsBackGlass": true,
+    "order": 43
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A23 (5G)",
+    "year": 2022,
+    "slug": "galaxy-a23-5g",
+    "supportsBackGlass": true,
+    "order": 44
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A24",
+    "year": 2023,
+    "slug": "galaxy-a24",
+    "supportsBackGlass": true,
+    "order": 45
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A25 5G",
+    "year": 2024,
+    "slug": "galaxy-a25-5g",
+    "supportsBackGlass": true,
+    "order": 46
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A26 5G",
+    "year": 2024,
+    "slug": "galaxy-a26-5g",
+    "supportsBackGlass": true,
+    "order": 47
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A30",
+    "year": 2019,
+    "slug": "galaxy-a30",
+    "supportsBackGlass": true,
+    "order": 48
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A30s",
+    "year": 2019,
+    "slug": "galaxy-a30s",
+    "supportsBackGlass": true,
+    "order": 49
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A31",
+    "year": 2020,
+    "slug": "galaxy-a31",
+    "supportsBackGlass": true,
+    "order": 50
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A32 (4G)",
+    "year": 2021,
+    "slug": "galaxy-a32-4g",
+    "supportsBackGlass": true,
+    "order": 51
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A32 (5G)",
+    "year": 2021,
+    "slug": "galaxy-a32-5g",
+    "supportsBackGlass": true,
+    "order": 52
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A33 5G",
+    "year": 2022,
+    "slug": "galaxy-a33-5g",
+    "supportsBackGlass": true,
+    "order": 53
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A34 5G",
+    "year": 2023,
+    "slug": "galaxy-a34-5g",
+    "supportsBackGlass": true,
+    "order": 54
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A35 5G",
+    "year": 2024,
+    "slug": "galaxy-a35-5g",
+    "supportsBackGlass": true,
+    "order": 55
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A36 5G",
+    "year": 2024,
+    "slug": "galaxy-a36-5g",
+    "supportsBackGlass": true,
+    "order": 56
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A40",
+    "year": 2019,
+    "slug": "galaxy-a40",
+    "supportsBackGlass": true,
+    "order": 57
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A41",
+    "year": 2020,
+    "slug": "galaxy-a41",
+    "supportsBackGlass": true,
+    "order": 58
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A42 5G",
+    "year": 2020,
+    "slug": "galaxy-a42-5g",
+    "supportsBackGlass": true,
+    "order": 59
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A50",
+    "year": 2019,
+    "slug": "galaxy-a50",
+    "supportsBackGlass": true,
+    "order": 60
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A50s",
+    "year": 2019,
+    "slug": "galaxy-a50s",
+    "supportsBackGlass": true,
+    "order": 61
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A51",
+    "year": 2020,
+    "slug": "galaxy-a51",
+    "supportsBackGlass": true,
+    "order": 62
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A51 5G",
+    "year": 2020,
+    "slug": "galaxy-a51-5g",
+    "supportsBackGlass": true,
+    "order": 63
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A52",
+    "year": 2021,
+    "slug": "galaxy-a52",
+    "supportsBackGlass": true,
+    "order": 64
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A52 5G",
+    "year": 2021,
+    "slug": "galaxy-a52-5g",
+    "supportsBackGlass": true,
+    "order": 65
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A52s 5G",
+    "year": 2021,
+    "slug": "galaxy-a52s-5g",
+    "supportsBackGlass": true,
+    "order": 66
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A53 5G",
+    "year": 2022,
+    "slug": "galaxy-a53-5g",
+    "supportsBackGlass": true,
+    "order": 67
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A54 5G",
+    "year": 2023,
+    "slug": "galaxy-a54-5g",
+    "supportsBackGlass": true,
+    "order": 68
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A55 5G",
+    "year": 2024,
+    "slug": "galaxy-a55-5g",
+    "supportsBackGlass": true,
+    "order": 69
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A56 5G",
+    "year": 2024,
+    "slug": "galaxy-a56-5g",
+    "supportsBackGlass": true,
+    "order": 70
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A60",
+    "year": 2019,
+    "slug": "galaxy-a60",
+    "supportsBackGlass": true,
+    "order": 71
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A70",
+    "year": 2019,
+    "slug": "galaxy-a70",
+    "supportsBackGlass": true,
+    "order": 72
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A70s",
+    "year": 2019,
+    "slug": "galaxy-a70s",
+    "supportsBackGlass": true,
+    "order": 73
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A71",
+    "year": 2020,
+    "slug": "galaxy-a71",
+    "supportsBackGlass": true,
+    "order": 74
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A71 5G",
+    "year": 2020,
+    "slug": "galaxy-a71-5g",
+    "supportsBackGlass": true,
+    "order": 75
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A72",
+    "year": 2021,
+    "slug": "galaxy-a72",
+    "supportsBackGlass": true,
+    "order": 76
+  },
+  {
+    "brand": "Samsung",
+    "series": "A",
+    "model": "Galaxy A73 5G",
+    "year": 2022,
+    "slug": "galaxy-a73-5g",
+    "supportsBackGlass": true,
+    "order": 77
+  }
+]

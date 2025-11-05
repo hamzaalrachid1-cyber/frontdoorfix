@@ -1,0 +1,10 @@
+{
+  "id": "motorola-edge",
+  "brandId": "motorola",
+  "name": "Edge",
+  "slug": "edge",
+  "descriptionShort": "Edge serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 2
+}

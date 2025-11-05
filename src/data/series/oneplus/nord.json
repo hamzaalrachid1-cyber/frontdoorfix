@@ -1,0 +1,10 @@
+{
+  "id": "oneplus-nord",
+  "brandId": "oneplus",
+  "name": "Nord",
+  "slug": "nord",
+  "descriptionShort": "Nord serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 1
+}

@@ -1,0 +1,52 @@
+{
+  "brand": "motorola",
+  "series": "edge",
+  "model": "Motorola Edge 50 Test",
+  "slug": "motorola-edge-50-test",
+  "year": 2024,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNjMzM0ZGIi8+CjxwYXRoIGQ9Ik0xMDAgODBDMTEwLjQ5MSA4MCAxMjAgODkuNTA5IDEyMCAxMDBDMTIwIDExMC40OTEgMTEwLjQ5MSAxMjAgMTAwIDEyMEM4OS41MDkgMTIwIDgwIDExMC40OTEgODAgMTAwQzgwIDg5LjUwOSA4OS41MDkgODAgMTAwIDgwWiIgZmlsbD0iIzMzMzMzMyIvPgo8dGV4dCB4PSIxMDAiIHk9IjE0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0Ij5Nb3Rvcm9sYTwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCI+RWRnZSA1MDwvdGV4dD4KPC9zdmc+Cg==",
+  "hero": {
+    "title": "Motorola Edge 50 Test Reparation",
+    "tags": [
+      "test",
+      "motorola",
+      "edge",
+      "2024"
+    ]
+  },
+  "repairs": [
+    {
+      "id": "repair-1",
+      "type": "Skærm",
+      "quality": "Original",
+      "price": 999,
+      "duration": "20-30 min",
+      "warranty": "24 måneder",
+      "description": "Udskiftning af ødelagt skærm med original Motorola del",
+      "isVisible": true
+    },
+    {
+      "id": "repair-2",
+      "type": "Batteri",
+      "quality": "Original",
+      "price": 599,
+      "duration": "15-20 min",
+      "warranty": "12 måneder",
+      "description": "Udskiftning af batteri med original Motorola batteri",
+      "isVisible": true
+    },
+    {
+      "id": "repair-3",
+      "type": "Bagglas",
+      "quality": "Kompatibel",
+      "price": 399,
+      "duration": "20-25 min",
+      "warranty": "12 måneder",
+      "description": "Udskiftning af bagglas med kompatibel del",
+      "isVisible": true
+    }
+  ],
+  "sort_order": 350
+}

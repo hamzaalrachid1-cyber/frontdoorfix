@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 13\" (2010-2017)",
+  "slug": "macbook-air-13",
+  "year": 2017,
+  "sort_order": 85,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/8---edited-1762268991849.png",
+  "hero": {
+    "title": "MacBook Air 13\" (2010-2017)",
+    "tags": []
+  },
+  "repairs": []
+}

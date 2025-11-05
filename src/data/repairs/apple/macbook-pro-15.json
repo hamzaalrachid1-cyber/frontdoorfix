@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 15\" (2009-2012)",
+  "slug": "macbook-pro-15",
+  "year": 2012,
+  "sort_order": 70,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/5---edited-1762268829949.png",
+  "hero": {
+    "title": "MacBook Pro 15\" (2009-2012)",
+    "tags": []
+  },
+  "repairs": []
+}

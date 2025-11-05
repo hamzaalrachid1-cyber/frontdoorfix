@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 15\" M3 (2024) – A3114",
+  "slug": "macbook-air-15-m3-a3114",
+  "year": 2024,
+  "sort_order": 195,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/f1---edited-1762270337467.png",
+  "hero": {
+    "title": "MacBook Air 15\" M3 (2024) – A3114",
+    "tags": []
+  },
+  "repairs": []
+}

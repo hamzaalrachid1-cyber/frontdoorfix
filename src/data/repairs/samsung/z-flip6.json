@@ -1,0 +1,33 @@
+{
+  "brand": "samsung",
+  "series": "z",
+  "model": "Samsung Galaxy Z Flip6",
+  "slug": "z-flip6",
+  "year": 2024,
+  "sort_order": 100,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/images/samsung/z-flip6.jpg",
+  "hero": {
+    "title": "Samsung Galaxy Z Flip6",
+    "tags": []
+  },
+  "repairs": [
+    {
+      "title": "skærm",
+      "category": "Skærm",
+      "quality": "original",
+      "price": 0,
+      "time": "~30 min",
+      "warranty": "24 mdr",
+      "description": "",
+      "order": 100,
+      "id": "repair_1759587958490",
+      "type": "original",
+      "isVisible": true,
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ]
+}

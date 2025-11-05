@@ -1,0 +1,164 @@
+export interface ModelSeoContent {
+  model: string;
+  year?: string;
+  chip?: string;
+  screenTech?: string;
+  supportsBackGlass: boolean;
+  usbType: string;
+  cities: string;
+  intro: string;
+  sections: {
+    screen: string;
+    battery: string;
+    camera: string;
+    backGlass?: string;
+    pricing: string;
+    whyChoose: string;
+    contact: string;
+  };
+}
+
+export const defaultSeoContent: Omit<ModelSeoContent, 'model'> = {
+  supportsBackGlass: false,
+  usbType: "Lightning",
+  cities: "København og omegn",
+  intro: "{{model}} er kendt for sit {{screenTech}}. Når uheldet er ude, reparerer vi hurtigt og professionelt – direkte på din adresse i København og omegn. Vi kalibrerer før/efter, funktionstester og giver 24 mdr. garanti på skærme og 12 mdr. på batterier og øvrige dele.",
+  sections: {
+    screen: "En ridset eller knust skærm påvirker både udseende og brug. Vi udskifter med original kalibreret del (pulled/testet) eller kompatibel A-kvalitet – du vælger efter behov og budget. Original bevarer typisk bedst farver/lysstyrke og touch-respons (True Tone/lyssensor hvor muligt). Tid: typisk 20–30 min inkl. test.",
+    battery: "Mister din telefon strøm for hurtigt, eller slukker den uventet? Et nyt batteri giver mærkbar forbedring. Vi kalibrerer og funktionstester – og rådgiver om gode opladningsvaner, så batteriet holder længere. Garanti: 12 mdr.",
+    camera: "Kamera (for/bag): Slørede billeder, fokusfejl eller pletter løses med udskiftning og test. Ladeport ({{usbType}}): Rensning eller udskiftning ved ladeproblemer/ustabil forbindelse. Mikrofon/højttaler: Lav lyd, støj eller ingen lyd – vi udskifter moduler og kvalitetstester. Biometrisk (Face ID/Touch ID): Vi fejlfinder; visse begrænsninger kan gælde på ældre modeller.",
+    backGlass: "På modeller med glasbagside skifter vi bagglasset sikkert og rent, så din {{model}} ser ud som ny igen.",
+    pricing: "Priser som vist – inkl. moms, kalibrering og test. Varighed: de fleste reparationer tager 20–30 min. Fleksibel kvalitet: vælg mellem Original (kalibreret/pulled) og Kompatibel A-kvalitet. Vi kommer til dig – {{cities}}.",
+    whyChoose: "Erfarne teknikere, gennemsigtige priser og dele i topkvalitet. Vi rådgiver ærligt om, hvad der bedst kan betale sig for netop din {{model}} – uanset om målet er topkvalitet eller laveste pris til en ældre enhed.",
+    contact: "Er du i tvivl? Ring på +45 93 54 54 57 – vi svarer typisk inden for 5 minutter."
+  }
+};
+
+export const modelSeoOverrides: Partial<Record<string, Partial<ModelSeoContent>>> = {
+  'iphone-8': {
+    year: "2017",
+    chip: "A11 Bionic", 
+    screenTech: "LCD Retina",
+    supportsBackGlass: true,
+    usbType: "Lightning"
+  },
+  'iphone-8-plus': {
+    year: "2017",
+    chip: "A11 Bionic",
+    screenTech: "LCD Retina", 
+    supportsBackGlass: true,
+    usbType: "Lightning"
+  },
+  'iphone-x': {
+    year: "2017",
+    chip: "A11 Bionic",
+    screenTech: "OLED",
+    supportsBackGlass: true,
+    usbType: "Lightning"
+  },
+  'iphone-15': {
+    year: "2023",
+    chip: "A16",
+    screenTech: "OLED",
+    supportsBackGlass: true,
+    usbType: "USB-C",
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  },
+  'iphone-15-plus': {
+    year: "2023", 
+    chip: "A16",
+    screenTech: "OLED",
+    supportsBackGlass: true,
+    usbType: "USB-C",
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  },
+  'iphone-15-pro': {
+    year: "2023",
+    chip: "A17 Pro", 
+    screenTech: "OLED LTPO / ProMotion",
+    supportsBackGlass: true,
+    usbType: "USB-C",
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  },
+  'iphone-15-pro-max': {
+    year: "2023",
+    chip: "A17 Pro",
+    screenTech: "OLED LTPO / ProMotion", 
+    supportsBackGlass: true,
+    usbType: "USB-C",
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  },
+  'iphone-16': {
+    year: "2024",
+    chip: "A18",
+    screenTech: "OLED",
+    supportsBackGlass: true,
+    usbType: "USB-C",
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  },
+  'iphone-16-plus': {
+    year: "2024",
+    chip: "A18", 
+    screenTech: "OLED",
+    supportsBackGlass: true,
+    usbType: "USB-C",
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  },
+  'iphone-16-pro': {
+    year: "2024",
+    chip: "A18 Pro",
+    screenTech: "OLED LTPO / ProMotion",
+    supportsBackGlass: true,
+    usbType: "USB-C", 
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  },
+  'iphone-16-pro-max': {
+    year: "2024",
+    chip: "A18 Pro",
+    screenTech: "OLED LTPO / ProMotion",
+    supportsBackGlass: true,
+    usbType: "USB-C",
+    cities: "København, Frederiksberg, Amager, Lyngby, Hvidovre m.fl."
+  }
+};
+
+function replaceTokens(text: string, data: ModelSeoContent): string {
+  return text
+    .replace(/\{\{model\}\}/g, data.model)
+    .replace(/\{\{year\}\}/g, data.year || '')
+    .replace(/\{\{chip\}\}/g, data.chip || '')
+    .replace(/\{\{screenTech\}\}/g, data.screenTech || 'skærm')
+    .replace(/\{\{usbType\}\}/g, data.usbType)
+    .replace(/\{\{cities\}\}/g, data.cities);
+}
+
+export function getModelSeoContent(modelData: any): ModelSeoContent {
+  const overrides = modelSeoOverrides[modelData.slug] || {};
+  
+  const baseContent = {
+    model: modelData.model,
+    year: modelData.hero?.tags?.find((tag: string) => /\d{4}/.test(tag)),
+    chip: modelData.hero?.tags?.find((tag: string) => tag.includes('chip')),
+    screenTech: modelData.hero?.tags?.find((tag: string) => tag.includes('Retina') || tag.includes('OLED') || tag.includes('ProMotion')),
+    supportsBackGlass: modelData.hasBackGlass || false,
+    ...defaultSeoContent,
+    ...overrides
+  };
+
+  // Replace tokens in all text content
+  const processedContent = {
+    ...baseContent,
+    intro: replaceTokens(baseContent.intro, baseContent),
+    sections: {
+      screen: replaceTokens(baseContent.sections.screen, baseContent),
+      battery: replaceTokens(baseContent.sections.battery, baseContent),
+      camera: replaceTokens(baseContent.sections.camera, baseContent),
+      backGlass: baseContent.sections.backGlass ? replaceTokens(baseContent.sections.backGlass, baseContent) : undefined,
+      pricing: replaceTokens(baseContent.sections.pricing, baseContent),
+      whyChoose: replaceTokens(baseContent.sections.whyChoose, baseContent),
+      contact: replaceTokens(baseContent.sections.contact, baseContent)
+    }
+  };
+
+  return processedContent;
+}

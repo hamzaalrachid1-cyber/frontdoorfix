@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 13\" M2 (2022) – A2681",
+  "slug": "macbook-air-13-m2-a2681",
+  "year": 2022,
+  "sort_order": 163,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/g6---edited-1762270132826.png",
+  "hero": {
+    "title": "MacBook Air 13\" M2 (2022) – A2681",
+    "tags": []
+  },
+  "repairs": []
+}

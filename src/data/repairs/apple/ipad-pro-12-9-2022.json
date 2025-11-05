@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "ipad",
+  "model": "iPad Pro 12,9″ (2022)",
+  "slug": "ipad-pro-12-9-2022",
+  "year": 2022,
+  "sort_order": 425,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/12---edited-1762268557277.png",
+  "hero": {
+    "title": "iPad Pro 12,9″ (2022) Reparation",
+    "tags": []
+  },
+  "repairs": []
+}

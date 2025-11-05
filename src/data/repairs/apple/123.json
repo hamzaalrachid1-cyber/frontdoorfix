@@ -1,0 +1,27 @@
+{
+  "brand": "Apple",
+  "model": "123",
+  "slug": "123",
+  "hasBackGlass": false,
+  "hero": {
+    "title": "123 Reparation",
+    "tags": [],
+    "image": ""
+  },
+  "repairs": [
+    {
+      "id": "screen_original",
+      "category": "Skærm",
+      "title": "Skærmskift – Original",
+      "type": "original",
+      "price": 999,
+      "time": "~45 min",
+      "warranty": "24 mdr",
+      "description": "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ],
+  "sort_order": 350
+}

@@ -1,0 +1,72 @@
+{
+  "siteSettings": {
+    "siteName": "FrontDoorFix",
+    "siteTagline": "Udkørende værksted",
+    "siteDescription": "Professionel reparation af telefoner og tablets direkte på din adresse",
+    "contactPhone": "+45 93 54 54 57",
+    "contactEmail": "info@frontdoorfix.dk",
+    "contactAddress": "København, Danmark",
+    "openingHours": "Alle dage 8:00-22:00"
+  },
+  "seoSettings": {
+    "defaultTitle": "Reparationer af telefoner og tablets - FrontDoorFix",
+    "defaultDescription": "Professionel reparation af iPhone, iPad, Samsung Galaxy og andre enheder. Vi kommer til dig - hurtig service med garanti.",
+    "defaultKeywords": [
+      "reparation",
+      "iPhone",
+      "iPad",
+      "Samsung",
+      "skærmreparation",
+      "batteri",
+      "service"
+    ]
+  },
+  "footerContent": {
+    "companyInfo": "Vi leverer professionel reparation af telefoner og tablets direkte på din adresse i København, omegn og Nordsjælland. Hurtig service med garanti.",
+    "openingHours": "Alle dage: 8:00 - 22:00\nVi kommer til dig hele dagen",
+    "socialLinks": [
+      {
+        "id": "facebook",
+        "platform": "Facebook",
+        "url": "#",
+        "icon": "📘"
+      },
+      {
+        "id": "instagram",
+        "platform": "Instagram",
+        "url": "#",
+        "icon": "📷"
+      },
+      {
+        "id": "trustpilot",
+        "platform": "Trustpilot",
+        "url": "#",
+        "icon": "⭐"
+      }
+    ]
+  },
+  "commonTexts": {
+    "ctaButton": "Bestil tid",
+    "readMore": "Læs mere",
+    "contactUs": "Kontakt os",
+    "getQuote": "Få tilbud",
+    "learnMore": "Lær mere",
+    "bookAppointment": "Book tid",
+    "viewAll": "Se alle",
+    "showMore": "Vis mere",
+    "showLess": "Vis mindre",
+    "loading": "Indlæser...",
+    "error": "Der opstod en fejl",
+    "success": "Handling gennemført"
+  },
+  "pageTitles": {
+    "home": "Forside",
+    "reparationer": "Reparationer",
+    "apple": "Apple Reparationer",
+    "samsung": "Samsung Reparationer",
+    "kontakt": "Kontakt os",
+    "erhverv": "Erhvervsaftaler",
+    "privatlivspolitik": "Privatlivspolitik",
+    "handelsbetingelser": "Handelsbetingelser"
+  }
+}

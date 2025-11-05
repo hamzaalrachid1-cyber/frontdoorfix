@@ -1,0 +1,15 @@
+{
+  "brand": "samsung",
+  "series": "z",
+  "model": "Samsung Galaxy Z Fold4",
+  "slug": "z-fold4",
+  "year": 2022,
+  "family": "galaxyzfold",
+  "sortOrder": 180,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "",
+  "repairs": [],
+  "sort_order": 60,
+  "updated_at": "2025-10-04T17:17:21.718Z"
+}

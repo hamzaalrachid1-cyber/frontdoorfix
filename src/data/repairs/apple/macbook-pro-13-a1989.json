@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 13\" (2019-2020) – A1989",
+  "slug": "macbook-pro-13-a1989",
+  "year": 2020,
+  "sort_order": 125,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/54---edited-1762269462821.png",
+  "hero": {
+    "title": "MacBook Pro 13\" (2019-2020) – A1989",
+    "tags": []
+  },
+  "repairs": []
+}

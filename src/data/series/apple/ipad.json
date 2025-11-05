@@ -1,0 +1,11 @@
+{
+  "id": "apple-ipad",
+  "brandId": "apple",
+  "name": "iPad",
+  "slug": "ipad",
+  "descriptionShort": "iPad serie reparationer",
+  "icon": "",
+  "image": "https://www.idriverep.dk/wp-content/uploads/2024/09/ipads.png",
+  "isActive": true,
+  "sortOrder": 2
+}

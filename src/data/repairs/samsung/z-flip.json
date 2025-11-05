@@ -1,0 +1,15 @@
+{
+  "brand": "samsung",
+  "series": "z",
+  "model": "Samsung Galaxy Z Flip",
+  "slug": "z-flip",
+  "year": 2020,
+  "family": "galaxyzflip",
+  "sortOrder": 110,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "",
+  "repairs": [],
+  "sort_order": 45,
+  "updated_at": "2025-10-04T17:17:27.775Z"
+}

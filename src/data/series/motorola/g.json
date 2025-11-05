@@ -1,0 +1,10 @@
+{
+  "id": "motorola-g",
+  "brandId": "motorola",
+  "name": "G",
+  "slug": "g",
+  "descriptionShort": "G serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 1
+}

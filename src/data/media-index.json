@@ -1,0 +1,1732 @@
+[
+  {
+    "id": "media-1759423810562",
+    "filename": "apple-logo-1-1759423810562.png",
+    "url": "/uploads/apple-logo-1-1759423810562.png",
+    "alt": "Apple logo",
+    "type": "image",
+    "size": 69910,
+    "uploadedAt": "2025-10-02T16:50:10.565Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759423860714",
+    "filename": "samsung-idrzcarcpr-1-1759423860714.png",
+    "url": "/uploads/samsung-idrzcarcpr-1-1759423860714.png",
+    "alt": "Samsung logo",
+    "type": "image",
+    "size": 15458,
+    "uploadedAt": "2025-10-02T16:51:00.716Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759423906490",
+    "filename": "huawei-idrfzg3amf-0-1759423906490.png",
+    "url": "/uploads/huawei-idrfzg3amf-0-1759423906490.png",
+    "alt": "Huawei logo",
+    "type": "image",
+    "size": 410077,
+    "uploadedAt": "2025-10-02T16:51:46.491Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759423942063",
+    "filename": "motorola-logo-1-1759423942063.png",
+    "url": "/uploads/motorola-logo-1-1759423942063.png",
+    "alt": "Motorola logo",
+    "type": "image",
+    "size": 14937,
+    "uploadedAt": "2025-10-02T16:52:22.064Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759423974671",
+    "filename": "oneplus-id-2ksyfjw-1-1759423974671.png",
+    "url": "/uploads/oneplus-id-2ksyfjw-1-1759423974671.png",
+    "alt": "OnePlus logo",
+    "type": "image",
+    "size": 11409,
+    "uploadedAt": "2025-10-02T16:52:54.673Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759424013346",
+    "filename": "google-symbol-1-1759424013346.png",
+    "url": "/uploads/google-symbol-1-1759424013346.png",
+    "alt": "Google Pixel logo",
+    "type": "image",
+    "size": 69014,
+    "uploadedAt": "2025-10-02T16:53:33.348Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759424058816",
+    "filename": "playstation--logo-1-1759424058816.png",
+    "url": "/uploads/playstation--logo-1-1759424058816.png",
+    "alt": "PlayStation logo",
+    "type": "image",
+    "size": 59518,
+    "uploadedAt": "2025-10-02T16:54:18.820Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759424173073",
+    "filename": "windows-idyr5flfof-1-1759424173073.png",
+    "url": "/uploads/windows-idyr5flfof-1-1759424173073.png",
+    "alt": "Computer logo",
+    "type": "image",
+    "size": 15388,
+    "uploadedAt": "2025-10-02T16:56:13.075Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759600578726",
+    "filename": "untitled-design--2--1759600578726.png",
+    "url": "/uploads/untitled-design--2--1759600578726.png",
+    "alt": "iPhone 6 image",
+    "type": "image",
+    "size": 75468,
+    "uploadedAt": "2025-10-04T17:56:18.728Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759600653329",
+    "filename": "untitled-design--4--1759600653329.png",
+    "url": "/uploads/untitled-design--4--1759600653329.png",
+    "alt": "iPhone 6 image",
+    "type": "image",
+    "size": 359993,
+    "uploadedAt": "2025-10-04T17:57:33.330Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759600705088",
+    "filename": "untitled-design--5--1759600705088.png",
+    "url": "/uploads/untitled-design--5--1759600705088.png",
+    "alt": "iPhone 6 image",
+    "type": "image",
+    "size": 798297,
+    "uploadedAt": "2025-10-04T17:58:25.093Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759601096933",
+    "filename": "untitled-design--6--1759601096933.png",
+    "url": "/uploads/untitled-design--6--1759601096933.png",
+    "alt": "iPhone 6 image",
+    "type": "image",
+    "size": 1211917,
+    "uploadedAt": "2025-10-04T18:04:56.935Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759601337503",
+    "filename": "untitled-design--7--1759601337503.png",
+    "url": "/uploads/untitled-design--7--1759601337503.png",
+    "alt": "iPhone 6 image",
+    "type": "image",
+    "size": 1510378,
+    "uploadedAt": "2025-10-04T18:08:57.505Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759601849812",
+    "filename": "untitled-design--7--1759601849812.png",
+    "url": "/uploads/untitled-design--7--1759601849812.png",
+    "alt": "iPhone 6 image",
+    "type": "image",
+    "size": 1510378,
+    "uploadedAt": "2025-10-04T18:17:29.815Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602150953",
+    "filename": "untitled-design---1---edited-1759602150953.png",
+    "url": "/uploads/untitled-design---1---edited-1759602150953.png",
+    "alt": "iPhone 6 image",
+    "type": "image",
+    "size": 1558313,
+    "uploadedAt": "2025-10-04T18:22:30.956Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602262329",
+    "filename": "untitled-design---1---edited-1759602262329.png",
+    "url": "/uploads/untitled-design---1---edited-1759602262329.png",
+    "alt": "iPhone 6 Plus image",
+    "type": "image",
+    "size": 1558313,
+    "uploadedAt": "2025-10-04T18:24:22.332Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602379830",
+    "filename": "6s-plus-1759602379830.png",
+    "url": "/uploads/6s-plus-1759602379830.png",
+    "alt": "iPhone 6s image",
+    "type": "image",
+    "size": 876615,
+    "uploadedAt": "2025-10-04T18:26:19.832Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602388722",
+    "filename": "6s-plus-1759602388722.png",
+    "url": "/uploads/6s-plus-1759602388722.png",
+    "alt": "iPhone 6s Plus image",
+    "type": "image",
+    "size": 876615,
+    "uploadedAt": "2025-10-04T18:26:28.723Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602607350",
+    "filename": "iphone-7---edited-1759602607350.png",
+    "url": "/uploads/iphone-7---edited-1759602607350.png",
+    "alt": "iPhone 7 image",
+    "type": "image",
+    "size": 190666,
+    "uploadedAt": "2025-10-04T18:30:07.352Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602617158",
+    "filename": "iphone-7---edited-1759602617158.png",
+    "url": "/uploads/iphone-7---edited-1759602617158.png",
+    "alt": "iPhone 7 Plus image",
+    "type": "image",
+    "size": 190666,
+    "uploadedAt": "2025-10-04T18:30:17.159Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602728825",
+    "filename": "iphone-8---edited-1759602728825.png",
+    "url": "/uploads/iphone-8---edited-1759602728825.png",
+    "alt": "iPhone 8 image",
+    "type": "image",
+    "size": 47232,
+    "uploadedAt": "2025-10-04T18:32:08.826Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759602739237",
+    "filename": "iphone-8---edited-1759602739237.png",
+    "url": "/uploads/iphone-8---edited-1759602739237.png",
+    "alt": "iPhone 8 Plus image",
+    "type": "image",
+    "size": 47232,
+    "uploadedAt": "2025-10-04T18:32:19.237Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759664050742",
+    "filename": "iphone-x-1759664050742.avif",
+    "url": "/uploads/iphone-x-1759664050742.avif",
+    "alt": "iPhone X image",
+    "type": "image",
+    "size": 5253,
+    "uploadedAt": "2025-10-05T11:34:10.744Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759664174715",
+    "filename": "iphone-xr-blue-1759664174715.jpg",
+    "url": "/uploads/iphone-xr-blue-1759664174715.jpg",
+    "alt": "iPhone XR image",
+    "type": "image",
+    "size": 60503,
+    "uploadedAt": "2025-10-05T11:36:14.716Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759664265573",
+    "filename": "iphone-xr-blue-back-09122018-carousel-jpg-large---edited-1759664265573.png",
+    "url": "/uploads/iphone-xr-blue-back-09122018-carousel-jpg-large---edited-1759664265573.png",
+    "alt": "iPhone XR image",
+    "type": "image",
+    "size": 294759,
+    "uploadedAt": "2025-10-05T11:37:45.575Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759664361344",
+    "filename": "iphon-x-2---edited-1759664361344.png",
+    "url": "/uploads/iphon-x-2---edited-1759664361344.png",
+    "alt": "iPhone X image",
+    "type": "image",
+    "size": 303951,
+    "uploadedAt": "2025-10-05T11:39:21.345Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759681694574",
+    "filename": "ab48958b-ae59-420d-a4c5-e2e188848734-1759681694574.png",
+    "url": "/uploads/ab48958b-ae59-420d-a4c5-e2e188848734-1759681694574.png",
+    "alt": "iPhone XS image",
+    "type": "image",
+    "size": 362016,
+    "uploadedAt": "2025-10-05T16:28:14.576Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759681793028",
+    "filename": "616caaca-57c8-4544-8a9f-f1321fdc6b62-1759681793028.png",
+    "url": "/uploads/616caaca-57c8-4544-8a9f-f1321fdc6b62-1759681793028.png",
+    "alt": "iPhone XS Max image",
+    "type": "image",
+    "size": 46338,
+    "uploadedAt": "2025-10-05T16:29:53.030Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759682523395",
+    "filename": "69bdbeb2-cd86-4086-bb90-f0b4f8fbd082-1759682523395.png",
+    "url": "/uploads/69bdbeb2-cd86-4086-bb90-f0b4f8fbd082-1759682523395.png",
+    "alt": "iPhone 11 image",
+    "type": "image",
+    "size": 420622,
+    "uploadedAt": "2025-10-05T16:42:03.398Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759682684308",
+    "filename": "8e6d6e77-5c0b-4a89-92ed-1d93f34fc867-1759682684308.png",
+    "url": "/uploads/8e6d6e77-5c0b-4a89-92ed-1d93f34fc867-1759682684308.png",
+    "alt": "iPhone 11 Pro image",
+    "type": "image",
+    "size": 447974,
+    "uploadedAt": "2025-10-05T16:44:44.310Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759684642948",
+    "filename": "swappie-iphone-11-pro-max-space-gray-back-1759684642948.avif",
+    "url": "/uploads/swappie-iphone-11-pro-max-space-gray-back-1759684642948.avif",
+    "alt": "iPhone 11 Pro Max image",
+    "type": "image",
+    "size": 6684,
+    "uploadedAt": "2025-10-05T17:17:22.950Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759684738101",
+    "filename": "83d8fd65-932b-4d7a-bda0-b05e83a8d553-1759684738101.png",
+    "url": "/uploads/83d8fd65-932b-4d7a-bda0-b05e83a8d553-1759684738101.png",
+    "alt": "iPhone 11 Pro Max image",
+    "type": "image",
+    "size": 502095,
+    "uploadedAt": "2025-10-05T17:18:58.102Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759685786359",
+    "filename": "1028ed79-e273-4d4f-8978-68249116f14e-1759685786359.png",
+    "url": "/uploads/1028ed79-e273-4d4f-8978-68249116f14e-1759685786359.png",
+    "alt": "iPhone 12 image",
+    "type": "image",
+    "size": 1207693,
+    "uploadedAt": "2025-10-05T17:36:26.362Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759687733133",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759687733133.svg",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759687733133.svg",
+    "alt": "",
+    "type": "svg",
+    "size": 64630,
+    "uploadedAt": "2025-10-05T18:08:53.135Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759687752665",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759687752665.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759687752665.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:09:12.666Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759687794160",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759687794160.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759687794160.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:09:54.161Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688008093",
+    "filename": "null-1759688008093",
+    "url": "/uploads/null-1759688008093",
+    "alt": "",
+    "type": "image",
+    "size": 0,
+    "uploadedAt": "2025-10-05T18:13:28.094Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688073408",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759688073408.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759688073408.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:14:33.409Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688135599",
+    "filename": "null-1759688135599",
+    "url": "/uploads/null-1759688135599",
+    "alt": "",
+    "type": "image",
+    "size": 0,
+    "uploadedAt": "2025-10-05T18:15:35.600Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688190632",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759688190632.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759688190632.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:16:30.633Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688219657",
+    "filename": "front-doorfix-tekniker-til-d-ren--1--1759688219657.svg",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--1--1759688219657.svg",
+    "alt": "",
+    "type": "svg",
+    "size": 64630,
+    "uploadedAt": "2025-10-05T18:16:59.658Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688279560",
+    "filename": "null-1759688279560",
+    "url": "/uploads/null-1759688279560",
+    "alt": "",
+    "type": "image",
+    "size": 0,
+    "uploadedAt": "2025-10-05T18:17:59.561Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688326378",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759688326378.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759688326378.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:18:46.379Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688339809",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759688339809.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759688339809.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:18:59.810Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688650026",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759688650026.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759688650026.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:24:10.028Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688667799",
+    "filename": "front-doorfix-tekniker-til-d-ren--1--1759688667799.svg",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--1--1759688667799.svg",
+    "alt": "",
+    "type": "svg",
+    "size": 64630,
+    "uploadedAt": "2025-10-05T18:24:27.800Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759688950503",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759688950503.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759688950503.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:29:10.505Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759689025802",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759689025802.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759689025802.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:30:25.804Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759689138683",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759689138683.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759689138683.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:32:18.684Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759689150688",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759689150688.svg",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759689150688.svg",
+    "alt": "",
+    "type": "svg",
+    "size": 64630,
+    "uploadedAt": "2025-10-05T18:32:30.690Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759689160354",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759689160354.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759689160354.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T18:32:40.356Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759689378167",
+    "filename": "sk-rmbillede-2025-10-05-kl--10-27-41-1759689378167.png",
+    "url": "/uploads/sk-rmbillede-2025-10-05-kl--10-27-41-1759689378167.png",
+    "alt": "",
+    "type": "image",
+    "size": 697098,
+    "uploadedAt": "2025-10-05T18:36:18.168Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759689552028",
+    "filename": "sk-rmbillede-2025-10-05-kl--10-27-41-1759689552028.png",
+    "url": "/uploads/sk-rmbillede-2025-10-05-kl--10-27-41-1759689552028.png",
+    "alt": "",
+    "type": "image",
+    "size": 697098,
+    "uploadedAt": "2025-10-05T18:39:12.031Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759691721874",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759691721874.svg",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759691721874.svg",
+    "alt": "",
+    "type": "svg",
+    "size": 64630,
+    "uploadedAt": "2025-10-05T19:15:21.876Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759691746692",
+    "filename": "front-doorfix-tekniker-til-d-ren--2--1759691746692.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--2--1759691746692.png",
+    "alt": "",
+    "type": "image",
+    "size": 18227,
+    "uploadedAt": "2025-10-05T19:15:46.692Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759691752799",
+    "filename": "front-doorfix-tekniker-til-d-ren-1759691752799.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren-1759691752799.png",
+    "alt": "",
+    "type": "image",
+    "size": 50854,
+    "uploadedAt": "2025-10-05T19:15:52.803Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759692272467",
+    "filename": "12-mini---edited-1759692272467.png",
+    "url": "/uploads/12-mini---edited-1759692272467.png",
+    "alt": "iPhone 12 Mini image",
+    "type": "image",
+    "size": 1378775,
+    "uploadedAt": "2025-10-05T19:24:32.469Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759692402740",
+    "filename": "e030195c-d215-41dc-8c87-5a3087f572d4-1759692402740.png",
+    "url": "/uploads/e030195c-d215-41dc-8c87-5a3087f572d4-1759692402740.png",
+    "alt": "iPhone 12 image",
+    "type": "image",
+    "size": 56481,
+    "uploadedAt": "2025-10-05T19:26:42.741Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759692413381",
+    "filename": "e030195c-d215-41dc-8c87-5a3087f572d4-1759692413381.png",
+    "url": "/uploads/e030195c-d215-41dc-8c87-5a3087f572d4-1759692413381.png",
+    "alt": "iPhone 12 Mini image",
+    "type": "image",
+    "size": 56481,
+    "uploadedAt": "2025-10-05T19:26:53.386Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759692593074",
+    "filename": "e0b58b78-c063-4952-97db-86e0cc5b65f1-1759692593074.png",
+    "url": "/uploads/e0b58b78-c063-4952-97db-86e0cc5b65f1-1759692593074.png",
+    "alt": "iPhone 12 Pro image",
+    "type": "image",
+    "size": 76439,
+    "uploadedAt": "2025-10-05T19:29:53.075Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759694878409",
+    "filename": "e0b58b78-c063-4952-97db-86e0cc5b65f1-1759694878409.png",
+    "url": "/uploads/e0b58b78-c063-4952-97db-86e0cc5b65f1-1759694878409.png",
+    "alt": "iPhone 12 Pro Max image",
+    "type": "image",
+    "size": 76439,
+    "uploadedAt": "2025-10-05T20:07:58.411Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695013297",
+    "filename": "swappie-iphone-11-pro-max-space-gray-back--1----edited-1759695013297.png",
+    "url": "/uploads/swappie-iphone-11-pro-max-space-gray-back--1----edited-1759695013297.png",
+    "alt": "iPhone 11 Pro Max image",
+    "type": "image",
+    "size": 73998,
+    "uploadedAt": "2025-10-05T20:10:13.299Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695023247",
+    "filename": "swappie-iphone-11-pro-max-space-gray-back--1----edited-1759695023247.png",
+    "url": "/uploads/swappie-iphone-11-pro-max-space-gray-back--1----edited-1759695023247.png",
+    "alt": "iPhone 11 Pro image",
+    "type": "image",
+    "size": 73998,
+    "uploadedAt": "2025-10-05T20:10:23.248Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695128468",
+    "filename": "iphone-11-purple-back-1759695128468.jpg",
+    "url": "/uploads/iphone-11-purple-back-1759695128468.jpg",
+    "alt": "iPhone 11 image",
+    "type": "image",
+    "size": 8965,
+    "uploadedAt": "2025-10-05T20:12:08.470Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695149764",
+    "filename": "iphone-11-purple-back---edited-1759695149764.png",
+    "url": "/uploads/iphone-11-purple-back---edited-1759695149764.png",
+    "alt": "iPhone 11 image",
+    "type": "image",
+    "size": 52278,
+    "uploadedAt": "2025-10-05T20:12:29.769Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695221637",
+    "filename": "418dv8rljvl--uf894-1000-ql80--1759695221637.jpg",
+    "url": "/uploads/418dv8rljvl--uf894-1000-ql80--1759695221637.jpg",
+    "alt": "iPhone XS image",
+    "type": "image",
+    "size": 18923,
+    "uploadedAt": "2025-10-05T20:13:41.638Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695241831",
+    "filename": "418dv8rljvl--uf894-1000-ql80----edited-1759695241831.png",
+    "url": "/uploads/418dv8rljvl--uf894-1000-ql80----edited-1759695241831.png",
+    "alt": "iPhone XS image",
+    "type": "image",
+    "size": 97534,
+    "uploadedAt": "2025-10-05T20:14:01.832Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695299149",
+    "filename": "restored-like-new-apple-iphone-xs-64gb-factory-unlocked-4g-lte-ios-smartphone-refurbished-2a179dc4-4347-4ce8-9625-3de8fa9f6320-1cdd01ca495289daf8b2b2fb212f2e1a-1759695299149.avif",
+    "url": "/uploads/restored-like-new-apple-iphone-xs-64gb-factory-unlocked-4g-lte-ios-smartphone-refurbished-2a179dc4-4347-4ce8-9625-3de8fa9f6320-1cdd01ca495289daf8b2b2fb212f2e1a-1759695299149.avif",
+    "alt": "iPhone X image",
+    "type": "image",
+    "size": 20441,
+    "uploadedAt": "2025-10-05T20:14:59.150Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695335389",
+    "filename": "iphone-x-1759695335389.png",
+    "url": "/uploads/iphone-x-1759695335389.png",
+    "alt": "iPhone X image",
+    "type": "image",
+    "size": 545869,
+    "uploadedAt": "2025-10-05T20:15:35.390Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695368860",
+    "filename": "iphone-xs-1759695368860.png",
+    "url": "/uploads/iphone-xs-1759695368860.png",
+    "alt": "iPhone XS image",
+    "type": "image",
+    "size": 97534,
+    "uploadedAt": "2025-10-05T20:16:08.861Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695400800",
+    "filename": "iphone-xs--1--1759695400800.png",
+    "url": "/uploads/iphone-xs--1--1759695400800.png",
+    "alt": "iPhone XS image",
+    "type": "image",
+    "size": 97534,
+    "uploadedAt": "2025-10-05T20:16:40.801Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695440669",
+    "filename": "12-pro-1759695440669.png",
+    "url": "/uploads/12-pro-1759695440669.png",
+    "alt": "iPhone 12 Pro Max image",
+    "type": "image",
+    "size": 76439,
+    "uploadedAt": "2025-10-05T20:17:20.670Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695450772",
+    "filename": "12-pro-1759695450772.png",
+    "url": "/uploads/12-pro-1759695450772.png",
+    "alt": "iPhone 12 Pro image",
+    "type": "image",
+    "size": 76439,
+    "uploadedAt": "2025-10-05T20:17:30.774Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695589675",
+    "filename": "xr-1759695589675.png",
+    "url": "/uploads/xr-1759695589675.png",
+    "alt": "iPhone XR image",
+    "type": "image",
+    "size": 64157,
+    "uploadedAt": "2025-10-05T20:19:49.678Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695675318",
+    "filename": "6s-1759695675318.png",
+    "url": "/uploads/6s-1759695675318.png",
+    "alt": "iPhone 6s image",
+    "type": "image",
+    "size": 347071,
+    "uploadedAt": "2025-10-05T20:21:15.319Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759695683147",
+    "filename": "6s-1759695683147.png",
+    "url": "/uploads/6s-1759695683147.png",
+    "alt": "iPhone 6s Plus image",
+    "type": "image",
+    "size": 347071,
+    "uploadedAt": "2025-10-05T20:21:23.149Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759696277001",
+    "filename": "13---edited-1759696277001.png",
+    "url": "/uploads/13---edited-1759696277001.png",
+    "alt": "iPhone 13 image",
+    "type": "image",
+    "size": 42734,
+    "uploadedAt": "2025-10-05T20:31:17.005Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1759696335952",
+    "filename": "13---edited-1759696335952.png",
+    "url": "/uploads/13---edited-1759696335952.png",
+    "alt": "iPhone 13 Mini image",
+    "type": "image",
+    "size": 42734,
+    "uploadedAt": "2025-10-05T20:32:15.954Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1761121320608",
+    "filename": "front-doorfix-tekniker-til-d-ren--2--1761121320608.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--2--1761121320608.png",
+    "alt": "",
+    "type": "image",
+    "size": 18227,
+    "uploadedAt": "2025-10-22T08:22:00.609Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1761121431221",
+    "filename": "front-doorfix-tekniker-til-d-ren--1--1761121431221.svg",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--1--1761121431221.svg",
+    "alt": "",
+    "type": "svg",
+    "size": 64630,
+    "uploadedAt": "2025-10-22T08:23:51.223Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1761121961117",
+    "filename": "front-doorfix-tekniker-til-d-ren--1--1761121961117.svg",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--1--1761121961117.svg",
+    "alt": "",
+    "type": "svg",
+    "size": 64630,
+    "uploadedAt": "2025-10-22T08:32:41.118Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1761121968603",
+    "filename": "front-doorfix-tekniker-til-d-ren--1--1761121968603.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--1--1761121968603.png",
+    "alt": "",
+    "type": "image",
+    "size": 26364,
+    "uploadedAt": "2025-10-22T08:32:48.604Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1761121987680",
+    "filename": "front-doorfix-tekniker-til-d-ren--2--1761121987680.png",
+    "url": "/uploads/front-doorfix-tekniker-til-d-ren--2--1761121987680.png",
+    "alt": "",
+    "type": "image",
+    "size": 18227,
+    "uploadedAt": "2025-10-22T08:33:07.681Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1761122062207",
+    "filename": "e030195c-d215-41dc-8c87-5a3087f572d4-1761122062207.png",
+    "url": "/uploads/e030195c-d215-41dc-8c87-5a3087f572d4-1761122062207.png",
+    "alt": "",
+    "type": "image",
+    "size": 56481,
+    "uploadedAt": "2025-10-22T08:34:22.209Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257036843",
+    "filename": "untitled-design--11--1762257036843.png",
+    "url": "/uploads/untitled-design--11--1762257036843.png",
+    "alt": "iPhone 13 Pro image",
+    "type": "image",
+    "size": 236987,
+    "uploadedAt": "2025-11-04T11:50:36.850Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257225243",
+    "filename": "13-pro-max-1762257225243.png",
+    "url": "/uploads/13-pro-max-1762257225243.png",
+    "alt": "iPhone 13 Pro Max image",
+    "type": "image",
+    "size": 84525,
+    "uploadedAt": "2025-11-04T11:53:45.244Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257363029",
+    "filename": "14---edited-1762257363029.png",
+    "url": "/uploads/14---edited-1762257363029.png",
+    "alt": "iPhone 14 image",
+    "type": "image",
+    "size": 84945,
+    "uploadedAt": "2025-11-04T11:56:03.031Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257371742",
+    "filename": "14---edited-1762257371742.png",
+    "url": "/uploads/14---edited-1762257371742.png",
+    "alt": "iPhone 14 Pro image",
+    "type": "image",
+    "size": 84945,
+    "uploadedAt": "2025-11-04T11:56:11.743Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257466698",
+    "filename": "14-1---edited-1762257466698.png",
+    "url": "/uploads/14-1---edited-1762257466698.png",
+    "alt": "iPhone 14 image",
+    "type": "image",
+    "size": 56384,
+    "uploadedAt": "2025-11-04T11:57:46.699Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257479478",
+    "filename": "14-1---edited-1762257479478.png",
+    "url": "/uploads/14-1---edited-1762257479478.png",
+    "alt": "iPhone 14 Plus image",
+    "type": "image",
+    "size": 56384,
+    "uploadedAt": "2025-11-04T11:57:59.479Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257489196",
+    "filename": "14---edited-1762257489196.png",
+    "url": "/uploads/14---edited-1762257489196.png",
+    "alt": "iPhone 14 Pro Max image",
+    "type": "image",
+    "size": 84945,
+    "uploadedAt": "2025-11-04T11:58:09.197Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257550677",
+    "filename": "15---edited-1762257550677.png",
+    "url": "/uploads/15---edited-1762257550677.png",
+    "alt": "iPhone 15 image",
+    "type": "image",
+    "size": 46453,
+    "uploadedAt": "2025-11-04T11:59:10.681Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257560581",
+    "filename": "15---edited-1762257560581.png",
+    "url": "/uploads/15---edited-1762257560581.png",
+    "alt": "iPhone 15 Plus image",
+    "type": "image",
+    "size": 46453,
+    "uploadedAt": "2025-11-04T11:59:20.582Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257615078",
+    "filename": "15-pro---edited-1762257615078.png",
+    "url": "/uploads/15-pro---edited-1762257615078.png",
+    "alt": "iPhone 15 Pro image",
+    "type": "image",
+    "size": 72416,
+    "uploadedAt": "2025-11-04T12:00:15.080Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257621666",
+    "filename": "15-pro---edited-1762257621666.png",
+    "url": "/uploads/15-pro---edited-1762257621666.png",
+    "alt": "iPhone 15 Pro Max image",
+    "type": "image",
+    "size": 72416,
+    "uploadedAt": "2025-11-04T12:00:21.671Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257677717",
+    "filename": "16---edited-1762257677717.png",
+    "url": "/uploads/16---edited-1762257677717.png",
+    "alt": "iphone 16 image",
+    "type": "image",
+    "size": 57319,
+    "uploadedAt": "2025-11-04T12:01:17.718Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257685953",
+    "filename": "16---edited-1762257685953.png",
+    "url": "/uploads/16---edited-1762257685953.png",
+    "alt": "iPhone 16 Plus image",
+    "type": "image",
+    "size": 57319,
+    "uploadedAt": "2025-11-04T12:01:25.954Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257855134",
+    "filename": "16-pro---edited-1762257855134.png",
+    "url": "/uploads/16-pro---edited-1762257855134.png",
+    "alt": "iPhone 16 Pro image",
+    "type": "image",
+    "size": 83827,
+    "uploadedAt": "2025-11-04T12:04:15.136Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762257860529",
+    "filename": "16-pro---edited-1762257860529.png",
+    "url": "/uploads/16-pro---edited-1762257860529.png",
+    "alt": "iPhone 16 Pro Max image",
+    "type": "image",
+    "size": 83827,
+    "uploadedAt": "2025-11-04T12:04:20.530Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762258019890",
+    "filename": "ipad-5---edited-1762258019890.png",
+    "url": "/uploads/ipad-5---edited-1762258019890.png",
+    "alt": "iPad 5 Gen (9,7″) 2017 image",
+    "type": "image",
+    "size": 375452,
+    "uploadedAt": "2025-11-04T12:06:59.892Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762258037198",
+    "filename": "ipad-5---edited-1762258037198.png",
+    "url": "/uploads/ipad-5---edited-1762258037198.png",
+    "alt": "iPad 6 Gen (9,7″) 2018 image",
+    "type": "image",
+    "size": 375452,
+    "uploadedAt": "2025-11-04T12:07:17.200Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762258103498",
+    "filename": "ipad-8---edited-1762258103498.png",
+    "url": "/uploads/ipad-8---edited-1762258103498.png",
+    "alt": "iPad 8 Gen – 10,2″ (2020) image",
+    "type": "image",
+    "size": 268230,
+    "uploadedAt": "2025-11-04T12:08:23.499Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762258142342",
+    "filename": "ipad-8---edited--1--1762258142342.png",
+    "url": "/uploads/ipad-8---edited--1--1762258142342.png",
+    "alt": "iPad 7 Gen 10,2″ 2019 image",
+    "type": "image",
+    "size": 250280,
+    "uploadedAt": "2025-11-04T12:09:02.343Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762258150476",
+    "filename": "ipad-8---edited-1762258150476.png",
+    "url": "/uploads/ipad-8---edited-1762258150476.png",
+    "alt": "iPad 9 Gen – 10,2″ (2021) image",
+    "type": "image",
+    "size": 268230,
+    "uploadedAt": "2025-11-04T12:09:10.480Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762258232724",
+    "filename": "ipad-10---edited-1762258232724.png",
+    "url": "/uploads/ipad-10---edited-1762258232724.png",
+    "alt": "iPad 10 Gen 10,9″ 2022 image",
+    "type": "image",
+    "size": 267507,
+    "uploadedAt": "2025-11-04T12:10:32.726Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762258240885",
+    "filename": "ipad-10---edited-1762258240885.png",
+    "url": "/uploads/ipad-10---edited-1762258240885.png",
+    "alt": "iPad 11. gen 10,9″ 2025 image",
+    "type": "image",
+    "size": 267507,
+    "uploadedAt": "2025-11-04T12:10:40.886Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762261770443",
+    "filename": "12-min---edited-1762261770443.png",
+    "url": "/uploads/12-min---edited-1762261770443.png",
+    "alt": "iPad mini (2012) image",
+    "type": "image",
+    "size": 513010,
+    "uploadedAt": "2025-11-04T13:09:30.448Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762261779908",
+    "filename": "12-min---edited-1762261779908.png",
+    "url": "/uploads/12-min---edited-1762261779908.png",
+    "alt": "iPad mini 2 (2013) image",
+    "type": "image",
+    "size": 513010,
+    "uploadedAt": "2025-11-04T13:09:39.914Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762261805121",
+    "filename": "12-min---edited-1762261805121.png",
+    "url": "/uploads/12-min---edited-1762261805121.png",
+    "alt": "iPad mini 4 (2015) image",
+    "type": "image",
+    "size": 513010,
+    "uploadedAt": "2025-11-04T13:10:05.123Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762261867566",
+    "filename": "mini-5-1762261867566.webp",
+    "url": "/uploads/mini-5-1762261867566.webp",
+    "alt": "iPad mini 4 (2015) image",
+    "type": "image",
+    "size": 18572,
+    "uploadedAt": "2025-11-04T13:11:07.569Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762261934684",
+    "filename": "mini-6---edited-1762261934684.png",
+    "url": "/uploads/mini-6---edited-1762261934684.png",
+    "alt": "iPad mini 5 (2019) image",
+    "type": "image",
+    "size": 242266,
+    "uploadedAt": "2025-11-04T13:12:14.687Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762261992653",
+    "filename": "mini-7-1762261992653.jpg",
+    "url": "/uploads/mini-7-1762261992653.jpg",
+    "alt": "iPad mini 6 (2021) image",
+    "type": "image",
+    "size": 30569,
+    "uploadedAt": "2025-11-04T13:13:12.655Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262015422",
+    "filename": "mini-7-1762262015422.jpg",
+    "url": "/uploads/mini-7-1762262015422.jpg",
+    "alt": "iPad mini 7 (2023) image",
+    "type": "image",
+    "size": 30569,
+    "uploadedAt": "2025-11-04T13:13:35.423Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262067945",
+    "filename": "12-min---edited-1762262067945.png",
+    "url": "/uploads/12-min---edited-1762262067945.png",
+    "alt": "iPad mini 3 (2014) image",
+    "type": "image",
+    "size": 513010,
+    "uploadedAt": "2025-11-04T13:14:27.947Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262090320",
+    "filename": "mini-5---edited-1762262090320.png",
+    "url": "/uploads/mini-5---edited-1762262090320.png",
+    "alt": "iPad mini 4 (2015) image",
+    "type": "image",
+    "size": 520421,
+    "uploadedAt": "2025-11-04T13:14:50.327Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262122737",
+    "filename": "mini-7---edited-1762262122737.png",
+    "url": "/uploads/mini-7---edited-1762262122737.png",
+    "alt": "iPad mini 6 (2021) image",
+    "type": "image",
+    "size": 198891,
+    "uploadedAt": "2025-11-04T13:15:22.742Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262131343",
+    "filename": "mini-7---edited-1762262131343.png",
+    "url": "/uploads/mini-7---edited-1762262131343.png",
+    "alt": "iPad mini 7 (2023) image",
+    "type": "image",
+    "size": 198891,
+    "uploadedAt": "2025-11-04T13:15:31.346Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262331241",
+    "filename": "air-5---edited-1762262331241.png",
+    "url": "/uploads/air-5---edited-1762262331241.png",
+    "alt": "iPad Air (2013) image",
+    "type": "image",
+    "size": 185754,
+    "uploadedAt": "2025-11-04T13:18:51.243Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262340579",
+    "filename": "air-5---edited-1762262340579.png",
+    "url": "/uploads/air-5---edited-1762262340579.png",
+    "alt": "iPad Air 2 (2014) image",
+    "type": "image",
+    "size": 185754,
+    "uploadedAt": "2025-11-04T13:19:00.580Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262388045",
+    "filename": "ipadair3-2019---edited-1762262388045.png",
+    "url": "/uploads/ipadair3-2019---edited-1762262388045.png",
+    "alt": "iPad Air 3 (2019) image",
+    "type": "image",
+    "size": 290789,
+    "uploadedAt": "2025-11-04T13:19:48.047Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262436064",
+    "filename": "air4---edited-1762262436064.png",
+    "url": "/uploads/air4---edited-1762262436064.png",
+    "alt": "iPad Air 4 (2020) image",
+    "type": "image",
+    "size": 260147,
+    "uploadedAt": "2025-11-04T13:20:36.066Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262452097",
+    "filename": "air4---edited-1762262452097.png",
+    "url": "/uploads/air4---edited-1762262452097.png",
+    "alt": "iPad Air 5 (2022) image",
+    "type": "image",
+    "size": 260147,
+    "uploadedAt": "2025-11-04T13:20:52.099Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262503727",
+    "filename": "air-6---edited-1762262503727.png",
+    "url": "/uploads/air-6---edited-1762262503727.png",
+    "alt": "iPad Air 6 (2024) image",
+    "type": "image",
+    "size": 385313,
+    "uploadedAt": "2025-11-04T13:21:43.729Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262833651",
+    "filename": "11-pro-ipad-1762262833651.webp",
+    "url": "/uploads/11-pro-ipad-1762262833651.webp",
+    "alt": "iPad Pro 11\" (2018) image",
+    "type": "image",
+    "size": 37348,
+    "uploadedAt": "2025-11-04T13:27:13.653Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262843575",
+    "filename": "11-pro-ipad---edited-1762262843575.png",
+    "url": "/uploads/11-pro-ipad---edited-1762262843575.png",
+    "alt": "iPad Pro 11\" (2018) image",
+    "type": "image",
+    "size": 461610,
+    "uploadedAt": "2025-11-04T13:27:23.580Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262850687",
+    "filename": "11-pro-ipad---edited-1762262850687.png",
+    "url": "/uploads/11-pro-ipad---edited-1762262850687.png",
+    "alt": "iPad Pro 11\" (2020) image",
+    "type": "image",
+    "size": 461610,
+    "uploadedAt": "2025-11-04T13:27:30.689Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262858000",
+    "filename": "11-pro-ipad---edited-1762262858000.png",
+    "url": "/uploads/11-pro-ipad---edited-1762262858000.png",
+    "alt": "iPad Pro 11\" (2021) image",
+    "type": "image",
+    "size": 461610,
+    "uploadedAt": "2025-11-04T13:27:38.002Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262916708",
+    "filename": "2022---edited-1762262916708.png",
+    "url": "/uploads/2022---edited-1762262916708.png",
+    "alt": "iPad Pro 11\" (2021) image",
+    "type": "image",
+    "size": 574979,
+    "uploadedAt": "2025-11-04T13:28:36.714Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762262922987",
+    "filename": "2022---edited-1762262922987.png",
+    "url": "/uploads/2022---edited-1762262922987.png",
+    "alt": "iPad Pro 11\" (2022) image",
+    "type": "image",
+    "size": 574979,
+    "uploadedAt": "2025-11-04T13:28:42.989Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268209099",
+    "filename": "apple-ipad-pro-12-9-64gb-wifi-4g-gold-2017-included-charger---edited-1762268209099.png",
+    "url": "/uploads/apple-ipad-pro-12-9-64gb-wifi-4g-gold-2017-included-charger---edited-1762268209099.png",
+    "alt": "iPad Pro 12,9″ (2017) image",
+    "type": "image",
+    "size": 2597186,
+    "uploadedAt": "2025-11-04T14:56:49.112Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268296559",
+    "filename": "apple-ipad-pro-12-9-64gb-wifi-4g-gold-2017-included-charger---edited-1762268296559.png",
+    "url": "/uploads/apple-ipad-pro-12-9-64gb-wifi-4g-gold-2017-included-charger---edited-1762268296559.png",
+    "alt": "iPad Pro 12,9″ (2018) image",
+    "type": "image",
+    "size": 2597186,
+    "uploadedAt": "2025-11-04T14:58:16.567Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268424392",
+    "filename": "apple-ipad-pro-12-9---2020--primaryproductimage-code-mdawmdawmdawmdawmdiwnje3-format-hardware-configurator-l-1762268424392.png",
+    "url": "/uploads/apple-ipad-pro-12-9---2020--primaryproductimage-code-mdawmdawmdawmdawmdiwnje3-format-hardware-configurator-l-1762268424392.png",
+    "alt": "iPad Pro 12,9″ (2020) image",
+    "type": "image",
+    "size": 567252,
+    "uploadedAt": "2025-11-04T15:00:24.396Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268452997",
+    "filename": "12-1762268452997.png",
+    "url": "/uploads/12-1762268452997.png",
+    "alt": "iPad Pro 12,9″ (2020) image",
+    "type": "image",
+    "size": 560249,
+    "uploadedAt": "2025-11-04T15:00:53.005Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268461330",
+    "filename": "12-1762268461330.png",
+    "url": "/uploads/12-1762268461330.png",
+    "alt": "iPad Pro 12,9″ (2021) image",
+    "type": "image",
+    "size": 560249,
+    "uploadedAt": "2025-11-04T15:01:01.332Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268557277",
+    "filename": "12---edited-1762268557277.png",
+    "url": "/uploads/12---edited-1762268557277.png",
+    "alt": "iPad Pro 12,9″ (2022) image",
+    "type": "image",
+    "size": 519210,
+    "uploadedAt": "2025-11-04T15:02:37.287Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268677244",
+    "filename": "123---edited-1762268677244.png",
+    "url": "/uploads/123---edited-1762268677244.png",
+    "alt": "MacBook Pro 16\" (2019-2020) image",
+    "type": "image",
+    "size": 83550,
+    "uploadedAt": "2025-11-04T15:04:37.246Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268829949",
+    "filename": "5---edited-1762268829949.png",
+    "url": "/uploads/5---edited-1762268829949.png",
+    "alt": "MacBook Pro 15\" (2009-2012) image",
+    "type": "image",
+    "size": 268583,
+    "uploadedAt": "2025-11-04T15:07:09.951Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268863204",
+    "filename": "5---edited-1762268863204.png",
+    "url": "/uploads/5---edited-1762268863204.png",
+    "alt": "MacBook Pro 13\" (2009-2012) image",
+    "type": "image",
+    "size": 268583,
+    "uploadedAt": "2025-11-04T15:07:43.207Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268917962",
+    "filename": "6-1762268917962.png",
+    "url": "/uploads/6-1762268917962.png",
+    "alt": "MacBook Air 11\" (2010-2015) image",
+    "type": "image",
+    "size": 541464,
+    "uploadedAt": "2025-11-04T15:08:37.965Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268933610",
+    "filename": "6---edited-1762268933610.png",
+    "url": "/uploads/6---edited-1762268933610.png",
+    "alt": "MacBook Air 11\" (2010-2015) image",
+    "type": "image",
+    "size": 757629,
+    "uploadedAt": "2025-11-04T15:08:53.612Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762268991849",
+    "filename": "8---edited-1762268991849.png",
+    "url": "/uploads/8---edited-1762268991849.png",
+    "alt": "MacBook Air 13\" (2010-2017) image",
+    "type": "image",
+    "size": 218967,
+    "uploadedAt": "2025-11-04T15:09:51.850Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269083406",
+    "filename": "9---edited-1762269083406.png",
+    "url": "/uploads/9---edited-1762269083406.png",
+    "alt": "MacBook 12\" (2015-2017) image",
+    "type": "image",
+    "size": 407586,
+    "uploadedAt": "2025-11-04T15:11:23.408Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269153980",
+    "filename": "00---edited-1762269153980.png",
+    "url": "/uploads/00---edited-1762269153980.png",
+    "alt": "MacBook Pro 13\" (2016-2018) – A1708 image",
+    "type": "image",
+    "size": 704698,
+    "uploadedAt": "2025-11-04T15:12:33.982Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269174569",
+    "filename": "00---edited--1--1762269174569.png",
+    "url": "/uploads/00---edited--1--1762269174569.png",
+    "alt": "MacBook Pro 13\" (2016-2018) – A1708 image",
+    "type": "image",
+    "size": 704698,
+    "uploadedAt": "2025-11-04T15:12:54.572Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269195132",
+    "filename": "00---edited--1--1762269195132.png",
+    "url": "/uploads/00---edited--1--1762269195132.png",
+    "alt": "MacBook Pro 13\" (2016-2018) – A1706 image",
+    "type": "image",
+    "size": 704698,
+    "uploadedAt": "2025-11-04T15:13:15.134Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269210225",
+    "filename": "00---edited--1--1762269210225.png",
+    "url": "/uploads/00---edited--1--1762269210225.png",
+    "alt": "MacBook Air 13\" (2018-2019) – A1932 image",
+    "type": "image",
+    "size": 704698,
+    "uploadedAt": "2025-11-04T15:13:30.228Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269282230",
+    "filename": "98---edited-1762269282230.png",
+    "url": "/uploads/98---edited-1762269282230.png",
+    "alt": "MacBook Air 13\" (2018-2019) – A1932 image",
+    "type": "image",
+    "size": 1384735,
+    "uploadedAt": "2025-11-04T15:14:42.234Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269345417",
+    "filename": "76---edited-1762269345417.png",
+    "url": "/uploads/76---edited-1762269345417.png",
+    "alt": "MacBook Pro 13\" (2020) – A2289 image",
+    "type": "image",
+    "size": 407008,
+    "uploadedAt": "2025-11-04T15:15:45.419Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269362069",
+    "filename": "76---edited-1762269362069.png",
+    "url": "/uploads/76---edited-1762269362069.png",
+    "alt": "MacBook Pro 13\" (2020) – A2251 image",
+    "type": "image",
+    "size": 407008,
+    "uploadedAt": "2025-11-04T15:16:02.071Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269445308",
+    "filename": "54---edited-1762269445308.png",
+    "url": "/uploads/54---edited-1762269445308.png",
+    "alt": "MacBook Pro 13\" (2019-2020) – A2159 image",
+    "type": "image",
+    "size": 213612,
+    "uploadedAt": "2025-11-04T15:17:25.309Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269462821",
+    "filename": "54---edited-1762269462821.png",
+    "url": "/uploads/54---edited-1762269462821.png",
+    "alt": "MacBook Pro 13\" (2019-2020) – A1989 image",
+    "type": "image",
+    "size": 213612,
+    "uploadedAt": "2025-11-04T15:17:42.822Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269543539",
+    "filename": "1324---edited-1762269543539.png",
+    "url": "/uploads/1324---edited-1762269543539.png",
+    "alt": "MacBook Air 13\" M1 (2020) – A2337 image",
+    "type": "image",
+    "size": 423394,
+    "uploadedAt": "2025-11-04T15:19:03.541Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269831036",
+    "filename": "1324---edited-1762269831036.png",
+    "url": "/uploads/1324---edited-1762269831036.png",
+    "alt": "MacBook Air 13\" (2019-2020) – A2179 image",
+    "type": "image",
+    "size": 423394,
+    "uploadedAt": "2025-11-04T15:23:51.038Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269877822",
+    "filename": "d3---edited-1762269877822.png",
+    "url": "/uploads/d3---edited-1762269877822.png",
+    "alt": "MacBook Pro 16\" (2021) – A2485 image",
+    "type": "image",
+    "size": 504167,
+    "uploadedAt": "2025-11-04T15:24:37.824Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269935947",
+    "filename": "d5---edited-1762269935947.png",
+    "url": "/uploads/d5---edited-1762269935947.png",
+    "alt": "MacBook Pro 14\" (2021) – A2442 image",
+    "type": "image",
+    "size": 450195,
+    "uploadedAt": "2025-11-04T15:25:35.949Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269945472",
+    "filename": "d3---edited-1762269945472.png",
+    "url": "/uploads/d3---edited-1762269945472.png",
+    "alt": "MacBook Pro 16\" (2022) – A2780 image",
+    "type": "image",
+    "size": 504167,
+    "uploadedAt": "2025-11-04T15:25:45.474Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269956437",
+    "filename": "d5---edited-1762269956437.png",
+    "url": "/uploads/d5---edited-1762269956437.png",
+    "alt": "MacBook Pro 14\" (2022) – A2779 image",
+    "type": "image",
+    "size": 450195,
+    "uploadedAt": "2025-11-04T15:25:56.442Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762269971228",
+    "filename": "1324---edited-1762269971228.png",
+    "url": "/uploads/1324---edited-1762269971228.png",
+    "alt": "MacBook Pro 13\" (2020-2022) – A2338 image",
+    "type": "image",
+    "size": 423394,
+    "uploadedAt": "2025-11-04T15:26:11.231Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270068883",
+    "filename": "g1---edited-1762270068883.png",
+    "url": "/uploads/g1---edited-1762270068883.png",
+    "alt": "MacBook Pro 13\" (2020-2022) – A2338 image",
+    "type": "image",
+    "size": 194855,
+    "uploadedAt": "2025-11-04T15:27:48.884Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270132826",
+    "filename": "g6---edited-1762270132826.png",
+    "url": "/uploads/g6---edited-1762270132826.png",
+    "alt": "MacBook Air 13\" M2 (2022) – A2681 image",
+    "type": "image",
+    "size": 1846904,
+    "uploadedAt": "2025-11-04T15:28:52.832Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270195769",
+    "filename": "g7---edited-1762270195769.png",
+    "url": "/uploads/g7---edited-1762270195769.png",
+    "alt": "MacBook Pro 16\" (2023) – A2991 image",
+    "type": "image",
+    "size": 407456,
+    "uploadedAt": "2025-11-04T15:29:55.771Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270276247",
+    "filename": "h1---edited-1762270276247.png",
+    "url": "/uploads/h1---edited-1762270276247.png",
+    "alt": "MacBook Pro 14\" (2023) – A2992 image",
+    "type": "image",
+    "size": 64148,
+    "uploadedAt": "2025-11-04T15:31:16.251Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270283341",
+    "filename": "h1---edited-1762270283341.png",
+    "url": "/uploads/h1---edited-1762270283341.png",
+    "alt": "MacBook Pro 14\" (2023) – A2918 image",
+    "type": "image",
+    "size": 64148,
+    "uploadedAt": "2025-11-04T15:31:23.342Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270330750",
+    "filename": "f1-1762270330750.webp",
+    "url": "/uploads/f1-1762270330750.webp",
+    "alt": "MacBook Air 15\" M2 (2023) – A2941 image",
+    "type": "image",
+    "size": 54216,
+    "uploadedAt": "2025-11-04T15:32:10.799Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270333017",
+    "filename": "f1---edited-1762270333017.png",
+    "url": "/uploads/f1---edited-1762270333017.png",
+    "alt": "MacBook Air 15\" M2 (2023) – A2941 image",
+    "type": "image",
+    "size": 762998,
+    "uploadedAt": "2025-11-04T15:32:13.018Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270337467",
+    "filename": "f1---edited-1762270337467.png",
+    "url": "/uploads/f1---edited-1762270337467.png",
+    "alt": "MacBook Air 15\" M3 (2024) – A3114 image",
+    "type": "image",
+    "size": 762998,
+    "uploadedAt": "2025-11-04T15:32:17.469Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762270377096",
+    "filename": "d1---edited-1762270377096.png",
+    "url": "/uploads/d1---edited-1762270377096.png",
+    "alt": "MacBook Air 13\" M3 (2024) – A3113 image",
+    "type": "image",
+    "size": 938357,
+    "uploadedAt": "2025-11-04T15:32:57.104Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762334118245",
+    "filename": "s25---edited-1762334118245.png",
+    "url": "/uploads/s25---edited-1762334118245.png",
+    "alt": "Galaxy S25 image",
+    "type": "image",
+    "size": 186705,
+    "uploadedAt": "2025-11-05T09:15:18.248Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762334199230",
+    "filename": "4fbf222d-bbc8-4885-b309-accf6afb6905-1762334199230.png",
+    "url": "/uploads/4fbf222d-bbc8-4885-b309-accf6afb6905-1762334199230.png",
+    "alt": "Galaxy S25 Ultra image",
+    "type": "image",
+    "size": 201924,
+    "uploadedAt": "2025-11-05T09:16:39.232Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762334269971",
+    "filename": "plus-25---edited-1762334269971.png",
+    "url": "/uploads/plus-25---edited-1762334269971.png",
+    "alt": "Galaxy S25+ image",
+    "type": "image",
+    "size": 215597,
+    "uploadedAt": "2025-11-05T09:17:49.976Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762334394573",
+    "filename": "9245dfaf-c12e-49e4-8c9e-a1ff77292835-1762334394573.png",
+    "url": "/uploads/9245dfaf-c12e-49e4-8c9e-a1ff77292835-1762334394573.png",
+    "alt": "Galaxy S24 Ultra image",
+    "type": "image",
+    "size": 259852,
+    "uploadedAt": "2025-11-05T09:19:54.577Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762334476644",
+    "filename": "42---edited-1762334476644.png",
+    "url": "/uploads/42---edited-1762334476644.png",
+    "alt": "Galaxy S24 image",
+    "type": "image",
+    "size": 184085,
+    "uploadedAt": "2025-11-05T09:21:16.646Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762334524498",
+    "filename": "24-plus-1762334524498.png",
+    "url": "/uploads/24-plus-1762334524498.png",
+    "alt": "Galaxy S24+ image",
+    "type": "image",
+    "size": 46085,
+    "uploadedAt": "2025-11-05T09:22:04.499Z",
+    "usedBy": []
+  }
+]

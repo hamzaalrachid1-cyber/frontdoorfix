@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BrandSettings {
+  id             String   @id @default(cuid())
+  name           String
+  tagline        String?
+  
+  // Single logo URL
+  logoUrl        String?
+  
+  // Logo size settings
+  logoHeight     Int      @default(32)
+  logoMaxWidth   Int?
+  
+  // Contact info
+  phone          String?
+  email          String?
+  hours          String?
+  
+  // CTA texts
+  ctaPrimary     String?
+  ctaSecondary   String?
+  
+  // Status and timestamps
+  status         String   @default("Draft") // "Draft" or "Published"
+  updatedAt      DateTime @updatedAt
+  createdAt      DateTime @default(now())
+  
+  @@map("brand_settings")
+}
+
+model BrandSettingsHistory {
+  id             String   @id @default(cuid())
+  
+  // Copy of all BrandSettings fields
+  name           String
+  tagline        String?
+  logoUrl        String?
+  logoHeight     Int      @default(32)
+  logoMaxWidth   Int?
+  phone          String?
+  email          String?
+  hours          String?
+  ctaPrimary     String?
+  ctaSecondary   String?
+  
+  // History specific fields
+  publishedAt    DateTime @default(now())
+  version        Int      @default(1)
+  
+  @@map("brand_settings_history")
+}
+
+model AdminUser {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String   // hashed
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@map("admin_users")
+}

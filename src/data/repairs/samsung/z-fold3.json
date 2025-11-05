@@ -1,0 +1,15 @@
+{
+  "brand": "samsung",
+  "series": "z",
+  "model": "Samsung Galaxy Z Fold3",
+  "slug": "z-fold3",
+  "year": 2021,
+  "family": "galaxyzfold",
+  "sortOrder": 170,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "",
+  "repairs": [],
+  "sort_order": 50,
+  "updated_at": "2025-10-04T17:17:25.411Z"
+}

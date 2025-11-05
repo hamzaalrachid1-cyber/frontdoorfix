@@ -1,0 +1,10 @@
+{
+  "id": "oneplus-pro",
+  "brandId": "oneplus",
+  "name": "Pro",
+  "slug": "pro",
+  "descriptionShort": "Pro serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 2
+}

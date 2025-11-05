@@ -1,0 +1,10 @@
+{
+  "id": "huawei-nova",
+  "brandId": "huawei",
+  "name": "Nova",
+  "slug": "nova",
+  "descriptionShort": "Nova serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 3
+}

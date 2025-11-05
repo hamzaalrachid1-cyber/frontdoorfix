@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "ipad",
+  "model": "iPad Pro 12,9″ (2020)",
+  "slug": "ipad-pro-12-9-2020",
+  "year": 2020,
+  "sort_order": 415,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/12-1762268452997.png",
+  "hero": {
+    "title": "iPad Pro 12,9″ (2020) Reparation",
+    "tags": []
+  },
+  "repairs": []
+}

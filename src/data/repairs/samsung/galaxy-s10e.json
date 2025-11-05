@@ -1,0 +1,27 @@
+{
+  "brand": "samsung",
+  "series": "s",
+  "model": "Galaxy S10e",
+  "slug": "galaxy-s10e",
+  "year": 2019,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/images/samsung/galaxy-s10e.jpg",
+  "hero": {
+    "title": "Galaxy S10e",
+    "tags": []
+  },
+  "repairs": [
+    {
+      "id": "test-repair-1",
+      "type": "Skærm",
+      "quality": "Original",
+      "price": 999,
+      "duration": "30 min",
+      "warranty": "24 måneder",
+      "description": "Test reparation",
+      "isVisible": true
+    }
+  ],
+  "sort_order": 60
+}

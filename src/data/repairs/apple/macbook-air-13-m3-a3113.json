@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 13\" M3 (2024) – A3113",
+  "slug": "macbook-air-13-m3-a3113",
+  "year": 2024,
+  "sort_order": 200,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/d1---edited-1762270377096.png",
+  "hero": {
+    "title": "MacBook Air 13\" M3 (2024) – A3113",
+    "tags": []
+  },
+  "repairs": []
+}

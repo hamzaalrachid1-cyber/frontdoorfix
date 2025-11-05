@@ -1,0 +1,266 @@
+[
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S8",
+    "year": 2017,
+    "slug": "galaxy-s8",
+    "supportsBackGlass": true,
+    "order": 1
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S8+",
+    "year": 2017,
+    "slug": "galaxy-s8-plus",
+    "supportsBackGlass": true,
+    "order": 2
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S9",
+    "year": 2018,
+    "slug": "galaxy-s9",
+    "supportsBackGlass": true,
+    "order": 3
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S9+",
+    "year": 2018,
+    "slug": "galaxy-s9-plus",
+    "supportsBackGlass": true,
+    "order": 4
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S10e",
+    "year": 2019,
+    "slug": "galaxy-s10e",
+    "supportsBackGlass": true,
+    "order": 5
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S10",
+    "year": 2019,
+    "slug": "galaxy-s10",
+    "supportsBackGlass": true,
+    "order": 6
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S10+",
+    "year": 2019,
+    "slug": "galaxy-s10-plus",
+    "supportsBackGlass": true,
+    "order": 7
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S10 5G",
+    "year": 2019,
+    "slug": "galaxy-s10-5g",
+    "supportsBackGlass": true,
+    "order": 8
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S20",
+    "year": 2020,
+    "slug": "galaxy-s20",
+    "supportsBackGlass": true,
+    "order": 9
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S20+",
+    "year": 2020,
+    "slug": "galaxy-s20-plus",
+    "supportsBackGlass": true,
+    "order": 10
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S20 Ultra",
+    "year": 2020,
+    "slug": "galaxy-s20-ultra",
+    "supportsBackGlass": true,
+    "order": 11
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S20 FE",
+    "year": 2020,
+    "slug": "galaxy-s20-fe",
+    "supportsBackGlass": true,
+    "order": 12
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S21",
+    "year": 2021,
+    "slug": "galaxy-s21",
+    "supportsBackGlass": true,
+    "order": 13
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S21+",
+    "year": 2021,
+    "slug": "galaxy-s21-plus",
+    "supportsBackGlass": true,
+    "order": 14
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S21 Ultra",
+    "year": 2021,
+    "slug": "galaxy-s21-ultra",
+    "supportsBackGlass": true,
+    "order": 15
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S21 FE",
+    "year": 2022,
+    "slug": "galaxy-s21-fe",
+    "supportsBackGlass": true,
+    "order": 16
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S22",
+    "year": 2022,
+    "slug": "galaxy-s22",
+    "supportsBackGlass": true,
+    "order": 17
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S22+",
+    "year": 2022,
+    "slug": "galaxy-s22-plus",
+    "supportsBackGlass": true,
+    "order": 18
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S22 Ultra",
+    "year": 2022,
+    "slug": "galaxy-s22-ultra",
+    "supportsBackGlass": true,
+    "order": 19
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S23",
+    "year": 2023,
+    "slug": "galaxy-s23",
+    "supportsBackGlass": true,
+    "order": 20
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S23+",
+    "year": 2023,
+    "slug": "galaxy-s23-plus",
+    "supportsBackGlass": true,
+    "order": 21
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S23 Ultra",
+    "year": 2023,
+    "slug": "galaxy-s23-ultra",
+    "supportsBackGlass": true,
+    "order": 22
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S23 FE",
+    "year": 2023,
+    "slug": "galaxy-s23-fe",
+    "supportsBackGlass": true,
+    "order": 23
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S24",
+    "year": 2024,
+    "slug": "galaxy-s24",
+    "supportsBackGlass": true,
+    "order": 24
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S24+",
+    "year": 2024,
+    "slug": "galaxy-s24-plus",
+    "supportsBackGlass": true,
+    "order": 25
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S24 Ultra",
+    "year": 2024,
+    "slug": "galaxy-s24-ultra",
+    "supportsBackGlass": true,
+    "order": 26
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S25",
+    "year": 2025,
+    "slug": "galaxy-s25",
+    "supportsBackGlass": true,
+    "comingSoon": true,
+    "order": 27
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S25+",
+    "year": 2025,
+    "slug": "galaxy-s25-plus",
+    "supportsBackGlass": true,
+    "comingSoon": true,
+    "order": 28
+  },
+  {
+    "brand": "Samsung",
+    "series": "S",
+    "model": "Galaxy S25 Ultra",
+    "year": 2025,
+    "slug": "galaxy-s25-ultra",
+    "supportsBackGlass": true,
+    "comingSoon": true,
+    "order": 29
+  }
+]

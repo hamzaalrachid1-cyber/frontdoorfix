@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 14\" (2021) – A2442",
+  "slug": "macbook-pro-14-a2442",
+  "year": 2021,
+  "sort_order": 145,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/d5---edited-1762269935947.png",
+  "hero": {
+    "title": "MacBook Pro 14\" (2021) – A2442",
+    "tags": []
+  },
+  "repairs": []
+}

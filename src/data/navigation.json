@@ -1,0 +1,137 @@
+{
+  "mainMenu": [
+    {
+      "id": "reparationer",
+      "label": "Reparation & Priser",
+      "href": "/reparationer",
+      "isExternal": false,
+      "order": 1,
+      "isVisible": true,
+      "children": [
+        {
+          "id": "iphone",
+          "label": "iPhone",
+          "href": "/reparationer/apple/iphone",
+          "isExternal": false,
+          "order": 1,
+          "isVisible": true
+        },
+        {
+          "id": "ipad",
+          "label": "iPad",
+          "href": "/reparationer/apple/ipad",
+          "isExternal": false,
+          "order": 2,
+          "isVisible": true
+        },
+        {
+          "id": "macbook",
+          "label": "MacBook",
+          "href": "/reparationer/apple/macbook",
+          "isExternal": false,
+          "order": 3,
+          "isVisible": true
+        },
+        {
+          "id": "samsung",
+          "label": "Samsung",
+          "href": "/reparationer/samsung",
+          "isExternal": false,
+          "order": 4,
+          "isVisible": true
+        },
+        {
+          "id": "huawei",
+          "label": "Huawei",
+          "href": "/reparationer/huawei",
+          "isExternal": false,
+          "order": 5,
+          "isVisible": true
+        },
+        {
+          "id": "motorola",
+          "label": "Motorola",
+          "href": "/reparationer/motorola",
+          "isExternal": false,
+          "order": 6,
+          "isVisible": true
+        },
+        {
+          "id": "oneplus",
+          "label": "OnePlus",
+          "href": "/reparationer/oneplus",
+          "isExternal": false,
+          "order": 7,
+          "isVisible": true
+        },
+        {
+          "id": "google",
+          "label": "Google Pixel",
+          "href": "/reparationer/google",
+          "isExternal": false,
+          "order": 8,
+          "isVisible": true
+        }
+      ]
+    },
+    {
+      "id": "erhverv",
+      "label": "Erhvervsaftaler",
+      "href": "/erhverv",
+      "isExternal": false,
+      "order": 2,
+      "isVisible": true
+    },
+    {
+      "id": "kontakt",
+      "label": "Kontakt os",
+      "href": "/kontakt",
+      "isExternal": false,
+      "order": 3,
+      "isVisible": true
+    }
+  ],
+  "footerMenu": [
+    {
+      "id": "alle-reparationer",
+      "label": "Alle reparationer",
+      "href": "/reparationer",
+      "isExternal": false,
+      "order": 1,
+      "isVisible": true
+    },
+    {
+      "id": "erhverv-footer",
+      "label": "Erhvervsaftaler",
+      "href": "/erhverv",
+      "isExternal": false,
+      "order": 2,
+      "isVisible": true
+    },
+    {
+      "id": "kontakt-footer",
+      "label": "Kontakt os",
+      "href": "/kontakt",
+      "isExternal": false,
+      "order": 3,
+      "isVisible": true
+    },
+    {
+      "id": "privatlivspolitik",
+      "label": "Privatlivspolitik",
+      "href": "/privatlivspolitik",
+      "isExternal": false,
+      "order": 4,
+      "isVisible": true
+    },
+    {
+      "id": "handelsbetingelser",
+      "label": "Handelsbetingelser",
+      "href": "/handelsbetingelser",
+      "isExternal": false,
+      "order": 5,
+      "isVisible": true
+    }
+  ],
+  "mobileMenu": []
+}

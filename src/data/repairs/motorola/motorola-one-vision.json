@@ -1,0 +1,42 @@
+{
+  "brand": "motorola",
+  "series": "one",
+  "model": "Motorola One Vision",
+  "slug": "motorola-one-vision",
+  "year": 2019,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "https://via.placeholder.com/200x200/FF6B00/FFFFFF?text=One+Vision",
+  "hero": {
+    "title": "Motorola One Vision Reparation",
+    "tags": [
+      "motorola",
+      "one",
+      "vision",
+      "2019"
+    ]
+  },
+  "repairs": [
+    {
+      "id": "repair-1",
+      "type": "Skærm",
+      "quality": "Original",
+      "price": 899,
+      "duration": "20-25 min",
+      "warranty": "24 måneder",
+      "description": "Udskiftning af ødelagt skærm med original Motorola del",
+      "isVisible": true
+    },
+    {
+      "id": "repair-2",
+      "type": "Batteri",
+      "quality": "Original",
+      "price": 599,
+      "duration": "15-20 min",
+      "warranty": "12 måneder",
+      "description": "Udskiftning af batteri med original Motorola batteri",
+      "isVisible": true
+    }
+  ],
+  "sort_order": 350
+}

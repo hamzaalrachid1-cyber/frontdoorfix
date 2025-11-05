@@ -1,0 +1,162 @@
+{
+  "brand": "Samsung",
+  "model": "Galaxy 22",
+  "slug": "galaxy-s22",
+  "hasBackGlass": true,
+  "order": 24,
+  "hero": {
+    "title": "Galaxy 22 Reparation",
+    "tags": [
+      "Snapdragon 8 Gen 3",
+      "6.2\" Dynamic AMOLED 2X",
+      "USB-C",
+      "2024"
+    ],
+    "image": ""
+  },
+  "repairs": [
+    {
+      "id": "screen_original",
+      "category": "Skærm",
+      "title": "Skærmskift – Original",
+      "type": "original",
+      "price": null,
+      "time": "~45–60 min",
+      "warranty": "24 mdr",
+      "description": "Original servicepack (inkl. pakning/lim). 45–60 min. inkl. test & kalibrering.",
+      "badges": ["Original kvalitet"],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "screen_compatible",
+      "category": "Skærm",
+      "title": "Skærmskift – Kompatibel",
+      "type": "compatible",
+      "price": null,
+      "time": "~45–60 min",
+      "warranty": "12 mdr",
+      "description": "Kompatibel kvalitet – prisvenligt valg. 45–60 min.",
+      "badges": ["Prisvenlig"],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "battery_original",
+      "category": "Batteri",
+      "title": "Batteriskift – Original",
+      "type": "original",
+      "price": null,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Nyt batteri med frisk kapacitet. Kalibrering + test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "back_glass",
+      "category": "Bagcover",
+      "title": "Bagcover udskift (glas)",
+      "type": "original",
+      "price": null,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Udskiftning af bagglas (original kvalitet). 30–45 min.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "charging_port",
+      "category": "Ladeport",
+      "title": "USB-C port reparation",
+      "type": "original",
+      "price": null,
+      "time": "~30 min",
+      "warranty": "12 mdr",
+      "description": "USB-C port reparation. Oprydning og test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "camera_front",
+      "category": "Kamera",
+      "title": "Frontkamera udskift",
+      "type": "original",
+      "price": null,
+      "time": "~30 min",
+      "warranty": "12 mdr",
+      "description": "Frontkamera udskift med originalt Samsung-kamera.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "camera_back",
+      "category": "Kamera",
+      "title": "Bagkamera udskift",
+      "type": "original",
+      "price": null,
+      "time": "~45 min",
+      "warranty": "12 mdr",
+      "description": "Bagkamera udskift med originalt Samsung-kamera.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "speaker_mic",
+      "category": "Lyd",
+      "title": "Højttaler/mikrofon",
+      "type": "original",
+      "price": null,
+      "time": "~30 min",
+      "warranty": "12 mdr",
+      "description": "Højttaler og mikrofon reparation.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "software",
+      "category": "Software",
+      "title": "Software/opdatering",
+      "type": "service",
+      "price": null,
+      "time": "~20 min",
+      "warranty": "3 mdr",
+      "description": "Android opdatering, backup og gendannelse.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "liquid_damage",
+      "category": "Væskeskade",
+      "title": "Væskeskade reparation",
+      "type": "service",
+      "price": null,
+      "time": "~60–90 min",
+      "warranty": "3 mdr",
+      "description": "Rensning og reparation efter væskeskade.",
+      "badges": ["Akut service"],
+      "notes": "Kontakt os hurtigst muligt ved væskeskade",
+      "showDetailsLink": true
+    },
+    {
+      "id": "diagnostics",
+      "category": "Diagnose",
+      "title": "Fejldiagnose",
+      "type": "service",
+      "price": null,
+      "time": "~20 min",
+      "warranty": "0 mdr",
+      "description": "Komplet fejldiagnose. Trækkes fra ved reparation.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ]
+}

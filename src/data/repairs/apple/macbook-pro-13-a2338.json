@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 13\" (2020-2022) – A2338",
+  "slug": "macbook-pro-13-a2338",
+  "year": 2022,
+  "sort_order": 160,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/g1---edited-1762270068883.png",
+  "hero": {
+    "title": "MacBook Pro 13\" (2020-2022) – A2338",
+    "tags": []
+  },
+  "repairs": []
+}

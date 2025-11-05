@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "ipad",
+  "model": "iPad Pro 12,9″ (2021)",
+  "slug": "ipad-pro-12-9-2021",
+  "year": 2021,
+  "sort_order": 420,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/12-1762268461330.png",
+  "hero": {
+    "title": "iPad Pro 12,9″ (2021) Reparation",
+    "tags": []
+  },
+  "repairs": []
+}

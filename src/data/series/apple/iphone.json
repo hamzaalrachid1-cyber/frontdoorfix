@@ -1,0 +1,11 @@
+{
+  "id": "apple-iphone",
+  "brandId": "apple",
+  "name": "iPhone",
+  "slug": "iphone",
+  "descriptionShort": "iPhone serie reparationer",
+  "icon": "",
+  "image": "https://www.idriverep.dk/wp-content/uploads/2024/09/iphone-15.png",
+  "isActive": true,
+  "sortOrder": 1
+}

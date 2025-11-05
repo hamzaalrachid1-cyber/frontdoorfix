@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 13\" (2020) – A2289",
+  "slug": "macbook-pro-13-a2289",
+  "year": 2020,
+  "sort_order": 110,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/76---edited-1762269345417.png",
+  "hero": {
+    "title": "MacBook Pro 13\" (2020) – A2289",
+    "tags": []
+  },
+  "repairs": []
+}

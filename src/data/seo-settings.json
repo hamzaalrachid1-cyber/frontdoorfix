@@ -1,0 +1,26 @@
+{
+  "siteName": "FrontDoorFix",
+  "defaultTitle": "Reparationer af telefoner og tablets - FrontDoorFix",
+  "defaultDescription": "Professionel reparation af iPhone, iPad, Samsung Galaxy og andre enheder. Vi kommer til dig - hurtig service med garanti.",
+  "defaultKeywords": [
+    "reparation",
+    "iPhone",
+    "iPad",
+    "Samsung",
+    "skærmreparation",
+    "batteri",
+    "service"
+  ],
+  "ogImage": "/images/og-default.jpg",
+  "twitterCard": "summary_large_image",
+  "twitterSite": "@frontdoorfix",
+  "robotsIndex": true,
+  "robotsFollow": true,
+  "canonicalDomain": "https://frontdoorfix.dk",
+  "sitemapEnabled": true,
+  "structuredDataEnabled": true,
+  "breadcrumbsEnabled": true,
+  "googleAnalytics": "",
+  "googleTagManager": "",
+  "facebookPixel": ""
+}

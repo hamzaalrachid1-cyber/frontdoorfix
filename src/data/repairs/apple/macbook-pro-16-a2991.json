@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 16\" (2023) – A2991",
+  "slug": "macbook-pro-16-a2991",
+  "year": 2023,
+  "sort_order": 170,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/g7---edited-1762270195769.png",
+  "hero": {
+    "title": "MacBook Pro 16\" (2023) – A2991",
+    "tags": []
+  },
+  "repairs": []
+}

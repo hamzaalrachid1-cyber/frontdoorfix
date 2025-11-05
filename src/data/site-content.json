@@ -1,0 +1,106 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "Reparationer af telefoner og tablets",
+      "subtitle": "Vi kommer til dig - hurtig service med garanti",
+      "description": "Professionel reparation af iPhone, iPad, Samsung Galaxy og andre enheder. Vi reparationer skærm, batteri, opladning og meget mere.",
+      "ctaText": "Bestil tid nu",
+      "ctaLink": "/reparationer"
+    },
+    "uspCards": [
+      {
+        "title": "Vi kommer til dig",
+        "description": "Ingen transport - vi reparationer på stedet",
+        "icon": "🚗"
+      },
+      {
+        "title": "Hurtig service",
+        "description": "De fleste reparationer klaret på 20-30 minutter",
+        "icon": "⚡"
+      },
+      {
+        "title": "Garanti på alt arbejde",
+        "description": "24 måneder på skærm, 12 måneder på batteri",
+        "icon": "🛡️"
+      }
+    ],
+    "callouts": [
+      {
+        "title": "iPhone & iPad Reparationer",
+        "description": "Alle modeller fra iPhone 6 til iPhone 16 Pro Max",
+        "link": "/reparationer/apple",
+        "image": "/images/apple-devices.jpg"
+      },
+      {
+        "title": "Samsung Galaxy Reparationer", 
+        "description": "Galaxy S, A, Z og XCover serier",
+        "link": "/reparationer/samsung",
+        "image": "/images/samsung-devices.jpg"
+      }
+    ]
+  },
+  "sections": {
+    "qualityWarranty": {
+      "title": "Kvalitet & garanti",
+      "content": "Vi bruger kun originale dele og kvalitetskomponenter. Alle vores reparationer kommer med garanti: 24 måneder på skærmreparationer og 12 måneder på batteri og andre komponenter.",
+      "features": [
+        "Originale dele og komponenter",
+        "Professionel montering og service",
+        "24 måneders garanti på skærm",
+        "12 måneders garanti på batteri",
+        "Gratis serviceeftersyn"
+      ]
+    },
+    "threeSteps": {
+      "title": "Sådan foregår det – 3 trin",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Bestil tid",
+          "description": "Vælg tid og sted, og beskriv dit problem. Vi kommer til dig på det aftalte tidspunkt."
+        },
+        {
+          "number": "2", 
+          "title": "Reparation",
+          "description": "Vi diagnosticerer problemet og reparationer din enhed med originale dele. De fleste reparationer tager 20-30 minutter."
+        },
+        {
+          "number": "3",
+          "title": "Test & garanti",
+          "description": "Vi tester din enhed grundigt og giver dig garanti på arbejdet. Du betaler kun efter reparationen er godkendt."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Ofte stillede spørgsmål",
+      "questions": [
+        {
+          "question": "Hvor lang tid tager en reparation?",
+          "answer": "De fleste reparationer tager 20-30 minutter. Skærmreparationer tager typisk 20-25 minutter, mens batteriskift tager 15-20 minutter."
+        },
+        {
+          "question": "Hvilke betalingsmetoder accepterer I?",
+          "answer": "Vi accepterer kontanter, MobilePay, Dankort og alle større kreditkort. Du betaler kun efter reparationen er godkendt."
+        },
+        {
+          "question": "Kan I reparationer alle telefonmodeller?",
+          "answer": "Ja, vi reparationer alle større mærker inklusive iPhone, Samsung Galaxy, Huawei, OnePlus, Google Pixel og mange flere."
+        },
+        {
+          "question": "Hvad hvis reparationen ikke løser problemet?",
+          "answer": "Hvis reparationen ikke løser problemet, finder vi en anden løsning eller refunderer dig. Vores mål er at få din enhed til at fungere perfekt."
+        },
+        {
+          "question": "Kan I hjælpe med software-problemer?",
+          "answer": "Ja, vi kan hjælpe med software-opdateringer, data-genopretning og andre software-relaterede problemer."
+        }
+      ]
+    }
+  },
+  "seo": {
+    "defaultTitle": "Reparationer af telefoner og tablets - FrontDoorFix",
+    "defaultDescription": "Professionel reparation af iPhone, iPad, Samsung Galaxy og andre enheder. Vi kommer til dig - hurtig service med garanti.",
+    "defaultKeywords": ["reparation", "iPhone", "iPad", "Samsung", "skærmreparation", "batteri", "service"]
+  }
+}
+

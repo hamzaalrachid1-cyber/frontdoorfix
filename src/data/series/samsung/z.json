@@ -1,0 +1,11 @@
+{
+  "id": "samsung-z",
+  "brandId": "samsung",
+  "name": "Samsung Galaxy Z-Modeller",
+  "slug": "z",
+  "descriptionShort": "Galaxy Z serie reparationer",
+  "icon": "",
+  "image": "https://www.idriverep.dk/wp-content/uploads/2025/09/Untitled-design-35.png",
+  "isActive": true,
+  "sortOrder": 3
+}

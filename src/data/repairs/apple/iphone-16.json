@@ -1,0 +1,33 @@
+{
+  "brand": "apple",
+  "series": "iphone",
+  "model": "iphone 16",
+  "slug": "iphone-16",
+  "year": 2025,
+  "sort_order": 325,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/16---edited-1762257677717.png",
+  "hero": {
+    "title": "iphone 16",
+    "tags": []
+  },
+  "repairs": [
+    {
+      "title": "skræm org",
+      "category": "Skærm",
+      "quality": "original",
+      "price": 0,
+      "time": "~30 min",
+      "warranty": "24 mdr",
+      "description": "",
+      "order": 100,
+      "id": "repair_1759399133550",
+      "type": "original",
+      "isVisible": true,
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ]
+}

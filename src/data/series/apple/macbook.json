@@ -1,0 +1,11 @@
+{
+  "id": "apple-macbook",
+  "brandId": "apple",
+  "name": "MacBook",
+  "slug": "macbook",
+  "descriptionShort": "MacBook serie reparationer",
+  "icon": "",
+  "image": "https://www.idriverep.dk/wp-content/uploads/2025/09/Untitled-design-51.png",
+  "isActive": true,
+  "sortOrder": 3
+}

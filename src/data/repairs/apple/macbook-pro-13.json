@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 13\" (2009-2012)",
+  "slug": "macbook-pro-13",
+  "year": 2012,
+  "sort_order": 75,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/5---edited-1762268863204.png",
+  "hero": {
+    "title": "MacBook Pro 13\" (2009-2012)",
+    "tags": []
+  },
+  "repairs": []
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 13\" (2019-2020) – A2159",
+  "slug": "macbook-pro-13-a2159",
+  "year": 2020,
+  "sort_order": 120,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/54---edited-1762269445308.png",
+  "hero": {
+    "title": "MacBook Pro 13\" (2019-2020) – A2159",
+    "tags": []
+  },
+  "repairs": []
+}

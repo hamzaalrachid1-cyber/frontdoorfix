@@ -1,0 +1,127 @@
+{
+  "brand": "apple",
+  "series": "ipad",
+  "model": "iPad Air 4 (2020)",
+  "slug": "ipad-air-4",
+  "year": 2020,
+  "sort_order": 365,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/air4---edited-1762262436064.png",
+  "hero": {
+    "title": "iPad Air 4 Reparation",
+    "tags": [
+      "A14 Bionic",
+      "10.9\"",
+      "USB-C",
+      "2020"
+    ],
+    "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111905_sp828ipad-air-ipados14-960.png"
+  },
+  "repairs": [
+    {
+      "id": "screen_original",
+      "category": "Skærm",
+      "title": "Skærmskift – Original",
+      "type": "original",
+      "price": 1799,
+      "time": "~45 min",
+      "warranty": "24 mdr",
+      "description": "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "battery_original",
+      "category": "Batteri",
+      "title": "Batteriskift – Original",
+      "type": "original",
+      "price": 899,
+      "time": "~30–45 min",
+      "warranty": "12 mdr",
+      "description": "Nyt batteri med frisk kapacitet. Kalibrering + test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "charging_port",
+      "category": "Ladeport",
+      "title": "Ladeport reparation",
+      "type": "original",
+      "price": 799,
+      "time": "~30 min",
+      "warranty": "12 mdr",
+      "description": "USB-C port reparation. Oprydning og test.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "camera_front",
+      "category": "Kamera",
+      "title": "Frontkamera udskift",
+      "type": "original",
+      "price": 699,
+      "time": "~30 min",
+      "warranty": "12 mdr",
+      "description": "Frontkamera udskift med originalt Apple-kamera.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "camera_back",
+      "category": "Kamera",
+      "title": "Bagkamera udskift",
+      "type": "original",
+      "price": 1099,
+      "time": "~45 min",
+      "warranty": "12 mdr",
+      "description": "Bagkamera udskift med originalt Apple-kamera.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "speaker_mic",
+      "category": "Lyd",
+      "title": "Højttaler/mikrofon",
+      "type": "original",
+      "price": 699,
+      "time": "~30 min",
+      "warranty": "12 mdr",
+      "description": "Højttaler og mikrofon reparation.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "software",
+      "category": "Software",
+      "title": "Software/opdatering",
+      "type": "service",
+      "price": 299,
+      "time": "~20 min",
+      "warranty": "3 mdr",
+      "description": "iOS opdatering, backup og gendannelse.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    },
+    {
+      "id": "diagnostics",
+      "category": "Diagnose",
+      "title": "Fejldiagnose",
+      "type": "service",
+      "price": 199,
+      "time": "~20 min",
+      "warranty": "0 mdr",
+      "description": "Komplet fejldiagnose. Trækkes fra ved reparation.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ]
+}

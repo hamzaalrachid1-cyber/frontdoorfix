@@ -3,8 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useBookingModal } from '@/context/BookingModalContext';
-import { APPLE_MODELS, getAllModels } from '@/data/apple/models';
-import { ModelSpec } from '@/data/apple/types';
+import { MODELS, getModelsByBrand, type Model } from '@/data/devices';
 
 type Step = 1 | 2 | 3;
 
@@ -14,7 +13,7 @@ export default function BookingModal() {
   const modalRef = useRef<HTMLDivElement>(null);
   const [step, setStep] = useState<Step>(1);
   const [selectedBrand, setSelectedBrand] = useState<string>('');
-  const [selectedModel, setSelectedModel] = useState<ModelSpec | null>(null);
+  const [selectedModel, setSelectedModel] = useState<Model | null>(null);
   const [selectedRepairs, setSelectedRepairs] = useState<string[]>([]);
   const [modelSearch, setModelSearch] = useState('');
 
@@ -26,7 +25,7 @@ export default function BookingModal() {
         setStep(2);
       }
       if (preselect.model) {
-        const model = APPLE_MODELS.find(m => m.name === preselect.model && m.brand === preselect.brand);
+        const model = MODELS.find(m => m.name === preselect.model && m.brand === preselect.brand);
         if (model) {
           setSelectedModel(model);
           setStep(3);
@@ -97,7 +96,7 @@ export default function BookingModal() {
     setStep(2);
   };
 
-  const handleModelSelect = (model: ModelSpec) => {
+  const handleModelSelect = (model: Model) => {
     setSelectedModel(model);
     setSelectedRepairs([]);
     setStep(3);
@@ -134,7 +133,7 @@ export default function BookingModal() {
   };
 
   const filteredModels = selectedBrand 
-    ? APPLE_MODELS.filter(model => 
+    ? MODELS.filter(model => 
         model.brand === selectedBrand && 
         model.name.toLowerCase().includes(modelSearch.toLowerCase())
       )
@@ -215,9 +214,9 @@ export default function BookingModal() {
                   key={brand}
                   onClick={() => handleBrandSelect(brand)}
                   className={`p-4 rounded-lg border-2 transition-all hover:shadow-md ${
-                    selectedBrand === brand
-                      ? 'border-pink-500 bg-pink-50 text-pink-700'
-                      : 'border-gray-200 hover:border-gray-300'
+                        selectedBrand === brand
+                          ? 'border-pink-500 bg-pink-50 text-pink-700'
+                          : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
                   <div className="text-lg font-semibold">{brand}</div>
@@ -269,11 +268,7 @@ export default function BookingModal() {
                 <p className="text-sm text-gray-600">Vælg de reparationer du har brug for</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {/* Placeholder repairs - will be loaded from JSON in real implementation */}
-                {[
-                  { id: 'screen_original', label: 'Skærmskift – Original', price: 799, time: '~30 min', warranty: '24 mdr' },
-                  { id: 'battery_original', label: 'Batteriskift – Original', price: 399, time: '~15-20 min', warranty: '12 mdr' }
-                ].map((repair) => (
+                {selectedModel?.repairs.map((repair) => (
                   <div
                     key={repair.id}
                     className={`p-4 rounded-lg border-2 cursor-pointer transition-all hover:shadow-md ${
@@ -306,7 +301,7 @@ export default function BookingModal() {
                         </div>
                       </div>
                       <div className="text-right ml-3 shrink-0">
-                        {repair.price === 'contact' ? (
+                        {repair.price === 'kontakt' ? (
                           <div className="text-sm font-semibold text-gray-600">Kontakt os</div>
                         ) : (
                           <div className="text-lg font-bold text-gray-900">{repair.price} kr</div>

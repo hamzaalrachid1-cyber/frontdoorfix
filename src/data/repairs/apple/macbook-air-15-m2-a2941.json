@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 15\" M2 (2023) – A2941",
+  "slug": "macbook-air-15-m2-a2941",
+  "year": 2023,
+  "sort_order": 190,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/f1---edited-1762270333017.png",
+  "hero": {
+    "title": "MacBook Air 15\" M2 (2023) – A2941",
+    "tags": []
+  },
+  "repairs": []
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 14\" (2023) – A2992",
+  "slug": "macbook-pro-14-a2992",
+  "year": 2023,
+  "sort_order": 175,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/h1---edited-1762270276247.png",
+  "hero": {
+    "title": "MacBook Pro 14\" (2023) – A2992",
+    "tags": []
+  },
+  "repairs": []
+}

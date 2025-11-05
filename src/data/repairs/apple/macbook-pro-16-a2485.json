@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Pro 16\" (2021) – A2485",
+  "slug": "macbook-pro-16-a2485",
+  "year": 2021,
+  "sort_order": 140,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/d3---edited-1762269877822.png",
+  "hero": {
+    "title": "MacBook Pro 16\" (2021) – A2485",
+    "tags": []
+  },
+  "repairs": []
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "apple",
+  "series": "macbook",
+  "model": "MacBook Air 11\" (2010-2015)",
+  "slug": "macbook-air-11",
+  "year": 2015,
+  "sort_order": 80,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/6---edited-1762268933610.png",
+  "hero": {
+    "title": "MacBook Air 11\" (2010-2015)",
+    "tags": []
+  },
+  "repairs": []
+}

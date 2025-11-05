@@ -1,0 +1,11 @@
+{
+  "id": "samsung-a",
+  "brandId": "samsung",
+  "name": "Samsung Galaxy A-Modeller",
+  "slug": "a",
+  "descriptionShort": "Galaxy A serie reparationer",
+  "icon": "",
+  "image": "https://www.idriverep.dk/wp-content/uploads/2024/09/samsung-a-serie.png",
+  "isActive": true,
+  "sortOrder": 2
+}

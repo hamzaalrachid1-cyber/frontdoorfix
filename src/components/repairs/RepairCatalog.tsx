@@ -208,7 +208,7 @@ export default function RepairCatalog({ modelSpec }: RepairCatalogProps) {
             {/* SEO Text */}
             <div className="text-center mb-8">
               <p className="text-gray-600 text-lg">
-                {modelSpec.name} reparation i København – vi kommer til dig og reparerer på 20–30 min.
+                {modelSpec.name} reparation – vi kommer til dig og reparerer på 20–30 min.
               </p>
               <div className="mt-2 flex items-center justify-center gap-2 relative">
                 <span className="text-sm text-gray-500">Kvalitetsspørgsmål?</span>

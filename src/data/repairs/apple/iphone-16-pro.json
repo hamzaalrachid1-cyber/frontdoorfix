@@ -1,11 +1,20 @@
 {
-  "brand": "Apple",
+  "brand": "apple",
+  "series": "iphone",
   "model": "iPhone 16 Pro",
   "slug": "iphone-16-pro",
-  "hasBackGlass": true,
+  "year": 2025,
+  "sort_order": 335,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/16-pro---edited-1762257855134.png",
   "hero": {
     "title": "iPhone 16 Pro Reparation",
-    "tags": ["A18 Pro chip", "Titanium design", "2024 model"]
+    "tags": [
+      "A18 Pro chip",
+      "Titanium design",
+      "2024 model"
+    ]
   },
   "repairs": [
     {
@@ -17,7 +26,7 @@
       "time": "~30 min",
       "warranty": "24 mdr",
       "description": "Udskiftning af ødelagt skærm med original Apple del.",
-      "badges": ["Populær"],
+      "badges": [],
       "notes": null,
       "showDetailsLink": true
     },
@@ -41,7 +50,7 @@
       "type": "oem",
       "price": 1899,
       "time": "~25–35 min",
-      "warranty": "24 mdr",
+      "warranty": "",
       "description": "Udskiftning af ødelagt bagcover i titanium.",
       "badges": [],
       "notes": null,
@@ -56,7 +65,7 @@
       "time": "~15–20 min",
       "warranty": "12 mdr",
       "description": "Udskiftning af batteri med original Apple batteri.",
-      "badges": ["Populær"],
+      "badges": [],
       "notes": null,
       "showDetailsLink": true
     },
@@ -95,19 +104,6 @@
       "time": "~30–45 min",
       "warranty": "12 mdr",
       "description": "Udskiftning af bag-kamera system (alle linser).",
-      "badges": [],
-      "notes": null,
-      "showDetailsLink": true
-    },
-    {
-      "id": "front_camera",
-      "category": "Kamera",
-      "title": "For-kamera",
-      "type": "oem",
-      "price": 799,
-      "time": "~20–30 min",
-      "warranty": "12 mdr",
-      "description": "Udskiftning af for-kamera og Face ID system.",
       "badges": [],
       "notes": null,
       "showDetailsLink": true
@@ -173,19 +169,6 @@
       "time": "~30–60 min",
       "warranty": "Ingen",
       "description": "Rensning og diagnosticering.",
-      "badges": [],
-      "notes": null,
-      "showDetailsLink": true
-    },
-    {
-      "id": "data_recovery",
-      "category": "Software/Andet",
-      "title": "Dataredning",
-      "type": "service",
-      "price": "contact",
-      "time": "Variabel",
-      "warranty": "Ingen",
-      "description": "Gendannelse af data (hvis muligt).",
       "badges": [],
       "notes": null,
       "showDetailsLink": true

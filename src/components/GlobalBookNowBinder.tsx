@@ -43,6 +43,7 @@ export default function GlobalBookNowBinder() {
       // 3. Try to get from page context (body dataset or meta tags)
       const bodyBrand = document.body.dataset.brand ||
         document.querySelector('meta[name="fd-brand"]')?.getAttribute('content') || undefined;
+
       const bodyModel = document.body.dataset.model ||
         document.querySelector('meta[name="fd-model"]')?.getAttribute('content') || undefined;
 
@@ -88,15 +89,24 @@ export default function GlobalBookNowBinder() {
       if (!target) return;
 
       // Find the closest clickable element that might be a booking button
-      const btn = target.closest('[data-book-now], .js-book-now, a, button');
-      if (!btn) return;
+      const btn = target.closest('[data-book-now], .js-book-now');
+      if (!btn) {
+        // Only check for explicit booking buttons with data attributes or classes
+        const clickableBtn = target.closest('button[data-book-now], a[data-book-now], button.js-book-now, a.js-book-now');
+        if (clickableBtn) {
+          const text = (clickableBtn as HTMLElement).innerText?.trim() || '';
+          if (bookingTextRegex.test(text)) {
+            // Prevent default navigation and stop propagation
+            e.preventDefault();
+            e.stopPropagation();
 
-      const text = (btn as HTMLElement).innerText?.trim() || '';
-      const hasDataAttr = (btn as HTMLElement).dataset?.bookNow !== undefined;
-      const hasJsClass = btn.classList.contains('js-book-now');
-
-      // Check if this is a booking button either by data attribute, class, or text content
-      if (!hasDataAttr && !hasJsClass && !bookingTextRegex.test(text)) return;
+            // Get preselect data and open modal
+            const preselect = getPreselect(clickableBtn);
+            open(preselect);
+          }
+        }
+        return;
+      }
 
       // Prevent default navigation and stop propagation
       e.preventDefault();
@@ -119,6 +129,7 @@ export default function GlobalBookNowBinder() {
               const element = node as Element;
               // Check if the added element or its children have booking buttons
               const bookingButtons = element.querySelectorAll('[data-book-now], .js-book-now');
+
               if (bookingButtons.length > 0) {
                 // New booking buttons were added, they'll be handled by the existing event listener
                 console.log('New booking buttons detected:', bookingButtons.length);

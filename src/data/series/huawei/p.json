@@ -1,0 +1,10 @@
+{
+  "id": "huawei-p",
+  "brandId": "huawei",
+  "name": "P-serien",
+  "slug": "p",
+  "descriptionShort": "P-serien serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 2
+}

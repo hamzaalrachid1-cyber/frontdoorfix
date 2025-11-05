@@ -1,0 +1,15 @@
+{
+  "brand": "samsung",
+  "series": "z",
+  "model": "Samsung Galaxy Z Fold6",
+  "slug": "z-fold6",
+  "year": 2024,
+  "family": "galaxyzfold",
+  "sortOrder": 200,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "",
+  "repairs": [],
+  "sort_order": 90,
+  "updated_at": "2025-10-04T17:17:07.953Z"
+}

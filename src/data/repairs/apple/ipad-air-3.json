@@ -1,0 +1,31 @@
+{
+  "brand": "apple",
+  "series": "ipad",
+  "model": "iPad Air 3 (2019)",
+  "slug": "ipad-air-3",
+  "year": 2019,
+  "sort_order": 356,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/ipadair3-2019---edited-1762262388045.png",
+  "hero": {
+    "title": "iPad Air 3 (2019) Reparation",
+    "tags": [],
+    "image": "https://cdn.prod.website-files.com/65b3b01a97ff5dc51bb2bcb2/65ddeb4973836987e2429b24_iPad-Air-2019-reparation-ocb7im1d86ssvznbzx3blayxkq35ca6upsq5tbrnr4.jpeg"
+  },
+  "repairs": [
+    {
+      "id": "screen_original",
+      "category": "Skærm",
+      "title": "Skærmskift – Original",
+      "type": "original",
+      "price": 999,
+      "time": "~45 min",
+      "warranty": "24 mdr",
+      "description": "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true
+    }
+  ]
+}

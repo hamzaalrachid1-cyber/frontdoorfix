@@ -1,0 +1,240 @@
+/* Design Tokens - Inner Pages Only */
+/* Applied to all routes except homepage (/) */
+
+:root {
+  /* Core Brand Palette */
+  --brand-primary-start: #FF4D8D;
+  --brand-primary-end: #FFB347;
+  --brand-primary-solid: #FF6FA7;
+  --brand-primary-deep: #D9367A;
+  --brand-primary-soft: #FFE3ED;
+  
+  /* Link/Info Colors */
+  --link-default: #2563EB;
+  --link-hover: #1D4ED8;
+  --info-surface: #EFF6FF;
+  
+  /* Neutrals */
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --bg-base: #FFFFFF;
+  --bg-subtle: #F8FAFC;
+  --card-surface: #FFFFFF;
+  --border-default: #E2E8F0;
+  --divider: #F1F5F9;
+  --focus-ring: #FF6FA7;
+  
+  /* Semantic Colors */
+  --success: #16A34A;
+  --success-surface: #ECFDF5;
+  --success-text: #065F46;
+  
+  --warning: #F59E0B;
+  --warning-surface: #FFFBEB;
+  --warning-text: #7C2D12;
+  
+  --error: #EF4444;
+  --error-surface: #FEF2F2;
+  --error-text: #7F1D1D;
+  
+  --info: #2563EB;
+  --info-surface: #EFF6FF;
+  --info-text: #1E3A8A;
+  
+  /* Elevation */
+  --shadow-level-1: 0 2px 8px rgba(2, 6, 23, 0.06);
+  --shadow-level-2: 0 8px 24px rgba(2, 6, 23, 0.08);
+}
+
+/* Inner Pages Layout Wrapper */
+.inner-pages {
+  /* Override existing colors for inner pages only */
+  color: var(--text-primary);
+  background-color: var(--bg-base);
+}
+
+/* Primary Gradient - CTA Buttons */
+.inner-pages .btn-primary-gradient {
+  background: linear-gradient(135deg, var(--brand-primary-start), var(--brand-primary-end));
+  color: white;
+  border: none;
+  box-shadow: var(--shadow-level-1);
+  transition: box-shadow 0.2s ease;
+}
+
+.inner-pages .btn-primary-gradient:hover {
+  box-shadow: var(--shadow-level-2);
+}
+
+/* Secondary Buttons */
+.inner-pages .btn-secondary {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-level-1);
+  transition: all 0.2s ease;
+}
+
+.inner-pages .btn-secondary:hover {
+  background: var(--bg-subtle);
+  box-shadow: var(--shadow-level-2);
+}
+
+/* Destructive Buttons */
+.inner-pages .btn-destructive {
+  background: var(--error);
+  color: white;
+  border: none;
+  box-shadow: var(--shadow-level-1);
+}
+
+/* Links */
+.inner-pages a {
+  color: var(--link-default);
+  transition: color 0.2s ease;
+}
+
+.inner-pages a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Cards */
+.inner-pages .card {
+  background: var(--card-surface);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-level-1);
+  transition: all 0.2s ease;
+}
+
+.inner-pages .card:hover {
+  box-shadow: var(--shadow-level-2);
+  transform: translateY(-1px);
+}
+
+/* Badges/Chips */
+.inner-pages .badge-original,
+.inner-pages .badge-pulled {
+  color: var(--brand-primary-solid);
+  background: var(--brand-primary-soft);
+}
+
+.inner-pages .badge-kompatibel {
+  color: #06B6D4;
+  background: #CFFAFE;
+}
+
+.inner-pages .badge-mest-valgt {
+  color: #B45309;
+  background: #FEF3C7;
+}
+
+/* FAQ Accordion */
+.inner-pages .faq-header {
+  color: var(--text-primary);
+}
+
+.inner-pages .faq-header:hover {
+  color: var(--brand-primary-solid);
+}
+
+.inner-pages .faq-expanded {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-default);
+}
+
+/* Booking Modal */
+.inner-pages .booking-modal-accent {
+  background: linear-gradient(135deg, var(--brand-primary-start), var(--brand-primary-end));
+}
+
+.inner-pages .booking-modal input:focus,
+.inner-pages .booking-modal select:focus {
+  border-color: var(--focus-ring);
+  box-shadow: 0 0 0 2px rgba(255, 111, 167, 0.2);
+}
+
+/* Tables/Price Rows */
+.inner-pages .table-header {
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+.inner-pages .table-row:hover {
+  background: var(--bg-subtle);
+}
+
+/* Focus States */
+.inner-pages *:focus {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Hero Sections */
+.inner-pages .hero-gradient {
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--brand-primary-start) 8%, white), 
+    color-mix(in oklab, var(--brand-primary-end) 8%, white)
+  );
+}
+
+/* Text Gradients */
+.inner-pages .text-gradient {
+  background: linear-gradient(135deg, var(--brand-primary-start), var(--brand-primary-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Sticky Mobile CTA */
+.inner-pages .mobile-sticky-cta {
+  background: linear-gradient(135deg, var(--brand-primary-start), var(--brand-primary-end));
+  color: white;
+  box-shadow: var(--shadow-level-2);
+}
+
+/* Section Backgrounds */
+.inner-pages .section-bg-subtle {
+  background: var(--bg-subtle);
+}
+
+.inner-pages .section-bg-base {
+  background: var(--bg-base);
+}
+
+/* Typography */
+.inner-pages h1,
+.inner-pages h2,
+.inner-pages h3,
+.inner-pages h4,
+.inner-pages h5,
+.inner-pages h6 {
+  color: var(--text-primary);
+}
+
+.inner-pages p,
+.inner-pages span,
+.inner-pages div {
+  color: var(--text-secondary);
+}
+
+.inner-pages .text-muted {
+  color: var(--text-muted);
+}
+
+/* Borders and Dividers */
+.inner-pages .border-default {
+  border-color: var(--border-default);
+}
+
+.inner-pages .divider {
+  border-color: var(--divider);
+}
+
+/* Info Surface */
+.inner-pages .info-surface {
+  background: var(--info-surface);
+  border: 1px solid var(--border-default);
+}
+

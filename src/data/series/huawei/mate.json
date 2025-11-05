@@ -1,0 +1,10 @@
+{
+  "id": "huawei-mate",
+  "brandId": "huawei",
+  "name": "Mate",
+  "slug": "mate",
+  "descriptionShort": "Mate serie reparationer",
+  "icon": "",
+  "isActive": true,
+  "sortOrder": 1
+}

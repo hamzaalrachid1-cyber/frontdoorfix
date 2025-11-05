@@ -1,16 +1,22 @@
+import Link from "next/link";
+import { CTAButtons } from "@/components/CTAButtons";
+import { BrandInfo } from "@/components/BrandInfo";
+import FLogo from "@/components/FLogo";
+import ScrollAnimation from "@/components/ScrollAnimation";
+
 export default function Home() {
   return (
     <div className="min-h-screen">
       <main>
         {/* Hero Section */}
-        <section className="py-20 px-6">
+        <section className="py-20 px-6 animate-fade-in">
           <div className="mx-auto max-w-6xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
-              <div className="text-center md:text-left">
+              <div className="text-center md:text-left animate-fade-in-right animate-delay-100">
 
                 {/* Main Headline */}
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 leading-tight animate-fade-in-up animate-delay-200">
                   <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                     <span id="rotating-headline">Vi fikser din mobil – dér hvor du er</span>
                   </span>
@@ -23,17 +29,7 @@ export default function Home() {
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-16">
-                  <button className="btn-gradient px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-all">
-                    Bestil tid nu
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6-6 6-1.41-1.41z"/>
-                    </svg>
-                  </button>
-                  <a href="/reparationer" className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent text-lg font-semibold underline hover:opacity-80 transition-opacity">
-                    Tjek priser
-                  </a>
-                </div>
+                <CTAButtons />
 
               </div>
 
@@ -141,10 +137,11 @@ export default function Home() {
 
         {/* How It Works Section */}
         <section className="py-16 bg-white">
-          <div className="mx-auto max-w-6xl px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-              Sådan fungerer det – nem reparation i 3 trin
-            </h2>
+          <ScrollAnimation animationType="fade-in">
+            <div className="mx-auto max-w-6xl px-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 animate-fade-in-up">
+                Sådan fungerer det – nem reparation i 3 trin
+              </h2>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               {/* Step 1 */}
@@ -152,10 +149,9 @@ export default function Home() {
                 <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <span className="text-3xl font-bold text-white">1</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">Book en tid</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-800">Book online eller ring</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Vælg din reparation online eller ring direkte til os. 
-                  Hurtigt og enkelt.
+                  Vælg model og fejl, se prisen med det samme, og vælg et tidspunkt der passer dig. Det tager under 1 minut.
                 </p>
               </div>
               
@@ -164,10 +160,9 @@ export default function Home() {
                 <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <span className="text-3xl font-bold text-white">2</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">Vi kommer til dig</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-800">Tekniker på vej til dit hjem eller arbejde</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Vores tekniker kører hjem til dig eller til dit kontor 
-                  med alt udstyr.
+                  Du får sms-bekræftelse og ankomsttid. Vi medbringer alt udstyr – du behøver ikke gøre noget.
                 </p>
               </div>
               
@@ -176,29 +171,61 @@ export default function Home() {
                 <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <span className="text-3xl font-bold text-white">3</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">Reparation på stedet</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-800">Færdig på 20–30 min. med garanti</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Din mobil repareres på under 30 minutter – 
-                  sikkert og med garanti.
+                  Betal med MobilePay/kort. Du får kvittering og garanti (24 mdr. på skærme, 12 mdr. på batteri/øvrige dele).
                 </p>
               </div>
             </div>
             
             {/* CTA Button */}
             <div className="text-center">
-              <button className="btn-gradient px-10 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all flex items-center gap-3 mx-auto">
+              <button 
+                className="btn-gradient px-10 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all flex items-center gap-3 mx-auto animate-pulse-slow"
+                aria-label="Bestil mobilreparation – vælg model og tid"
+              >
                 <span>👉</span>
                 Bestil en reparation nu
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6-6 6-1.41-1.41z"/>
                 </svg>
               </button>
+              
+              {/* Secondary Phone CTA */}
+              <div className="mt-4">
+                <a 
+                  href="tel:+4593545457"
+                  className="text-gray-600 hover:text-pink-600 transition-colors text-sm font-medium"
+                >
+                  Ring 93 54 54 57 – vi svarer typisk inden for 5 min.
+                </a>
+              </div>
+              
+              {/* Trust Line */}
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-gray-600">
+                <span className="flex items-center gap-1">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-green-600">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  2.000+ reparationer
+                </span>
+                <span>•</span>
+                <span className="flex items-center gap-1">
+                  ⭐ 5.0 på Trustpilot
+                </span>
+                <span>•</span>
+                <span className="flex items-center gap-1">
+                  🛡️ 24 mdr. skærmgaranti
+                </span>
+              </div>
             </div>
           </div>
+          </ScrollAnimation>
         </section>
 
         {/* Brand Carousel Section */}
         <section className="py-16 bg-white">
+          <ScrollAnimation animationType="slide-left">
           <div className="mx-auto max-w-6xl px-6">
             <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Vi reparerer alle mærker</h2>
             <p className="text-center text-lg text-gray-600 mb-12">Vi reparerer alle populære mærker – altid med garanti</p>
@@ -327,10 +354,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </ScrollAnimation>
         </section>
 
         {/* Services Section */}
         <section className="py-16 bg-gray-50">
+          <ScrollAnimation animationType="fade-in">
           <div className="mx-auto max-w-6xl px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Populære reparationer vi tilbyder</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -447,10 +476,12 @@ export default function Home() {
               </button>
             </div>
           </div>
+          </ScrollAnimation>
         </section>
 
         {/* Devices We Repair Section */}
         <section className="py-16 bg-gray-50">
+          <ScrollAnimation animationType="scale-in">
           <div className="mx-auto max-w-6xl px-6">
             <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Vi reparerer alle dine enheder</h2>
             <p className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -478,7 +509,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">📲 Tablets</h3>
-                <p className="text-gray-600">iPad, Samsung Galaxy Tab, Microsoft Surface, og flere.</p>
+                <p className="text-gray-600">iPad, iPad Air, iPad mini, iPad Pro, Samsung Galaxy Tab, Microsoft Surface, og flere.</p>
               </div>
               
               {/* Laptops */}
@@ -503,10 +534,12 @@ export default function Home() {
               </button>
             </div>
           </div>
+          </ScrollAnimation>
         </section>
 
         {/* Parts Quality Section */}
         <section className="py-16 bg-white">
+          <ScrollAnimation animationType="fade-in">
           <div className="mx-auto max-w-6xl px-6">
             <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
               Vores reservedele – kvalitet uden kompromis
@@ -525,7 +558,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-gray-800">Original</h3>
                 </div>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                  Vi bruger ægte Apple-dele, der er demonteret fra donorenheder ("pulled"), kvalitetstestet og kalibreret til din telefon. Apple viser disse som "Brugt/Ukendt del" i indstillinger – det er forventet og påvirker ikke funktionaliteten.
+                  Vi bruger ægte Apple-dele, der er demonteret fra donorenheder (&quot;pulled&quot;), kvalitetstestet og kalibreret til din telefon. Apple viser disse som &quot;Brugt/Ukendt del&quot; i indstillinger – det er forventet og påvirker ikke funktionaliteten.
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="text-sm">
@@ -589,7 +622,7 @@ export default function Home() {
                     • touch-respons kan føles en anelse anderledes
                   </div>
                   <div className="text-sm text-gray-600">
-                    • nyere iPhones kan vise informationsbesked om "Ukendt del"
+                    • nyere iPhones kan vise informationsbesked om &quot;Ukendt del&quot;
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 font-medium">
@@ -675,10 +708,10 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">
-                    Hvorfor står der "Brugt/Ukendt del" efter skærm/batteriskift?
+                    Hvorfor står der &quot;Brugt/Ukendt del&quot; efter skærm/batteriskift?
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Apple knytter visse dele til enhedens serie-komponenter. Når vi monterer en original pulled del, kan iPhone vise "Brugt/Ukendt del" i indstillinger – det er kun information og påvirker ikke funktion eller garanti hos os.
+                    Apple knytter visse dele til enhedens serie-komponenter. Når vi monterer en original pulled del, kan iPhone vise &quot;Brugt/Ukendt del&quot; i indstillinger – det er kun information og påvirker ikke funktion eller garanti hos os.
                   </p>
                 </div>
                 
@@ -745,14 +778,16 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-center text-xs text-gray-500 mt-3">
-                iPhone kan vise "Brugt/Ukendt del" – funktion er uændret
+                iPhone kan vise &quot;Brugt/Ukendt del&quot; – funktion er uændret
               </p>
             </div>
           </div>
+          </ScrollAnimation>
         </section>
 
         {/* Why Frontdoorfix Section */}
         <section className="py-16 bg-gray-50">
+          <ScrollAnimation animationType="slide-right">
           <div className="mx-auto max-w-6xl px-6">
             <div className="max-w-4xl">
               <h2 className="text-3xl font-bold mb-8 text-gray-800">Hvorfor Frontdoorfix?</h2>
@@ -784,10 +819,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </ScrollAnimation>
         </section>
 
         {/* Features Section */}
         <section className="py-16">
+          <ScrollAnimation animationType="fade-in">
           <div className="mx-auto max-w-6xl px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -906,25 +943,15 @@ export default function Home() {
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                    <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <linearGradient id="logoGrad" x1="0" x2="1" y1="0" y2="1">
-                          <stop offset="0%" stopColor="var(--brand-pink)" />
-                          <stop offset="100%" stopColor="var(--brand-yellow)" />
-                        </linearGradient>
-                      </defs>
-                      <rect x="8" y="4" width="32" height="56" rx="6" fill="url(#logoGrad)"/>
-                      <path d="M12 18l8 6-6 6 10 8-6 6" stroke="var(--brand-blue)" strokeWidth="3" fill="none" strokeLinecap="round"/>
-                      <circle cx="24" cy="54" r="2" fill="var(--brand-blue)"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">Frontdoorfix</h3>
-                  <p className="text-gray-600">Din pålidelige partner for mobilreparation</p>
+        <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <FLogo size={64} />
+        </div>
+                  <BrandInfo />
                 </div>
               </div>
             </div>
           </div>
+          </ScrollAnimation>
         </section>
       </main>
       

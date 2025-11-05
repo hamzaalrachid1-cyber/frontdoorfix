@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Reparationer af telefoner og tablets",
+    "subtitle": "Vi kommer til dig - hurtig service med garanti",
+    "description": "Professionel reparation af iPhone, iPad, Samsung Galaxy og andre enheder. Vi reparationer skærm, batteri, opladning og meget mere.",
+    "ctaText": "Bestil tid nu",
+    "ctaLink": "/reparationer"
+  },
+  "uspCards": [
+    {
+      "id": "usp-1",
+      "title": "Vi kommer til dig",
+      "description": "Ingen transport - vi reparationer på stedet",
+      "icon": "🚗",
+      "order": 1
+    },
+    {
+      "id": "usp-2",
+      "title": "Hurtig service",
+      "description": "De fleste reparationer klaret på 20-30 minutter",
+      "icon": "⚡",
+      "order": 2
+    },
+    {
+      "id": "usp-3",
+      "title": "Garanti på alt arbejde",
+      "description": "24 måneder på skærm, 12 måneder på batteri",
+      "icon": "🛡️",
+      "order": 3
+    }
+  ],
+  "callouts": [
+    {
+      "id": "callout-1",
+      "title": "iPhone & iPad Reparationer",
+      "description": "Alle modeller fra iPhone 6 til iPhone 16 Pro Max",
+      "link": "/reparationer/apple",
+      "image": "/images/apple-devices.jpg",
+      "order": 1
+    },
+    {
+      "id": "callout-2",
+      "title": "Samsung Galaxy Reparationer",
+      "description": "Galaxy S, A, Z og XCover serier",
+      "link": "/reparationer/samsung",
+      "image": "/images/samsung-devices.jpg",
+      "order": 2
+    }
+  ],
+  "testimonials": []
+}
