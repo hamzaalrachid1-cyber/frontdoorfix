@@ -299,7 +299,7 @@ export default function OnePlusNordPage() {
                 Hvilke dele bruger I?
               </h3>
               <p className="text-gray-600">
-                Originale eller kvalitetsgodkendte A-kvalitetsdele med garanti. Vi bruger kun dele af højeste kvalitet, der lever op til OnePlus's standarder.
+                Originale eller kvalitetsgodkendte A-kvalitetsdele med garanti. Vi bruger kun dele af højeste kvalitet, der lever op til OnePlus&apos;s standarder.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
@@ -340,7 +340,7 @@ export default function OnePlusNordPage() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4 italic">
-                "Fantastisk service! Min OnePlus Nord 3 blev repareret på under 30 minutter direkte på min arbejdsplads. Kan varmt anbefales!"
+                &quot;Fantastisk service! Min OnePlus Nord 3 blev repareret på under 30 minutter direkte på min arbejdsplads. Kan varmt anbefales!&quot;
               </p>
               <p className="text-sm text-gray-500">- Sarah M.</p>
             </div>
@@ -355,7 +355,7 @@ export default function OnePlusNordPage() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4 italic">
-                "Professionel og hurtig service. Min skærm blev udskiftet med original kvalitet og jeg fik 24 måneders garanti. Perfekt!"
+                &quot;Professionel og hurtig service. Min skærm blev udskiftet med original kvalitet og jeg fik 24 måneders garanti. Perfekt!&quot;
               </p>
               <p className="text-sm text-gray-500">- Michael K.</p>
             </div>
@@ -370,7 +370,7 @@ export default function OnePlusNordPage() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4 italic">
-                "Bedste OnePlus reparation i København! De kom til mig og reparerede min Nord på stedet. Meget tilfreds med resultatet."
+                &quot;Bedste OnePlus reparation i København! De kom til mig og reparerede min Nord på stedet. Meget tilfreds med resultatet.&quot;
               </p>
               <p className="text-sm text-gray-500">- Anna L.</p>
             </div>

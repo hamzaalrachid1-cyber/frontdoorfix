@@ -126,7 +126,7 @@ export default function SchemaOrg({ type, data }: SchemaOrgProps) {
         return {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          "itemListElement": data.map((item: any, index: number) => ({
+          "itemListElement": (data as Array<{ name: string; url: string; [key: string]: unknown }>).map((item: { name: string; url: string; [key: string]: unknown }, index: number) => ({
             "@type": "ListItem",
             "position": index + 1,
             "name": item.name,

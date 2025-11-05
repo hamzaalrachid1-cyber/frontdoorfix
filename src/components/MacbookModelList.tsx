@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import ModelSearch from './ModelSearch';
 
 interface MacbookModel {
@@ -63,13 +64,11 @@ export default function MacbookModelList({ models }: MacbookModelListProps) {
                 className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl hover:border-pink-300 transition-all duration-300 relative"
               >
                 <div className="phone-card">
-                  <img
+                  <Image
                     src={model.image}
                     alt={`${model.model} – front, bagside og sideprofil`}
-                    loading="lazy"
                     width={200}
                     height={200}
-                    decoding="async"
                     className="phone-card__img"
                   />
                 </div>
