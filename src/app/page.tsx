@@ -33,103 +33,31 @@ export default function Home() {
 
               </div>
 
-              {/* Right Content - Van */}
-              <div className="flex flex-col items-center md:items-end gap-6">
-        <div className="w-full max-w-3xl drive-stage flex justify-center items-center relative px-4 md:px-0">
-          {/* Floating pill badges around the van - Hidden on mobile, shown on md+ */}
-          <div className="hidden md:block absolute top-2 left-8 z-10">
-            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform rotate-2 opacity-80">
-              🚐 Reparation på stedet
-            </div>
-          </div>
-          
-          <div className="hidden md:block absolute top-2 right-8 z-10">
-            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform -rotate-2 opacity-80">
-              ⚡ Hurtigt og effektivt
-            </div>
-          </div>
-          
-          <div className="hidden md:block absolute top-12 left-8 z-10">
-            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform rotate-1 opacity-80">
-              😊 Kun glade kunder
-            </div>
-          </div>
-          
-          <div className="hidden md:block absolute top-12 right-8 z-10">
-            <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform -rotate-1 opacity-80">
-              💰 Fair og gennemsigtige priser
-            </div>
-          </div>
-          
-          <div className="w-full drive-stage flex justify-center items-center overflow-hidden">
-            {/* Professional delivery van in Frontdoorfix colors */}
-          <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[280px] md:max-w-[350px] h-auto drop-shadow-xl">
-            <defs>
-              <linearGradient id="vanGradient" x1="0" x2="1">
-                <stop offset="0%" stopColor="var(--brand-pink)" />
-                <stop offset="100%" stopColor="var(--brand-yellow)" />
-              </linearGradient>
-            </defs>
-            <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81) translate(0, 12)">
-              {/* Ground shadow */}
-              <ellipse cx="47" cy="75" rx="45" ry="8" fill="rgba(0,0,0,0.15)"/>
-              
-              {/* Van cargo area - main body in brand colors - window area also colored */}
-              <path d="M 87.377 43.572 L 77.67 39.1 l -9.659 -11.621 c -2.052 -2.468 -5.07 -3.884 -8.279 -3.884 H 5.299 C 2.377 23.595 0 25.972 0 28.894 v 25.988 c 0 3.059 2.488 5.547 5.551 5.547 l 4.434 -0.014 l 19.925 -0.011 h 35.968 L 85.8 60.425 l 0.64 0.004 c 1.963 0 3.56 -1.597 3.56 -3.56 v -9.2 C 90 45.915 88.971 44.306 87.377 43.572 z M 56.585 26.595 h 3.147 c 2.315 0 4.492 1.021 5.973 2.802 l 7.832 9.424 H 56.585 V 26.595 z M 40.811 26.595 h 12.774 v 12.226 H 40.811 V 26.595 z M 25.038 26.595 h 12.773 v 12.226 H 25.038 V 26.595 z M 9.264 26.595 h 12.774 v 12.226 H 10.465 c -0.662 0 -1.201 -0.539 -1.201 -1.201 V 26.595 z" fill="url(#vanGradient)" stroke="#e5e7eb" strokeWidth="0.5"/>
-              
-              {/* Van undercarriage - now colored */}
-              <path d="M 6.794 25.46 c 0 0 -0.993 15.557 0 15.722 c 0.993 0.165 69.381 0.829 69.381 0.829 v -3.191 L 64.223 26.595 l -5.461 -1.135 H 6.794 z" fill="url(#vanGradient)"/>
-              
-              
-              {/* Van bottom section */}
-              <path d="M 89.624 53.425 l -21.507 -0.021 H 29.289 L 7.779 53.414 l -4.786 0.014 c -1.091 0 -2.111 -0.275 -2.993 -0.748 v 2.201 c 0 3.059 2.488 5.547 5.551 5.547 l 4.434 -0.014 l 19.925 -0.011 h 35.968 L 85.8 60.425 l 0.64 0.004 c 1.963 0 3.56 -1.597 3.56 -3.56 v -3.442 L 89.624 53.425 z" fill="url(#vanGradient)" opacity="0.8"/>
-              
-              {/* Wheels with spinning animation */}
-              <g>
-                <path d="M 76.175 66.405 c -4.685 0 -8.496 -3.812 -8.496 -8.497 c 0 -4.685 3.812 -8.496 8.496 -8.496 s 8.496 3.812 8.496 8.496 C 84.671 62.593 80.86 66.405 76.175 66.405 z" fill="#1f2937"/>
-                <path d="M 76.175 62.408 c -2.481 0 -4.5 -2.019 -4.5 -4.501 c 0 -2.481 2.019 -4.5 4.5 -4.5 s 4.5 2.019 4.5 4.5 C 80.675 60.39 78.656 62.408 76.175 62.408 z" fill="#e5e7eb"/>
-                <g className="wheel" style={{transformOrigin: '76.175px 57.908px'}}>
-                  <line x1="76.175" y1="53.407" x2="76.175" y2="62.408" stroke="#6b7280" strokeWidth="1"/>
-                  <line x1="71.675" y1="57.908" x2="80.675" y2="57.908" stroke="#6b7280" strokeWidth="1"/>
-                </g>
-              </g>
-              
-              <g>
-                <path d="M 17.811 66.405 c -4.685 0 -8.496 -3.812 -8.496 -8.497 c 0 -4.685 3.812 -8.496 8.496 -8.496 c 4.685 0 8.497 3.812 8.497 8.496 C 26.308 62.593 22.497 66.405 17.811 66.405 z" fill="#1f2937"/>
-                <path d="M 17.811 62.408 c -2.481 0 -4.5 -2.019 -4.5 -4.501 c 0 -2.481 2.019 -4.5 4.5 -4.5 c 2.481 0 4.5 2.019 4.5 4.5 C 22.312 60.389 20.293 62.408 17.811 62.408 z" fill="#e5e7eb"/>
-                <g className="wheel" style={{transformOrigin: '17.811px 57.908px'}}>
-                  <line x1="17.811" y1="53.407" x2="17.811" y2="62.408" stroke="#6b7280" strokeWidth="1"/>
-                  <line x1="13.311" y1="57.908" x2="22.312" y2="57.908" stroke="#6b7280" strokeWidth="1"/>
-                </g>
-              </g>
-              
-              {/* Van details */}
-              <path d="M 90 47.669 c 0 -0.524 -0.102 -1.031 -0.273 -1.51 h -7.453 c 1.93 2.351 4.723 3.795 7.726 4.05 V 47.669 z" fill="rgba(255,255,255,0.3)"/>
-              <path d="M 0 49.031 h 2.174 c 0.883 0 1.599 -0.716 1.599 -1.599 v -1.796 c 0 -0.871 -0.696 -1.575 -1.562 -1.596 L 0 44.041 V 49.031 z" fill="url(#vanGradient)" opacity="0.9"/>
-              
-              {/* Speed effects - exhaust smoke and speed lines */}
-              <g className="speed-effects">
-                {/* Bigger, more visible exhaust smoke clouds */}
-                <circle cx="6" cy="50" r="5" fill="#9ca3af" opacity="0.8" className="smoke-1"/>
-                <circle cx="2" cy="48" r="4" fill="#d1d5db" opacity="0.7" className="smoke-2"/>
-                <circle cx="0" cy="52" r="3.5" fill="#e5e7eb" opacity="0.6" className="smoke-3"/>
-                <circle cx="-3" cy="50" r="3" fill="#f3f4f6" opacity="0.5" className="smoke-4"/>
+              {/* Right Content - Feature Badges */}
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-pink-100 hover:shadow-xl transition-all">
+                  <div className="text-4xl mb-3">🚐</div>
+                  <h3 className="font-bold text-gray-800 mb-2">Vi kommer til dig</h3>
+                  <p className="text-sm text-gray-600">Reparation på din adresse</p>
+                </div>
                 
-                {/* More dramatic speed lines behind van */}
-                <line x1="-15" y1="30" x2="5" y2="30" stroke="#6b7280" strokeWidth="3" opacity="0.8" className="speed-line-1"/>
-                <line x1="-20" y1="35" x2="0" y2="35" stroke="#6b7280" strokeWidth="4" opacity="0.7" className="speed-line-2"/>
-                <line x1="-18" y1="40" x2="2" y2="40" stroke="#6b7280" strokeWidth="3" opacity="0.8" className="speed-line-3"/>
-                <line x1="-25" y1="45" x2="-5" y2="45" stroke="#6b7280" strokeWidth="5" opacity="0.6" className="speed-line-4"/>
-                <line x1="-22" y1="50" x2="-2" y2="50" stroke="#6b7280" strokeWidth="4" opacity="0.7" className="speed-line-5"/>
-                <line x1="-16" y1="55" x2="3" y2="55" stroke="#6b7280" strokeWidth="3" opacity="0.8" className="speed-line-6"/>
-                <line x1="-12" y1="60" x2="1" y2="60" stroke="#6b7280" strokeWidth="2" opacity="0.6" className="speed-line-7"/>
-              </g>
-              
-            </g>
-          </svg>
-            <div className="road"><div className="lane" /></div>
-          </div>
-        </div>
+                <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-yellow-100 hover:shadow-xl transition-all">
+                  <div className="text-4xl mb-3">⚡</div>
+                  <h3 className="font-bold text-gray-800 mb-2">Hurtig service</h3>
+                  <p className="text-sm text-gray-600">20-30 minutter</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-pink-100 hover:shadow-xl transition-all">
+                  <div className="text-4xl mb-3">✅</div>
+                  <h3 className="font-bold text-gray-800 mb-2">24 mdr. garanti</h3>
+                  <p className="text-sm text-gray-600">På alle skærme</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-yellow-100 hover:shadow-xl transition-all">
+                  <div className="text-4xl mb-3">💰</div>
+                  <h3 className="font-bold text-gray-800 mb-2">Faste priser</h3>
+                  <p className="text-sm text-gray-600">Ingen skjulte omkostninger</p>
+                </div>
               </div>
             </div>
           </div>
