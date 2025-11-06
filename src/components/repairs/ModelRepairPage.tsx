@@ -263,29 +263,35 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
                 </div>
 
                 {/* Filter Chips */}
-                <div className="flex gap-2 overflow-x-auto no-scrollbar">
-                  {[
-                    { key: 'alle', label: 'Alle' },
-                    { key: 'screen', label: 'Skærm' },
-                    { key: 'battery', label: 'Batteri' },
-                    { key: 'camera', label: 'Kamera' },
-                    { key: 'audio', label: 'Lyd/Knapper' },
-                    { key: 'ports', label: 'Porte' },
-                    { key: 'software', label: 'Software/Andet' },
-                    ...(modelData.hasBackGlass ? [{ key: 'bagcover', label: 'Bagcover' }] : [])
-                  ].map((filter) => (
-                    <button
-                      key={filter.key}
-                      onClick={() => setActiveFilter(filter.key)}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
-                        activeFilter === filter.key
-                          ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                      }`}
-                    >
-                      {filter.label}
-                    </button>
-                  ))}
+                <div className="relative">
+                  <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+                    {[
+                      { key: 'alle', label: 'Alle' },
+                      { key: 'screen', label: 'Skærm' },
+                      { key: 'battery', label: 'Batteri' },
+                      { key: 'camera', label: 'Kamera' },
+                      { key: 'audio', label: 'Lyd/Knapper' },
+                      { key: 'ports', label: 'Porte' },
+                      { key: 'software', label: 'Software/Andet' },
+                      ...(modelData.hasBackGlass ? [{ key: 'bagcover', label: 'Bagcover' }] : [])
+                    ].map((filter) => (
+                      <button
+                        key={filter.key}
+                        onClick={() => setActiveFilter(filter.key)}
+                        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap flex-shrink-0 ${
+                          activeFilter === filter.key
+                            ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white shadow-md'
+                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        }`}
+                      >
+                        {filter.label}
+                      </button>
+                    ))}
+                  </div>
+                  {/* Scroll hint for mobile */}
+                  <div className="md:hidden text-center mt-2">
+                    <p className="text-xs text-gray-400">← Scroll for flere kategorier →</p>
+                  </div>
                 </div>
               </div>
             </div>
