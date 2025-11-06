@@ -34,8 +34,8 @@ export default function Home() {
               </div>
 
               {/* Right Content - Van */}
-              <div className="flex flex-col items-end gap-6">
-        <div className="w-full max-w-3xl drive-stage flex justify-center items-center relative">
+              <div className="flex flex-col items-center md:items-end gap-6">
+        <div className="w-full max-w-3xl drive-stage flex justify-center items-center relative px-4 md:px-0">
           {/* Floating pill badges around the van - Hidden on mobile, shown on md+ */}
           <div className="hidden md:block absolute top-2 left-8 z-10">
             <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform rotate-2 opacity-80">
@@ -61,9 +61,9 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="w-full max-w-3xl drive-stage flex justify-center items-center">
+          <div className="w-full drive-stage flex justify-center items-center overflow-hidden">
             {/* Professional delivery van in Frontdoorfix colors */}
-          <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto drop-shadow-xl" style={{transform: 'scale(1.2)', maxWidth: '350px'}}>
+          <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[280px] md:max-w-[350px] h-auto drop-shadow-xl"
             <defs>
               <linearGradient id="vanGradient" x1="0" x2="1">
                 <stop offset="0%" stopColor="var(--brand-pink)" />
