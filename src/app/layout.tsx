@@ -20,11 +20,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://frontdoorfix.dk"),
   title: "Frontdoorfix - Mobilreparation i København",
   description: "Hurtig og pålidelig mobil- og elektronikreparation direkte på din adresse i København, omegn og Nordsjælland. 24 måneders garanti på skærme.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   alternates: {
     canonical: "/",
     languages: {
