@@ -253,48 +253,6 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
               </a>
             </div>
 
-            {/* SEO Text */}
-            <div className="text-center mb-8">
-              <p className="text-gray-600 text-lg">
-                {modelData.model} reparation – vi kommer til dig og reparerer på 20–30 min.
-              </p>
-              <div className="mt-2 flex items-center justify-center gap-2 relative">
-                <span className="text-sm text-gray-500">Kvalitetsspørgsmål?</span>
-                <button 
-                  className="transition-colors"
-                  onClick={() => {
-                    const tooltip = document.getElementById('quality-tooltip');
-                    if (tooltip) {
-                      tooltip.classList.toggle('hidden');
-                    }
-                  }}
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </button>
-                <div id="quality-tooltip" className="hidden absolute bg-white border border-gray-200 rounded-lg shadow-lg p-4 max-w-sm z-30 top-8 left-1/2 transform -translate-x-1/2">
-                  <button 
-                    className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-                    onClick={() => {
-                      const tooltip = document.getElementById('quality-tooltip');
-                      if (tooltip) {
-                        tooltip.classList.add('hidden');
-                      }
-                    }}
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                  <p className="text-sm text-gray-700">
-                    <strong>Original:</strong> OEM-kvalitet, 24 mdr. garanti på skærm.<br/>
-                    <strong>Kompatibel:</strong> A-kvalitet, 12 mdr. garanti.<br/>
-                    Begge testes og kalibreres.
-                  </p>
-                </div>
-              </div>
-            </div>
 
             {/* Filters & Search */}
             <div className="relative bg-transparent mb-8">
