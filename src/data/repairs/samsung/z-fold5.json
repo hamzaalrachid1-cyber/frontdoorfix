@@ -11,5 +11,13 @@
   "image": "",
   "repairs": [],
   "sort_order": 70,
-  "updated_at": "2025-10-04T17:17:12.505Z"
+  "updated_at": "2025-10-04T17:17:12.505Z",
+  "hero": {
+    "title": "Samsung Galaxy Z Fold5 Reparation",
+    "tags": [
+      "Foldable",
+      "5G"
+    ]
+  },
+  "hasBackGlass": false
 }

@@ -53,24 +53,32 @@ function ModelCard({ model }: { model: { id: string; name: string; image: string
   );
 }
 
-// Fetch MacBook Air models from API
+// Fetch MacBook Air models from filesystem
 async function getIPadModels() {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/admin/models?brand=apple&series=macbook`, {
-      cache: 'no-store',
-      next: { tags: ['models'] }
-    });
+    const fs = require('fs');
+    const path = require('path');
+    const modelsDir = path.join(process.cwd(), 'src', 'data', 'repairs', 'apple');
     
-    if (!res.ok) {
-      console.error('Failed to fetch MacBook Air models:', res.statusText);
+    if (!fs.existsSync(modelsDir)) {
       return [];
     }
     
-    const models = await res.json();
-    // Filter visible models and sort by sortOrder DESC
-    return models
-      .filter((m: { isVisible?: boolean; [key: string]: unknown }) => m.isVisible !== false)
-      .sort((a: { sortOrder?: number; [key: string]: unknown }, b: { sortOrder?: number; [key: string]: unknown }) => (b.sortOrder || 0) - (a.sortOrder || 0));
+    const files = fs.readdirSync(modelsDir).filter((f: string) => f.endsWith('.json'));
+    const models = files.map((file: string) => {
+      try {
+        const filePath = path.join(modelsDir, file);
+        const content = fs.readFileSync(filePath, 'utf8');
+        return JSON.parse(content);
+      } catch {
+        return null;
+      }
+    }).filter((m: { series?: string; isVisible?: boolean } | null): m is { series: string; isVisible?: boolean; [key: string]: unknown } => 
+      m !== null && m.series === 'macbook' && m.isVisible !== false
+    );
+    
+    // Sort by sortOrder DESC
+    return models.sort((a: { sortOrder?: number; [key: string]: unknown }, b: { sortOrder?: number; [key: string]: unknown }) => (b.sortOrder || 0) - (a.sortOrder || 0));
   } catch (error) {
     console.error('Error fetching MacBook Air models:', error);
     return [];

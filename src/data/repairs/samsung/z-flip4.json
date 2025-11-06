@@ -11,5 +11,13 @@
   "image": "",
   "repairs": [],
   "sort_order": 65,
-  "updated_at": "2025-10-04T17:17:19.874Z"
+  "updated_at": "2025-10-04T17:17:19.874Z",
+  "hero": {
+    "title": "Samsung Galaxy Z Flip4 Reparation",
+    "tags": [
+      "Foldable",
+      "5G"
+    ]
+  },
+  "hasBackGlass": false
 }

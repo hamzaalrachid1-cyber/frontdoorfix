@@ -9,6 +9,11 @@
   "isVisible": true,
   "comingSoon": false,
   "image": "",
+  "hero": {
+    "title": "Samsung Galaxy Z Flip Reparation",
+    "tags": ["2020", "Foldable", "5G"]
+  },
+  "hasBackGlass": false,
   "repairs": [],
   "sort_order": 45,
   "updated_at": "2025-10-04T17:17:27.775Z"
