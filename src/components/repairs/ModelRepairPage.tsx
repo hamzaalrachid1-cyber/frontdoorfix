@@ -278,10 +278,10 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
                       <button
                         key={filter.key}
                         onClick={() => setActiveFilter(filter.key)}
-                        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap flex-shrink-0 ${
+                        className={`px-5 py-2.5 rounded-full text-base font-semibold transition-colors whitespace-nowrap flex-shrink-0 ${
                           activeFilter === filter.key
-                            ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white shadow-md'
-                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            ? 'bg-gradient-to-r from-pink-500 to-yellow-500 text-white shadow-lg'
+                            : 'bg-white text-gray-700 hover:bg-gray-50 border-2 border-gray-200'
                         }`}
                       >
                         {filter.label}
@@ -289,8 +289,8 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
                     ))}
                   </div>
                   {/* Scroll hint for mobile */}
-                  <div className="md:hidden text-center mt-2">
-                    <p className="text-xs text-gray-400">← Scroll for flere kategorier →</p>
+                  <div className="md:hidden text-center mt-3">
+                    <p className="text-sm text-gray-500 font-medium">← Swipe for flere →</p>
                   </div>
                 </div>
               </div>
