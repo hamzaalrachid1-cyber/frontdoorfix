@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://frontdoorfix.dk"),
   title: "Frontdoorfix - Mobilreparation i København",
   description: "Hurtig og pålidelig mobil- og elektronikreparation direkte på din adresse i København, omegn og Nordsjælland. 24 måneders garanti på skærme.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   alternates: {
     canonical: "/",
     languages: {
@@ -67,7 +68,7 @@ export default function RootLayout({
         <BookingModalProvider>
           <GlobalBookNowBinder />
           <div className="bar-gradient" />
-        <div className="bg-gray-50 border-b border-gray-200">
+        <div className="hidden md:block bg-gray-50 border-b border-gray-200">
           <div className="mx-auto max-w-6xl px-6 py-2 flex items-center justify-between text-sm text-gray-600">
             <div className="flex items-center gap-4">
               <a href="tel:+4593545457" className="hover:text-gray-800 flex items-center gap-1">
@@ -89,12 +90,14 @@ export default function RootLayout({
           </div>
         </div>
         <header className="bg-gradient-to-r from-pink-50 via-yellow-50 to-white border-b border-gray-200">
-          <div className="mx-auto max-w-6xl p-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity logo-animate">
-          <FLogo size={40} />
-          <span className="text-2xl font-bold text-gray-800">FrontDoorFix</span>
+          <div className="mx-auto max-w-6xl px-4 md:px-6 py-4 md:py-6 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity logo-animate">
+          <FLogo size={32} />
+          <span className="text-lg md:text-2xl font-bold text-gray-800">FrontDoorFix</span>
         </Link>
-            <div className="flex items-center gap-8">
+            
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center gap-8">
               <nav className="flex items-center gap-8 text-base text-gray-700">
                 <div className="relative group">
                   <Link href="/reparationer" className="nav-link flex items-center gap-1">
@@ -120,6 +123,11 @@ export default function RootLayout({
                 <a href="/kontakt" className="nav-link">Kontakt os</a>
               </nav>
               <BookNowButton className="btn-gradient px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-opacity" />
+            </div>
+
+            {/* Mobile: Just CTA button */}
+            <div className="lg:hidden">
+              <BookNowButton className="btn-gradient px-4 py-2 text-sm rounded-full font-semibold hover:opacity-90 transition-opacity" />
             </div>
           </div>
         </header>

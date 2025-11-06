@@ -9,21 +9,21 @@ export default function Home() {
     <div className="min-h-screen">
       <main>
         {/* Hero Section */}
-        <section className="py-20 px-6 animate-fade-in">
+        <section className="py-12 md:py-20 px-4 md:px-6 animate-fade-in">
           <div className="mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Left Content */}
               <div className="text-center md:text-left animate-fade-in-right animate-delay-100">
 
                 {/* Main Headline */}
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 leading-tight animate-fade-in-up animate-delay-200">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 md:mb-8 leading-tight animate-fade-in-up animate-delay-200">
                   <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                     <span id="rotating-headline">Vi fikser din mobil – dér hvor du er</span>
                   </span>
                 </h1>
 
                 {/* Description */}
-                <p className="text-xl text-gray-600 mb-12 max-w-2xl">
+                <p className="text-lg md:text-xl text-gray-600 mb-8 md:mb-12 max-w-2xl">
                   Nem og tryg reparation uden at forlade hjemmet eller kontoret. 
                   Hurtigt, professionelt og med garanti.
                 </p>
@@ -36,26 +36,26 @@ export default function Home() {
               {/* Right Content - Van */}
               <div className="flex flex-col items-end gap-6">
         <div className="w-full max-w-3xl drive-stage flex justify-center items-center relative">
-          {/* Floating pill badges around the van */}
-          <div className="absolute top-2 left-8 z-10">
+          {/* Floating pill badges around the van - Hidden on mobile, shown on md+ */}
+          <div className="hidden md:block absolute top-2 left-8 z-10">
             <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform rotate-2 opacity-80">
               🚐 Reparation på stedet
             </div>
           </div>
           
-          <div className="absolute top-2 right-8 z-10">
+          <div className="hidden md:block absolute top-2 right-8 z-10">
             <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform -rotate-2 opacity-80">
               ⚡ Hurtigt og effektivt
             </div>
           </div>
           
-          <div className="absolute top-12 left-8 z-10">
+          <div className="hidden md:block absolute top-12 left-8 z-10">
             <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform rotate-1 opacity-80">
               😊 Kun glade kunder
             </div>
           </div>
           
-          <div className="absolute top-12 right-8 z-10">
+          <div className="hidden md:block absolute top-12 right-8 z-10">
             <div className="px-5 py-3 text-xs font-bold text-white shadow-xl rounded-full brand-gradient transform -rotate-1 opacity-80">
               💰 Fair og gennemsigtige priser
             </div>
