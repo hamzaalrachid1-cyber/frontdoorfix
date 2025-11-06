@@ -9,6 +9,7 @@ import GlobalBookNowBinder from "@/components/GlobalBookNowBinder";
 import Link from "next/link";
 import { Toaster } from "react-hot-toast";
 import FLogo from "@/components/FLogo";
+import MobileMenu from "@/components/MobileMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -130,8 +131,9 @@ export default function RootLayout({
               <BookNowButton className="btn-gradient px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-opacity" />
             </div>
 
-            {/* Mobile: Just CTA button */}
-            <div className="lg:hidden">
+            {/* Mobile: Menu + CTA button */}
+            <div className="lg:hidden flex items-center gap-3">
+              <MobileMenu />
               <BookNowButton className="btn-gradient px-4 py-2 text-sm rounded-full font-semibold hover:opacity-90 transition-opacity" />
             </div>
           </div>
