@@ -241,17 +241,9 @@ export default function ModelRepairPage({ modelData }: ModelRepairPageProps) {
         {/* Repairs & Prices - New Simple Structure */}
         <section id="rep-list" className="pt-4 pb-6 sm:pt-6 sm:pb-8 bg-white">
           <div className="mx-auto max-w-6xl px-6">
-            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-900 mb-6 text-center" id="dele">
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-900 mb-8 text-center" id="dele">
               Reparationer & Priser
             </h2>
-            <div className="text-center mb-8">
-              <a 
-                href="/reservedele" 
-                className="transition-colors text-sm font-medium underline"
-              >
-                Læs om vores reservedele →
-              </a>
-            </div>
 
 
             {/* Filters & Search */}
