@@ -29,6 +29,7 @@ export default function SeriesAdmin() {
   const [loading, setLoading] = useState(true);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [editingSerie, setEditingSerie] = useState<Serie | null>(null);
+  const [uploading, setUploading] = useState(false);
   
   const [newSerie, setNewSerie] = useState({
     name: '',
@@ -71,6 +72,64 @@ export default function SeriesAdmin() {
       console.error('Error fetching series:', error);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleNewSerieImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploading(true);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('alt', `${newSerie.name} serie image`);
+
+      const response = await fetch('/api/admin/media', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setNewSerie({ ...newSerie, image: data.media.url });
+      } else {
+        alert('Upload fejlede');
+      }
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      alert('Upload fejlede');
+    } finally {
+      setUploading(false);
+    }
+  };
+
+  const handleEditSerieImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !editingSerie) return;
+
+    setUploading(true);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('alt', `${editingSerie.name} serie image`);
+
+      const response = await fetch('/api/admin/media', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setEditingSerie({ ...editingSerie, image: data.media.url });
+      } else {
+        alert('Upload fejlede');
+      }
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      alert('Upload fejlede');
+    } finally {
+      setUploading(false);
     }
   };
 
@@ -271,17 +330,48 @@ export default function SeriesAdmin() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Billede URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Billede</label>
+                
+                {/* Upload button */}
+                <div className="flex gap-2 mb-2">
+                  <button
+                    type="button"
+                    onClick={() => document.getElementById('new-serie-image-upload')?.click()}
+                    disabled={uploading}
+                    className="flex-1 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
+                  >
+                    {uploading ? 'Uploader...' : '📁 Vælg billede fra Mac'}
+                  </button>
+                </div>
+                <input
+                  id="new-serie-image-upload"
+                  type="file"
+                  accept="image/*,image/svg+xml,.svg"
+                  onChange={handleNewSerieImageUpload}
+                  className="hidden"
+                />
+
+                {/* Or manual URL input */}
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-gray-200"></div>
+                  </div>
+                  <div className="relative flex justify-center text-xs">
+                    <span className="px-2 bg-white text-gray-500">eller indsæt URL</span>
+                  </div>
+                </div>
+                
                 <input
                   type="text"
                   value={newSerie.image}
                   onChange={(e) => setNewSerie({ ...newSerie, image: e.target.value })}
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg mt-3"
                   placeholder="/uploads/serie-image.png"
                 />
-                <p className="text-xs text-gray-500 mt-1">
-                  Upload billede i Media → Kopiér URL → Indsæt her
-                </p>
+
+                {newSerie.image && (
+                  <img src={newSerie.image} alt="Preview" className="mt-2 max-h-32 border rounded" />
+                )}
               </div>
             </div>
             <div className="flex gap-3 mt-6">
@@ -326,14 +416,45 @@ export default function SeriesAdmin() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Billede URL</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Billede</label>
+                
+                {/* Upload button */}
+                <div className="flex gap-2 mb-2">
+                  <button
+                    type="button"
+                    onClick={() => document.getElementById('edit-serie-image-upload')?.click()}
+                    disabled={uploading}
+                    className="flex-1 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
+                  >
+                    {uploading ? 'Uploader...' : '📁 Vælg billede fra Mac'}
+                  </button>
+                </div>
+                <input
+                  id="edit-serie-image-upload"
+                  type="file"
+                  accept="image/*,image/svg+xml,.svg"
+                  onChange={handleEditSerieImageUpload}
+                  className="hidden"
+                />
+
+                {/* Or manual URL input */}
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-gray-200"></div>
+                  </div>
+                  <div className="relative flex justify-center text-xs">
+                    <span className="px-2 bg-white text-gray-500">eller indsæt URL</span>
+                  </div>
+                </div>
+                
                 <input
                   type="text"
                   value={editingSerie.image || ''}
                   onChange={(e) => setEditingSerie({ ...editingSerie, image: e.target.value })}
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg mt-3"
                   placeholder="/uploads/serie-image.png"
                 />
+
                 {editingSerie.image && (
                   <img src={editingSerie.image} alt="Preview" className="mt-2 max-h-32 rounded border" />
                 )}
