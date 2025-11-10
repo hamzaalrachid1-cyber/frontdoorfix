@@ -115,9 +115,6 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
 
   // Get dynamic series for this brand
   const series = await getSeriesForBrand(brand);
-  
-  // Debug log
-  console.log('Series data for', brand, ':', series.map(s => ({ name: s.name, image: s.image })));
 
   return (
     <div className="min-h-screen bg-white">
