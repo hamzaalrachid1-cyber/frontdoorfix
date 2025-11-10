@@ -1,0 +1,16 @@
+{
+  "brand": "huawei",
+  "series": "mate",
+  "model": "test",
+  "slug": "test",
+  "year": 2025,
+  "sort_order": 100,
+  "isVisible": true,
+  "comingSoon": false,
+  "image": "/uploads/s25---edited-1762778964243.png",
+  "hero": {
+    "title": "test",
+    "tags": []
+  },
+  "repairs": []
+}
