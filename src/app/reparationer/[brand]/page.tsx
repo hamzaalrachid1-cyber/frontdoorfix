@@ -102,6 +102,9 @@ export async function generateMetadata({ params }: { params: Promise<{ brand: st
   };
 }
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default async function BrandPage({ params }: { params: Promise<{ brand: string }> }) {
   const { brand } = await params;
   const brandData = BRANDS.find((b) => b.slug === brand);
@@ -112,6 +115,9 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
 
   // Get dynamic series for this brand
   const series = await getSeriesForBrand(brand);
+  
+  // Debug log
+  console.log('Series data for', brand, ':', series.map(s => ({ name: s.name, image: s.image })));
 
   return (
     <div className="min-h-screen bg-white">
