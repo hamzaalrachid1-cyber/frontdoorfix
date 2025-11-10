@@ -277,9 +277,10 @@ export default async function SeriesPage({ params }: { params: Promise<{ brand: 
                       <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
                         {model.image ? (
                           <img 
-                            src={model.image} 
+                            src={`${model.image}?t=${Date.now()}`}
                             alt={model.model}
                             className="w-full h-full object-contain"
+                            loading="lazy"
                           />
                         ) : (
                           <div className="text-gray-400 text-2xl">📱</div>
