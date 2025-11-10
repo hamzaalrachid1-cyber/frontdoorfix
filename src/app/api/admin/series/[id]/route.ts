@@ -32,6 +32,10 @@ export async function PUT(
 
     await fs.promises.writeFile(filePath, JSON.stringify(seriesData, null, 2), 'utf8');
 
+    // Revalidate the brand page to show new images
+    const { revalidatePath } = await import('next/cache');
+    revalidatePath(`/reparationer/${data.brandId}`);
+
     return NextResponse.json({ success: true, series: seriesData });
   } catch (error) {
     console.error('Error updating series:', error);

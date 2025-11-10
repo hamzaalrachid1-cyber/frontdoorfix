@@ -175,13 +175,13 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
                 aria-label={`Se ${serie.name} modeller og priser`}
               >
                 <div className="p-6">
-                  <div className="flex items-center justify-center w-40 h-40 mx-auto mb-6 bg-gray-50 rounded-lg">
+                  <div className="flex items-center justify-center w-40 h-40 mx-auto mb-6 bg-gray-50 rounded-lg overflow-hidden">
                     {serie.image ? (
                       <img 
-                        src={`${serie.image}?t=${Date.now()}`} 
+                        src={serie.image} 
                         alt={serie.name} 
                         className="w-full h-full object-contain p-2" 
-                        loading="lazy"
+                        key={serie.image}
                       />
                     ) : (
                       <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor" className="text-gray-300">
