@@ -24,52 +24,56 @@
       "category": "Skærm",
       "title": "Skærmskift – Original",
       "type": "original",
-      "price": 1699,
+      "price": 995,
       "time": "~45 min",
       "warranty": "24 mdr",
       "description": "Glas + LCD udskiftes. Lys, farver og touch gendannes.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 105
     },
     {
       "id": "screen_compatible",
       "category": "Skærm",
       "title": "Skærmskift – Kompatibel",
       "type": "compatible",
-      "price": 1299,
+      "price": 795,
       "time": "~45 min",
       "warranty": "24 mdr",
       "description": "Glas + LCD udskiftes (kompatibel kvalitet).",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 95
     },
     {
       "id": "battery_original",
       "category": "Batteri",
       "title": "Batteriskift – Original",
       "type": "original",
-      "price": 799,
+      "price": 995,
       "time": "~30–45 min",
       "warranty": "12 mdr",
       "description": "Nyt batteri med frisk kapacitet. Kalibrering + test.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 90
     },
     {
       "id": "battery_compatible",
       "category": "Batteri",
       "title": "Batteriskift – Kompatibel",
       "type": "compatible",
-      "price": 599,
+      "price": 695,
       "time": "~30–45 min",
       "warranty": "12 mdr",
       "description": "Kompatibelt batteri. Kalibrering + test.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 85
     },
     {
       "id": "chargeport",
@@ -82,7 +86,8 @@
       "description": "Reparation af opladningsproblemer. Inkl. rensning.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 80
     },
     {
       "id": "rear_camera",
@@ -95,7 +100,8 @@
       "description": "Udskiftning af bag-kamera. Inkl. test.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 70
     },
     {
       "id": "front_camera",
@@ -108,7 +114,8 @@
       "description": "Udskiftning af for-kamera. Inkl. test.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 65
     },
     {
       "id": "loudspeaker",
@@ -121,7 +128,8 @@
       "description": "Udskiftning af højttaler. Inkl. test.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 50
     },
     {
       "id": "mic",
@@ -134,30 +142,49 @@
       "description": "Udskiftning af mikrofon. Inkl. test.",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 40
     },
     {
       "id": "software",
       "category": "Software/Andet",
       "title": "Software",
       "type": "service",
-      "price": 149,
+      "price": 195,
       "time": "~30–60 min",
       "warranty": "Ingen",
       "description": "Backup, gendannelse, opdatering (hvis muligt).",
       "badges": [],
       "notes": null,
-      "showDetailsLink": true
+      "showDetailsLink": true,
+      "order": 30
     },
     {
       "id": "diagnostics",
       "category": "Software/Andet",
       "title": "Fejlsøgning/diagnose",
       "type": "service",
-      "price": 149,
+      "price": 295,
       "time": "~30–45 min",
       "warranty": "Ingen",
       "description": "Fratrækkes ved reparation.",
+      "badges": [],
+      "notes": null,
+      "showDetailsLink": true,
+      "order": 20
+    },
+    {
+      "title": "Væskeskade-rens",
+      "category": "Andet",
+      "quality": "original",
+      "price": 395,
+      "time": "~30 min",
+      "warranty": "24 mdr",
+      "description": "",
+      "order": 5,
+      "id": "repair_1762768408220",
+      "type": "original",
+      "isVisible": true,
       "badges": [],
       "notes": null,
       "showDetailsLink": true

@@ -510,16 +510,6 @@
     "usedBy": []
   },
   {
-    "id": "media-1759689378167",
-    "filename": "sk-rmbillede-2025-10-05-kl--10-27-41-1759689378167.png",
-    "url": "/uploads/sk-rmbillede-2025-10-05-kl--10-27-41-1759689378167.png",
-    "alt": "",
-    "type": "image",
-    "size": 697098,
-    "uploadedAt": "2025-10-05T18:36:18.168Z",
-    "usedBy": []
-  },
-  {
     "id": "media-1759689552028",
     "filename": "sk-rmbillede-2025-10-05-kl--10-27-41-1759689552028.png",
     "url": "/uploads/sk-rmbillede-2025-10-05-kl--10-27-41-1759689552028.png",
@@ -1737,6 +1727,26 @@
     "type": "image",
     "size": 407008,
     "uploadedAt": "2025-11-06T12:04:35.012Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762771431037",
+    "filename": "air4---edited-1762771431037.png",
+    "url": "/uploads/air4---edited-1762771431037.png",
+    "alt": "Mate serie image",
+    "type": "image",
+    "size": 260147,
+    "uploadedAt": "2025-11-10T10:43:51.041Z",
+    "usedBy": []
+  },
+  {
+    "id": "media-1762771448059",
+    "filename": "ipad-10---edited-1762771448059.png",
+    "url": "/uploads/ipad-10---edited-1762771448059.png",
+    "alt": "P-serien serie image",
+    "type": "image",
+    "size": 267507,
+    "uploadedAt": "2025-11-10T10:44:08.060Z",
     "usedBy": []
   }
 ]
